@@ -2,3 +2,4 @@
 back/*
 .DS_Store
 socket.js.now
+.gitignore
