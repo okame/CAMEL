@@ -1,4 +1,5 @@
 var packSrv = {};
+
 (function() {
 
     packSrv.con = {};
@@ -8,6 +9,7 @@ var packSrv = {};
     packSrv.sv = packSrv.ws.createServer();
     packSrv.timer;
     packSrv.sv.listen(8000);
+    packSrv.rate = 100;
 
     packSrv.init= function() {
       // param
@@ -18,21 +20,25 @@ var packSrv = {};
         echo:function() {
           that.sys.log('call echo');
         },
-        hoge:function(){
+        hoge:function(con){
+          con.send('{i:1,j:2}');
           that.sys.log('call hoge');
         },
 
+        // event start
         evs:function(con) {
           //that.evLoop.apply(packSrv, [con]);
-          that.evLoop(con);
+          //that.evLoop(con);
+          that.con  = con;
+          that.timer = setInterval(packSrv.evLoop, that.rate);
         },
 
+        // event stop
         eve:function() {
           clearInterval(that.timer);
         }
 
       }
-
 
       //add listener
       this.sv.addListener('connection', function(con){
@@ -58,7 +64,6 @@ var packSrv = {};
               that.sys.log(msg);
               var req = that.parseRequest(msg);
               if(req && that.operations[req.ope]) {
-                con.send(msg+':ok');
                 that.operations[req.ope](con);
               } else {
                 that.sys.log('Recieve invalid massge');
@@ -71,8 +76,9 @@ var packSrv = {};
       this.sys.puts('Server running');
     };
 
-    packSrv.evLoop = function(con) {
+    packSrv.evLoop = function() {
       var i = 0, j = 0, d;
+      var con = packSrv.con;
 
       d = Math.round(Math.random() * 2) - 1;
       if(Math.round(Math.random()) == 0) {
@@ -82,9 +88,8 @@ var packSrv = {};
         i = 0;
         j = d;
       }
-      this.sys.log(i+','+j);
+      packSrv.sys.log(i+','+j);
       con.send('{"i":'+i+',"j":'+j+'}');
-      this.timer = setInterval(packSrv.evLoop, 50);
     }
 
     packSrv.parseRequest = function(msg) {

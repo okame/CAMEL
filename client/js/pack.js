@@ -351,9 +351,9 @@ pack = {};
     }
 
     //  event on message
-    pack.onMessage = function(point) {
+    pack.onMessage = function(data) {
+      var point = eval('('+data+')');
       pack.movePack(point.i, point.j);
-      //console.log(pack.p.i+','+pack.p.j)
       console.log(pack.packDirection)
     }
 

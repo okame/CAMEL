@@ -8,5 +8,6 @@ $(document).ready(function() {
     //key.init();
     client.init();
     client.setOnMessage(pack.onMessage);
+    //client.setOnMessage(function(p){console.log(p);});
   });
 
