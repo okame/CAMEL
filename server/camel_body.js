@@ -21,7 +21,7 @@ var packSrv = {};
           that.sys.log('call echo');
         },
         hoge:function(con){
-          con.send('{i:1,j:2}');
+          con.send('{ope:mv,arg:{i:1,j:2}}');
           that.sys.log('call hoge');
         },
 
@@ -89,7 +89,7 @@ var packSrv = {};
         j = d;
       }
       packSrv.sys.log(i+','+j);
-      con.send('{"i":'+i+',"j":'+j+'}');
+      con.send('{"ope":"mv","arg":{"i":'+i+',"j":'+j+'}}');
     }
 
     packSrv.parseRequest = function(msg) {

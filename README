@@ -1,1 +1,8 @@
-under construction.
+* メッセージ書式
+
+- srv->clnt
+{ope:<operation_name>,
+ arg:<object>}
+
+- clnt->srv
+ope:<arg>

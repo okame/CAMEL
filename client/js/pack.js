@@ -350,11 +350,25 @@ pack = {};
       this.p.j += dj;
     }
 
-    //  event on message
-    pack.onMessage = function(data) {
-      var point = eval('('+data+')');
+    /*------------------------------------------------
+     * Called when a client get a message from server.
+     ------------------------------------------------*/
+    pack.onMessage = function(point) {
       pack.movePack(point.i, point.j);
       console.log(pack.packDirection)
+    }
+
+    /*------------------------------------------------
+     * Called when connection is open.
+     ------------------------------------------------*/
+    pack.onOpen = function() {
+      console.log('pack open.')
+      pack.init();
+      if (!pack.checkBrowser()) {
+        return false;
+      }
+      pack.draw();
+
     }
 
   })($);
