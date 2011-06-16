@@ -2,10 +2,15 @@ var packSrv = {};
 
 (function() {
 
+    packSrv.OPTIONS = {
+      packNum = 4
+    }
+
     packSrv.con = {};
     packSrv.sys = require('sys');
     packSrv.http = require('http');
     packSrv.ws = require('websocket-server');
+    packSrv.json = require('./json2');
     packSrv.sv = packSrv.ws.createServer();
     packSrv.timer;
     packSrv.sv.listen(8000);
@@ -20,31 +25,35 @@ var packSrv = {};
         echo:function() {
           that.sys.log('call echo');
         },
-        hoge:function(con){
-          con.send('{ope:mv,arg:{i:1,j:2}}');
-          that.sys.log('call hoge');
-        },
 
         // event start
         evs:function(con) {
-          //that.evLoop.apply(packSrv, [con]);
-          //that.evLoop(con);
-          that.con  = con;
           that.timer = setInterval(packSrv.evLoop, that.rate);
         },
 
         // event stop
         eve:function() {
           clearInterval(that.timer);
+        },
+
+        // synchronize
+        syn:function(con) {
+          that.sys.log('called syn');
+          con.send(that.createMsg('synack', ''));
+        },
+
+        // acknowledge
+        ack:function(con) {
+          that.sys.log('called ack');
         }
 
       }
 
       //add listener
       this.sv.addListener('connection', function(con){
-          var i = 0, j = 0, d
+          var i = 0, j = 0, that = packSrv;
           that.sys.log(con.id);
-          this.con = con;
+          that.con = con;
 
           var f = function() {
             d = Math.round(Math.random() * 2) - 1;
@@ -61,7 +70,7 @@ var packSrv = {};
           }
 
           con.addListener('message', function(msg){
-              that.sys.log(msg);
+              //that.sys.log(msg);
               var req = that.parseRequest(msg);
               if(req && that.operations[req.ope]) {
                 that.operations[req.ope](con);
@@ -70,7 +79,6 @@ var packSrv = {};
                 con.send('Invalid massge');
               }
             });
-
         });
 
       this.sys.puts('Server running');
@@ -93,16 +101,20 @@ var packSrv = {};
     }
 
     packSrv.parseRequest = function(msg) {
-      var msgb = msg.split(':'),
+      var msgb = JSON.parse(msg);
       req = {};
-      if(msgb.length != 2) {
-        return false;
-      } else {
-        req.ope  = msgb[0],
-        req.data = msgb[1];
-      }
+      req.ope  = msgb.ope;
+      req.data = msgb.arg || '';
       return req;
     };
+
+    packSrv.createMsg = function(ope, arg) {
+      var msg = {
+        ope:ope,
+        arg:arg
+      };
+      return JSON.stringify(msg);
+    }
 
   })();
 packSrv.init();

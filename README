@@ -1,8 +1,6 @@
 * メッセージ書式
 
-- srv->clnt
-{ope:<operation_name>,
- arg:<object>}
-
-- clnt->srv
-ope:<arg>
+{
+  ope:<operation_name:string>
+  arg:<arguments:object>
+}
