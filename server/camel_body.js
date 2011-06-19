@@ -3,7 +3,7 @@ var packSrv = {};
 (function() {
 
     packSrv.OPTIONS = {
-      packNum = 4
+      packNum : 4
     }
 
     packSrv.con = {};
@@ -11,10 +11,12 @@ var packSrv = {};
     packSrv.http = require('http');
     packSrv.ws = require('websocket-server');
     packSrv.json = require('./json2');
+    packSrv.pack = require('./pack');
     packSrv.sv = packSrv.ws.createServer();
     packSrv.timer;
     packSrv.sv.listen(8000);
     packSrv.rate = 100;
+    packSrv.packs = [];
 
     packSrv.init= function() {
       // param
@@ -44,13 +46,19 @@ var packSrv = {};
 
         // acknowledge
         ack:function(con) {
+          var p = new that.pack.Pack();
           that.sys.log('called ack');
+          that.packs.push(p);
+          that.sys.log('push pack[id='+p.getId()+']');
         }
 
       }
 
       //add listener
-      this.sv.addListener('connection', function(con){
+      this.sv.addListener('close', function(con) {
+          that.sys.log('close');
+        });
+      this.sv.addListener('connection', function(con) {
           var i = 0, j = 0, that = packSrv;
           that.sys.log(con.id);
           that.con = con;
