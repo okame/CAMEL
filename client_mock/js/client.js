@@ -8,13 +8,27 @@ var client = {};
 
       this.con = new window.WebSocket('ws://localhost:8000');
 
+
+    /*------------------------------------------------
+     * Client operation implementations
+     ------------------------------------------------*/
       this.operations = {
-        synack:function() {
+        // synack
+        synack : function() {
           console.log('get synack message');
           that.con.send(that.createMsg('ack',''));
+        },
+        next : function() {
+          console.log('get next message');
+          var msg = {};
+          msg['i'] = Math.floor(Math.random() * 10);
+          msg['j'] = Math.floor(Math.random() * 10);
+          that.con.send(that.createMsg('move',msg));
         }
       };
-
+      this.con.onclose = function(e) {
+        console.log('connection closed');
+      };
       this.con.onopen = function(e) {
         console.log('connecting');
         client.con.send(that.createMsg('syn',''));
