@@ -15,8 +15,8 @@ var packSrv = {};
     packSrv.sv = packSrv.ws.createServer();
     packSrv.timer;
     packSrv.sv.listen(8000);
-    packSrv.rate = 100;
-    packSrv.packs = [];
+    packSrv.rate = 1000;
+    packSrv.packs = {};
 
     packSrv.init= function() {
       // param
@@ -24,64 +24,51 @@ var packSrv = {};
 
       // ope
       this.operations = {
-        echo:function() {
+        echo : function() {
           that.sys.log('call echo');
         },
 
         // event start
-        evs:function(con) {
+        evs : function(con) {
           that.timer = setInterval(packSrv.evLoop, that.rate);
         },
 
         // event stop
-        eve:function() {
+        eve : function() {
           clearInterval(that.timer);
         },
 
         // synchronize
-        syn:function(con) {
+        syn : function(con) {
           that.sys.log('called syn');
           con.send(that.createMsg('synack', ''));
         },
 
         // acknowledge
-        ack:function(con) {
-          var p = new that.pack.Pack();
+        ack : function(con) {
+          var p = new that.pack.Pack(con);
           that.sys.log('called ack');
-          that.packs.push(p);
+          that.packs[con.id] = p;
           that.sys.log('push pack[id='+p.getId()+']');
+          that.timer = setInterval(packSrv.evLoop, that.rate);
+        },
+
+        // move pack
+        move : function(con, msg) {
+          that.packs[con.id].move(msg);
         }
 
       }
 
       //add listener
-      this.sv.addListener('close', function(con) {
-          that.sys.log('close');
-        });
       this.sv.addListener('connection', function(con) {
           var i = 0, j = 0, that = packSrv;
           that.sys.log(con.id);
-          that.con = con;
-
-          var f = function() {
-            d = Math.round(Math.random() * 2) - 1;
-            if(Math.round(Math.random()) == 0) {
-              i = d;
-              j = 0;
-            } else {
-              i = 0;
-              j = d;
-            }
-            this.sys.log(i+','+j);
-            this.con.send('{"i":'+i+',"j":'+j+'}');
-            this.timer = setTimeout(f, 50);
-          }
 
           con.addListener('message', function(msg){
-              //that.sys.log(msg);
               var req = that.parseRequest(msg);
               if(req && that.operations[req.ope]) {
-                that.operations[req.ope](con);
+                that.operations[req.ope](con, req.data);
               } else {
                 that.sys.log('Recieve invalid massge');
                 con.send('Invalid massge');
@@ -95,17 +82,14 @@ var packSrv = {};
     packSrv.evLoop = function() {
       var i = 0, j = 0, d;
       var con = packSrv.con;
+      var packs = packSrv.packs;
 
-      d = Math.round(Math.random() * 2) - 1;
-      if(Math.round(Math.random()) == 0) {
-        i = d;
-        j = 0;
-      } else {
-        i = 0;
-        j = d;
+      for(var id in packs) {
+        packSrv.sys.log(packs[id].getId());
+        //packSrv.sys.log(packs[id].getX()+','+packs[id].getY());
+        packs[id].next();
       }
-      packSrv.sys.log(i+','+j);
-      con.send('{"ope":"mv","arg":{"i":'+i+',"j":'+j+'}}');
+
     }
 
     packSrv.parseRequest = function(msg) {

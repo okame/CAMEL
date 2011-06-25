@@ -1,4 +1,9 @@
-* メッセージ書式
+* Library
+- websocket-server
+-- [How to install]
+-- % npm install websocket-server
+
+* Message Format
 
 {
   ope:<operation_name:string>
