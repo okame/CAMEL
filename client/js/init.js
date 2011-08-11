@@ -1,5 +1,9 @@
 $(document).ready(function() {
-    client.init(pack.onOpen);
-    client.setOperation('mv', pack.onMessage);
+
+    // sample operations
+    var echo = function(data) {
+      console.log(data);
+    }
+    controller.init();
   });
 

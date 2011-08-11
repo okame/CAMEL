@@ -9,3 +9,33 @@
   ope:<operation_name:string>
   arg:<arguments:object>
 }
+
+* Coordinate Data Format
+** Stage
+
+** Entity{Pack, Item}
+各オブジェクト内に座標値を持つ
+
+* TODO
+パックマンが壁を食べる
+
+severで設定したframe rateとclientの設定を比較
+レンダリングがちかちかする
+同じ場所に続けて２ターンいると消える
+
+* methods
+- syn
+-- クライアントからサーバへの最初の接続要求
+
+- synack
+-- synに対するサーバからの応答
+
+- prestart
+-- すべてのクライアントからの接続(syn)を確認するとサーバからブロードキャストされる
+-- クライアントはこのメッセージを受信すると初期化処理を開始する
+
+- ack
+-- クライアントが初期化処理終了したことをサーバへ通知するメッセージ
+
+- start
+-- サーバack受信後のクライアントへのイベント開始通知
