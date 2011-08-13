@@ -12,7 +12,7 @@ var packSrv = {};
 		packSrv.sv = packSrv.ws.createServer();
 		packSrv.timer;
 		packSrv.sv.listen(8000);
-		packSrv.rate = 400;
+		packSrv.rate = 200;
 		packSrv.packs = {};
 		packSrv.turnNumber = 0;
 		packSrv.idCnt = 0;
@@ -38,11 +38,11 @@ var packSrv = {};
 			var env = this.env;
 
 			//stage array initialize
-			stage = new Array(env.STAGE_XSIZE);
+			stage = [];
 			for(i=0; i<env.STAGE_XSIZE; i++){
-				stage[i] = new Array(env.STAGE_YSIZE);
+				stage[i] = [];
 				for(j=0; j<env.STAGE_YSIZE; j++){
-					stage[i][j] = new Array(env.STAGE_ZSIZE);
+					stage[i][j] = [];
 					for(k=0; k<env.STAGE_ZSIZE; k++){
 						stage[i][j][k] = 0;
 					}
@@ -51,20 +51,22 @@ var packSrv = {};
 
 			//create wall
 			for(i=0; i<env.STAGE_XSIZE; i++){
-				stage[i][0][env.STAGE_BLOCK] = env.BLOCK_EXIST_YES;
-				stage[i][env.STAGE_YSIZE-1][env.STAGE_BLOCK] = env.BLOCK_EXIST_YES;
+				stage[i][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+				stage[i][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
 			}
 			for(i=1; i<env.STAGE_YSIZE-1; i++){
-				stage[0][i][env.STAGE_BLOCK] = env.BLOCK_EXIST_YES;
-				stage[env.STAGE_XSIZE-1][i][env.STAGE_BLOCK] = env.BLOCK_EXIST_YES;
+				stage[0][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+				stage[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
 			}	
 
 			//put point
-			stage[2][1][env.STAGE_POINT]=10;
-			stage[3][1][env.STAGE_POINT]=10;
-			//stage[4][1][STAGE_POINT]=1;
-			//stage[6][1][STAGE_POINT]=1;
-			//stage[8][1][STAGE_POINT]=1;
+			stage[2][1][env.STAGE_OBJECTS.FEED]=10;
+			stage[3][1][env.STAGE_OBJECTS.FEED]=10;
+			stage[18][1][env.STAGE_OBJECTS.FEED]=10;
+			stage[18][18][env.STAGE_OBJECTS.FEED]=10;
+			//stage[4][1][STAGE_OBJECTS.FEED]=1;
+			//stage[6][1][STAGE_OBJECTS.FEED]=1;
+			//stage[8][1][STAGE_OBJECTS.FEED]=1;
 
 
 			//client location decide - random?
@@ -84,7 +86,7 @@ var packSrv = {};
 		/*
 		 * initialize function
 		 */
-		packSrv.init= function() {
+		packSrv.init = function() {
 			// param
 			var that = this;
 			var env = this.env;
@@ -135,7 +137,7 @@ var packSrv = {};
 						that.packs[id].point=0;
 						that.packs[id].sumPoint=0;
 
-						//check syn phase finish
+						//check first connection of all client
 						var flag = that.checkFinish('syn');
 						if(flag){
 							//initialize
@@ -205,7 +207,7 @@ var packSrv = {};
 					}
 
 					//check wall
-					if( moveSuccessFlag && stage[x][y][env.STAGE_BLOCK]==env.BLOCK_EXIST_YES){
+					if( moveSuccessFlag && stage[x][y][env.STAGE_OBJECTS.BLOCK]==env.BLOCK_EXIST_YES){
 						//block
 						that.sys.log('Cant move for block.x='+x+',y='+y+'(id='+id+')');
 						moveSuccessFlag = false;
@@ -234,17 +236,15 @@ var packSrv = {};
 						packSrv.turnEnd();
 					}
 				}
-
 			}
-
 
 			packSrv.movePackmanForStage = function(id,x,y){
 				var pack = packSrv.packs[id];
 				var env = this.env;
-				stage[pack.x][pack.y][env.STAGE_PACKMAN] = stage[pack.x][pack.y][env.STAGE_PACKMAN] - Math.pow(2,id);
-				that.sys.log('debug1='+stage[pack.x][pack.y][env.STAGE_PACKMAN]);
-				stage[x][y][env.STAGE_PACKMAN] = stage[x][y][env.STAGE_PACKMAN] + Math.pow(2,id);
-				that.sys.log('debug2='+stage[x][y][env.STAGE_PACKMAN]);
+				stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK] = stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,id);
+				that.sys.log('debug1='+stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK]);
+				stage[x][y][env.STAGE_OBJECTS.PACK] = stage[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,id);
+				that.sys.log('debug2='+stage[x][y][env.STAGE_OBJECTS.PACK]);
 			}
 
 			packSrv.turnEnd = function(){
@@ -257,9 +257,9 @@ var packSrv = {};
 						//no already calculate
 						var pointDividePackmanIdArray = new Array();
 						var pack = packSrv.packs[i];
-						var packmanExist = stage[pack.x][pack.y][env.STAGE_PACKMAN];
+						var packmanExist = stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK];
 
-						if(stage[pack.x][pack.y][env.STAGE_POINT]==0){
+						if(stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED]==0){
 							//no point
 							checkFinishArray[i] = true;
 							continue;
@@ -273,7 +273,7 @@ var packSrv = {};
 							}
 						}
 
-						var point = stage[pack.x][pack.y][env.STAGE_POINT];
+						var point = stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED];
 						var dividePoint = 0;
 
 						if(pointDividePackmanIdArray.length != 0){
@@ -288,7 +288,7 @@ var packSrv = {};
 							checkFinishArray[id] = true;
 						}
 
-						stage[pack.x][pack.y][env.STAGE_POINT] = 0;
+						stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED] = 0;
 					}
 
 				}
@@ -384,7 +384,7 @@ var packSrv = {};
 		 */
 		packSrv.evLoop = function() {
 			var packs = packSrv.packs;
-			var env = this.env;
+			var env = packSrv.env;
 
 			//TODO:change broadcast message(kondo)
 			for(var id in packs) {
@@ -412,5 +412,6 @@ var packSrv = {};
 		}
 
 	})();
+
 packSrv.init();
 

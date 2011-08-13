@@ -7,12 +7,13 @@ display = {};
 		// options
 		display.options= {
 			packColor : "yellow",
+			feedColor : "red",
 			enemyColor : "red",
 			stageColor : "gray",
 			canvasWidth : 600,
 			canvasHeight : 600,
 			cellSize : 30,
-			frameRate : 100,//ms
+			frameRate : 90,//ms
 			gridColor : 'rgb(240, 240, 240)',
 			bgColor : 'rgb(255, 255, 255)'
 		}
@@ -40,7 +41,7 @@ display = {};
 
 		// main
 		display.render = function () {
-			this.ctx.clearRect(0,0,this.options.canvasWidth,this.options.canvasHeight);
+			//this.ctx.clearRect(0,0,this.options.canvasWidth,this.options.canvasHeight);
 			this.renderGridLine();
 			this.renderAllObjects();
 		}
@@ -128,6 +129,22 @@ display = {};
 			f.apply(this, [x, y]);
 		}
 
+		display.renderFeed = function (x, y, dir) {
+			var size = this.options.cellSize
+			,r = (size-1)/3
+			,rx = x + size/2
+			,ry = y + size/2
+			,msize = Math.PI/6,mths,mthe;
+
+			//render circle
+			this.ctx.fillStyle = this.options.feedColor;
+			this.ctx.beginPath();
+			this.ctx.arc(rx, ry, r, 0, Math.PI * 2, true);
+			this.ctx.fill();
+			this.ctx.closePath();
+
+		}
+
 		display.renderPack = function (x, y, dir) {
 			var size = this.options.cellSize
 			,r = (size-1)/2
@@ -135,7 +152,7 @@ display = {};
 			,ry = y + size/2
 			,msize = Math.PI/6,mths,mthe;
 
-			//base circle
+			//render circle
 			this.ctx.fillStyle = this.options.packColor;
 			this.ctx.beginPath();
 			this.ctx.arc(rx, ry, r, 0, Math.PI * 2, true);
@@ -206,12 +223,12 @@ display = {};
 
 			for(i = 0; i < stage.length; i++) {
 				for(j = 0; j < stage[i].length; j++) {
-					if(stage[i][j][env.STAGE_OBJECTS.STAGE_BLOCK] == env.EXIST_FLG) {
+					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
 						this.renderCell(i, j, this.renderStage);
-					} else if(stage[i][j][env.STAGE_OBJECTS.STAGE_PACK] > 0) {
+					} else if(stage[i][j][env.STAGE_OBJECTS.PACK] > 0) {
 						// render all packs
 						for(k=0; k<env.PACK_NUM; k++) {
-							if(stage[i][j][env.STAGE_OBJECTS.STAGE_PACK] & Math.pow(2, k)) {
+							if(stage[i][j][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
 								di = i - this.packPos[k].i; 
 								dj = j - this.packPos[k].j; 
 								this.movePack(di, dj, k);
@@ -219,7 +236,9 @@ display = {};
 								this.packPos[k].j = j;
 							}
 						}
-					} 
+					} else if(stage[i][j][env.STAGE_OBJECTS.FEED] > 0) {
+						this.renderCell(i, j, this.renderFeed);
+					}
 				}
 			}
 		}
@@ -241,17 +260,25 @@ display = {};
 
 		display.movePack = function(di, dj, id) {
 			//console.log(id);
-			var p = this.packPos[id],
+			var p = this.packPos[id], x, y,
 			pNext = {};
 			pNext.i = p.i + di;
 			pNext.j = p.j + dj;
+
+			p.dir = this.getPackPos(di, dj, id);
+
 			//check frame, stage and motion lock
-			if(  pNext.i < 0 || pNext.i >= this.matrixSizeX
-				|| pNext.j < 0 || pNext.j >= this.matrixSizeY
+			if(  pNext.i < 0 //|| pNext.i >= this.matrixSizeX
+				|| pNext.j < 0 //|| pNext.j >= this.matrixSizeY
 				|| this.motionLock) {
 				return false;
+			} else if(di == 0 && dj == 0) {
+				x = p.i * this.options.cellSize;
+				y = p.j * this.options.cellSize;
+				this.renderPack(x, y, p.dir);
+				console.log(x,y);
+				return;
 			} else {
-				if(this.matrix.stage[pNext.i][pNext.j] == env.STAGE_BLOCK) return false;
 				this.renderPackMotion(di, dj, id);
 			}
 		}
@@ -272,18 +299,7 @@ display = {};
 			y = yf;
 			rate = this.options.frameRate;
 			dis = Math.abs(di != 0? di : dj) * size; // distance
-			dRate = rate / dis; 
-			if(di > 0) { // decide direction of pack face
-				p.dir = 'right';
-			} else if(di < 0) {
-				p.dir = 'left';
-			} else if(dj < 0) {
-				p.dir = 'up';
-			} else if(dj > 0) {
-				p.dir = 'down';
-			} else {
-				return false
-			}
+			dRate = Math.floor(rate / dis); 
 			timer = setInterval(function(){
 					that.motionLock = true;
 					if(cntRate >= (dis - 1)) {
@@ -298,6 +314,23 @@ display = {};
 				}, dRate);
 			p.i += di;
 			p.j += dj;
+		}
+
+		display.getPackPos = function(di, dj, id) {
+			var dir;
+			if(di > 0) { // decide direction of pack face
+				dir = 'right';
+			} else if(di < 0) {
+				dir = 'left';
+			} else if(dj < 0) {
+				dir = 'up';
+			} else if(dj > 0) {
+				dir = 'down';
+			} else {
+				dir = this.packPos[id].dir;
+			}
+
+			return dir;
 		}
 
 		/*------------------------------------------------
