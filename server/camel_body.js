@@ -7,7 +7,7 @@ var packSrv = {};
 		packSrv.http = require('http');
 		packSrv.ws = require('websocket-server');
 		packSrv.json = require('./json2');
-		packSrv.pack = require('./pack');
+		packSrv.Pack = require('./pack').Pack;
 		packSrv.env = require('./env').env;
 		packSrv.sv = packSrv.ws.createServer();
 		packSrv.timer;
@@ -129,7 +129,7 @@ var packSrv = {};
 						con.send(that.createMsg('synack', ''));
 
 						//create packman object
-						var p = new that.pack.Pack(con, env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y);
+						var p = new that.Pack(con, env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y);
 						that.sys.log('create packman object(id='+id+')');
 						that.packs[id] = p;
 						that.packs[id].setId(id);
@@ -317,7 +317,7 @@ var packSrv = {};
 					that.sys.log('con.id='+con.id);
 
 					con.addListener('message', function(msg){
-							var req = that.parseRequest(msg);
+							var req = util.parseRequest(msg);
 							if(req && that.operations[req.ope]) {
 								that.operations[req.ope](con, req.data);
 							} else {

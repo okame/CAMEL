@@ -1,16 +1,18 @@
 var id = 0;
-var point = 0;
-var sumPoint = 0;
+
+/*
+ * change to member
 var teamName = '';
 var item = 0;
 var status = 0;
-var x=1;
-var y=1;
+*/
 
-exports.Pack = function(con, x, y, v) {
+exports.Pack = function(con, x, y) {
   this.con = con;
   this.x = x||1;
   this.y = y||1;
+  this.point = 0;
+  this.sumPoint = 0;
   id++;
 }
 
