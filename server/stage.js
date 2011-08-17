@@ -1,7 +1,6 @@
 /**
  * Stage Object
- *
- * stage{type : Object}
+ * type : Object
  */
 var stage = {}
 
@@ -9,14 +8,16 @@ var stage = {}
 var sys = require('sys');
 var env = require('./env').env;
 
-/* 
+/* ------------------------------
  * Member variables
- */
+  ------------------------------ */
 stage.cells = [];
 
-/* 
+
+
+/* ------------------------------
  * Methods
- */
+  ------------------------------ */
 
 /**
  * Initialize stage cells.
@@ -54,14 +55,20 @@ stage.init = function() {
 	this.cells[3][1][env.STAGE_OBJECTS.FEED]=10;
 	this.cells[18][1][env.STAGE_OBJECTS.FEED]=10;
 	this.cells[10][10][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[18][18][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[17][18][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[16][18][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[18][17][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[18][16][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[18][16][env.STAGE_OBJECTS.FEED]=10;
 
 	this.printStageInfo();
 
 	sys.log('finished to create stage');
 }
 
-/*
- * Print stage info like under the figure.
+/**
+ * Print stage info as like under the figure.
  *
  * 111111
  * 100001
@@ -85,4 +92,5 @@ stage.printStageInfo = function() {
 
 }
 
+//------------------------
 exports.stage = stage;

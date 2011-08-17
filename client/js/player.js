@@ -5,20 +5,16 @@ var env = {};
 		var that = player;
 		that.stage = {};
 		that.operations = {
-			// synack
-			synack : function(arg) {
-				console.log('[ synack ]');
-			},
 			start : function(arg) {
 				console.log('[ start ]');
 			},
-			prestart : function(arg) {
-				console.log('[ prestart ]');
+			ready : function(arg) {
+				console.log('[ ready ]');
 				that.stage = arg;
 				env = arg;
 				display.init(env.stage);
 				display.render();
-				return (util.createMsg('ack',''));
+				return (util.createMsg('readyOk',''));
 			},
 			next : function(arg) {
 				console.log('[ next ]');

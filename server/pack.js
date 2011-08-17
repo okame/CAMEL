@@ -1,18 +1,22 @@
+/**
+ * Pack Object
+ */
+
+/* Load library */
+var sys = require('sys');
+var env = require('./env').env;
+
 var id = 0;
 
-/*
- * change to member
-var teamName = '';
-var item = 0;
-var status = 0;
-*/
-
-exports.Pack = function(con, x, y) {
+exports.Pack = function(con, x, y, teamName) {
   this.con = con;
-  this.x = x||1;
-  this.y = y||1;
+  this.x = x || 1;
+  this.y = y || 1;
   this.point = 0;
   this.sumPoint = 0;
+  this.item = 0;
+  this.status = env.PACK_STATUS.CLIENT_INIT;
+  this.id = id;
   id++;
 }
 
@@ -21,9 +25,6 @@ exports.Pack.prototype.getX = function() {
 }
 exports.Pack.prototype.getY = function() {
   return this.y;
-}
-exports.Pack.prototype.getV = function() {
-  return this.v;
 }
 exports.Pack.prototype.getId = function() {
   return this.id;
@@ -51,7 +52,7 @@ exports.Pack.prototype.createMsg = function(ope, arg) {
 	};
 	return JSON.stringify(msg);
 }
-exports.Pack.prototype.createSendPack = function(msg) {
+exports.Pack.prototype.createPackGhost = function(msg) {
 	var pack = {};
 	pack.x = this.x;
 	pack.y = this.y;

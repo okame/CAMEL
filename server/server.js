@@ -2,7 +2,7 @@ var packSrv = {};
 
 (function() {
 
- 		// change to local variables
+		// change to local variables
 		packSrv.sys        = require('sys');
 		packSrv.http       = require('http');
 		packSrv.ws         = require('websocket-server');
@@ -10,6 +10,8 @@ var packSrv = {};
 		packSrv.Pack       = require('./pack').Pack;
 		packSrv.env        = require('./env').env;
 		packSrv.util       = require('./util').util;
+		packSrv.stage      = require('./stage').stage;
+		packSrv.referee    = require('./referee').referee;
 		packSrv.sv         = packSrv.ws.createServer();
 		packSrv.packs      = {};
 		packSrv.turnNumber = 0;
@@ -17,76 +19,21 @@ var packSrv = {};
 		packSrv.rate       = packSrv.env.FRAME_RATE;
 		packSrv.sv.listen(8000);
 
-		var stage = {};
 		//manage packman ID
-		var packmanidArray = new Array();
+		var packmanidArray = [];
 		//manage to finish execution
-		var checkFinishArray = new Array(packSrv.env.PACK_NUM);
 
 		packSrv.sys.log(packSrv.env.PACK_NUM);
-
-
-		/* 
-		 * create stage function
-		 */
-		packSrv.createStage = function() {
-			//param
-			var env = this.env;
-
-			//stage array initialize
-			stage = [];
-			for(i=0; i<env.STAGE_XSIZE; i++){
-				stage[i] = [];
-				for(j=0; j<env.STAGE_YSIZE; j++){
-					stage[i][j] = [];
-					for(k=0; k<env.STAGE_ZSIZE; k++){
-						stage[i][j][k] = 0;
-					}
-				}
-			}
-
-			//create wall
-			for(i=0; i<env.STAGE_XSIZE; i++){
-				stage[i][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-				stage[i][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-			}
-			for(i=1; i<env.STAGE_YSIZE-1; i++){
-				stage[0][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-				stage[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-			}	
-
-			//put point
-			stage[2][1][env.STAGE_OBJECTS.FEED]=10;
-			stage[3][1][env.STAGE_OBJECTS.FEED]=10;
-			stage[18][1][env.STAGE_OBJECTS.FEED]=10;
-			stage[10][10][env.STAGE_OBJECTS.FEED]=10;
-
-			//debug by kondo
-			for(i=0; i<env.STAGE_YSIZE; i++){
-				for(j=0; j<env.STAGE_XSIZE; j++){
-					this.sys.print(stage[j][i][0]);
-				}
-				this.sys.print('\n');
-			}
-
-			this.sys.log('finished to create stage');
-		}
 
 		/*
 		 * initialize function
 		 */
 		packSrv.init = function() {
-			// param
 			var that = this;
 			var env = this.env;
 
-			//initialize
-			for(i=0; i<env.PACK_NUM; i++){
-				checkFinishArray[i] = false;
-			}
-
-			//create stage
-			this.createStage();
+			// create stage function
+			this.stage.init();
 
 			// ope
 			this.operations = {
@@ -105,67 +52,55 @@ var packSrv = {};
 				},
 
 				// synchronize
-				syn : function(con) {
-					var i,id;
+				clientInit : function(con) {
+					var i, id, packNum, finished, pack;
 					id = that.idCnt;
-					that.sys.log('called syn(id='+id+')',env.PACK_NUM);
+					that.sys.log('Called clientInit');
 
-					if( packmanidArray[con.id] != null || id <= env.PACK_NUM || checkFinishArray[id] == false ) {
+					if( packmanidArray[con.id] != null || id <= env.PACK_NUM ) {
 						packmanidArray[con.id] = id;
 						that.idCnt++;
-						checkFinishArray[id] = true;
-						that.sys.log('synack(id='+id+')');
-						con.send(that.util.createMsg('synack', ''));
 
 						//create packman object
-						var p = new that.Pack(con, env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y);
+						pack = new that.Pack(con, env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y);
 						that.sys.log('create packman object(id='+id+')');
-						that.packs[id] = p;
+						that.packs[id] = pack;
 						that.packs[id].setId(id);
-						that.sys.log('push pack[id='+p.getId()+']');
+						that.sys.log('push pack[id='+pack.getId()+']');
 
 						//check first connection of all client
-						var flag = that.checkFinish('syn');
-						if(flag){
-							//initialize
-							for(i=0; i<env.PACK_NUM; i++){
-								checkFinishArray[i] = false;
-							}
+						finished = that.util.checkPackStatus(that.packs, 'CLIENT_INIT', true);
+						packNum = that.util.sumPackNum(that.packs);
+						if(packNum == env.PACK_NUM && finished){
+
 							//broadcast to send stage information
-							that.sys.log('#######prestart phase#######');
-							/*
-							var sendObj={};
-							sendObj.stage = stage;
-							sendObj.packs = [];
-							*/
-							env.stage = stage;
+							that.sys.log('#######client ready phase#######');
+							env.stage = that.stage.cells;
 							env.packs = [];
 							for(i=0; i<env.PACK_NUM; i++) {
-								env.packs[i] = that.packs[i].createSendPack();
+								env.packs[i] = that.packs[i].createPackGhost();
 							}
-							that.sv.broadcast( that.util.createMsg('prestart', env) );
+							that.sv.broadcast(that.util.createMsg('ready', env));
+
+							// Initialize referee object by packs and stage.
+							that.referee.init(that.packs, that.stage);
 						}
 					}else{
-						that.sys.log('[Error]fail connection.It already use this id?');
+						that.sys.log('[Error]fail connection. This id is already used.');
 					}
 
 				},
 
-				// acknowledge
-				ack : function(con) {
-					var id = packmanidArray[con.id];
-					that.sys.log('ack(id='+id+')');
-					checkFinishArray[id] = true;
+				readyOk : function(con) {
+					var id = packmanidArray[con.id], finished;
+					that.sys.log('readyOk(id='+id+')');
+					that.packs[id].status = env.PACK_STATUS.READY_OK;
 
-					var flag = that.checkFinish('ack');
-					if(flag){
-						//initialize
-						for(i=0; i<env.PACK_NUM; i++){
-							checkFinishArray[i] = false;
-						}
+					finished = that.util.checkPackStatus(that.packs, 'READY_OK', true);
+					if(finished){
 
 						that.sys.log('start after 1 min.');
-						that.sv.broadcast( that.util.createMsg('start', '') );
+						that.sv.broadcast(that.util.createMsg('start', ''));
 						setTimeout(packSrv.startEventLoop(),2000); //TODO:change 1min
 					}
 
@@ -176,126 +111,28 @@ var packSrv = {};
 					var id = packmanidArray[con.id];
 					var x = msg.i;
 					var y = msg.j;
+					var finished;
+					var success;
 					that.sys.log('move(id='+id+')(x='+x+',y='+y+')');
 
-					var moveSuccessFlag = true;
-
-					/*
-					 * check to move to next step
-					 */
-
-					//check out of stage
-					if( x > 0 && x < env.STAGE_XSIZE-1 && 
-						y > 0 && y < env.STAGE_YSIZE-1 ){
-						//OK	
-					}else{
-						that.sys.log('Cant move to out of stage.x='+x+',y='+y+'(id='+id+')');
-						moveSuccessFlag = false;
-					}
-
-					//check wall
-					if( moveSuccessFlag && stage[x][y][env.STAGE_OBJECTS.BLOCK]==env.BLOCK_EXIST_YES){
-						//block
-						that.sys.log('Cant move for block.x='+x+',y='+y+'(id='+id+')');
-						moveSuccessFlag = false;
-					}
-
-					//check tonari no masu
-					if( moveSuccessFlag && !that.checkNextStep(id,x,y) ){
-						that.sys.log('No exist packman.(id='+id+')');
-						moveSuccessFlag = false;
-					}
-
-					if(moveSuccessFlag){
-						//execution to move
+					// Check next cell
+					if(that.referee.checkNextCell(id, x, y)){
+						// Move pack to next cell
 						that.movePackmanForStage(id,x,y);
 						that.packs[id].move(msg);
 					}
 
-					checkFinishArray[id] = true;
+					that.packs[id].status = env.PACK_STATUS.MOVE;
 
-					var flag = that.checkFinish('move');
-					if(flag){
+					finished = that.util.checkPackStatus(that.packs, 'MOVE', false);
+					if(finished){
 						//initialize
 						for(i=0; i<env.PACK_NUM; i++){
-							checkFinishArray[i] = false;
+							that.packs[id].status = env.PACK_STATUS.TURN_END;
 						}
 						packSrv.turnEnd();
 					}
 				}
-			}
-
-			packSrv.movePackmanForStage = function(id,x,y){
-				var pack = packSrv.packs[id];
-				var env = this.env;
-				stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK] = stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,id);
-				that.sys.log('debug1='+stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK]);
-				stage[x][y][env.STAGE_OBJECTS.PACK] = stage[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,id);
-				that.sys.log('debug2='+stage[x][y][env.STAGE_OBJECTS.PACK]);
-			}
-
-			packSrv.turnEnd = function(){
-				var env = this.env;
-				that.sys.log('turnEnd():turn number='+packSrv.turnNumber);
-
-				//calculate point
-				for(i=0; i<env.PACK_NUM; i++){
-					if(!checkFinishArray[i]){
-						//no already calculate
-						var pointDividePackmanIdArray = new Array();
-						var pack = packSrv.packs[i];
-						var packmanExist = stage[pack.x][pack.y][env.STAGE_OBJECTS.PACK];
-
-						if(stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED]==0){
-							//no point
-							checkFinishArray[i] = true;
-							continue;
-						}
-
-						for(j=i; (packmanExist != 0) && (j<env.PACK_NUM); j++){
-							if( ( packmanExist & Math.pow(2,j) ) != 0 ){
-								packmanExist = packmanExist - Math.pow(2,j);
-								pointDividePackmanIdArray[pointDividePackmanIdArray.length] = j;
-
-							}
-						}
-
-						var point = stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED];
-						var dividePoint = 0;
-
-						if(pointDividePackmanIdArray.length != 0){
-							dividePoint = point / pointDividePackmanIdArray.length;
-							that.sys.log('debug(dividePoint)='+dividePoint);
-						}
-
-						for( i in pointDividePackmanIdArray ){
-							var id = pointDividePackmanIdArray[i];
-							packSrv.packs[id].point = packSrv.packs[id].point + dividePoint;
-							packSrv.packs[id].sumPoint = packSrv.packs[id].sumPoint + dividePoint;
-							checkFinishArray[id] = true;
-						}
-
-						stage[pack.x][pack.y][env.STAGE_OBJECTS.FEED] = 0;
-					}
-
-				}
-				//initialize
-				for(i=0; i<env.PACK_NUM; i++){
-					checkFinishArray[i] = false;
-				}
-				//debug
-				for(i=0;i<env.PACK_NUM; i++){
-					that.sys.log('point='+that.packs[i].point+'(id='+i+')');
-				}
-
-				//get item
-				//no implement
-
-
-				//encounter enemy
-				//no implement(end of turn of all packman)
-
-				packSrv.turnNumber++;
 			}
 
 			//add listener
@@ -318,44 +155,34 @@ var packSrv = {};
 			this.sys.log('#######sys phase#######');
 		};
 
-		/*
-		 * check tonari no masu
-		 */
-		packSrv.checkNextStep = function(id,x,y){
+		packSrv.movePackmanForStage = function(id,x,y){
 			var pack = packSrv.packs[id];
-
-			if( pack.x == x && pack.y == y || //same location
-				pack.x-1 == x && pack.y == y ||
-				pack.x == x && pack.y-1 == y ||
-				pack.x+1 == x && pack.y == y ||
-				pack.x == x && pack.y+1 == y){
-				//OK
-				return true;
-			}else{
-				//NG
-				return false;
-			}
+			var env = this.env;
+			this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK] = this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,id);
+			this.stage.cells[x][y][env.STAGE_OBJECTS.PACK] = this.stage.cells[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,id);
 		}
 
-		/*
-		 * check finish
+		/**
+		 * Turn end processing.
 		 */
-		packSrv.checkFinish = function(msg){
-			var flag = true;
+		packSrv.turnEnd = function(){
+			this.sys.log('turnEnd():turn number='+packSrv.turnNumber);
+
 			var env = this.env;
+			var i = 0, j = 0;
+			var pointDividePackmanIdArray = [];
+			var pack, packmanExist, point, dividePoint, id;
 
-			this.sys.print( msg + ' status=');
-			for(i=0; i<env.PACK_NUM; i++){
-				if( checkFinishArray[i] ){
-					this.sys.print('1');
-				}else{
-					flag = false;
-					this.sys.print('0');
-				}
-			}
-			this.sys.print('\n');
+			this.referee.calcPoint();
+			this.referee.printPoint();
 
-			return flag;
+			//get item
+			//no implement
+
+			//encounter enemy
+			//no implement(end of turn of all packman)
+
+			packSrv.turnNumber++;
 		}
 
 		/*
@@ -376,8 +203,8 @@ var packSrv = {};
 			//TODO:change broadcast message(kondo)
 			for(var id in packs) {
 				packSrv.sys.log(packs[id].getX()+','+packs[id].getY()+'(id='+packs[id].getId()+')');
-				packs[id].next(packs[id].createSendPack());
-				packs[id].render(stage);
+				packs[id].next(packs[id].createPackGhost());
+				packs[id].render(packSrv.stage.cells);
 			}
 
 		}

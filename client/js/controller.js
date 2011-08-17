@@ -17,7 +17,7 @@ var controller = {};
 			};
 			this.con.onopen = function(e) {
 				console.log('connecting');
-				controller.con.send(util.createMsg('syn',''));
+				controller.con.send(util.createMsg('clientInit',''));
 				if(init) return init();
 			};
 			this.con.onmessage = function(msg) {

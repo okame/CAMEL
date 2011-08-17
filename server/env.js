@@ -28,7 +28,15 @@ exports.env = {
 	BLOCK_EXIST_NO  : 0,
 	BLOCK_EXIST_YES : 1,
 
-	FRAME_RATE : 200
+	FRAME_RATE : 200,
+
+	PACK_STATUS : {
+		NEW : 0,
+		CLIENT_INIT : 1,
+		READY_OK : 2,
+		MOVE : 3,
+		TURN_END: 4
+	}
 }
 
 // Make stage mock
