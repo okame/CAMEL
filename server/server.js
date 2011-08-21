@@ -32,7 +32,7 @@ var packSrv = {};
 			var that = this;
 			var env = this.env;
 
-			// create stage function
+			// create stage
 			this.stage.init();
 
 			// ope
@@ -51,7 +51,7 @@ var packSrv = {};
 					clearInterval(that.timer);
 				},
 
-				// synchronize
+				// Initialize client
 				clientInit : function(con) {
 					var i, id, packNum, finished, pack;
 					id = that.idCnt;
@@ -68,7 +68,7 @@ var packSrv = {};
 						that.packs[id].setId(id);
 						that.sys.log('push pack[id='+pack.getId()+']');
 
-						//check first connection of all client
+						//Check first connection of all client
 						finished = that.util.checkPackStatus(that.packs, 'CLIENT_INIT', true);
 						packNum = that.util.sumPackNum(that.packs);
 						if(packNum == env.PACK_NUM && finished){
@@ -119,14 +119,16 @@ var packSrv = {};
 					if(that.referee.checkNextCell(id, x, y)){
 						// Move pack to next cell
 						that.movePackmanForStage(id,x,y);
+						that.packs[id].isWall = false;
 						that.packs[id].move(msg);
+					} else {
+						that.packs[id].isWall = true;
 					}
 
 					that.packs[id].status = env.PACK_STATUS.MOVE;
-
 					finished = that.util.checkPackStatus(that.packs, 'MOVE', false);
+
 					if(finished){
-						//initialize
 						for(i=0; i<env.PACK_NUM; i++){
 							that.packs[id].status = env.PACK_STATUS.TURN_END;
 						}
@@ -168,11 +170,6 @@ var packSrv = {};
 		packSrv.turnEnd = function(){
 			this.sys.log('turnEnd():turn number='+packSrv.turnNumber);
 
-			var env = this.env;
-			var i = 0, j = 0;
-			var pointDividePackmanIdArray = [];
-			var pack, packmanExist, point, dividePoint, id;
-
 			this.referee.calcPoint();
 			this.referee.printPoint();
 
@@ -199,11 +196,14 @@ var packSrv = {};
 		packSrv.evLoop = function() {
 			var packs = packSrv.packs;
 			var env = packSrv.env;
+			var msg = {};
 
 			//TODO:change broadcast message(kondo)
 			for(var id in packs) {
 				packSrv.sys.log(packs[id].getX()+','+packs[id].getY()+'(id='+packs[id].getId()+')');
-				packs[id].next(packs[id].createPackGhost());
+				msg.cells = packSrv.stage.cells;
+				msg.pack = packs[id].createPackGhost();
+				packs[id].next(msg);
 				packs[id].render(packSrv.stage.cells);
 			}
 

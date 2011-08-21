@@ -51,16 +51,23 @@ stage.init = function() {
 
 	/* DEBUG */
 	// Put point
-	this.cells[2][1][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[3][1][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[18][1][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[10][10][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[18][18][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[17][18][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[16][18][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[18][17][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[18][16][env.STAGE_OBJECTS.FEED]=10;
-	this.cells[18][16][env.STAGE_OBJECTS.FEED]=10;
+	this.cells[2][1][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[3][1][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[18][1][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[10][10][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[18][18][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[17][18][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[16][18][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[18][17][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[18][16][env.STAGE_OBJECTS.FEED] = 10;
+	this.cells[18][16][env.STAGE_OBJECTS.FEED] = 10;
+	//this.cells[12][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[13][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[14][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[15][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[16][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[17][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+	//this.cells[18][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
 
 	this.printStageInfo();
 

@@ -22,7 +22,7 @@ var controller = {};
 			};
 			this.con.onmessage = function(msg) {
 				var that = controller;
-				var res ={};
+				var res;
 				var buf = JSON.parse(msg.data);
 				var ope = buf.ope || '';
 				var arg = buf.arg || '';

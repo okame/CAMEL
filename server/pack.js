@@ -15,6 +15,7 @@ exports.Pack = function(con, x, y, teamName) {
   this.point = 0;
   this.sumPoint = 0;
   this.item = 0;
+  this.isWall = false; // Whether last step is wall or not.
   this.status = env.PACK_STATUS.CLIENT_INIT;
   this.id = id;
   id++;
@@ -57,6 +58,7 @@ exports.Pack.prototype.createPackGhost = function(msg) {
 	pack.x = this.x;
 	pack.y = this.y;
 	pack.id = this.id;
+	pack.isWall = this.isWall;
 	return pack;
 }
 

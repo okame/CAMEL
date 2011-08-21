@@ -50,7 +50,7 @@ referee.checkNextCell = function(id, x, y){
 		success = false;
 	}
 
-	//check tonari no masu
+	//check next step
 	if( success && !this.checkNextStep(id, x, y) ){
 		sys.log('No exist packman.(id='+id+')');
 		success = false;
@@ -66,6 +66,7 @@ referee.checkNextCell = function(id, x, y){
 referee.checkNextStep = function(id, x, y){
 	var pack = this.packs[id];
 
+	// change to smart one
 	if( pack.x == x && pack.y == y ||
 		pack.x-1 == x && pack.y == y ||
 		pack.x == x && pack.y-1 == y ||

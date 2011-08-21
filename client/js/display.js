@@ -259,7 +259,6 @@ display = {};
 		}
 
 		display.movePack = function(di, dj, id) {
-			//console.log(id);
 			var p = this.packPos[id], x, y,
 			pNext = {};
 			pNext.i = p.i + di;
@@ -276,7 +275,6 @@ display = {};
 				x = p.i * this.options.cellSize;
 				y = p.j * this.options.cellSize;
 				this.renderPack(x, y, p.dir);
-				console.log(x,y);
 				return;
 			} else {
 				this.renderPackMotion(di, dj, id);
