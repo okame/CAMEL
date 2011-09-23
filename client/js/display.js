@@ -2,8 +2,6 @@ display = {};
 
 (function($) {
 
-		// constant variables
-
 		// options
 		display.options= {
 			packColor : "yellow",

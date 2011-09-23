@@ -139,6 +139,7 @@ var packSrv = {};
 
 			//add listener
 			this.sv.addListener('connection', function(con) {
+					console.log(con.version);
 					var i = 0, j = 0, that = packSrv;
 					that.sys.log('con.id='+con.id);
 
@@ -203,6 +204,7 @@ var packSrv = {};
 				packSrv.sys.log(packs[id].getX()+','+packs[id].getY()+'(id='+packs[id].getId()+')');
 				msg.cells = packSrv.stage.cells;
 				msg.pack = packs[id].createPackGhost();
+				msg.turn = packSrv.turnNumber;
 				packs[id].next(msg);
 				packs[id].render(packSrv.stage.cells);
 			}

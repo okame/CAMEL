@@ -13,8 +13,6 @@ var env = require('./env').env;
   ------------------------------ */
 stage.cells = [];
 
-
-
 /* ------------------------------
  * Methods
   ------------------------------ */
@@ -49,26 +47,8 @@ stage.init = function() {
 		this.cells[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
 	}	
 
-	/* DEBUG */
-	// Put point
-	this.cells[2][1][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[3][1][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[18][1][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[10][10][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[18][18][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[17][18][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[16][18][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[18][17][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[18][16][env.STAGE_OBJECTS.FEED] = 10;
-	this.cells[18][16][env.STAGE_OBJECTS.FEED] = 10;
-	//this.cells[12][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[13][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[14][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[15][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[16][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[17][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	//this.cells[18][12][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-
+	this.debug();
+	
 	this.printStageInfo();
 
 	sys.log('finished to create stage');
@@ -101,3 +81,44 @@ stage.printStageInfo = function() {
 
 //------------------------
 exports.stage = stage;
+
+
+
+/* DEBUG */
+stage.debug = function() {
+
+	var blocks = [
+		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
+		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+	]
+	, i, j;
+
+	// Put point
+	for(i=0; i<blocks.length; i++) {
+		for(j=0; j<blocks[i].length; j++) {
+			if(blocks[i][j] == 1) {
+				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+			} else if(blocks[i][j] == 9) {
+				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
+			}
+		}
+	}
+}

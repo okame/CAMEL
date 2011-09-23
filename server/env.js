@@ -1,7 +1,7 @@
 var sys = require('sys');
 
 exports.env = {
-	PACK_NUM : 2,
+	PACK_NUM : 1,
 	STAGE_WIDTH :20,
 	STAGE_OBJECTS : {
 		BLOCK:0,
@@ -10,8 +10,8 @@ exports.env = {
 		ITEM:3
 	},
 	STAGE_WIDTH : 20,
-	DEFAULT_PACK_X:10,
-	DEFAULT_PACK_Y:10,
+	DEFAULT_PACK_X:2,
+	DEFAULT_PACK_Y:1,
 	EMPTY_FLG:0,
 	EXIST_FLG:1,
 	stage: [],
@@ -39,26 +39,3 @@ exports.env = {
 	}
 }
 
-// Make stage mock
-var env = exports.env;
-
-env.stage = [];
-var i, j, key;
-for(i = 0;i<env.STAGE_WIDTH;i++) {
-	env.stage[i] = [];
-	for(j = 0;j<env.STAGE_WIDTH;j++) {
-		env.stage[i][j] = [];
-		for(key in env.STAGE_OBJECTS) {
-			env.stage[i][j][env.STAGE_OBJECTS[key]] = env.EMPTY_FLG;
-		}
-	}
-}
-
-// Put block
-env.stage[5][5][env.STAGE_OBJECTS.STAGE_BLOCK] = env.EXIST_FLG;
-env.stage[10][7][env.STAGE_OBJECTS.STAGE_BLOCK] = env.EXIST_FLG;
-env.stage[3][5][env.STAGE_OBJECTS.STAGE_BLOCK] = env.EXIST_FLG;
-env.stage[5][3][env.STAGE_OBJECTS.STAGE_BLOCK] = env.EXIST_FLG;
-env.stage[14][13][env.STAGE_OBJECTS.STAGE_BLOCK] = env.EXIST_FLG;
-
-env.stage[14][13][env.STAGE_OBJECTS.STAGE_FEED] = env.EXIST_FLG;

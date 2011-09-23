@@ -14,6 +14,7 @@ var env = {};
 				env = arg;
 				display.init(env.stage);
 				display.render();
+				userScript.init();
 				return (util.createMsg('readyOk',''));
 			},
 			next : function(arg) {
