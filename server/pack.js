@@ -41,7 +41,7 @@ exports.Pack.prototype.move = function(msg) {
   this.y = msg.j;
 }
 exports.Pack.prototype.send = function(ope, arg) {
-  this.con.send(this.createMsg(ope, arg));
+  this.con.sendUTF(this.createMsg(ope, arg));
 }
 exports.Pack.prototype.render = function(stage) {
   this.send('render', stage);

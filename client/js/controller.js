@@ -1,6 +1,6 @@
 var controller = {};
 
-(function($) {
+(function() {
 		controller.con = {};
 		controller.operations = {};
 		//var player = player;
@@ -16,7 +16,7 @@ var controller = {};
 				console.log('connection closed');
 			};
 			this.con.onopen = function(e) {
-				console.log('connecting');
+				console.log('connecting.');
 				controller.con.send(util.createMsg('clientInit',''));
 				if(init) return init();
 			};
@@ -45,4 +45,4 @@ var controller = {};
 			this.cmd(util.createMsg('eve',''));
 		}
 
-	})($);
+	})();
