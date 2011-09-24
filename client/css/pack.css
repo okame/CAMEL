@@ -1,11 +1,26 @@
 body {
-  background-color:white;
+	background-color:white;
 }
 
 canvas {
-  border:2px dotted gray;
+	border:2px dotted gray;
+	width:600px;
+	float:left;
+	margin-left:10px;
+}
+
+div#usrInfo {
+	float:left;
+	margin-left:10px;
+
+	/*DEBUG*/
+	background-color:gray;
 }
 
 div#wrapper {
-  margin-left : 10px;
+	float:left;
+
+	/*DEBUG*/
+	border:2px dotted gray;
+	background-color:white;
 }

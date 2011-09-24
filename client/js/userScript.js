@@ -197,10 +197,6 @@ var userScript = {};
 
 				save.push({i:(next.i - pack.x), j:(next.j - pack.y)});
 
-				if(turn == 200) {
-					console.log(JSON.stringify(save));
-				}
-
 				return next;
 			}
 

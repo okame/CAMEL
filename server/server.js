@@ -2,14 +2,15 @@ var packSrv = {};
 
 // change to local variables
 packSrv.sys        = require('sys');
+util = require('util');
 var WebSocketServer    = require('websocket').server;
 var http = require('http');
-packSrv.json       = require('./json2');
-packSrv.Pack       = require('./pack').Pack;
-packSrv.env        = require('./env').env;
-packSrv.util       = require('./util').util;
-packSrv.stage      = require('./stage').stage;
-packSrv.referee    = require('./referee').referee;
+packSrv.json       = require('./lib/json2');
+packSrv.Pack       = require('./lib/pack').Pack;
+packSrv.env        = require('./lib/env').env;
+packSrv.tool = require('./lib/tool').tool;
+packSrv.stage      = require('./lib/stage').stage;
+packSrv.referee    = require('./lib/referee').referee;
 packSrv.packs      = {};
 packSrv.turnNumber = 0;
 packSrv.idCnt      = 0;
@@ -44,7 +45,6 @@ WebSocketServer.prototype.broadcast = function(msg) {
 packSrv.sv = new WebSocketServer(wsParam);
 
 //manage packman ID
-var packmanidArray = [];
 //manage to finish execution
 
 packSrv.sys.log(packSrv.env.PACK_NUM);
@@ -77,24 +77,26 @@ packSrv.init = function() {
 
 		// Initialize client
 		clientInit : function(con) {
-			var i, id, packNum, finished, pack;
+			var i, id, packNum, finished, pack, usrInfo = {};
 			id = that.idCnt;
 			that.sys.log('Called clientInit');
 
-			if( packmanidArray[con.id] != null || id <= env.PACK_NUM ) {
-				packmanidArray[con.id] = id;
+			if( id < env.PACK_NUM ) {
+				usrInfo.score = '0';
+				usrInfo.id = id;
 				that.idCnt++;
 
 				//create packman object
-				pack = new that.Pack(con, env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y);
+				pack = new that.Pack(con);
+				pack.send('init', usrInfo);
 				that.sys.log('create packman object(id='+id+')');
 				that.packs[id] = pack;
 				that.packs[id].setId(id);
 				that.sys.log('push pack[id='+pack.getId()+']');
 
 				//Check first connection of all client
-				finished = that.util.checkPackStatus(that.packs, 'CLIENT_INIT', true);
-				packNum = that.util.sumPackNum(that.packs);
+				finished = that.tool.checkPackStatus(that.packs, 'CLIENT_INIT', true);
+				packNum = that.tool.sumPackNum(that.packs);
 				if(packNum == env.PACK_NUM && finished){
 
 					//broadcast to send stage information
@@ -104,7 +106,7 @@ packSrv.init = function() {
 					for(i=0; i<env.PACK_NUM; i++) {
 						env.packs[i] = that.packs[i].createPackGhost();
 					}
-					that.sv.broadcast(that.util.createMsg('ready', env));
+					that.sv.broadcast(that.tool.createMsg('ready', env));
 
 					// Initialize referee object by packs and stage.
 					that.referee.init(that.packs, that.stage);
@@ -115,16 +117,16 @@ packSrv.init = function() {
 
 		},
 
-		readyOk : function(con) {
-			var id = packmanidArray[con.id], finished;
+		readyOk : function(con, msg) {
+			var id = msg.id, finished;
 			that.sys.log('readyOk(id='+id+')');
 			that.packs[id].status = env.PACK_STATUS.READY_OK;
 
-			finished = that.util.checkPackStatus(that.packs, 'READY_OK', true);
+			finished = that.tool.checkPackStatus(that.packs, 'READY_OK', true);
 			if(finished){
 
 				that.sys.log('start after 1 min.');
-				that.sv.broadcast(that.util.createMsg('start', ''));
+				that.sv.broadcast(that.tool.createMsg('start', ''));
 				setTimeout(packSrv.startEventLoop(),2000); //TODO:change 1min
 			}
 
@@ -132,7 +134,7 @@ packSrv.init = function() {
 
 		// move pack
 		move : function(con, msg) {
-			var id = packmanidArray[con.id];
+			var id = msg.id;
 			var x = msg.i;
 			var y = msg.j;
 			var finished;
@@ -150,7 +152,7 @@ packSrv.init = function() {
 			}
 
 			that.packs[id].status = env.PACK_STATUS.MOVE;
-			finished = that.util.checkPackStatus(that.packs, 'MOVE', false);
+			finished = that.tool.checkPackStatus(that.packs, 'MOVE', false);
 
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
@@ -163,12 +165,11 @@ packSrv.init = function() {
 
 	//add listener
 	this.sv.on('connect', function(con) {
-			console.log(con.version);
 			var i = 0, j = 0, that = packSrv;
-			that.sys.log('con.id='+con.id);
+			//that.sys.log('con.id='+con.config.httpServer.connections);
 
 			con.on('message', function(msg){
-					var req = that.util.parseRequest(msg.utf8Data);
+					var req = that.tool.parseRequest(msg.utf8Data);
 					if(req && that.operations[req.ope]) {
 						that.operations[req.ope](con, req.data);
 					} else {
@@ -193,6 +194,7 @@ packSrv.movePackmanForStage = function(id,x,y){
  * Turn end processing.
  */
 packSrv.turnEnd = function(){
+	var packs = this.packs;
 	this.sys.log('turnEnd():turn number='+packSrv.turnNumber);
 
 	this.referee.calcPoint();
@@ -203,6 +205,10 @@ packSrv.turnEnd = function(){
 
 	//encounter enemy
 	//no implement(end of turn of all packman)
+	
+	for(var id in packs) {
+		packs[id].send('scr', packs[id].point);
+	}
 
 	packSrv.turnNumber++;
 }

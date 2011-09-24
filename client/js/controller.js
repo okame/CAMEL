@@ -1,6 +1,6 @@
 var controller = {};
 
-(function() {
+(function($) {
 		controller.con = {};
 		controller.operations = {};
 		//var player = player;
@@ -30,6 +30,7 @@ var controller = {};
 					display.matrix.stage = arg;
 					display.render();
 				} else {
+					console.log('ope:'+ope);
 					if(player.operations[ope]) res = player.operations[ope](arg);
 					if(res) that.con.send(res);
 				}
@@ -45,4 +46,4 @@ var controller = {};
 			this.cmd(util.createMsg('eve',''));
 		}
 
-	})();
+	})($);
