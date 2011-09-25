@@ -7,7 +7,7 @@ var env = {};
 		that.operations = {
 			 start : function(arg) {
 				console.log('[ start ]');
-			 }
+			}
 			,ready : function(arg) {
 				console.log('[ ready ]');
 				var msg = {};
@@ -18,22 +18,25 @@ var env = {};
 				display.render();
 				userScript.init();
 				return (util.createMsg('readyOk', msg));
-			 }
+			}
 			,next : function(arg) {
 				console.log('[ next ]');
 				var msg = userScript.next(arg);
 				msg.id = that.id;
 				return (util.createMsg('move', msg));
-			 }
+			}
 			,scr : function(arg) {
 				$('div#usrInfo div#score').html(arg || '0');
-			 }
+			}
 			,init : function(arg) {
 				that.id = arg.id;
 				$('div#usrInfo div#id').html(arg.id);
 				$('div#usrInfo div#score').html(arg.score);
 				console.log('id:'+that.id);
-			 }
+			}
+			,end : function(arg) {
+				$('div#usrInfo div#g_status').html('END');
+			}
 		};
 	})($);
 

@@ -19,7 +19,7 @@ packSrv.rate       = packSrv.env.FRAME_RATE;
 // make websocket server
 var http = require('http').createServer (
 	function(request, response) {
-		console.log('hogehoge');
+		console.log('hoge');
 		response.writeHead(404);
 		response.end();
 	}
@@ -58,6 +58,7 @@ packSrv.init = function() {
 
 	// create stage
 	this.stage.init();
+	this.stage.createPList();
 
 	// ope
 	this.operations = {
@@ -195,13 +196,10 @@ packSrv.movePackmanForStage = function(id,x,y){
  */
 packSrv.turnEnd = function(){
 	var packs = this.packs;
-	this.sys.log('turnEnd():turn number='+packSrv.turnNumber);
+	//this.sys.log('turnEnd():turn number='+packSrv.turnNumber);
 
 	this.referee.calcPoint();
 	this.referee.printPoint();
-
-	//get item
-	//no implement
 
 	//encounter enemy
 	//no implement(end of turn of all packman)
@@ -209,6 +207,8 @@ packSrv.turnEnd = function(){
 	for(var id in packs) {
 		packs[id].send('scr', packs[id].point);
 	}
+
+	console.log('pListNum:'+this.stage.getPListLength());
 
 	packSrv.turnNumber++;
 }
@@ -238,6 +238,12 @@ packSrv.evLoop = function() {
 		packs[id].next(msg);
 		packs[id].render(packSrv.stage.cells);
 	}
+
+	if(packSrv.stage.feedsIsEmpty()) {
+		clearInterval(packSrv.timer);
+		packSrv.sv.broadcast(packSrv.tool.createMsg('end'));
+	}
+
 
 }
 
