@@ -35,7 +35,10 @@ var env = {};
 				console.log('id:'+that.id);
 			}
 			,end : function(arg) {
-				$('div#usrInfo div#g_status').html('END');
+				var winText = '<b>Winner : '+arg.winner.id+'</b><br />'
+					+ 'point : ' + arg.winner.point;
+				$('div#usrInfo div#g_status').html('');
+				$('div#usrInfo div#winner').html(winText);
 			}
 		};
 	})($);

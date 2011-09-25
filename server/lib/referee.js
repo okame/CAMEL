@@ -121,7 +121,6 @@ referee.calcPoint = function(){
 		
 		// remove feed from pList
 		if(this.stage.pList[pack.x.toString()+pack.y.toString()]) {
-			console.log('delete');
 			delete this.stage.pList[pack.x.toString()+pack.y.toString()];
 		}
 
@@ -148,6 +147,26 @@ referee.calcPoint = function(){
 
 	}
 
+}
+
+/**
+ * get pack who has the most amount of points.
+ */
+referee.judgeWinner = function() {
+	var id
+	, winner = {}
+	, packs = this.packs;
+	winner.point = 0;
+	winner.id = 0;
+
+	for(id in packs) {
+		if(packs[id].point > winner.point) {
+			winner.id = id;
+			winner.point = packs[id].point;
+		}
+	}
+
+	return winner;
 }
 
 //------------------------

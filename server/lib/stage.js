@@ -53,7 +53,7 @@ stage.init = function() {
 
 	this.debug();
 	
-	this.printStageInfo();
+	//this.printStageInfo();
 
 	sys.log('finished to create stage');
 }
@@ -94,7 +94,6 @@ stage.createPList = function() {
 			if(this.cells[j][i][env.STAGE_OBJECTS.FEED] > 0) {
 				v = this.cells[j][i][env.STAGE_OBJECTS.FEED];
 				this.pList[i.toString() + j.toString()] = v;
-				console.log('pList['+i.toString() + j.toString()+']')
 			}
 		}
 	}

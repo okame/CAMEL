@@ -6,9 +6,9 @@ describe('stage object test.', function() {
 	stage.init();
 	stage.debug();
 	describe('createPList method.', function() {
-		it('is ok.', function() {
+		it('is 60 in case of debug.', function() {
 			stage.createPList();
-			expect(60).toEqual(stage.pList.length);
+			expect(60).toEqual(stage.getPListLength());
 		});
 	});
 });

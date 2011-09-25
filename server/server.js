@@ -241,7 +241,8 @@ packSrv.evLoop = function() {
 
 	if(packSrv.stage.feedsIsEmpty()) {
 		clearInterval(packSrv.timer);
-		packSrv.sv.broadcast(packSrv.tool.createMsg('end'));
+		msg.winner = packSrv.referee.judgeWinner();
+		packSrv.sv.broadcast(packSrv.tool.createMsg('end', msg));
 	}
 
 
