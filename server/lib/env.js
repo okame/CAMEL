@@ -29,6 +29,7 @@ exports.env = {
 	BLOCK_EXIST_YES : 1,
 
 	FRAME_RATE : 200,
+	PORT : 8000,
 
 	PACK_STATUS : {
 		NEW : 0,
