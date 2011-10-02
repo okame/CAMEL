@@ -1,9 +1,18 @@
+/**
+ * controller.js
+ *
+ * Dep:
+ * 	util.js
+ * 	display.js
+ * 	player.js
+ * 	messageManager.js
+ *
+ */
 var controller = {};
 
 (function($) {
 		controller.con = {};
 		controller.operations = {};
-		//var player = player;
 		controller.init = function(init) {
 			var that = this;
 

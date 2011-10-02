@@ -1,26 +1,23 @@
+/**
+ * display.js
+ *
+ * dep:
+ * 	Pack.js
+ *
+ * comment:
+ *
+ * called "display.init" when client get ready message from server with stage ENV.
+ * called "display.render" method at "evLoop" on game.js per frame rate.
+ * 
+ *
+ */
+
 display = {};
 
 (function($) {
 
-		// options
-		display.options= {
-			packColor : "yellow",
-			feedColor : "red",
-			enemyColor : "red",
-			stageColor : "gray",
-			canvasWidth : 600,
-			canvasHeight : 600,
-			cellSize : 30,
-			frameRate : 90,//ms
-			gridColor : 'rgb(240, 240, 240)',
-			bgColor : 'rgb(255, 255, 255)'
-		}
-
 		// now pack position
-		display.packPos = {};
-
-		// passes
-		display.passes = {}
+		display.packs = {};
 
 		// grid data matrix
 		display.matrix = {
@@ -28,18 +25,10 @@ display = {};
 			pack: [],
 			enemy : []
 		}
-		display.matrirxNum = 0;
-
-		display.dumpPos = function(msg) {
-			for(i=0; i<env.PACK_NUM; i++) {
-				console.log(msg+' packPos['+i+']:', this.packPos[i].i, this.packPos[i].j, this.packPos[i].dir);
-				break;
-			}
-		}
 
 		// main
 		display.render = function () {
-			//this.ctx.clearRect(0,0,this.options.canvasWidth,this.options.canvasHeight);
+			//this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
 			this.renderGridLine();
 			this.renderAllObjects();
 		}
@@ -47,8 +36,8 @@ display = {};
 		// initialize
 		display.init = function (arg) {
 			var i,j,
-			matrixSizeX = this.options.canvasWidth / this.options.cellSize,
-			matrixSizeY = this.options.canvasHeight / this.options.cellSize;
+			matrixSizeX = OPTIONS.canvasWidth / OPTIONS.cellSize,
+			matrixSizeY = OPTIONS.canvasHeight / OPTIONS.cellSize;
 			this.matrixSizeX = matrixSizeX;
 			this.matrixSizeY = matrixSizeY;
 
@@ -64,36 +53,27 @@ display = {};
 			}
 
 			this.matrix.stage = env.stage;
-			for(i=0; i<env.PACK_NUM; i++) {
-				this.packPos[i] = {};
-				this.packPos[i].i = env.DEFAULT_PACK_X;
-				this.packPos[i].j = env.DEFAULT_PACK_Y;
-				this.packPos[i].dir = 'left';
-			}
 
 			// canvas
 			this.canvas = document.getElementById('canvasMain');
 			this.ctx = this.canvas.getContext('2d');
-		}
 
-		// whether a browser suport html5 canvas tag
-		display.checkBrowser = function () {
-			if ( ! this.canvas || ! this.canvas.getContext ) {
-				console.log("This browser unsupported HTML5.");
-				return false;
-			} else {
-				return true;
+			for(i=0; i<env.PACK_NUM; i++) {
+				this.packs[i] = new Pack(env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y, 'left', this.ctx);
 			}
+
 		}
 
-		// render dotted line as grid
+		/**
+		 * render dotted line as grid on stage.
+		 */
 		display.renderGridLine= function () {
 			var i,
 			x1, y1, x2, y2;
-			width = this.options.canvasWidth,
-			height = this.options.canvasHeight,
-			color = this.options.gridColor,
-			cellSize = this.options.cellSize,
+			width = OPTIONS.canvasWidth,
+			height = OPTIONS.canvasHeight,
+			color = OPTIONS.gridColor,
+			cellSize = OPTIONS.cellSize,
 			cellNumX = width / cellSize,
 			cellNumY = height / cellSize,
 			ctx = this.canvas.getContext('2d');
@@ -117,104 +97,56 @@ display = {};
 			}
 		}
 
-		// render a cell
-		// @param x,y : origin coordinate of a cell
+		/**
+		 * render cell at {i, j} with render method f.
+		 * @param i coordinate of a cell
+		 * @param j coordinate of a cell
+		 * @param f render method
+		 */
 		display.renderCell = function (i, j, f){
-			var size = this.options.cellSize,
+			var size = OPTIONS.cellSize,
 			x, y;
 			x = i * size;
 			y = j * size;
 			f.apply(this, [x, y]);
 		}
 
-		display.renderFeed = function (x, y, dir) {
-			var size = this.options.cellSize
+		/**
+		 * render feed at {x, y}:pixel.
+		 */
+		display.renderFeed = function (x, y) {
+			var size = OPTIONS.cellSize
 			,r = (size-1)/3
 			,rx = x + size/2
 			,ry = y + size/2
 			,msize = Math.PI/6,mths,mthe;
 
 			//render circle
-			this.ctx.fillStyle = this.options.feedColor;
+			this.ctx.fillStyle = OPTIONS.feedColor;
 			this.ctx.beginPath();
 			this.ctx.arc(rx, ry, r, 0, Math.PI * 2, true);
 			this.ctx.fill();
 			this.ctx.closePath();
 
-		}
-
-		display.renderPack = function (x, y, dir) {
-			var size = this.options.cellSize
-			,r = (size-1)/2
-			,rx = x + size/2
-			,ry = y + size/2
-			,msize = Math.PI/6,mths,mthe;
-
-			//render circle
-			this.ctx.fillStyle = this.options.packColor;
-			this.ctx.beginPath();
-			this.ctx.arc(rx, ry, r, 0, Math.PI * 2, true);
-			this.ctx.fill();
-			this.ctx.closePath();
-
-			if(dir == 'left') {
-				mths = Math.PI + msize;
-				mthe = Math.PI - msize;
-			} else if(dir == 'down') {
-				mths = Math.PI / 2 + msize;
-				mthe = Math.PI / 2 - msize;
-			} else if(dir == 'right') {
-				mths = msize;
-				mthe = 2 * Math.PI - msize;
-			} else if(dir == 'up') {
-				mths = Math.PI * 3 / 2 + msize;
-				mthe = Math.PI * 3 / 2 - msize;
-			} else {
-				return false;
-			}
-
-			//erase mouth region
-			this.ctx.fillStyle = this.options.bgColor;
-			this.ctx.beginPath();
-			this.ctx.arc(rx, ry, r, mths, mthe, true);
-			this.ctx.fill();
-			this.ctx.closePath();
-			this.ctx.beginPath();
-			this.ctx.moveTo(rx, ry);
-			this.ctx.lineTo(rx + r * Math.cos(mths), ry + r * Math.sin(mths));
-			this.ctx.lineTo(rx + r * Math.cos(mthe), ry + r * Math.sin(mthe));
-			this.ctx.closePath();
-			this.ctx.fill();
-
-			this.ctx.fillStyle = "";
-		}
-
-		display.clearPack = function (x, y) {
-			var size = this.options.cellSize;
-			this.ctx.fillStyle = this.options.bgColor;
-			this.ctx.clearRect(x,y,size,size);
-			this.ctx.fillStyle = "";
-		}
-
-		display.renderEnemy = function (x, y) {
-			var size = this.options.cellSize;
-			this.ctx.fillStyle = this.options.enemyColor;
-			this.ctx.fillRect(x,y,size,size);
-			this.ctx.fillStyle = "";
 		}
 
 		display.renderStage = function (x, y) {
-			var size = this.options.cellSize;
-			this.ctx.fillStyle = this.options.stageColor;
+			var size = OPTIONS.cellSize;
+			this.ctx.fillStyle = OPTIONS.stageColor;
 			this.ctx.fillRect(x,y,size,size);
 			this.ctx.fillStyle = "";
 		}
 
-		// render all Packs
+		/**
+		 * render all objects.
+		 * - packs
+		 * - feeds
+		 * - stage blocks
+		 */
 		display.renderAllObjects= function(stage) {
 			var enemie = this.matrix.enemy,
 			stage = stage || this.matrix.stage,
-			size = this.options.cellSize,
+			size = OPTIONS.cellSize,
 			cellNumX = this.matrixSizeX,
 			cellNumY = this.matrixSizeY,
 			i, j, k, x, y, di, dj;
@@ -227,11 +159,11 @@ display = {};
 						// render all packs
 						for(k=0; k<env.PACK_NUM; k++) {
 							if(stage[i][j][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
-								di = i - this.packPos[k].i; 
-								dj = j - this.packPos[k].j; 
-								this.movePack(di, dj, k);
-								this.packPos[k].i = i;
-								this.packPos[k].j = j;
+								di = i - this.packs[k].i; 
+								dj = j - this.packs[k].j; 
+								this.packs[k].movePack(di, dj, k);
+								this.packs[k].i = i;
+								this.packs[k].j = j;
 							}
 						}
 					} else if(stage[i][j][env.STAGE_OBJECTS.FEED] > 0) {
@@ -256,79 +188,6 @@ display = {};
 			this.ctx.strokeStyle = "";
 		}
 
-		display.movePack = function(di, dj, id) {
-			var p = this.packPos[id], x, y,
-			pNext = {};
-			pNext.i = p.i + di;
-			pNext.j = p.j + dj;
-
-			p.dir = this.getPackPos(di, dj, id);
-
-			//check frame, stage and motion lock
-			if(  pNext.i < 0 //|| pNext.i >= this.matrixSizeX
-				|| pNext.j < 0 //|| pNext.j >= this.matrixSizeY
-				|| this.motionLock) {
-				return false;
-			} else if(di == 0 && dj == 0) {
-				x = p.i * this.options.cellSize;
-				y = p.j * this.options.cellSize;
-				this.renderPack(x, y, p.dir);
-				return;
-			} else {
-				this.renderPackMotion(di, dj, id);
-			}
-		}
-
-		display.renderPackMotion = function(di, dj, id) {
-			if(di != 0 && dj != 0) return false; // ?? rendering is stop
-			var x,y,xf,yf,xt,yt,xm,ym,i,j,d,rate,dRate,cntRate = 0, timer
-			,that = this
-			,p = that.packPos[id]
-			,size = this.options.cellSize;
-			xf = p.i * size; // coordinate x : from
-			yf = p.j * size;
-			xt = (p.i + di) * size; // coordinate x : to
-			yt = (p.j + dj) * size;
-			xm = di != 0? di : 0;
-			ym = dj != 0? dj : 0;
-			x = xf;
-			y = yf;
-			rate = this.options.frameRate;
-			dis = Math.abs(di != 0? di : dj) * size; // distance
-			dRate = Math.floor(rate / dis); 
-			timer = setInterval(function(){
-					that.motionLock = true;
-					if(cntRate >= (dis - 1)) {
-						clearInterval(timer);
-						that.motionLock = false;
-					}
-					that.clearPack(x, y);
-					x += xm;
-					y += ym;
-					that.renderPack(x, y, p.dir);
-					cntRate++;
-				}, dRate);
-			p.i += di;
-			p.j += dj;
-		}
-
-		display.getPackPos = function(di, dj, id) {
-			var dir;
-			if(di > 0) { // decide direction of pack face
-				dir = 'right';
-			} else if(di < 0) {
-				dir = 'left';
-			} else if(dj < 0) {
-				dir = 'up';
-			} else if(dj > 0) {
-				dir = 'down';
-			} else {
-				dir = this.packPos[id].dir;
-			}
-
-			return dir;
-		}
-
 		/*------------------------------------------------
 		 * Called when a client get a message from server.
 		 ------------------------------------------------*/
@@ -342,7 +201,7 @@ display = {};
 				display.onOpen = function() {
 					console.log('display open.')
 					display.init();
-					if (!display.checkBrowser()) {
+					if (!util.checkBrowser()) {
 						return false;
 					}
 					display.draw();
