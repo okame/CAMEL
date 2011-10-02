@@ -5,46 +5,64 @@
 /* Load library */
 var sys = require('sys');
 var env = require('./env').env;
+var stage = require('./stage').stage;
 
 var id = 0;
 
-exports.Pack = function(con, x, y, teamName) {
-  this.con = con;
-  this.x = x || env.DEFAULT_PACK_X;
-  this.y = y || env.DEFAULT_PACK_Y;
-  this.point = 0;
-  this.sumPoint = 0;
-  this.item = 0;
-  this.isWall = false; // Whether last step is wall or not.
-  this.status = env.PACK_STATUS.CLIENT_INIT;
-  this.id = id;
-  id++;
+exports.Pack = function(con, id, x, y, teamName) {
+	this.con = con;
+	this.x = x || env.DEFAULT_PACK_X;
+	this.y = y || env.DEFAULT_PACK_Y;
+	this.point = 0;
+	this.sumPoint = 0;
+	this.item = 0;
+	this.isWall = false; // Whether last step is wall or not.
+	this.status = env.PACK_STATUS.CLIENT_INIT;
+	this.id = id++;
+}
+
+exports.Pack.prototype.changeState = function(state) {
+	this.status = state;
+	this.send('state', state);
 }
 
 exports.Pack.prototype.getX = function() {
-  return this.x;
+	return this.x;
 }
 exports.Pack.prototype.getY = function() {
-  return this.y;
+	return this.y;
 }
 exports.Pack.prototype.getId = function() {
-  return this.id;
+	return this.id;
 }
 exports.Pack.prototype.setId = function(id) {
-  this.id = id;
+	this.id = id;
 }
 exports.Pack.prototype.next = function(arg) {
-  this.send('next', arg);
+	this.send('next', arg);
 }
 exports.Pack.prototype.move = function(msg) {
-  this.x = msg.i;
-  this.y = msg.j;
+	var x = msg.i;
+	var y = msg.j;
+
+	/*
+	 * ステージ上の移動前の自分の位置を消し, 新たに移動後の位置を登録する
+	 */
+	stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] = 
+		stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,this.id);
+	stage.cells[x][y][env.STAGE_OBJECTS.PACK] = 
+		stage.cells[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,this.id);
+	this.isWall = false;
+
+	// 位置更新
+	this.x = x;
+	this.y = y;
 }
 exports.Pack.prototype.send = function(ope, arg) {
-  this.con.sendUTF(this.createMsg(ope, arg));
+	this.con.sendUTF(this.createMsg(ope, arg));
 }
 exports.Pack.prototype.render = function(stage) {
-  this.send('render', stage);
+	this.send('render', stage);
 }
 exports.Pack.prototype.createMsg = function(ope, arg) {
 	var msg = {

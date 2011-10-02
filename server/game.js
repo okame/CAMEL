@@ -1,6 +1,6 @@
-var packSrv = {};
+var game = {};
 
-var server = require('./lib/server').server;
+var createServer    = require('./lib/server').createServer;
 var util            = require('util');
 var WebSocketServer = require('websocket').server;
 var http            = require('http');
@@ -14,63 +14,49 @@ var packs           = {};
 var turnNumber      = 0;
 var idCnt           = 0;
 
-packSrv.sv = server();
+
+game.moduleInit = function() {
+	stage.init();
+	referee.init(packs, stage);
+	this.sv = createServer();
+}
 
 /*
  * initialize function
  */
-packSrv.init = function() {
+game.init = function() {
 	var that = this;
-
-	// create stage
-	stage.init();
-	stage.createPList();
 
 	// ope
 	this.operations = {
-		echo : function() {
-			util.log('call echo');
-		},
 
 		// Initialize client
 		clientInit : function(con) {
 			var i, id, packNum, finished, pack, usrInfo = {};
-			id = idCnt;
-			util.log('Called clientInit');
 
-			if( id < env.PACK_NUM ) {
-				usrInfo.score = '0';
-				usrInfo.id = id;
-				usrInfo.state = 'CLIENT_INIT';
-				idCnt++;
-
+			if( idCnt < env.PACK_NUM ) {
 				//create packman object
-				pack = new Pack(con);
-				pack.send('init', usrInfo);
-				util.log('create packman object(id='+id+')');
+				id = idCnt++;
+				pack = new Pack(con, id);
 				packs[id] = pack;
-				packs[id].setId(id);
-				util.log('push pack[id='+pack.getId()+']');
+				pack.changeState(env.PACK_STATUS.CLIENT_INIT);
+				usrInfo = { score:0 ,id:id ,state:'CLIENT_INIT' };
+				pack.send('init', usrInfo);
+				util.log('clientInit(id='+id+')');
 
 				//Check first connection of all client
 				finished = tool.checkPackStatus(packs, 'CLIENT_INIT', true);
-				packNum = tool.sumPackNum(packs);
-				if(packNum == env.PACK_NUM && finished){
-
-					//broadcast to send stage information
-					util.log('#######client ready phase#######');
+				if(tool.sumPackNum(packs) == env.PACK_NUM && finished){
 					env.stage = stage.cells;
 					env.packs = [];
 					for(i=0; i<env.PACK_NUM; i++) {
 						env.packs[i] = packs[i].createPackGhost();
 					}
 					that.sv.broadcast(tool.createMsg('ready', env));
-
-					// Initialize referee object by packs and stage.
-					referee.init(packs, stage);
+					that.moduleInit();
 				}
 			}else{
-				util.log('[Error]fail connection. This id is already used.');
+				util.log('[Error] game is full.');
 			}
 
 		},
@@ -78,89 +64,74 @@ packSrv.init = function() {
 		readyOk : function(con, msg) {
 			var id = msg.id, finished;
 			util.log('readyOk(id='+id+')');
-			packs[id].status = env.PACK_STATUS.READY_OK;
-			packs[id].send('state', 'READY_OK');
+			packs[id].changeState(env.PACK_STATUS.READY_OK);
 
-			finished = tool.checkPackStatus(packs, 'READY_OK', true);
-			packs[id].send('state', 'READY_OK');
+			finished = tool.checkPackStatus(packs, 'READY_OK');
 			if(finished){
-
-				util.log('start after 1 min.');
-				that.sv.broadcast(tool.createMsg('start', ''));
-				setTimeout(packSrv.startEventLoop(),2000); //TODO:change 1min
+				that.sv.broadcast(tool.createMsg('start'));
+				that.timer = setInterval(game.evLoop, env.FRAME_RATE);
 			}
 
 		},
 
 		// move pack
 		move : function(con, msg) {
-			var id = msg.id;
-			var x = msg.i;
-			var y = msg.j;
-			var finished;
-			var success;
+			var id = msg.id
+			, x = msg.i
+			, y = msg.j
+			, finished
+			, success;
+
 			util.log('move(id='+id+')(x='+x+',y='+y+')');
 
-			// Check next cell
 			if(referee.checkNextCell(id, x, y)){
-				// Move pack to next cell
-				that.movePackmanForStage(id,x,y);
-				packs[id].isWall = false;
 				packs[id].move(msg);
 			} else {
 				packs[id].isWall = true;
 			}
 
-			packs[id].status = env.PACK_STATUS.MOVE;
-			packs[id].send('state', 'MOVE');
+			packs[id].changeState(env.PACK_STATUS.MOVE);
 			finished = tool.checkPackStatus(packs, 'MOVE', false);
 
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
-					packs[id].status = env.PACK_STATUS.TURN_END;
-					packs[id].send('state', 'TURN_END');
+					packs[id].changeState(env.PACK_STATUS.TURN_END);
 				}
-				packSrv.turnEnd();
+				game.turnEnd();
 			}
 		}
 	}
 
-	//add listener
-	this.sv.on('connect', function(con) {
-			var i = 0, j = 0, that = packSrv;
+	// WebSocketServer作成
+	this.sv = createServer(this.connectEvnt, this.closeEvnt, this.messageEvnt);
 
-			con.on('message', function(msg){
-					var req = tool.parseRequest(msg.utf8Data);
-					if(req && that.operations[req.ope]) {
-						that.operations[req.ope](con, req.data);
-					} else {
-						util.log('Recieve invalid massge');
-						con.sendUTF('Invalid massge');
-					}
-				});
-		});
-
-	util.log('Server running');
-	util.log('#######sys phase#######');
 };
 
-packSrv.movePackmanForStage = function(id,x,y){
-	var pack = packs[id];
-	stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK] = stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,id);
-	stage.cells[x][y][env.STAGE_OBJECTS.PACK] = stage.cells[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,id);
+game.connectEvnt = function(con) {
+	util.log('connect.');
+}
+
+game.closeEvnt = function(con) {
+	util.log('close.');
+}
+
+game.messageEvnt = function(con, msg) {
+	var req = tool.parseRequest(msg.utf8Data);
+	if(req && game.operations[req.ope]) {
+		game.operations[req.ope](con, req.data);
+	} else {
+		util.log('Recieve invalid massge');
+	}
 }
 
 /**
  * Turn end processing.
  */
-packSrv.turnEnd = function(){
+game.turnEnd = function(){
 
 	referee.calcPoint();
 	referee.printPoint();
 
-	//encounter enemy
-	//no implement(end of turn of all packman)
-	
 	for(var id in packs) {
 		packs[id].send('scr', packs[id].point);
 	}
@@ -169,21 +140,13 @@ packSrv.turnEnd = function(){
 }
 
 /**
- * start event loop
- */
-packSrv.startEventLoop = function(){
-	util.log('start event loop.');
-	this.timer = setInterval(packSrv.evLoop, env.FRAME_RATE);
-}
-
-/**
  * Event Loop
  */
-packSrv.evLoop = function() {
+game.evLoop = function() {
 	var msg = {};
 
 	for(var id in packs) {
-		util.log(packs[id].getX()+','+packs[id].getY()+'(id='+packs[id].getId()+')');
+		util.log(packs[id].getX()+','+packs[id].getY()+'(id='+id+')');
 		msg.cells = stage.cells;
 		msg.pack = packs[id].createPackGhost();
 		msg.turn = turnNumber;
@@ -193,13 +156,11 @@ packSrv.evLoop = function() {
 
 	// check game end.
 	if(stage.feedsIsEmpty()) {
-		clearInterval(packSrv.timer);
+		clearInterval(game.timer);
 		msg.winner = referee.judgeWinner();
-		packSrv.sv.broadcast(tool.createMsg('end', msg));
+		game.sv.broadcast(tool.createMsg('end', msg));
 	}
-
-
 }
 
-packSrv.init();
+game.init();
 

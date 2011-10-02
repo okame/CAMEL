@@ -53,7 +53,7 @@ stage.init = function() {
 
 	this.debug();
 	
-	//this.printStageInfo();
+	this.createPList();
 
 	sys.log('finished to create stage');
 }
