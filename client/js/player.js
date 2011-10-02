@@ -28,10 +28,14 @@ var env = {};
 			,scr : function(arg) {
 				$('div#usrInfo div#score').html(arg || '0');
 			}
+			,state : function(arg){
+				$('div#usrInfo div#g_status').html(arg);
+			}
 			,init : function(arg) {
 				that.id = arg.id;
 				$('div#usrInfo div#id').html(arg.id);
 				$('div#usrInfo div#score').html(arg.score);
+				$('div#usrInfo div#g_status').html(arg.state);
 				console.log('id:'+that.id);
 			}
 			,end : function(arg) {
