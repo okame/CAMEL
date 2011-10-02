@@ -1,3 +1,10 @@
+/**
+ * player.js
+ *
+ * dep :
+ * 	userScript.js
+ * 	display.js
+ */
 var player = {};
 var env = {};
 
@@ -34,14 +41,18 @@ var env = {};
 			,init : function(arg) {
 				that.id = arg.id;
 				$('div#usrInfo div#id').html(arg.id);
+				$('div#usrInfo div#g_status').html(arg.state);
 				$('div#usrInfo div#score').html(arg.score);
 				$('div#usrInfo div#g_status').html(arg.state);
 				console.log('id:'+that.id);
 			}
+			,state : function(arg) {
+				$('div#usrInfo div#g_status').html(arg);
+			}
 			,end : function(arg) {
 				var winText = '<b>Winner : '+arg.winner.id+'</b><br />'
 					+ 'point : ' + arg.winner.point;
-				$('div#usrInfo div#g_status').html('');
+				$('div#usrInfo div#g_status').html('END');
 				$('div#usrInfo div#winner').html(winText);
 			}
 		};
