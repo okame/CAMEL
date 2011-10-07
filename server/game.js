@@ -82,7 +82,7 @@ game.init = function() {
 			, finished
 			, success;
 
-			util.log('move(id='+id+')(x='+x+',y='+y+')');
+			//util.log('move(id='+id+')(x='+x+',y='+y+')');
 
 			if(referee.checkNextCell(id, x, y)){
 				packs[id].move(msg);

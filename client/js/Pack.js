@@ -17,6 +17,9 @@
  *
  */
 
+/**
+ * Constructor.
+ */
 var Pack = function(i, j, dir, ctx) {
 	this.i = i;
 	this.j = j;
@@ -29,6 +32,9 @@ var Pack = function(i, j, dir, ctx) {
 
 }
 
+/**
+ * Move pack to {Pack.i+di, Pack.j+dj}
+ */
 Pack.prototype.movePack = function(di, dj) {
 	var p = this
 		, x = this.x
@@ -38,7 +44,7 @@ Pack.prototype.movePack = function(di, dj) {
 	pNext.i = p.i + di;
 	pNext.j = p.j + dj;
 
-	p.dir = this.getPackPos(di, dj) || p.dir;
+	p.dir = this.getPackDir(di, dj) || p.dir;
 
 	//check frame, stage and motion lock
 	if(pNext.i < 0 || pNext.j < 0 || this.motionLock) {
@@ -160,7 +166,10 @@ Pack.prototype.clearPack = function (x, y) {
 	this.ctx.fillStyle = "";
 }
 
-Pack.prototype.getPackPos = function(di, dj) {
+/**
+ * Get pack direction based on pack's moving.
+ */
+Pack.prototype.getPackDir = function(di, dj) {
 	var dir;
 	if(di > 0) { // decide direction of pack face
 		dir = 'right';
