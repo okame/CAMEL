@@ -93,13 +93,12 @@ game.init = function() {
 			packs[id].changeState(env.PACK_STATUS.MOVE);
 			finished = tool.checkPackStatus(packs, 'MOVE', 1);
 
-			console.log('get msg from:pack' + id);
+			console.log('[TURN:'+turnNumber+']get msg from:pack' + id);
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
-					packs[id].changeState(env.PACK_STATUS.TURN_END);
+					packs[i].changeState(env.PACK_STATUS.TURN_END);
 				}
 				game.turnEnd();
-				loopLock = false;
 			}
 		}
 	}
@@ -132,6 +131,7 @@ game.messageEvnt = function(con, msg) {
 game.turnEnd = function(){
 
 	turnNumber++;
+	console.log('--- calcPoint : '+turnNumber+' ---');
 	referee.calcPoint(turnNumber);
 	//referee.printPoint();
 
@@ -141,6 +141,7 @@ game.turnEnd = function(){
 
 	console.log('--- turn end : '+turnNumber+' ---');
 	console.log();
+	loopLock = false;
 }
 
 /**
@@ -148,7 +149,7 @@ game.turnEnd = function(){
  */
 game.evLoop = function() {
 
-	if(loopLock) {
+	if(loopLock || !(tool.checkPackStatus(packs, 'READY_OK', false) || tool.checkPackStatus(packs, 'TURN_END', false))) {
 		console.log('LOCKED!');
 		return;
 	}

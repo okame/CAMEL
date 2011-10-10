@@ -32,14 +32,16 @@ tool.createMsg = function(ope, arg) {
  * return true, otherwise return false.
  */
 tool.checkPackStatus = function(packs, status, logSw) {
-	var id;
+	var id
+	, result = true;
+
 	for(id in packs){
 		if( packs[id].status != env.PACK_STATUS[status]){
 			if(logSw) console.log('pack[' + id + '] is not ' + status + '.');
-			return false;
+			result = false;
 		}
 	}
-	return true;
+	return result;
 }
 
 /**

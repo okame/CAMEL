@@ -178,7 +178,6 @@ referee.calcPoint = function(num){
 		console.log(i, pack.x, pack.y);
 
 	}
-	console.log('--- calcPoint : '+num+' ---');
 
 }
 
