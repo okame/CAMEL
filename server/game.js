@@ -1,20 +1,20 @@
 var game = {};
 
-var createServer    = require('./lib/server').createServer;
-var util            = require('util');
-var WebSocketServer = require('websocket').server;
-var http            = require('http');
-var util            = require('util');
-var Pack            = require('./lib/pack').Pack;
-var env             = require('./lib/env').env;
-var tool            = require('./lib/tool').tool;
-var stage           = require('./lib/stage').stage;
-var referee         = require('./lib/referee').referee;
-var packs           = {};
-var turnNumber      = 0;
-var idCnt           = 0;
-
-
+var createServer    = require('./lib/server').createServer
+, util            = require('util')
+, WebSocketServer = require('websocket').server
+, http            = require('http')
+, util            = require('util')
+, Pack            = require('./lib/pack').Pack
+, env             = require('./lib/env').env
+, tool            = require('./lib/tool').tool
+, stage           = require('./lib/stage').stage
+, referee         = require('./lib/referee').referee
+, packs           = {}
+, turnNumber      = 0
+, idCnt           = 0
+, loopLock = false;
+ 
 game.moduleInit = function() {
 	stage.init();
 	referee.init(packs, stage);
@@ -91,13 +91,15 @@ game.init = function() {
 			}
 
 			packs[id].changeState(env.PACK_STATUS.MOVE);
-			finished = tool.checkPackStatus(packs, 'MOVE', false);
+			finished = tool.checkPackStatus(packs, 'MOVE', 1);
 
+			console.log('get msg from:pack' + id);
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
 					packs[id].changeState(env.PACK_STATUS.TURN_END);
 				}
 				game.turnEnd();
+				loopLock = false;
 			}
 		}
 	}
@@ -129,24 +131,35 @@ game.messageEvnt = function(con, msg) {
  */
 game.turnEnd = function(){
 
-	referee.calcPoint();
-	referee.printPoint();
+	turnNumber++;
+	referee.calcPoint(turnNumber);
+	//referee.printPoint();
 
 	for(var id in packs) {
 		packs[id].send('scr', packs[id].point);
 	}
 
-	turnNumber++;
+	console.log('--- turn end : '+turnNumber+' ---');
+	console.log();
 }
 
 /**
  * Event Loop
  */
 game.evLoop = function() {
+
+	if(loopLock) {
+		console.log('LOCKED!');
+		return;
+	}
+
+	loopLock = true;
+
+	console.log('--- evLoop : '+turnNumber+' ---');
 	var msg = {};
 
 	for(var id in packs) {
-		util.log(packs[id].getX()+','+packs[id].getY()+'(id='+id+')');
+		//util.log(packs[id].getX()+','+packs[id].getY()+'(id='+id+')');
 		msg.cells = stage.cells;
 		msg.pack = packs[id].createPackGhost();
 		msg.turn = turnNumber;

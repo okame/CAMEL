@@ -6,6 +6,7 @@ var referee = {}
 
 /* Load library */
 var sys = require('sys');
+var util = require('util');
 var env = require('./env').env;
 
 /* ------------------------------
@@ -98,22 +99,39 @@ referee.printPoint = function() {
 /**
  * Calcurate pack's point at turn end.
  */
-referee.calcPoint = function(){
-	var i = 0, j = 0;
-	var pointDividePackmanIdArray = [];
-	var pack, packmanExist, point, dividePoint, id;
+referee.calcPoint = function(num){
+	var i = 0
+	, j = 0
+	, k = 0
+	, procMap = {}
+	, pack
+	, occupancy
+	, point
+	, dividePoint
+	, id;
+
+
+	for(i=0; i<env.PACK_NUM; i++){
+		procMap[i] = false;
+	}
 
 	//calculate point
 	for(i=0; i<env.PACK_NUM; i++){
 
-		pointDividePackmanIdArray = [];
+		if(procMap[i]) {
+			console.log(i+':continue by proc.', pack.x, pack.y);
+			continue;
+		}
+
+		duplicatePackIds = [];
 		pack = this.packs[i];
-		packmanExist = this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK];
-		point = this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.FEED];
+		occupancy = this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.PACK] || 0;
+		point = this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.FEED] || 0;
 		dividePoint = 0;
 
 		//If no point
-		if(this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.FEED]==0){
+		if(point == 0) {
+			console.log(i+':continue by no point.', pack.x, pack.y);
 			continue;
 		}
 
@@ -124,28 +142,43 @@ referee.calcPoint = function(){
 			delete this.stage.pList[pack.x.toString()+pack.y.toString()];
 		}
 
-		for(j=i; (packmanExist != 0) && (j<env.PACK_NUM); j++){
-			if( ( packmanExist & Math.pow(2,j) ) != 0 ){
-				packmanExist = packmanExist - Math.pow(2,j);
-				pointDividePackmanIdArray.push(j);
+		//check if there're packs of same position
+		for(j = i + 1; j < env.PACK_NUM; j++){
+			// 現在のパックマンの位置に別のパックマンが存在した場合
+			if((occupancy & Math.pow(2, j)) != 0 ){
+				duplicatePackIds.push(j);
+				procMap[j] = true; // 処理済みとしてマーク
 			}
 		}
 
 		//If there're same cell packs
-		if(pointDividePackmanIdArray.length != 0){
-			dividePoint = point / pointDividePackmanIdArray.length;
-			sys.log('debug(dividePoint)='+dividePoint);
+		if(duplicatePackIds.length != 0){
+			duplicatePackIds.push(i);
+			dividePoint = point / duplicatePackIds.length;
+
+			/*
+			console.log('debug(dividePoint)='+dividePoint);
+			sys.log('devide packs :' + util.inspect(duplicatePackIds));
+			console.log('get point id='+i);
+			*/
+
+			// 分割ポイントを付与
+			for( k in duplicatePackIds ){
+				id = duplicatePackIds[k];
+				this.packs[id].point += dividePoint;
+			}
+
+		} else {
+			this.packs[i].point += point;
 		}
 
-		for( i in pointDividePackmanIdArray ){
-			id = pointDividePackmanIdArray[i];
-			this.packs[id].point = this.packs[id].point + dividePoint;
-			this.packs[id].sumPoint = this.packs[id].sumPoint + dividePoint;
-		}
 
+		// 餌の削除
 		this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.FEED] = 0;
+		console.log(i, pack.x, pack.y);
 
 	}
+	console.log('--- calcPoint : '+num+' ---');
 
 }
 

@@ -1,7 +1,7 @@
 var sys = require('sys');
 
 exports.env = {
-	PACK_NUM : 2,
+	PACK_NUM : 4,
 	STAGE_WIDTH :20,
 	STAGE_OBJECTS : {
 		BLOCK:0,
@@ -28,7 +28,7 @@ exports.env = {
 	BLOCK_EXIST_NO  : 0,
 	BLOCK_EXIST_YES : 1,
 
-	FRAME_RATE : 600,
+	FRAME_RATE : 800,
 	PORT : 8000,
 
 	PACK_STATUS : {

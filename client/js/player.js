@@ -27,7 +27,7 @@ var env = {};
 				return (util.createMsg('readyOk', msg));
 			}
 			,next : function(arg) {
-				that.printStage(arg.cells);
+				// that.printStage(arg.cells);
 				console.log('[ next ]');
 				var msg = userScript.next(arg);
 				msg.id = that.id;

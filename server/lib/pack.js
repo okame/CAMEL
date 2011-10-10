@@ -14,7 +14,6 @@ exports.Pack = function(con, id, x, y, teamName) {
 	this.x = x || env.DEFAULT_PACK_X;
 	this.y = y || env.DEFAULT_PACK_Y;
 	this.point = 0;
-	this.sumPoint = 0;
 	this.item = 0;
 	this.isWall = false; // Whether last step is wall or not.
 	this.status = env.PACK_STATUS.CLIENT_INIT;
@@ -48,10 +47,8 @@ exports.Pack.prototype.move = function(msg) {
 	/*
 	 * ステージ上の移動前の自分の位置を消し, 新たに移動後の位置を登録する
 	 */
-	stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] = 
-		stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] - Math.pow(2,this.id);
-	stage.cells[x][y][env.STAGE_OBJECTS.PACK] = 
-		stage.cells[x][y][env.STAGE_OBJECTS.PACK] + Math.pow(2,this.id);
+	stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] -= Math.pow(2,this.id);
+	stage.cells[x][y][env.STAGE_OBJECTS.PACK] += Math.pow(2,this.id);
 	this.isWall = false;
 
 	// 位置更新
