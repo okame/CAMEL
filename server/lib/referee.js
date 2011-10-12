@@ -119,7 +119,7 @@ referee.calcPoint = function(num){
 	for(i=0; i<env.PACK_NUM; i++){
 
 		if(procMap[i]) {
-			console.log(i+':continue by proc.', pack.x, pack.y);
+			// console.log(i+':continue by proc.', pack.x, pack.y);
 			continue;
 		}
 
@@ -131,7 +131,7 @@ referee.calcPoint = function(num){
 
 		//If no point
 		if(point == 0) {
-			console.log(i+':continue by no point.', pack.x, pack.y);
+			// console.log(i+':continue by no point.', pack.x, pack.y);
 			continue;
 		}
 

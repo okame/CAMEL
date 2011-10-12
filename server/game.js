@@ -45,7 +45,7 @@ game.init = function() {
 				util.log('clientInit(id='+id+')');
 
 				//Check first connection of all client
-				finished = tool.checkPackStatus(packs, 'CLIENT_INIT', true);
+				finished = tool.checkPackStatus(packs, 'CLIENT_INIT');
 				if(tool.sumPackNum(packs) == env.PACK_NUM && finished){
 					env.stage = stage.cells;
 					env.packs = [];
@@ -91,7 +91,7 @@ game.init = function() {
 			}
 
 			packs[id].changeState(env.PACK_STATUS.MOVE);
-			finished = tool.checkPackStatus(packs, 'MOVE', 1);
+			finished = tool.checkPackStatus(packs, 'MOVE');
 
 			console.log('[TURN:'+turnNumber+']get msg from:pack' + id);
 			if(finished){
@@ -135,8 +135,11 @@ game.turnEnd = function(){
 	referee.calcPoint(turnNumber);
 	//referee.printPoint();
 
+	
+	console.log('+++ render +++');
 	for(var id in packs) {
 		packs[id].send('scr', packs[id].point);
+		packs[id].render(stage.cells);
 	}
 
 	console.log('--- turn end : '+turnNumber+' ---');
@@ -149,8 +152,16 @@ game.turnEnd = function(){
  */
 game.evLoop = function() {
 
-	if(loopLock || !(tool.checkPackStatus(packs, 'READY_OK', false) || tool.checkPackStatus(packs, 'TURN_END', false))) {
-		console.log('LOCKED!');
+	if(loopLock) {
+		console.log('LOCKED! [loopLock]');
+		return;
+	}
+
+	var finReady = tool.checkPackStatus(packs, 'READY_OK', false);
+	var finTurn = tool.checkPackStatus(packs, 'TURN_END', false);
+
+	if(!(finReady || finTurn)) {
+		console.log('LOCKED! ['+(finReady? 'READY_OK':'TURN_END')+']');
 		return;
 	}
 
@@ -165,7 +176,6 @@ game.evLoop = function() {
 		msg.pack = packs[id].createPackGhost();
 		msg.turn = turnNumber;
 		packs[id].next(msg);
-		packs[id].render(stage.cells);
 	}
 
 	// check game end.

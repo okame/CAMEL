@@ -7,10 +7,17 @@
 CONSTATNT = {};
 
 (function($) {
+
 	CONSTATNT.DIR = {
 		 UP : 0
 		,DOWN : 1
 		,LEFT :2
 		,RIGTH : 3
+	},
+
+	CONSTATNT.MOUTH = {
+		MASTER : 'm'
+		, SMALL : 's'
+		, LARGE : 'l'
 	}
  })($);

@@ -17,6 +17,7 @@ OPTIONS = {
 	, cellSize : 30
 	, frameRate : 90//ms
 	, gridColor : 'rgb(240, 240, 240)'
-	, bgColor : 'rgb(255, 255, 255)'
+	, bgColor : 'rgb(0, 0, 0)'
+	, gifTime : 100
 }
 })($);

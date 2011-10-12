@@ -20,11 +20,35 @@ display = {};
 			stage : []
 		}
 
+		/* Gif timer for pack mouth animation*/
+		display.gifTimer;
+
+		display.lotate = [
+			  CONSTATNT.MOUTH.MATER
+			, CONSTATNT.MOUTH.SMALL
+			, CONSTATNT.MOUTH.LARGE
+			, CONSTATNT.MOUTH.SMALL
+		];
+
+		display.gifStart = function(dir) {
+			display.gifTimer = setInterval(function() {
+					display.mouthNo = (display.mouthNo >= (display.lotate.length - 1)? 0 : (display.mouthNo + 1));
+				}, OPTIONS.gifTimer);
+			};
+
+		display.imgs = [];
+
+		display.renderQueue = {};
+		display.renderQueue.block = [];
+		display.renderQueue.pack = [];
+		display.renderQueue.feed = [];
+
+
 		/** 
 		 * Main.
 		 */
 		display.render = function () {
-			//this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
+			this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
 			//this.renderGridLine();
 			this.renderAllObjects();
 		}
@@ -58,6 +82,7 @@ display = {};
 			for(i=0; i<env.PACK_NUM; i++) {
 				this.packs[i] = new Pack(env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y, 'left', this.ctx);
 			}
+
 
 		}
 
@@ -167,6 +192,40 @@ display = {};
 					}
 				}
 			}
+		}
+
+		/**
+		 * Set render objects into queue.
+		 */
+		display.setRenderQueue = function(stage) {
+			var stage = stage || this.matrix.stage
+			, i, j, k;
+
+			for(i = 0; i < stage.length; i++) {
+				for(j = 0; j < stage[i].length; j++) {
+					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
+						// this.renderCell(i, j, this.renderStage);
+						this.renderQueue.block.push({i:i, j:j});
+					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
+						// render all packs
+						for(k=0; k<env.PACK_NUM; k++) {
+							if(stage[j][i][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
+								di = i - this.packs[k].i; 
+								dj = j - this.packs[k].j; 
+								this.packs[k].movePack(di, dj, k);
+								this.packs[k].i = i;
+								this.packs[k].j = j;
+
+								this.renderQueue.pack.push({di:di, dj:dj, id:k});
+							}
+						}
+					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
+						//this.renderCell(i, j, this.renderFeed);
+						this.renderQueue.feed.push({i:i, j:j});
+					}
+				}
+			}
+
 		}
 
 	})($);
