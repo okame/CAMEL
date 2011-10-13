@@ -79,14 +79,12 @@ game.init = function() {
 			var id = msg.id
 			, x = msg.i
 			, y = msg.j
-			, finished
-			, success;
-
-			//util.log('move(id='+id+')(x='+x+',y='+y+')');
-
+			, finished;
+		
 			if(referee.checkNextCell(id, x, y)){
 				packs[id].move(msg);
 			} else {
+				packs[id].moveError();
 				packs[id].isWall = true;
 			}
 

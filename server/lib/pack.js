@@ -40,6 +40,9 @@ exports.Pack.prototype.setId = function(id) {
 exports.Pack.prototype.next = function(arg) {
 	this.send('next', arg);
 }
+exports.Pack.prototype.moveError = function(arg) {
+	this.send('moveError', arg);
+}
 exports.Pack.prototype.move = function(msg) {
 	var x = msg.i;
 	var y = msg.j;

@@ -30,34 +30,30 @@ referee.init = function(packs, stage) {
 
 /**
  * Check whether the packs[id] can step to {x, y}
- * return success { false : invalid, true : valid}
+ * return { false : invalid, true : valid}
  */
 referee.checkNextCell = function(id, x, y){
-	var success = true;
 
 	//check out of stage
-	if( x > 0 && x < env.STAGE_XSIZE - 1 && 
-		y > 0 && y < env.STAGE_YSIZE - 1 ){
-		//OK	
-	}else{
+	if(!(x > 0 && x < env.STAGE_XSIZE - 1 && y > 0 && y < env.STAGE_YSIZE - 1)){
 		sys.log('Cant move to out of stage.x='+x+',y='+y+'(id='+id+')');
-		success = false;
+		return false;
 	}
 
 	//check wall
-	if( success && this.stage.cells[x][y][env.STAGE_OBJECTS.BLOCK]==env.BLOCK_EXIST_YES){
+	if(this.stage.cells[x][y][env.STAGE_OBJECTS.BLOCK] == env.BLOCK_EXIST_YES){
 		//block
-		sys.log('Cant move for block.x='+x+',y='+y+'(id='+id+')');
-		success = false;
+		sys.log('Cant move into block.x='+x+',y='+y+'(id='+id+')');
+		return false;
 	}
 
 	//check next step
-	if( success && !this.checkNextStep(id, x, y) ){
+	if(!this.checkNextStep(id, x, y)){
 		sys.log('No exist packman.(id='+id+')');
-		success = false;
+		return  false;
 	}
 
-	return success;
+	return true;
 }
 
 /**
@@ -65,17 +61,17 @@ referee.checkNextCell = function(id, x, y){
  * -> next cell must be a adjacent cell
  */
 referee.checkNextStep = function(id, x, y){
-	var pack = this.packs[id];
+	var pack = this.packs[id]
+	, dx, dy;
 
-	// change to smart one
-	if( pack.x == x && pack.y == y ||
-		pack.x-1 == x && pack.y == y ||
-		pack.x == x && pack.y-1 == y ||
-		pack.x+1 == x && pack.y == y ||
-		pack.x == x && pack.y+1 == y){
-		return true;
-	}else{
+	dx = Math.abs(pack.x - x);
+	dy = Math.abs(pack.y - y);
+
+	if((dx + dy) > 1) {
+		console.log('HOGE');
 		return false;
+	}else{
+		return true;
 	}
 }
 

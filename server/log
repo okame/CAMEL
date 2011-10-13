@@ -1,0 +1,3804 @@
+14 Oct 01:34:43 - server listening on port 8000.
+14 Oct 01:34:45 - connect.
+14 Oct 01:34:45 - clientInit(id=0)
+14 Oct 01:34:46 - connect.
+14 Oct 01:34:46 - clientInit(id=1)
+14 Oct 01:34:47 - connect.
+14 Oct 01:34:47 - clientInit(id=2)
+14 Oct 01:34:47 - connect.
+14 Oct 01:34:48 - clientInit(id=3)
+14 Oct 01:34:48 - finished to create stage
+14 Oct 01:34:48 - readyOk(id=2)
+14 Oct 01:34:48 - readyOk(id=1)
+14 Oct 01:34:48 - readyOk(id=0)
+14 Oct 01:34:48 - readyOk(id=3)
+--- evLoop : 0 ---
+[TURN:0]get msg from:pack0
+[TURN:0]get msg from:pack2
+[TURN:0]get msg from:pack1
+[TURN:0]get msg from:pack3
+--- calcPoint : 1 ---
++++ render +++
+--- turn end : 1 ---
+
+--- evLoop : 1 ---
+[TURN:1]get msg from:pack0
+[TURN:1]get msg from:pack1
+[TURN:1]get msg from:pack2
+[TURN:1]get msg from:pack3
+--- calcPoint : 2 ---
++++ render +++
+--- turn end : 2 ---
+
+--- evLoop : 2 ---
+[TURN:2]get msg from:pack0
+[TURN:2]get msg from:pack1
+[TURN:2]get msg from:pack2
+[TURN:2]get msg from:pack3
+--- calcPoint : 3 ---
++++ render +++
+--- turn end : 3 ---
+
+--- evLoop : 3 ---
+[TURN:3]get msg from:pack0
+[TURN:3]get msg from:pack1
+[TURN:3]get msg from:pack2
+[TURN:3]get msg from:pack3
+--- calcPoint : 4 ---
++++ render +++
+--- turn end : 4 ---
+
+--- evLoop : 4 ---
+[TURN:4]get msg from:pack2
+[TURN:4]get msg from:pack0
+[TURN:4]get msg from:pack3
+[TURN:4]get msg from:pack1
+--- calcPoint : 5 ---
++++ render +++
+--- turn end : 5 ---
+
+--- evLoop : 5 ---
+[TURN:5]get msg from:pack0
+[TURN:5]get msg from:pack1
+[TURN:5]get msg from:pack2
+[TURN:5]get msg from:pack3
+--- calcPoint : 6 ---
++++ render +++
+--- turn end : 6 ---
+
+--- evLoop : 6 ---
+[TURN:6]get msg from:pack0
+[TURN:6]get msg from:pack1
+[TURN:6]get msg from:pack3
+[TURN:6]get msg from:pack2
+--- calcPoint : 7 ---
++++ render +++
+--- turn end : 7 ---
+
+--- evLoop : 7 ---
+[TURN:7]get msg from:pack0
+[TURN:7]get msg from:pack1
+[TURN:7]get msg from:pack2
+[TURN:7]get msg from:pack3
+--- calcPoint : 8 ---
++++ render +++
+--- turn end : 8 ---
+
+--- evLoop : 8 ---
+[TURN:8]get msg from:pack0
+[TURN:8]get msg from:pack1
+[TURN:8]get msg from:pack2
+[TURN:8]get msg from:pack3
+--- calcPoint : 9 ---
++++ render +++
+--- turn end : 9 ---
+
+--- evLoop : 9 ---
+[TURN:9]get msg from:pack0
+[TURN:9]get msg from:pack1
+[TURN:9]get msg from:pack2
+[TURN:9]get msg from:pack3
+--- calcPoint : 10 ---
++++ render +++
+--- turn end : 10 ---
+
+--- evLoop : 10 ---
+[TURN:10]get msg from:pack0
+[TURN:10]get msg from:pack1
+[TURN:10]get msg from:pack3
+[TURN:10]get msg from:pack2
+--- calcPoint : 11 ---
++++ render +++
+--- turn end : 11 ---
+
+--- evLoop : 11 ---
+[TURN:11]get msg from:pack0
+[TURN:11]get msg from:pack1
+[TURN:11]get msg from:pack3
+[TURN:11]get msg from:pack2
+--- calcPoint : 12 ---
++++ render +++
+--- turn end : 12 ---
+
+--- evLoop : 12 ---
+[TURN:12]get msg from:pack0
+[TURN:12]get msg from:pack1
+[TURN:12]get msg from:pack2
+[TURN:12]get msg from:pack3
+--- calcPoint : 13 ---
++++ render +++
+--- turn end : 13 ---
+
+--- evLoop : 13 ---
+[TURN:13]get msg from:pack0
+[TURN:13]get msg from:pack1
+[TURN:13]get msg from:pack2
+[TURN:13]get msg from:pack3
+--- calcPoint : 14 ---
++++ render +++
+--- turn end : 14 ---
+
+--- evLoop : 14 ---
+[TURN:14]get msg from:pack1
+[TURN:14]get msg from:pack0
+[TURN:14]get msg from:pack2
+[TURN:14]get msg from:pack3
+--- calcPoint : 15 ---
++++ render +++
+--- turn end : 15 ---
+
+--- evLoop : 15 ---
+[TURN:15]get msg from:pack0
+[TURN:15]get msg from:pack1
+[TURN:15]get msg from:pack2
+[TURN:15]get msg from:pack3
+--- calcPoint : 16 ---
++++ render +++
+--- turn end : 16 ---
+
+--- evLoop : 16 ---
+[TURN:16]get msg from:pack0
+[TURN:16]get msg from:pack1
+[TURN:16]get msg from:pack2
+[TURN:16]get msg from:pack3
+--- calcPoint : 17 ---
++++ render +++
+--- turn end : 17 ---
+
+--- evLoop : 17 ---
+[TURN:17]get msg from:pack0
+[TURN:17]get msg from:pack1
+[TURN:17]get msg from:pack2
+[TURN:17]get msg from:pack3
+--- calcPoint : 18 ---
++++ render +++
+--- turn end : 18 ---
+
+--- evLoop : 18 ---
+[TURN:18]get msg from:pack0
+[TURN:18]get msg from:pack1
+[TURN:18]get msg from:pack2
+[TURN:18]get msg from:pack3
+--- calcPoint : 19 ---
++++ render +++
+--- turn end : 19 ---
+
+--- evLoop : 19 ---
+[TURN:19]get msg from:pack0
+[TURN:19]get msg from:pack1
+[TURN:19]get msg from:pack2
+[TURN:19]get msg from:pack3
+--- calcPoint : 20 ---
++++ render +++
+--- turn end : 20 ---
+
+--- evLoop : 20 ---
+[TURN:20]get msg from:pack0
+[TURN:20]get msg from:pack1
+[TURN:20]get msg from:pack2
+[TURN:20]get msg from:pack3
+--- calcPoint : 21 ---
++++ render +++
+--- turn end : 21 ---
+
+--- evLoop : 21 ---
+[TURN:21]get msg from:pack0
+[TURN:21]get msg from:pack1
+[TURN:21]get msg from:pack2
+[TURN:21]get msg from:pack3
+--- calcPoint : 22 ---
++++ render +++
+--- turn end : 22 ---
+
+--- evLoop : 22 ---
+[TURN:22]get msg from:pack0
+[TURN:22]get msg from:pack1
+[TURN:22]get msg from:pack2
+[TURN:22]get msg from:pack3
+--- calcPoint : 23 ---
++++ render +++
+--- turn end : 23 ---
+
+--- evLoop : 23 ---
+[TURN:23]get msg from:pack0
+[TURN:23]get msg from:pack1
+[TURN:23]get msg from:pack2
+[TURN:23]get msg from:pack3
+--- calcPoint : 24 ---
++++ render +++
+--- turn end : 24 ---
+
+--- evLoop : 24 ---
+[TURN:24]get msg from:pack0
+[TURN:24]get msg from:pack1
+[TURN:24]get msg from:pack2
+[TURN:24]get msg from:pack3
+--- calcPoint : 25 ---
++++ render +++
+--- turn end : 25 ---
+
+--- evLoop : 25 ---
+[TURN:25]get msg from:pack0
+[TURN:25]get msg from:pack1
+[TURN:25]get msg from:pack2
+[TURN:25]get msg from:pack3
+--- calcPoint : 26 ---
++++ render +++
+--- turn end : 26 ---
+
+--- evLoop : 26 ---
+[TURN:26]get msg from:pack0
+[TURN:26]get msg from:pack1
+[TURN:26]get msg from:pack2
+[TURN:26]get msg from:pack3
+--- calcPoint : 27 ---
++++ render +++
+--- turn end : 27 ---
+
+--- evLoop : 27 ---
+[TURN:27]get msg from:pack0
+[TURN:27]get msg from:pack1
+[TURN:27]get msg from:pack2
+[TURN:27]get msg from:pack3
+--- calcPoint : 28 ---
++++ render +++
+--- turn end : 28 ---
+
+--- evLoop : 28 ---
+[TURN:28]get msg from:pack0
+[TURN:28]get msg from:pack1
+[TURN:28]get msg from:pack2
+[TURN:28]get msg from:pack3
+--- calcPoint : 29 ---
++++ render +++
+--- turn end : 29 ---
+
+--- evLoop : 29 ---
+[TURN:29]get msg from:pack0
+[TURN:29]get msg from:pack1
+[TURN:29]get msg from:pack2
+[TURN:29]get msg from:pack3
+--- calcPoint : 30 ---
++++ render +++
+--- turn end : 30 ---
+
+--- evLoop : 30 ---
+[TURN:30]get msg from:pack0
+[TURN:30]get msg from:pack1
+[TURN:30]get msg from:pack2
+[TURN:30]get msg from:pack3
+--- calcPoint : 31 ---
++++ render +++
+--- turn end : 31 ---
+
+--- evLoop : 31 ---
+[TURN:31]get msg from:pack0
+[TURN:31]get msg from:pack1
+[TURN:31]get msg from:pack2
+[TURN:31]get msg from:pack3
+--- calcPoint : 32 ---
++++ render +++
+--- turn end : 32 ---
+
+--- evLoop : 32 ---
+[TURN:32]get msg from:pack0
+[TURN:32]get msg from:pack1
+[TURN:32]get msg from:pack2
+[TURN:32]get msg from:pack3
+--- calcPoint : 33 ---
++++ render +++
+--- turn end : 33 ---
+
+--- evLoop : 33 ---
+[TURN:33]get msg from:pack1
+[TURN:33]get msg from:pack0
+[TURN:33]get msg from:pack2
+[TURN:33]get msg from:pack3
+--- calcPoint : 34 ---
++++ render +++
+--- turn end : 34 ---
+
+--- evLoop : 34 ---
+[TURN:34]get msg from:pack0
+[TURN:34]get msg from:pack1
+[TURN:34]get msg from:pack2
+[TURN:34]get msg from:pack3
+--- calcPoint : 35 ---
++++ render +++
+--- turn end : 35 ---
+
+--- evLoop : 35 ---
+[TURN:35]get msg from:pack0
+[TURN:35]get msg from:pack3
+[TURN:35]get msg from:pack2
+[TURN:35]get msg from:pack1
+--- calcPoint : 36 ---
++++ render +++
+--- turn end : 36 ---
+
+--- evLoop : 36 ---
+[TURN:36]get msg from:pack0
+[TURN:36]get msg from:pack1
+[TURN:36]get msg from:pack2
+[TURN:36]get msg from:pack3
+--- calcPoint : 37 ---
++++ render +++
+--- turn end : 37 ---
+
+--- evLoop : 37 ---
+[TURN:37]get msg from:pack0
+[TURN:37]get msg from:pack1
+[TURN:37]get msg from:pack2
+[TURN:37]get msg from:pack3
+--- calcPoint : 38 ---
++++ render +++
+--- turn end : 38 ---
+
+--- evLoop : 38 ---
+[TURN:38]get msg from:pack0
+[TURN:38]get msg from:pack1
+[TURN:38]get msg from:pack2
+[TURN:38]get msg from:pack3
+--- calcPoint : 39 ---
++++ render +++
+--- turn end : 39 ---
+
+--- evLoop : 39 ---
+[TURN:39]get msg from:pack0
+[TURN:39]get msg from:pack1
+[TURN:39]get msg from:pack2
+[TURN:39]get msg from:pack3
+--- calcPoint : 40 ---
++++ render +++
+--- turn end : 40 ---
+
+--- evLoop : 40 ---
+[TURN:40]get msg from:pack0
+[TURN:40]get msg from:pack1
+[TURN:40]get msg from:pack2
+[TURN:40]get msg from:pack3
+--- calcPoint : 41 ---
++++ render +++
+--- turn end : 41 ---
+
+--- evLoop : 41 ---
+[TURN:41]get msg from:pack0
+[TURN:41]get msg from:pack1
+[TURN:41]get msg from:pack2
+[TURN:41]get msg from:pack3
+--- calcPoint : 42 ---
++++ render +++
+--- turn end : 42 ---
+
+--- evLoop : 42 ---
+[TURN:42]get msg from:pack0
+[TURN:42]get msg from:pack1
+[TURN:42]get msg from:pack2
+[TURN:42]get msg from:pack3
+--- calcPoint : 43 ---
++++ render +++
+--- turn end : 43 ---
+
+--- evLoop : 43 ---
+[TURN:43]get msg from:pack0
+[TURN:43]get msg from:pack1
+[TURN:43]get msg from:pack2
+[TURN:43]get msg from:pack3
+--- calcPoint : 44 ---
++++ render +++
+--- turn end : 44 ---
+
+--- evLoop : 44 ---
+[TURN:44]get msg from:pack0
+[TURN:44]get msg from:pack1
+[TURN:44]get msg from:pack3
+[TURN:44]get msg from:pack2
+--- calcPoint : 45 ---
++++ render +++
+--- turn end : 45 ---
+
+--- evLoop : 45 ---
+[TURN:45]get msg from:pack0
+[TURN:45]get msg from:pack1
+[TURN:45]get msg from:pack2
+[TURN:45]get msg from:pack3
+--- calcPoint : 46 ---
++++ render +++
+--- turn end : 46 ---
+
+--- evLoop : 46 ---
+[TURN:46]get msg from:pack0
+[TURN:46]get msg from:pack1
+[TURN:46]get msg from:pack2
+[TURN:46]get msg from:pack3
+--- calcPoint : 47 ---
++++ render +++
+--- turn end : 47 ---
+
+--- evLoop : 47 ---
+[TURN:47]get msg from:pack0
+[TURN:47]get msg from:pack1
+[TURN:47]get msg from:pack3
+[TURN:47]get msg from:pack2
+--- calcPoint : 48 ---
++++ render +++
+--- turn end : 48 ---
+
+--- evLoop : 48 ---
+[TURN:48]get msg from:pack0
+[TURN:48]get msg from:pack1
+[TURN:48]get msg from:pack2
+[TURN:48]get msg from:pack3
+--- calcPoint : 49 ---
++++ render +++
+--- turn end : 49 ---
+
+--- evLoop : 49 ---
+[TURN:49]get msg from:pack0
+[TURN:49]get msg from:pack1
+[TURN:49]get msg from:pack2
+[TURN:49]get msg from:pack3
+--- calcPoint : 50 ---
++++ render +++
+--- turn end : 50 ---
+
+--- evLoop : 50 ---
+[TURN:50]get msg from:pack0
+[TURN:50]get msg from:pack1
+[TURN:50]get msg from:pack2
+[TURN:50]get msg from:pack3
+--- calcPoint : 51 ---
++++ render +++
+--- turn end : 51 ---
+
+--- evLoop : 51 ---
+[TURN:51]get msg from:pack0
+[TURN:51]get msg from:pack1
+[TURN:51]get msg from:pack2
+[TURN:51]get msg from:pack3
+--- calcPoint : 52 ---
++++ render +++
+--- turn end : 52 ---
+
+--- evLoop : 52 ---
+[TURN:52]get msg from:pack0
+[TURN:52]get msg from:pack1
+[TURN:52]get msg from:pack2
+[TURN:52]get msg from:pack3
+--- calcPoint : 53 ---
++++ render +++
+--- turn end : 53 ---
+
+--- evLoop : 53 ---
+[TURN:53]get msg from:pack0
+[TURN:53]get msg from:pack1
+[TURN:53]get msg from:pack2
+[TURN:53]get msg from:pack3
+--- calcPoint : 54 ---
++++ render +++
+--- turn end : 54 ---
+
+--- evLoop : 54 ---
+[TURN:54]get msg from:pack0
+[TURN:54]get msg from:pack1
+[TURN:54]get msg from:pack3
+[TURN:54]get msg from:pack2
+--- calcPoint : 55 ---
+0 5 17
++++ render +++
+--- turn end : 55 ---
+
+--- evLoop : 55 ---
+[TURN:55]get msg from:pack0
+[TURN:55]get msg from:pack1
+[TURN:55]get msg from:pack2
+[TURN:55]get msg from:pack3
+--- calcPoint : 56 ---
+0 5 16
++++ render +++
+--- turn end : 56 ---
+
+--- evLoop : 56 ---
+[TURN:56]get msg from:pack0
+[TURN:56]get msg from:pack1
+[TURN:56]get msg from:pack2
+[TURN:56]get msg from:pack3
+--- calcPoint : 57 ---
++++ render +++
+--- turn end : 57 ---
+
+--- evLoop : 57 ---
+[TURN:57]get msg from:pack1
+[TURN:57]get msg from:pack0
+[TURN:57]get msg from:pack2
+[TURN:57]get msg from:pack3
+--- calcPoint : 58 ---
++++ render +++
+--- turn end : 58 ---
+
+--- evLoop : 58 ---
+[TURN:58]get msg from:pack0
+[TURN:58]get msg from:pack1
+[TURN:58]get msg from:pack2
+[TURN:58]get msg from:pack3
+--- calcPoint : 59 ---
++++ render +++
+--- turn end : 59 ---
+
+--- evLoop : 59 ---
+[TURN:59]get msg from:pack0
+[TURN:59]get msg from:pack1
+[TURN:59]get msg from:pack2
+[TURN:59]get msg from:pack3
+--- calcPoint : 60 ---
++++ render +++
+--- turn end : 60 ---
+
+--- evLoop : 60 ---
+[TURN:60]get msg from:pack0
+[TURN:60]get msg from:pack1
+[TURN:60]get msg from:pack2
+[TURN:60]get msg from:pack3
+--- calcPoint : 61 ---
++++ render +++
+--- turn end : 61 ---
+
+--- evLoop : 61 ---
+[TURN:61]get msg from:pack0
+[TURN:61]get msg from:pack1
+[TURN:61]get msg from:pack2
+[TURN:61]get msg from:pack3
+--- calcPoint : 62 ---
++++ render +++
+--- turn end : 62 ---
+
+--- evLoop : 62 ---
+[TURN:62]get msg from:pack0
+[TURN:62]get msg from:pack1
+[TURN:62]get msg from:pack2
+[TURN:62]get msg from:pack3
+--- calcPoint : 63 ---
++++ render +++
+--- turn end : 63 ---
+
+--- evLoop : 63 ---
+[TURN:63]get msg from:pack0
+[TURN:63]get msg from:pack1
+[TURN:63]get msg from:pack2
+[TURN:63]get msg from:pack3
+--- calcPoint : 64 ---
++++ render +++
+--- turn end : 64 ---
+
+--- evLoop : 64 ---
+[TURN:64]get msg from:pack0
+[TURN:64]get msg from:pack1
+[TURN:64]get msg from:pack2
+[TURN:64]get msg from:pack3
+--- calcPoint : 65 ---
+0 5 15
++++ render +++
+--- turn end : 65 ---
+
+--- evLoop : 65 ---
+[TURN:65]get msg from:pack0
+[TURN:65]get msg from:pack1
+[TURN:65]get msg from:pack3
+[TURN:65]get msg from:pack2
+--- calcPoint : 66 ---
+0 5 14
++++ render +++
+--- turn end : 66 ---
+
+--- evLoop : 66 ---
+[TURN:66]get msg from:pack0
+[TURN:66]get msg from:pack1
+[TURN:66]get msg from:pack2
+[TURN:66]get msg from:pack3
+--- calcPoint : 67 ---
+0 6 14
++++ render +++
+--- turn end : 67 ---
+
+--- evLoop : 67 ---
+[TURN:67]get msg from:pack0
+[TURN:67]get msg from:pack1
+[TURN:67]get msg from:pack2
+[TURN:67]get msg from:pack3
+--- calcPoint : 68 ---
+0 7 14
++++ render +++
+--- turn end : 68 ---
+
+--- evLoop : 68 ---
+[TURN:68]get msg from:pack0
+[TURN:68]get msg from:pack1
+[TURN:68]get msg from:pack2
+[TURN:68]get msg from:pack3
+--- calcPoint : 69 ---
+0 8 14
++++ render +++
+--- turn end : 69 ---
+
+--- evLoop : 69 ---
+[TURN:69]get msg from:pack1
+[TURN:69]get msg from:pack0
+[TURN:69]get msg from:pack2
+[TURN:69]get msg from:pack3
+--- calcPoint : 70 ---
+0 9 14
++++ render +++
+--- turn end : 70 ---
+
+--- evLoop : 70 ---
+[TURN:70]get msg from:pack0
+[TURN:70]get msg from:pack1
+[TURN:70]get msg from:pack2
+[TURN:70]get msg from:pack3
+--- calcPoint : 71 ---
+0 10 14
++++ render +++
+--- turn end : 71 ---
+
+--- evLoop : 71 ---
+[TURN:71]get msg from:pack0
+[TURN:71]get msg from:pack1
+[TURN:71]get msg from:pack3
+[TURN:71]get msg from:pack2
+--- calcPoint : 72 ---
+0 11 14
++++ render +++
+--- turn end : 72 ---
+
+--- evLoop : 72 ---
+[TURN:72]get msg from:pack0
+[TURN:72]get msg from:pack1
+[TURN:72]get msg from:pack2
+[TURN:72]get msg from:pack3
+--- calcPoint : 73 ---
+0 12 14
++++ render +++
+--- turn end : 73 ---
+
+--- evLoop : 73 ---
+[TURN:73]get msg from:pack0
+[TURN:73]get msg from:pack1
+[TURN:73]get msg from:pack2
+[TURN:73]get msg from:pack3
+--- calcPoint : 74 ---
+0 13 14
++++ render +++
+--- turn end : 74 ---
+
+--- evLoop : 74 ---
+[TURN:74]get msg from:pack0
+[TURN:74]get msg from:pack1
+[TURN:74]get msg from:pack2
+[TURN:74]get msg from:pack3
+--- calcPoint : 75 ---
+0 14 14
++++ render +++
+--- turn end : 75 ---
+
+--- evLoop : 75 ---
+[TURN:75]get msg from:pack0
+[TURN:75]get msg from:pack1
+[TURN:75]get msg from:pack3
+[TURN:75]get msg from:pack2
+--- calcPoint : 76 ---
+0 15 14
++++ render +++
+--- turn end : 76 ---
+
+--- evLoop : 76 ---
+[TURN:76]get msg from:pack0
+[TURN:76]get msg from:pack1
+[TURN:76]get msg from:pack2
+[TURN:76]get msg from:pack3
+--- calcPoint : 77 ---
+0 16 14
++++ render +++
+--- turn end : 77 ---
+
+--- evLoop : 77 ---
+[TURN:77]get msg from:pack0
+[TURN:77]get msg from:pack1
+[TURN:77]get msg from:pack2
+[TURN:77]get msg from:pack3
+--- calcPoint : 78 ---
+0 17 14
++++ render +++
+--- turn end : 78 ---
+
+--- evLoop : 78 ---
+[TURN:78]get msg from:pack0
+[TURN:78]get msg from:pack1
+[TURN:78]get msg from:pack3
+[TURN:78]get msg from:pack2
+--- calcPoint : 79 ---
++++ render +++
+--- turn end : 79 ---
+
+--- evLoop : 79 ---
+[TURN:79]get msg from:pack0
+[TURN:79]get msg from:pack1
+[TURN:79]get msg from:pack2
+[TURN:79]get msg from:pack3
+--- calcPoint : 80 ---
++++ render +++
+--- turn end : 80 ---
+
+--- evLoop : 80 ---
+[TURN:80]get msg from:pack0
+[TURN:80]get msg from:pack1
+[TURN:80]get msg from:pack2
+[TURN:80]get msg from:pack3
+--- calcPoint : 81 ---
++++ render +++
+--- turn end : 81 ---
+
+--- evLoop : 81 ---
+[TURN:81]get msg from:pack0
+[TURN:81]get msg from:pack1
+[TURN:81]get msg from:pack2
+[TURN:81]get msg from:pack3
+--- calcPoint : 82 ---
++++ render +++
+--- turn end : 82 ---
+
+--- evLoop : 82 ---
+[TURN:82]get msg from:pack0
+[TURN:82]get msg from:pack1
+[TURN:82]get msg from:pack2
+[TURN:82]get msg from:pack3
+--- calcPoint : 83 ---
++++ render +++
+--- turn end : 83 ---
+
+--- evLoop : 83 ---
+[TURN:83]get msg from:pack0
+[TURN:83]get msg from:pack1
+[TURN:83]get msg from:pack3
+[TURN:83]get msg from:pack2
+--- calcPoint : 84 ---
+0 14 17
++++ render +++
+--- turn end : 84 ---
+
+--- evLoop : 84 ---
+[TURN:84]get msg from:pack2
+[TURN:84]get msg from:pack0
+[TURN:84]get msg from:pack1
+[TURN:84]get msg from:pack3
+--- calcPoint : 85 ---
+0 14 16
++++ render +++
+--- turn end : 85 ---
+
+--- evLoop : 85 ---
+[TURN:85]get msg from:pack1
+[TURN:85]get msg from:pack0
+[TURN:85]get msg from:pack2
+[TURN:85]get msg from:pack3
+--- calcPoint : 86 ---
++++ render +++
+--- turn end : 86 ---
+
+--- evLoop : 86 ---
+[TURN:86]get msg from:pack0
+[TURN:86]get msg from:pack1
+[TURN:86]get msg from:pack2
+[TURN:86]get msg from:pack3
+--- calcPoint : 87 ---
++++ render +++
+--- turn end : 87 ---
+
+--- evLoop : 87 ---
+[TURN:87]get msg from:pack0
+[TURN:87]get msg from:pack1
+[TURN:87]get msg from:pack2
+[TURN:87]get msg from:pack3
+--- calcPoint : 88 ---
++++ render +++
+--- turn end : 88 ---
+
+--- evLoop : 88 ---
+[TURN:88]get msg from:pack0
+[TURN:88]get msg from:pack1
+[TURN:88]get msg from:pack2
+[TURN:88]get msg from:pack3
+--- calcPoint : 89 ---
++++ render +++
+--- turn end : 89 ---
+
+--- evLoop : 89 ---
+[TURN:89]get msg from:pack0
+[TURN:89]get msg from:pack1
+[TURN:89]get msg from:pack2
+[TURN:89]get msg from:pack3
+--- calcPoint : 90 ---
+0 14 15
++++ render +++
+--- turn end : 90 ---
+
+--- evLoop : 90 ---
+[TURN:90]get msg from:pack0
+[TURN:90]get msg from:pack1
+[TURN:90]get msg from:pack2
+[TURN:90]get msg from:pack3
+--- calcPoint : 91 ---
++++ render +++
+--- turn end : 91 ---
+
+--- evLoop : 91 ---
+[TURN:91]get msg from:pack0
+[TURN:91]get msg from:pack2
+[TURN:91]get msg from:pack1
+[TURN:91]get msg from:pack3
+--- calcPoint : 92 ---
++++ render +++
+--- turn end : 92 ---
+
+--- evLoop : 92 ---
+[TURN:92]get msg from:pack0
+[TURN:92]get msg from:pack1
+[TURN:92]get msg from:pack2
+[TURN:92]get msg from:pack3
+--- calcPoint : 93 ---
++++ render +++
+--- turn end : 93 ---
+
+--- evLoop : 93 ---
+[TURN:93]get msg from:pack0
+[TURN:93]get msg from:pack1
+[TURN:93]get msg from:pack2
+[TURN:93]get msg from:pack3
+--- calcPoint : 94 ---
++++ render +++
+--- turn end : 94 ---
+
+--- evLoop : 94 ---
+[TURN:94]get msg from:pack0
+[TURN:94]get msg from:pack1
+[TURN:94]get msg from:pack2
+[TURN:94]get msg from:pack3
+--- calcPoint : 95 ---
++++ render +++
+--- turn end : 95 ---
+
+--- evLoop : 95 ---
+[TURN:95]get msg from:pack0
+[TURN:95]get msg from:pack1
+[TURN:95]get msg from:pack2
+[TURN:95]get msg from:pack3
+--- calcPoint : 96 ---
++++ render +++
+--- turn end : 96 ---
+
+--- evLoop : 96 ---
+[TURN:96]get msg from:pack0
+[TURN:96]get msg from:pack1
+[TURN:96]get msg from:pack3
+[TURN:96]get msg from:pack2
+--- calcPoint : 97 ---
++++ render +++
+--- turn end : 97 ---
+
+--- evLoop : 97 ---
+[TURN:97]get msg from:pack0
+[TURN:97]get msg from:pack1
+[TURN:97]get msg from:pack2
+[TURN:97]get msg from:pack3
+--- calcPoint : 98 ---
++++ render +++
+--- turn end : 98 ---
+
+--- evLoop : 98 ---
+[TURN:98]get msg from:pack0
+[TURN:98]get msg from:pack1
+[TURN:98]get msg from:pack2
+[TURN:98]get msg from:pack3
+--- calcPoint : 99 ---
++++ render +++
+--- turn end : 99 ---
+
+--- evLoop : 99 ---
+[TURN:99]get msg from:pack0
+[TURN:99]get msg from:pack1
+[TURN:99]get msg from:pack2
+[TURN:99]get msg from:pack3
+--- calcPoint : 100 ---
++++ render +++
+--- turn end : 100 ---
+
+--- evLoop : 100 ---
+[TURN:100]get msg from:pack0
+[TURN:100]get msg from:pack1
+[TURN:100]get msg from:pack2
+[TURN:100]get msg from:pack3
+--- calcPoint : 101 ---
++++ render +++
+--- turn end : 101 ---
+
+--- evLoop : 101 ---
+[TURN:101]get msg from:pack1
+[TURN:101]get msg from:pack0
+[TURN:101]get msg from:pack2
+[TURN:101]get msg from:pack3
+--- calcPoint : 102 ---
++++ render +++
+--- turn end : 102 ---
+
+--- evLoop : 102 ---
+[TURN:102]get msg from:pack0
+[TURN:102]get msg from:pack2
+[TURN:102]get msg from:pack1
+[TURN:102]get msg from:pack3
+--- calcPoint : 103 ---
++++ render +++
+--- turn end : 103 ---
+
+--- evLoop : 103 ---
+[TURN:103]get msg from:pack1
+[TURN:103]get msg from:pack2
+[TURN:103]get msg from:pack0
+[TURN:103]get msg from:pack3
+--- calcPoint : 104 ---
++++ render +++
+--- turn end : 104 ---
+
+--- evLoop : 104 ---
+[TURN:104]get msg from:pack0
+[TURN:104]get msg from:pack1
+[TURN:104]get msg from:pack2
+[TURN:104]get msg from:pack3
+--- calcPoint : 105 ---
++++ render +++
+--- turn end : 105 ---
+
+--- evLoop : 105 ---
+[TURN:105]get msg from:pack0
+[TURN:105]get msg from:pack1
+[TURN:105]get msg from:pack2
+[TURN:105]get msg from:pack3
+--- calcPoint : 106 ---
++++ render +++
+--- turn end : 106 ---
+
+--- evLoop : 106 ---
+[TURN:106]get msg from:pack0
+[TURN:106]get msg from:pack1
+[TURN:106]get msg from:pack2
+[TURN:106]get msg from:pack3
+--- calcPoint : 107 ---
++++ render +++
+--- turn end : 107 ---
+
+--- evLoop : 107 ---
+[TURN:107]get msg from:pack0
+[TURN:107]get msg from:pack1
+[TURN:107]get msg from:pack2
+[TURN:107]get msg from:pack3
+--- calcPoint : 108 ---
++++ render +++
+--- turn end : 108 ---
+
+--- evLoop : 108 ---
+[TURN:108]get msg from:pack1
+[TURN:108]get msg from:pack0
+[TURN:108]get msg from:pack2
+[TURN:108]get msg from:pack3
+--- calcPoint : 109 ---
++++ render +++
+--- turn end : 109 ---
+
+--- evLoop : 109 ---
+[TURN:109]get msg from:pack1
+[TURN:109]get msg from:pack2
+[TURN:109]get msg from:pack0
+[TURN:109]get msg from:pack3
+--- calcPoint : 110 ---
++++ render +++
+--- turn end : 110 ---
+
+--- evLoop : 110 ---
+[TURN:110]get msg from:pack1
+[TURN:110]get msg from:pack0
+[TURN:110]get msg from:pack2
+[TURN:110]get msg from:pack3
+--- calcPoint : 111 ---
++++ render +++
+--- turn end : 111 ---
+
+--- evLoop : 111 ---
+[TURN:111]get msg from:pack0
+[TURN:111]get msg from:pack1
+[TURN:111]get msg from:pack2
+[TURN:111]get msg from:pack3
+--- calcPoint : 112 ---
++++ render +++
+--- turn end : 112 ---
+
+--- evLoop : 112 ---
+[TURN:112]get msg from:pack1
+[TURN:112]get msg from:pack0
+[TURN:112]get msg from:pack2
+[TURN:112]get msg from:pack3
+--- calcPoint : 113 ---
++++ render +++
+--- turn end : 113 ---
+
+--- evLoop : 113 ---
+[TURN:113]get msg from:pack0
+[TURN:113]get msg from:pack1
+[TURN:113]get msg from:pack2
+[TURN:113]get msg from:pack3
+--- calcPoint : 114 ---
++++ render +++
+--- turn end : 114 ---
+
+--- evLoop : 114 ---
+[TURN:114]get msg from:pack0
+[TURN:114]get msg from:pack1
+[TURN:114]get msg from:pack2
+[TURN:114]get msg from:pack3
+--- calcPoint : 115 ---
++++ render +++
+--- turn end : 115 ---
+
+--- evLoop : 115 ---
+[TURN:115]get msg from:pack0
+[TURN:115]get msg from:pack1
+[TURN:115]get msg from:pack2
+[TURN:115]get msg from:pack3
+--- calcPoint : 116 ---
++++ render +++
+--- turn end : 116 ---
+
+--- evLoop : 116 ---
+[TURN:116]get msg from:pack0
+[TURN:116]get msg from:pack1
+[TURN:116]get msg from:pack2
+[TURN:116]get msg from:pack3
+--- calcPoint : 117 ---
++++ render +++
+--- turn end : 117 ---
+
+--- evLoop : 117 ---
+[TURN:117]get msg from:pack0
+[TURN:117]get msg from:pack1
+[TURN:117]get msg from:pack3
+[TURN:117]get msg from:pack2
+--- calcPoint : 118 ---
++++ render +++
+--- turn end : 118 ---
+
+--- evLoop : 118 ---
+[TURN:118]get msg from:pack0
+[TURN:118]get msg from:pack1
+[TURN:118]get msg from:pack2
+[TURN:118]get msg from:pack3
+--- calcPoint : 119 ---
++++ render +++
+--- turn end : 119 ---
+
+--- evLoop : 119 ---
+[TURN:119]get msg from:pack0
+[TURN:119]get msg from:pack1
+[TURN:119]get msg from:pack2
+[TURN:119]get msg from:pack3
+--- calcPoint : 120 ---
++++ render +++
+--- turn end : 120 ---
+
+--- evLoop : 120 ---
+[TURN:120]get msg from:pack0
+[TURN:120]get msg from:pack2
+[TURN:120]get msg from:pack1
+[TURN:120]get msg from:pack3
+--- calcPoint : 121 ---
++++ render +++
+--- turn end : 121 ---
+
+--- evLoop : 121 ---
+[TURN:121]get msg from:pack0
+[TURN:121]get msg from:pack1
+[TURN:121]get msg from:pack3
+[TURN:121]get msg from:pack2
+--- calcPoint : 122 ---
++++ render +++
+--- turn end : 122 ---
+
+--- evLoop : 122 ---
+[TURN:122]get msg from:pack0
+[TURN:122]get msg from:pack1
+[TURN:122]get msg from:pack2
+[TURN:122]get msg from:pack3
+--- calcPoint : 123 ---
++++ render +++
+--- turn end : 123 ---
+
+--- evLoop : 123 ---
+[TURN:123]get msg from:pack0
+[TURN:123]get msg from:pack1
+[TURN:123]get msg from:pack2
+[TURN:123]get msg from:pack3
+--- calcPoint : 124 ---
++++ render +++
+--- turn end : 124 ---
+
+--- evLoop : 124 ---
+[TURN:124]get msg from:pack0
+[TURN:124]get msg from:pack1
+[TURN:124]get msg from:pack2
+[TURN:124]get msg from:pack3
+--- calcPoint : 125 ---
++++ render +++
+--- turn end : 125 ---
+
+--- evLoop : 125 ---
+[TURN:125]get msg from:pack0
+[TURN:125]get msg from:pack1
+[TURN:125]get msg from:pack2
+[TURN:125]get msg from:pack3
+--- calcPoint : 126 ---
++++ render +++
+--- turn end : 126 ---
+
+--- evLoop : 126 ---
+[TURN:126]get msg from:pack0
+[TURN:126]get msg from:pack1
+[TURN:126]get msg from:pack2
+[TURN:126]get msg from:pack3
+--- calcPoint : 127 ---
+0 2 14
++++ render +++
+--- turn end : 127 ---
+
+--- evLoop : 127 ---
+[TURN:127]get msg from:pack0
+[TURN:127]get msg from:pack1
+[TURN:127]get msg from:pack2
+[TURN:127]get msg from:pack3
+--- calcPoint : 128 ---
+0 3 14
++++ render +++
+--- turn end : 128 ---
+
+--- evLoop : 128 ---
+[TURN:128]get msg from:pack0
+[TURN:128]get msg from:pack1
+[TURN:128]get msg from:pack3
+[TURN:128]get msg from:pack2
+--- calcPoint : 129 ---
+0 4 14
++++ render +++
+--- turn end : 129 ---
+
+--- evLoop : 129 ---
+[TURN:129]get msg from:pack0
+[TURN:129]get msg from:pack1
+[TURN:129]get msg from:pack2
+[TURN:129]get msg from:pack3
+--- calcPoint : 130 ---
++++ render +++
+--- turn end : 130 ---
+
+--- evLoop : 130 ---
+[TURN:130]get msg from:pack1
+[TURN:130]get msg from:pack2
+[TURN:130]get msg from:pack0
+[TURN:130]get msg from:pack3
+--- calcPoint : 131 ---
+0 5 13
++++ render +++
+--- turn end : 131 ---
+
+--- evLoop : 131 ---
+[TURN:131]get msg from:pack2
+[TURN:131]get msg from:pack1
+[TURN:131]get msg from:pack0
+[TURN:131]get msg from:pack3
+--- calcPoint : 132 ---
+0 5 12
++++ render +++
+--- turn end : 132 ---
+
+--- evLoop : 132 ---
+[TURN:132]get msg from:pack0
+[TURN:132]get msg from:pack1
+[TURN:132]get msg from:pack3
+[TURN:132]get msg from:pack2
+--- calcPoint : 133 ---
++++ render +++
+--- turn end : 133 ---
+
+--- evLoop : 133 ---
+[TURN:133]get msg from:pack0
+[TURN:133]get msg from:pack1
+[TURN:133]get msg from:pack3
+[TURN:133]get msg from:pack2
+--- calcPoint : 134 ---
++++ render +++
+--- turn end : 134 ---
+
+--- evLoop : 134 ---
+[TURN:134]get msg from:pack0
+[TURN:134]get msg from:pack1
+[TURN:134]get msg from:pack2
+[TURN:134]get msg from:pack3
+--- calcPoint : 135 ---
+0 5 11
++++ render +++
+--- turn end : 135 ---
+
+--- evLoop : 135 ---
+[TURN:135]get msg from:pack1
+[TURN:135]get msg from:pack0
+[TURN:135]get msg from:pack2
+[TURN:135]get msg from:pack3
+--- calcPoint : 136 ---
+0 5 10
++++ render +++
+--- turn end : 136 ---
+
+--- evLoop : 136 ---
+[TURN:136]get msg from:pack0
+[TURN:136]get msg from:pack1
+[TURN:136]get msg from:pack2
+[TURN:136]get msg from:pack3
+--- calcPoint : 137 ---
++++ render +++
+--- turn end : 137 ---
+
+--- evLoop : 137 ---
+[TURN:137]get msg from:pack0
+[TURN:137]get msg from:pack1
+[TURN:137]get msg from:pack2
+[TURN:137]get msg from:pack3
+--- calcPoint : 138 ---
++++ render +++
+--- turn end : 138 ---
+
+--- evLoop : 138 ---
+[TURN:138]get msg from:pack0
+[TURN:138]get msg from:pack1
+[TURN:138]get msg from:pack2
+[TURN:138]get msg from:pack3
+--- calcPoint : 139 ---
+0 5 9
++++ render +++
+--- turn end : 139 ---
+
+--- evLoop : 139 ---
+[TURN:139]get msg from:pack0
+[TURN:139]get msg from:pack1
+[TURN:139]get msg from:pack2
+[TURN:139]get msg from:pack3
+--- calcPoint : 140 ---
+0 5 8
++++ render +++
+--- turn end : 140 ---
+
+--- evLoop : 140 ---
+[TURN:140]get msg from:pack0
+[TURN:140]get msg from:pack2
+[TURN:140]get msg from:pack1
+[TURN:140]get msg from:pack3
+--- calcPoint : 141 ---
++++ render +++
+--- turn end : 141 ---
+
+--- evLoop : 141 ---
+[TURN:141]get msg from:pack0
+[TURN:141]get msg from:pack1
+[TURN:141]get msg from:pack2
+[TURN:141]get msg from:pack3
+--- calcPoint : 142 ---
++++ render +++
+--- turn end : 142 ---
+
+--- evLoop : 142 ---
+[TURN:142]get msg from:pack0
+[TURN:142]get msg from:pack1
+[TURN:142]get msg from:pack2
+[TURN:142]get msg from:pack3
+--- calcPoint : 143 ---
+0 5 7
++++ render +++
+--- turn end : 143 ---
+
+--- evLoop : 143 ---
+[TURN:143]get msg from:pack0
+[TURN:143]get msg from:pack1
+[TURN:143]get msg from:pack2
+[TURN:143]get msg from:pack3
+--- calcPoint : 144 ---
+0 5 6
++++ render +++
+--- turn end : 144 ---
+
+--- evLoop : 144 ---
+[TURN:144]get msg from:pack0
+[TURN:144]get msg from:pack2
+[TURN:144]get msg from:pack1
+[TURN:144]get msg from:pack3
+--- calcPoint : 145 ---
++++ render +++
+--- turn end : 145 ---
+
+--- evLoop : 145 ---
+[TURN:145]get msg from:pack0
+[TURN:145]get msg from:pack1
+[TURN:145]get msg from:pack2
+[TURN:145]get msg from:pack3
+--- calcPoint : 146 ---
+0 4 5
++++ render +++
+--- turn end : 146 ---
+
+--- evLoop : 146 ---
+[TURN:146]get msg from:pack0
+[TURN:146]get msg from:pack1
+[TURN:146]get msg from:pack2
+[TURN:146]get msg from:pack3
+--- calcPoint : 147 ---
+0 5 5
++++ render +++
+--- turn end : 147 ---
+
+--- evLoop : 147 ---
+[TURN:147]get msg from:pack0
+[TURN:147]get msg from:pack1
+[TURN:147]get msg from:pack3
+[TURN:147]get msg from:pack2
+--- calcPoint : 148 ---
+0 6 5
++++ render +++
+--- turn end : 148 ---
+
+--- evLoop : 148 ---
+[TURN:148]get msg from:pack0
+[TURN:148]get msg from:pack1
+[TURN:148]get msg from:pack2
+[TURN:148]get msg from:pack3
+--- calcPoint : 149 ---
+0 7 5
++++ render +++
+--- turn end : 149 ---
+
+--- evLoop : 149 ---
+[TURN:149]get msg from:pack1
+[TURN:149]get msg from:pack0
+[TURN:149]get msg from:pack3
+[TURN:149]get msg from:pack2
+--- calcPoint : 150 ---
+0 8 5
++++ render +++
+--- turn end : 150 ---
+
+--- evLoop : 150 ---
+[TURN:150]get msg from:pack0
+[TURN:150]get msg from:pack1
+[TURN:150]get msg from:pack2
+[TURN:150]get msg from:pack3
+--- calcPoint : 151 ---
+0 9 5
++++ render +++
+--- turn end : 151 ---
+
+--- evLoop : 151 ---
+[TURN:151]get msg from:pack0
+[TURN:151]get msg from:pack1
+[TURN:151]get msg from:pack2
+[TURN:151]get msg from:pack3
+--- calcPoint : 152 ---
+0 10 5
++++ render +++
+--- turn end : 152 ---
+
+--- evLoop : 152 ---
+[TURN:152]get msg from:pack0
+[TURN:152]get msg from:pack1
+[TURN:152]get msg from:pack2
+[TURN:152]get msg from:pack3
+--- calcPoint : 153 ---
+0 11 5
++++ render +++
+--- turn end : 153 ---
+
+--- evLoop : 153 ---
+[TURN:153]get msg from:pack0
+[TURN:153]get msg from:pack1
+[TURN:153]get msg from:pack2
+[TURN:153]get msg from:pack3
+--- calcPoint : 154 ---
+0 12 5
++++ render +++
+--- turn end : 154 ---
+
+--- evLoop : 154 ---
+[TURN:154]get msg from:pack0
+[TURN:154]get msg from:pack1
+[TURN:154]get msg from:pack2
+[TURN:154]get msg from:pack3
+--- calcPoint : 155 ---
+0 13 5
++++ render +++
+--- turn end : 155 ---
+
+--- evLoop : 155 ---
+[TURN:155]get msg from:pack0
+[TURN:155]get msg from:pack1
+[TURN:155]get msg from:pack2
+[TURN:155]get msg from:pack3
+--- calcPoint : 156 ---
+0 14 5
++++ render +++
+--- turn end : 156 ---
+
+--- evLoop : 156 ---
+[TURN:156]get msg from:pack0
+[TURN:156]get msg from:pack1
+[TURN:156]get msg from:pack2
+[TURN:156]get msg from:pack3
+--- calcPoint : 157 ---
+0 15 5
++++ render +++
+--- turn end : 157 ---
+
+--- evLoop : 157 ---
+[TURN:157]get msg from:pack0
+[TURN:157]get msg from:pack1
+[TURN:157]get msg from:pack3
+[TURN:157]get msg from:pack2
+--- calcPoint : 158 ---
+0 16 5
++++ render +++
+--- turn end : 158 ---
+
+--- evLoop : 158 ---
+[TURN:158]get msg from:pack0
+[TURN:158]get msg from:pack1
+[TURN:158]get msg from:pack2
+[TURN:158]get msg from:pack3
+--- calcPoint : 159 ---
+0 17 5
++++ render +++
+--- turn end : 159 ---
+
+--- evLoop : 159 ---
+[TURN:159]get msg from:pack0
+[TURN:159]get msg from:pack1
+[TURN:159]get msg from:pack2
+[TURN:159]get msg from:pack3
+--- calcPoint : 160 ---
++++ render +++
+--- turn end : 160 ---
+
+--- evLoop : 160 ---
+[TURN:160]get msg from:pack0
+[TURN:160]get msg from:pack1
+[TURN:160]get msg from:pack3
+[TURN:160]get msg from:pack2
+--- calcPoint : 161 ---
++++ render +++
+--- turn end : 161 ---
+
+--- evLoop : 161 ---
+[TURN:161]get msg from:pack0
+[TURN:161]get msg from:pack1
+[TURN:161]get msg from:pack3
+[TURN:161]get msg from:pack2
+--- calcPoint : 162 ---
++++ render +++
+--- turn end : 162 ---
+
+--- evLoop : 162 ---
+[TURN:162]get msg from:pack1
+[TURN:162]get msg from:pack0
+[TURN:162]get msg from:pack3
+[TURN:162]get msg from:pack2
+--- calcPoint : 163 ---
++++ render +++
+--- turn end : 163 ---
+
+--- evLoop : 163 ---
+[TURN:163]get msg from:pack1
+[TURN:163]get msg from:pack0
+[TURN:163]get msg from:pack2
+[TURN:163]get msg from:pack3
+--- calcPoint : 164 ---
++++ render +++
+--- turn end : 164 ---
+
+--- evLoop : 164 ---
+[TURN:164]get msg from:pack0
+[TURN:164]get msg from:pack1
+[TURN:164]get msg from:pack3
+[TURN:164]get msg from:pack2
+--- calcPoint : 165 ---
++++ render +++
+--- turn end : 165 ---
+
+--- evLoop : 165 ---
+[TURN:165]get msg from:pack1
+[TURN:165]get msg from:pack0
+[TURN:165]get msg from:pack3
+[TURN:165]get msg from:pack2
+--- calcPoint : 166 ---
++++ render +++
+--- turn end : 166 ---
+
+--- evLoop : 166 ---
+[TURN:166]get msg from:pack1
+[TURN:166]get msg from:pack0
+[TURN:166]get msg from:pack2
+[TURN:166]get msg from:pack3
+--- calcPoint : 167 ---
++++ render +++
+--- turn end : 167 ---
+
+--- evLoop : 167 ---
+[TURN:167]get msg from:pack0
+[TURN:167]get msg from:pack1
+[TURN:167]get msg from:pack2
+[TURN:167]get msg from:pack3
+--- calcPoint : 168 ---
++++ render +++
+--- turn end : 168 ---
+
+--- evLoop : 168 ---
+[TURN:168]get msg from:pack0
+[TURN:168]get msg from:pack1
+[TURN:168]get msg from:pack2
+[TURN:168]get msg from:pack3
+--- calcPoint : 169 ---
++++ render +++
+--- turn end : 169 ---
+
+--- evLoop : 169 ---
+[TURN:169]get msg from:pack0
+[TURN:169]get msg from:pack1
+[TURN:169]get msg from:pack2
+[TURN:169]get msg from:pack3
+--- calcPoint : 170 ---
+0 14 13
++++ render +++
+--- turn end : 170 ---
+
+--- evLoop : 170 ---
+[TURN:170]get msg from:pack0
+[TURN:170]get msg from:pack1
+[TURN:170]get msg from:pack2
+[TURN:170]get msg from:pack3
+--- calcPoint : 171 ---
+0 14 12
++++ render +++
+--- turn end : 171 ---
+
+--- evLoop : 171 ---
+[TURN:171]get msg from:pack0
+[TURN:171]get msg from:pack1
+[TURN:171]get msg from:pack2
+[TURN:171]get msg from:pack3
+--- calcPoint : 172 ---
++++ render +++
+--- turn end : 172 ---
+
+--- evLoop : 172 ---
+[TURN:172]get msg from:pack0
+[TURN:172]get msg from:pack1
+[TURN:172]get msg from:pack2
+[TURN:172]get msg from:pack3
+--- calcPoint : 173 ---
++++ render +++
+--- turn end : 173 ---
+
+--- evLoop : 173 ---
+[TURN:173]get msg from:pack0
+[TURN:173]get msg from:pack1
+[TURN:173]get msg from:pack2
+[TURN:173]get msg from:pack3
+--- calcPoint : 174 ---
+0 14 11
++++ render +++
+--- turn end : 174 ---
+
+--- evLoop : 174 ---
+[TURN:174]get msg from:pack0
+[TURN:174]get msg from:pack1
+[TURN:174]get msg from:pack2
+[TURN:174]get msg from:pack3
+--- calcPoint : 175 ---
+0 14 10
++++ render +++
+--- turn end : 175 ---
+
+--- evLoop : 175 ---
+[TURN:175]get msg from:pack1
+[TURN:175]get msg from:pack0
+[TURN:175]get msg from:pack2
+[TURN:175]get msg from:pack3
+--- calcPoint : 176 ---
++++ render +++
+--- turn end : 176 ---
+
+--- evLoop : 176 ---
+[TURN:176]get msg from:pack0
+[TURN:176]get msg from:pack1
+[TURN:176]get msg from:pack2
+[TURN:176]get msg from:pack3
+--- calcPoint : 177 ---
++++ render +++
+--- turn end : 177 ---
+
+--- evLoop : 177 ---
+[TURN:177]get msg from:pack1
+[TURN:177]get msg from:pack0
+[TURN:177]get msg from:pack2
+[TURN:177]get msg from:pack3
+--- calcPoint : 178 ---
+0 14 9
++++ render +++
+--- turn end : 178 ---
+
+--- evLoop : 178 ---
+[TURN:178]get msg from:pack0
+[TURN:178]get msg from:pack1
+[TURN:178]get msg from:pack2
+[TURN:178]get msg from:pack3
+--- calcPoint : 179 ---
+0 14 8
++++ render +++
+--- turn end : 179 ---
+
+--- evLoop : 179 ---
+[TURN:179]get msg from:pack0
+[TURN:179]get msg from:pack1
+[TURN:179]get msg from:pack3
+[TURN:179]get msg from:pack2
+--- calcPoint : 180 ---
++++ render +++
+--- turn end : 180 ---
+
+--- evLoop : 180 ---
+[TURN:180]get msg from:pack0
+[TURN:180]get msg from:pack1
+[TURN:180]get msg from:pack3
+[TURN:180]get msg from:pack2
+--- calcPoint : 181 ---
++++ render +++
+--- turn end : 181 ---
+
+--- evLoop : 181 ---
+[TURN:181]get msg from:pack0
+[TURN:181]get msg from:pack1
+[TURN:181]get msg from:pack2
+[TURN:181]get msg from:pack3
+--- calcPoint : 182 ---
+0 14 7
++++ render +++
+--- turn end : 182 ---
+
+--- evLoop : 182 ---
+[TURN:182]get msg from:pack0
+[TURN:182]get msg from:pack1
+[TURN:182]get msg from:pack2
+[TURN:182]get msg from:pack3
+--- calcPoint : 183 ---
+0 14 6
++++ render +++
+--- turn end : 183 ---
+
+--- evLoop : 183 ---
+[TURN:183]get msg from:pack0
+[TURN:183]get msg from:pack1
+[TURN:183]get msg from:pack2
+[TURN:183]get msg from:pack3
+--- calcPoint : 184 ---
++++ render +++
+--- turn end : 184 ---
+
+--- evLoop : 184 ---
+[TURN:184]get msg from:pack0
+[TURN:184]get msg from:pack1
+[TURN:184]get msg from:pack2
+[TURN:184]get msg from:pack3
+--- calcPoint : 185 ---
++++ render +++
+--- turn end : 185 ---
+
+--- evLoop : 185 ---
+[TURN:185]get msg from:pack0
+[TURN:185]get msg from:pack1
+[TURN:185]get msg from:pack2
+[TURN:185]get msg from:pack3
+--- calcPoint : 186 ---
++++ render +++
+--- turn end : 186 ---
+
+--- evLoop : 186 ---
+[TURN:186]get msg from:pack0
+[TURN:186]get msg from:pack1
+[TURN:186]get msg from:pack2
+[TURN:186]get msg from:pack3
+--- calcPoint : 187 ---
++++ render +++
+--- turn end : 187 ---
+
+--- evLoop : 187 ---
+[TURN:187]get msg from:pack0
+[TURN:187]get msg from:pack1
+[TURN:187]get msg from:pack2
+[TURN:187]get msg from:pack3
+--- calcPoint : 188 ---
++++ render +++
+--- turn end : 188 ---
+
+--- evLoop : 188 ---
+[TURN:188]get msg from:pack0
+[TURN:188]get msg from:pack1
+[TURN:188]get msg from:pack2
+[TURN:188]get msg from:pack3
+--- calcPoint : 189 ---
++++ render +++
+--- turn end : 189 ---
+
+--- evLoop : 189 ---
+[TURN:189]get msg from:pack0
+[TURN:189]get msg from:pack1
+[TURN:189]get msg from:pack2
+[TURN:189]get msg from:pack3
+--- calcPoint : 190 ---
++++ render +++
+--- turn end : 190 ---
+
+--- evLoop : 190 ---
+[TURN:190]get msg from:pack0
+[TURN:190]get msg from:pack1
+[TURN:190]get msg from:pack2
+[TURN:190]get msg from:pack3
+--- calcPoint : 191 ---
++++ render +++
+--- turn end : 191 ---
+
+--- evLoop : 191 ---
+[TURN:191]get msg from:pack0
+[TURN:191]get msg from:pack1
+[TURN:191]get msg from:pack2
+[TURN:191]get msg from:pack3
+--- calcPoint : 192 ---
++++ render +++
+--- turn end : 192 ---
+
+--- evLoop : 192 ---
+[TURN:192]get msg from:pack0
+[TURN:192]get msg from:pack1
+[TURN:192]get msg from:pack2
+[TURN:192]get msg from:pack3
+--- calcPoint : 193 ---
++++ render +++
+--- turn end : 193 ---
+
+--- evLoop : 193 ---
+[TURN:193]get msg from:pack0
+[TURN:193]get msg from:pack1
+[TURN:193]get msg from:pack2
+[TURN:193]get msg from:pack3
+--- calcPoint : 194 ---
++++ render +++
+--- turn end : 194 ---
+
+--- evLoop : 194 ---
+[TURN:194]get msg from:pack1
+[TURN:194]get msg from:pack2
+[TURN:194]get msg from:pack0
+[TURN:194]get msg from:pack3
+--- calcPoint : 195 ---
++++ render +++
+--- turn end : 195 ---
+
+--- evLoop : 195 ---
+[TURN:195]get msg from:pack1
+[TURN:195]get msg from:pack0
+[TURN:195]get msg from:pack2
+[TURN:195]get msg from:pack3
+--- calcPoint : 196 ---
++++ render +++
+--- turn end : 196 ---
+
+--- evLoop : 196 ---
+[TURN:196]get msg from:pack0
+[TURN:196]get msg from:pack1
+[TURN:196]get msg from:pack3
+[TURN:196]get msg from:pack2
+--- calcPoint : 197 ---
++++ render +++
+--- turn end : 197 ---
+
+--- evLoop : 197 ---
+[TURN:197]get msg from:pack1
+[TURN:197]get msg from:pack0
+[TURN:197]get msg from:pack2
+[TURN:197]get msg from:pack3
+--- calcPoint : 198 ---
++++ render +++
+--- turn end : 198 ---
+
+--- evLoop : 198 ---
+[TURN:198]get msg from:pack0
+[TURN:198]get msg from:pack2
+[TURN:198]get msg from:pack3
+[TURN:198]get msg from:pack1
+--- calcPoint : 199 ---
++++ render +++
+--- turn end : 199 ---
+
+--- evLoop : 199 ---
+[TURN:199]get msg from:pack0
+[TURN:199]get msg from:pack1
+[TURN:199]get msg from:pack2
+[TURN:199]get msg from:pack3
+--- calcPoint : 200 ---
++++ render +++
+--- turn end : 200 ---
+
+--- evLoop : 200 ---
+[TURN:200]get msg from:pack0
+[TURN:200]get msg from:pack1
+[TURN:200]get msg from:pack2
+[TURN:200]get msg from:pack3
+--- calcPoint : 201 ---
++++ render +++
+--- turn end : 201 ---
+
+--- evLoop : 201 ---
+[TURN:201]get msg from:pack0
+[TURN:201]get msg from:pack1
+[TURN:201]get msg from:pack2
+[TURN:201]get msg from:pack3
+--- calcPoint : 202 ---
++++ render +++
+--- turn end : 202 ---
+
+--- evLoop : 202 ---
+[TURN:202]get msg from:pack0
+[TURN:202]get msg from:pack1
+[TURN:202]get msg from:pack2
+[TURN:202]get msg from:pack3
+--- calcPoint : 203 ---
++++ render +++
+--- turn end : 203 ---
+
+--- evLoop : 203 ---
+[TURN:203]get msg from:pack0
+[TURN:203]get msg from:pack1
+[TURN:203]get msg from:pack2
+[TURN:203]get msg from:pack3
+--- calcPoint : 204 ---
++++ render +++
+--- turn end : 204 ---
+
+--- evLoop : 204 ---
+[TURN:204]get msg from:pack0
+[TURN:204]get msg from:pack1
+[TURN:204]get msg from:pack2
+[TURN:204]get msg from:pack3
+--- calcPoint : 205 ---
++++ render +++
+--- turn end : 205 ---
+
+--- evLoop : 205 ---
+[TURN:205]get msg from:pack0
+[TURN:205]get msg from:pack1
+[TURN:205]get msg from:pack2
+[TURN:205]get msg from:pack3
+--- calcPoint : 206 ---
++++ render +++
+--- turn end : 206 ---
+
+--- evLoop : 206 ---
+[TURN:206]get msg from:pack0
+[TURN:206]get msg from:pack1
+[TURN:206]get msg from:pack3
+[TURN:206]get msg from:pack2
+--- calcPoint : 207 ---
++++ render +++
+--- turn end : 207 ---
+
+--- evLoop : 207 ---
+[TURN:207]get msg from:pack0
+[TURN:207]get msg from:pack2
+[TURN:207]get msg from:pack1
+[TURN:207]get msg from:pack3
+--- calcPoint : 208 ---
++++ render +++
+--- turn end : 208 ---
+
+--- evLoop : 208 ---
+[TURN:208]get msg from:pack0
+[TURN:208]get msg from:pack1
+[TURN:208]get msg from:pack3
+[TURN:208]get msg from:pack2
+--- calcPoint : 209 ---
++++ render +++
+--- turn end : 209 ---
+
+--- evLoop : 209 ---
+[TURN:209]get msg from:pack0
+[TURN:209]get msg from:pack1
+[TURN:209]get msg from:pack2
+[TURN:209]get msg from:pack3
+--- calcPoint : 210 ---
++++ render +++
+--- turn end : 210 ---
+
+--- evLoop : 210 ---
+[TURN:210]get msg from:pack0
+[TURN:210]get msg from:pack1
+[TURN:210]get msg from:pack3
+[TURN:210]get msg from:pack2
+--- calcPoint : 211 ---
++++ render +++
+--- turn end : 211 ---
+
+--- evLoop : 211 ---
+[TURN:211]get msg from:pack0
+[TURN:211]get msg from:pack2
+[TURN:211]get msg from:pack1
+[TURN:211]get msg from:pack3
+--- calcPoint : 212 ---
++++ render +++
+--- turn end : 212 ---
+
+--- evLoop : 212 ---
+[TURN:212]get msg from:pack1
+[TURN:212]get msg from:pack0
+[TURN:212]get msg from:pack2
+[TURN:212]get msg from:pack3
+--- calcPoint : 213 ---
++++ render +++
+--- turn end : 213 ---
+
+--- evLoop : 213 ---
+[TURN:213]get msg from:pack1
+[TURN:213]get msg from:pack0
+[TURN:213]get msg from:pack2
+[TURN:213]get msg from:pack3
+--- calcPoint : 214 ---
++++ render +++
+--- turn end : 214 ---
+
+--- evLoop : 214 ---
+[TURN:214]get msg from:pack0
+[TURN:214]get msg from:pack1
+[TURN:214]get msg from:pack3
+[TURN:214]get msg from:pack2
+--- calcPoint : 215 ---
++++ render +++
+--- turn end : 215 ---
+
+--- evLoop : 215 ---
+[TURN:215]get msg from:pack0
+[TURN:215]get msg from:pack1
+[TURN:215]get msg from:pack2
+[TURN:215]get msg from:pack3
+--- calcPoint : 216 ---
++++ render +++
+--- turn end : 216 ---
+
+--- evLoop : 216 ---
+[TURN:216]get msg from:pack1
+[TURN:216]get msg from:pack0
+[TURN:216]get msg from:pack3
+[TURN:216]get msg from:pack2
+--- calcPoint : 217 ---
++++ render +++
+--- turn end : 217 ---
+
+--- evLoop : 217 ---
+[TURN:217]get msg from:pack0
+[TURN:217]get msg from:pack1
+[TURN:217]get msg from:pack2
+[TURN:217]get msg from:pack3
+--- calcPoint : 218 ---
++++ render +++
+--- turn end : 218 ---
+
+--- evLoop : 218 ---
+[TURN:218]get msg from:pack0
+[TURN:218]get msg from:pack1
+[TURN:218]get msg from:pack2
+[TURN:218]get msg from:pack3
+--- calcPoint : 219 ---
++++ render +++
+--- turn end : 219 ---
+
+--- evLoop : 219 ---
+[TURN:219]get msg from:pack0
+[TURN:219]get msg from:pack1
+[TURN:219]get msg from:pack3
+[TURN:219]get msg from:pack2
+--- calcPoint : 220 ---
++++ render +++
+--- turn end : 220 ---
+
+--- evLoop : 220 ---
+[TURN:220]get msg from:pack1
+[TURN:220]get msg from:pack2
+[TURN:220]get msg from:pack0
+[TURN:220]get msg from:pack3
+--- calcPoint : 221 ---
++++ render +++
+--- turn end : 221 ---
+
+--- evLoop : 221 ---
+[TURN:221]get msg from:pack0
+[TURN:221]get msg from:pack1
+[TURN:221]get msg from:pack2
+[TURN:221]get msg from:pack3
+--- calcPoint : 222 ---
++++ render +++
+--- turn end : 222 ---
+
+--- evLoop : 222 ---
+[TURN:222]get msg from:pack0
+[TURN:222]get msg from:pack1
+[TURN:222]get msg from:pack2
+[TURN:222]get msg from:pack3
+--- calcPoint : 223 ---
++++ render +++
+--- turn end : 223 ---
+
+--- evLoop : 223 ---
+[TURN:223]get msg from:pack0
+[TURN:223]get msg from:pack2
+[TURN:223]get msg from:pack1
+[TURN:223]get msg from:pack3
+--- calcPoint : 224 ---
++++ render +++
+--- turn end : 224 ---
+
+--- evLoop : 224 ---
+[TURN:224]get msg from:pack0
+[TURN:224]get msg from:pack1
+[TURN:224]get msg from:pack2
+[TURN:224]get msg from:pack3
+--- calcPoint : 225 ---
++++ render +++
+--- turn end : 225 ---
+
+--- evLoop : 225 ---
+[TURN:225]get msg from:pack0
+[TURN:225]get msg from:pack1
+[TURN:225]get msg from:pack2
+[TURN:225]get msg from:pack3
+--- calcPoint : 226 ---
++++ render +++
+--- turn end : 226 ---
+
+--- evLoop : 226 ---
+[TURN:226]get msg from:pack0
+[TURN:226]get msg from:pack1
+[TURN:226]get msg from:pack2
+[TURN:226]get msg from:pack3
+--- calcPoint : 227 ---
++++ render +++
+--- turn end : 227 ---
+
+--- evLoop : 227 ---
+[TURN:227]get msg from:pack0
+[TURN:227]get msg from:pack1
+[TURN:227]get msg from:pack2
+[TURN:227]get msg from:pack3
+--- calcPoint : 228 ---
++++ render +++
+--- turn end : 228 ---
+
+--- evLoop : 228 ---
+[TURN:228]get msg from:pack0
+[TURN:228]get msg from:pack1
+[TURN:228]get msg from:pack3
+[TURN:228]get msg from:pack2
+--- calcPoint : 229 ---
++++ render +++
+--- turn end : 229 ---
+
+--- evLoop : 229 ---
+[TURN:229]get msg from:pack0
+[TURN:229]get msg from:pack1
+[TURN:229]get msg from:pack2
+[TURN:229]get msg from:pack3
+--- calcPoint : 230 ---
++++ render +++
+--- turn end : 230 ---
+
+--- evLoop : 230 ---
+[TURN:230]get msg from:pack1
+[TURN:230]get msg from:pack0
+[TURN:230]get msg from:pack2
+[TURN:230]get msg from:pack3
+--- calcPoint : 231 ---
++++ render +++
+--- turn end : 231 ---
+
+--- evLoop : 231 ---
+[TURN:231]get msg from:pack0
+[TURN:231]get msg from:pack1
+[TURN:231]get msg from:pack2
+[TURN:231]get msg from:pack3
+--- calcPoint : 232 ---
++++ render +++
+--- turn end : 232 ---
+
+--- evLoop : 232 ---
+[TURN:232]get msg from:pack0
+[TURN:232]get msg from:pack1
+[TURN:232]get msg from:pack2
+[TURN:232]get msg from:pack3
+--- calcPoint : 233 ---
++++ render +++
+--- turn end : 233 ---
+
+--- evLoop : 233 ---
+[TURN:233]get msg from:pack0
+[TURN:233]get msg from:pack1
+[TURN:233]get msg from:pack2
+[TURN:233]get msg from:pack3
+--- calcPoint : 234 ---
++++ render +++
+--- turn end : 234 ---
+
+--- evLoop : 234 ---
+[TURN:234]get msg from:pack0
+[TURN:234]get msg from:pack1
+[TURN:234]get msg from:pack2
+[TURN:234]get msg from:pack3
+--- calcPoint : 235 ---
++++ render +++
+--- turn end : 235 ---
+
+--- evLoop : 235 ---
+[TURN:235]get msg from:pack0
+[TURN:235]get msg from:pack2
+[TURN:235]get msg from:pack1
+[TURN:235]get msg from:pack3
+--- calcPoint : 236 ---
++++ render +++
+--- turn end : 236 ---
+
+--- evLoop : 236 ---
+[TURN:236]get msg from:pack0
+[TURN:236]get msg from:pack3
+[TURN:236]get msg from:pack1
+[TURN:236]get msg from:pack2
+--- calcPoint : 237 ---
++++ render +++
+--- turn end : 237 ---
+
+--- evLoop : 237 ---
+[TURN:237]get msg from:pack0
+[TURN:237]get msg from:pack1
+[TURN:237]get msg from:pack2
+[TURN:237]get msg from:pack3
+--- calcPoint : 238 ---
++++ render +++
+--- turn end : 238 ---
+
+--- evLoop : 238 ---
+[TURN:238]get msg from:pack0
+[TURN:238]get msg from:pack1
+[TURN:238]get msg from:pack2
+[TURN:238]get msg from:pack3
+--- calcPoint : 239 ---
++++ render +++
+--- turn end : 239 ---
+
+--- evLoop : 239 ---
+[TURN:239]get msg from:pack0
+[TURN:239]get msg from:pack1
+[TURN:239]get msg from:pack2
+[TURN:239]get msg from:pack3
+--- calcPoint : 240 ---
++++ render +++
+--- turn end : 240 ---
+
+--- evLoop : 240 ---
+[TURN:240]get msg from:pack0
+[TURN:240]get msg from:pack1
+[TURN:240]get msg from:pack2
+[TURN:240]get msg from:pack3
+--- calcPoint : 241 ---
++++ render +++
+--- turn end : 241 ---
+
+--- evLoop : 241 ---
+[TURN:241]get msg from:pack0
+[TURN:241]get msg from:pack1
+[TURN:241]get msg from:pack2
+[TURN:241]get msg from:pack3
+--- calcPoint : 242 ---
++++ render +++
+--- turn end : 242 ---
+
+--- evLoop : 242 ---
+[TURN:242]get msg from:pack0
+[TURN:242]get msg from:pack1
+[TURN:242]get msg from:pack2
+[TURN:242]get msg from:pack3
+--- calcPoint : 243 ---
++++ render +++
+--- turn end : 243 ---
+
+--- evLoop : 243 ---
+[TURN:243]get msg from:pack0
+[TURN:243]get msg from:pack1
+[TURN:243]get msg from:pack2
+[TURN:243]get msg from:pack3
+--- calcPoint : 244 ---
++++ render +++
+--- turn end : 244 ---
+
+--- evLoop : 244 ---
+[TURN:244]get msg from:pack0
+[TURN:244]get msg from:pack1
+[TURN:244]get msg from:pack3
+[TURN:244]get msg from:pack2
+--- calcPoint : 245 ---
++++ render +++
+--- turn end : 245 ---
+
+--- evLoop : 245 ---
+[TURN:245]get msg from:pack0
+[TURN:245]get msg from:pack1
+[TURN:245]get msg from:pack2
+[TURN:245]get msg from:pack3
+--- calcPoint : 246 ---
++++ render +++
+--- turn end : 246 ---
+
+--- evLoop : 246 ---
+[TURN:246]get msg from:pack0
+[TURN:246]get msg from:pack1
+[TURN:246]get msg from:pack2
+[TURN:246]get msg from:pack3
+--- calcPoint : 247 ---
++++ render +++
+--- turn end : 247 ---
+
+--- evLoop : 247 ---
+[TURN:247]get msg from:pack0
+[TURN:247]get msg from:pack1
+[TURN:247]get msg from:pack2
+[TURN:247]get msg from:pack3
+--- calcPoint : 248 ---
++++ render +++
+--- turn end : 248 ---
+
+--- evLoop : 248 ---
+[TURN:248]get msg from:pack0
+[TURN:248]get msg from:pack2
+[TURN:248]get msg from:pack1
+[TURN:248]get msg from:pack3
+--- calcPoint : 249 ---
++++ render +++
+--- turn end : 249 ---
+
+--- evLoop : 249 ---
+[TURN:249]get msg from:pack0
+[TURN:249]get msg from:pack1
+[TURN:249]get msg from:pack3
+[TURN:249]get msg from:pack2
+--- calcPoint : 250 ---
++++ render +++
+--- turn end : 250 ---
+
+--- evLoop : 250 ---
+[TURN:250]get msg from:pack0
+[TURN:250]get msg from:pack1
+[TURN:250]get msg from:pack2
+[TURN:250]get msg from:pack3
+--- calcPoint : 251 ---
++++ render +++
+--- turn end : 251 ---
+
+--- evLoop : 251 ---
+[TURN:251]get msg from:pack0
+[TURN:251]get msg from:pack1
+[TURN:251]get msg from:pack2
+[TURN:251]get msg from:pack3
+--- calcPoint : 252 ---
++++ render +++
+--- turn end : 252 ---
+
+--- evLoop : 252 ---
+[TURN:252]get msg from:pack0
+[TURN:252]get msg from:pack2
+[TURN:252]get msg from:pack1
+[TURN:252]get msg from:pack3
+--- calcPoint : 253 ---
++++ render +++
+--- turn end : 253 ---
+
+--- evLoop : 253 ---
+[TURN:253]get msg from:pack0
+[TURN:253]get msg from:pack1
+[TURN:253]get msg from:pack2
+[TURN:253]get msg from:pack3
+--- calcPoint : 254 ---
++++ render +++
+--- turn end : 254 ---
+
+--- evLoop : 254 ---
+[TURN:254]get msg from:pack0
+[TURN:254]get msg from:pack1
+[TURN:254]get msg from:pack2
+[TURN:254]get msg from:pack3
+--- calcPoint : 255 ---
++++ render +++
+--- turn end : 255 ---
+
+--- evLoop : 255 ---
+[TURN:255]get msg from:pack0
+[TURN:255]get msg from:pack2
+[TURN:255]get msg from:pack1
+[TURN:255]get msg from:pack3
+--- calcPoint : 256 ---
++++ render +++
+--- turn end : 256 ---
+
+--- evLoop : 256 ---
+[TURN:256]get msg from:pack0
+[TURN:256]get msg from:pack1
+[TURN:256]get msg from:pack2
+[TURN:256]get msg from:pack3
+--- calcPoint : 257 ---
++++ render +++
+--- turn end : 257 ---
+
+--- evLoop : 257 ---
+[TURN:257]get msg from:pack0
+[TURN:257]get msg from:pack1
+[TURN:257]get msg from:pack2
+[TURN:257]get msg from:pack3
+--- calcPoint : 258 ---
++++ render +++
+--- turn end : 258 ---
+
+--- evLoop : 258 ---
+[TURN:258]get msg from:pack0
+[TURN:258]get msg from:pack2
+[TURN:258]get msg from:pack1
+[TURN:258]get msg from:pack3
+--- calcPoint : 259 ---
++++ render +++
+--- turn end : 259 ---
+
+--- evLoop : 259 ---
+[TURN:259]get msg from:pack0
+[TURN:259]get msg from:pack1
+[TURN:259]get msg from:pack2
+[TURN:259]get msg from:pack3
+--- calcPoint : 260 ---
++++ render +++
+--- turn end : 260 ---
+
+--- evLoop : 260 ---
+[TURN:260]get msg from:pack0
+[TURN:260]get msg from:pack1
+[TURN:260]get msg from:pack2
+[TURN:260]get msg from:pack3
+--- calcPoint : 261 ---
++++ render +++
+--- turn end : 261 ---
+
+--- evLoop : 261 ---
+[TURN:261]get msg from:pack0
+[TURN:261]get msg from:pack1
+[TURN:261]get msg from:pack3
+[TURN:261]get msg from:pack2
+--- calcPoint : 262 ---
++++ render +++
+--- turn end : 262 ---
+
+--- evLoop : 262 ---
+[TURN:262]get msg from:pack0
+[TURN:262]get msg from:pack1
+[TURN:262]get msg from:pack2
+[TURN:262]get msg from:pack3
+--- calcPoint : 263 ---
++++ render +++
+--- turn end : 263 ---
+
+--- evLoop : 263 ---
+[TURN:263]get msg from:pack0
+[TURN:263]get msg from:pack1
+[TURN:263]get msg from:pack3
+[TURN:263]get msg from:pack2
+--- calcPoint : 264 ---
++++ render +++
+--- turn end : 264 ---
+
+--- evLoop : 264 ---
+[TURN:264]get msg from:pack0
+[TURN:264]get msg from:pack1
+[TURN:264]get msg from:pack3
+[TURN:264]get msg from:pack2
+--- calcPoint : 265 ---
++++ render +++
+--- turn end : 265 ---
+
+--- evLoop : 265 ---
+[TURN:265]get msg from:pack1
+[TURN:265]get msg from:pack0
+[TURN:265]get msg from:pack2
+[TURN:265]get msg from:pack3
+--- calcPoint : 266 ---
++++ render +++
+--- turn end : 266 ---
+
+--- evLoop : 266 ---
+[TURN:266]get msg from:pack0
+[TURN:266]get msg from:pack1
+[TURN:266]get msg from:pack2
+[TURN:266]get msg from:pack3
+--- calcPoint : 267 ---
++++ render +++
+--- turn end : 267 ---
+
+--- evLoop : 267 ---
+[TURN:267]get msg from:pack0
+[TURN:267]get msg from:pack1
+[TURN:267]get msg from:pack2
+[TURN:267]get msg from:pack3
+--- calcPoint : 268 ---
++++ render +++
+--- turn end : 268 ---
+
+--- evLoop : 268 ---
+[TURN:268]get msg from:pack0
+[TURN:268]get msg from:pack1
+[TURN:268]get msg from:pack2
+[TURN:268]get msg from:pack3
+--- calcPoint : 269 ---
++++ render +++
+--- turn end : 269 ---
+
+--- evLoop : 269 ---
+[TURN:269]get msg from:pack0
+[TURN:269]get msg from:pack1
+[TURN:269]get msg from:pack2
+[TURN:269]get msg from:pack3
+--- calcPoint : 270 ---
++++ render +++
+--- turn end : 270 ---
+
+--- evLoop : 270 ---
+[TURN:270]get msg from:pack0
+[TURN:270]get msg from:pack1
+[TURN:270]get msg from:pack2
+[TURN:270]get msg from:pack3
+--- calcPoint : 271 ---
++++ render +++
+--- turn end : 271 ---
+
+--- evLoop : 271 ---
+[TURN:271]get msg from:pack0
+[TURN:271]get msg from:pack2
+[TURN:271]get msg from:pack1
+[TURN:271]get msg from:pack3
+--- calcPoint : 272 ---
++++ render +++
+--- turn end : 272 ---
+
+--- evLoop : 272 ---
+[TURN:272]get msg from:pack0
+[TURN:272]get msg from:pack1
+[TURN:272]get msg from:pack2
+[TURN:272]get msg from:pack3
+--- calcPoint : 273 ---
++++ render +++
+--- turn end : 273 ---
+
+--- evLoop : 273 ---
+[TURN:273]get msg from:pack0
+[TURN:273]get msg from:pack1
+[TURN:273]get msg from:pack2
+[TURN:273]get msg from:pack3
+--- calcPoint : 274 ---
++++ render +++
+--- turn end : 274 ---
+
+--- evLoop : 274 ---
+[TURN:274]get msg from:pack0
+[TURN:274]get msg from:pack1
+[TURN:274]get msg from:pack2
+[TURN:274]get msg from:pack3
+--- calcPoint : 275 ---
++++ render +++
+--- turn end : 275 ---
+
+--- evLoop : 275 ---
+[TURN:275]get msg from:pack0
+[TURN:275]get msg from:pack1
+[TURN:275]get msg from:pack2
+[TURN:275]get msg from:pack3
+--- calcPoint : 276 ---
++++ render +++
+--- turn end : 276 ---
+
+--- evLoop : 276 ---
+[TURN:276]get msg from:pack0
+[TURN:276]get msg from:pack1
+[TURN:276]get msg from:pack2
+[TURN:276]get msg from:pack3
+--- calcPoint : 277 ---
++++ render +++
+--- turn end : 277 ---
+
+--- evLoop : 277 ---
+[TURN:277]get msg from:pack0
+[TURN:277]get msg from:pack1
+[TURN:277]get msg from:pack2
+[TURN:277]get msg from:pack3
+--- calcPoint : 278 ---
++++ render +++
+--- turn end : 278 ---
+
+--- evLoop : 278 ---
+[TURN:278]get msg from:pack0
+[TURN:278]get msg from:pack2
+[TURN:278]get msg from:pack1
+[TURN:278]get msg from:pack3
+--- calcPoint : 279 ---
++++ render +++
+--- turn end : 279 ---
+
+--- evLoop : 279 ---
+[TURN:279]get msg from:pack0
+[TURN:279]get msg from:pack1
+[TURN:279]get msg from:pack2
+[TURN:279]get msg from:pack3
+--- calcPoint : 280 ---
++++ render +++
+--- turn end : 280 ---
+
+--- evLoop : 280 ---
+[TURN:280]get msg from:pack0
+[TURN:280]get msg from:pack1
+[TURN:280]get msg from:pack2
+[TURN:280]get msg from:pack3
+--- calcPoint : 281 ---
++++ render +++
+--- turn end : 281 ---
+
+--- evLoop : 281 ---
+[TURN:281]get msg from:pack0
+[TURN:281]get msg from:pack1
+[TURN:281]get msg from:pack2
+[TURN:281]get msg from:pack3
+--- calcPoint : 282 ---
++++ render +++
+--- turn end : 282 ---
+
+--- evLoop : 282 ---
+[TURN:282]get msg from:pack0
+[TURN:282]get msg from:pack1
+[TURN:282]get msg from:pack2
+[TURN:282]get msg from:pack3
+--- calcPoint : 283 ---
++++ render +++
+--- turn end : 283 ---
+
+--- evLoop : 283 ---
+[TURN:283]get msg from:pack0
+[TURN:283]get msg from:pack1
+[TURN:283]get msg from:pack3
+[TURN:283]get msg from:pack2
+--- calcPoint : 284 ---
++++ render +++
+--- turn end : 284 ---
+
+--- evLoop : 284 ---
+[TURN:284]get msg from:pack0
+[TURN:284]get msg from:pack1
+[TURN:284]get msg from:pack3
+[TURN:284]get msg from:pack2
+--- calcPoint : 285 ---
++++ render +++
+--- turn end : 285 ---
+
+--- evLoop : 285 ---
+[TURN:285]get msg from:pack0
+[TURN:285]get msg from:pack1
+[TURN:285]get msg from:pack2
+[TURN:285]get msg from:pack3
+--- calcPoint : 286 ---
++++ render +++
+--- turn end : 286 ---
+
+--- evLoop : 286 ---
+[TURN:286]get msg from:pack0
+[TURN:286]get msg from:pack1
+[TURN:286]get msg from:pack2
+[TURN:286]get msg from:pack3
+--- calcPoint : 287 ---
++++ render +++
+--- turn end : 287 ---
+
+--- evLoop : 287 ---
+[TURN:287]get msg from:pack0
+[TURN:287]get msg from:pack1
+[TURN:287]get msg from:pack2
+[TURN:287]get msg from:pack3
+--- calcPoint : 288 ---
++++ render +++
+--- turn end : 288 ---
+
+--- evLoop : 288 ---
+[TURN:288]get msg from:pack0
+[TURN:288]get msg from:pack1
+[TURN:288]get msg from:pack2
+[TURN:288]get msg from:pack3
+--- calcPoint : 289 ---
++++ render +++
+--- turn end : 289 ---
+
+--- evLoop : 289 ---
+[TURN:289]get msg from:pack0
+[TURN:289]get msg from:pack1
+[TURN:289]get msg from:pack2
+[TURN:289]get msg from:pack3
+--- calcPoint : 290 ---
++++ render +++
+--- turn end : 290 ---
+
+--- evLoop : 290 ---
+[TURN:290]get msg from:pack1
+[TURN:290]get msg from:pack0
+[TURN:290]get msg from:pack2
+[TURN:290]get msg from:pack3
+--- calcPoint : 291 ---
++++ render +++
+--- turn end : 291 ---
+
+--- evLoop : 291 ---
+[TURN:291]get msg from:pack0
+[TURN:291]get msg from:pack2
+[TURN:291]get msg from:pack1
+[TURN:291]get msg from:pack3
+--- calcPoint : 292 ---
++++ render +++
+--- turn end : 292 ---
+
+--- evLoop : 292 ---
+[TURN:292]get msg from:pack0
+[TURN:292]get msg from:pack1
+[TURN:292]get msg from:pack2
+[TURN:292]get msg from:pack3
+--- calcPoint : 293 ---
++++ render +++
+--- turn end : 293 ---
+
+--- evLoop : 293 ---
+[TURN:293]get msg from:pack0
+[TURN:293]get msg from:pack1
+[TURN:293]get msg from:pack3
+[TURN:293]get msg from:pack2
+--- calcPoint : 294 ---
++++ render +++
+--- turn end : 294 ---
+
+--- evLoop : 294 ---
+[TURN:294]get msg from:pack0
+[TURN:294]get msg from:pack1
+[TURN:294]get msg from:pack2
+[TURN:294]get msg from:pack3
+--- calcPoint : 295 ---
++++ render +++
+--- turn end : 295 ---
+
+--- evLoop : 295 ---
+[TURN:295]get msg from:pack0
+[TURN:295]get msg from:pack1
+[TURN:295]get msg from:pack2
+[TURN:295]get msg from:pack3
+--- calcPoint : 296 ---
++++ render +++
+--- turn end : 296 ---
+
+--- evLoop : 296 ---
+[TURN:296]get msg from:pack1
+[TURN:296]get msg from:pack0
+[TURN:296]get msg from:pack3
+[TURN:296]get msg from:pack2
+--- calcPoint : 297 ---
++++ render +++
+--- turn end : 297 ---
+
+--- evLoop : 297 ---
+[TURN:297]get msg from:pack0
+[TURN:297]get msg from:pack1
+[TURN:297]get msg from:pack2
+[TURN:297]get msg from:pack3
+--- calcPoint : 298 ---
++++ render +++
+--- turn end : 298 ---
+
+--- evLoop : 298 ---
+[TURN:298]get msg from:pack0
+[TURN:298]get msg from:pack1
+[TURN:298]get msg from:pack2
+[TURN:298]get msg from:pack3
+--- calcPoint : 299 ---
++++ render +++
+--- turn end : 299 ---
+
+--- evLoop : 299 ---
+[TURN:299]get msg from:pack0
+[TURN:299]get msg from:pack3
+[TURN:299]get msg from:pack1
+[TURN:299]get msg from:pack2
+--- calcPoint : 300 ---
++++ render +++
+--- turn end : 300 ---
+
+--- evLoop : 300 ---
+[TURN:300]get msg from:pack0
+[TURN:300]get msg from:pack1
+[TURN:300]get msg from:pack3
+[TURN:300]get msg from:pack2
+--- calcPoint : 301 ---
++++ render +++
+--- turn end : 301 ---
+
+--- evLoop : 301 ---
+[TURN:301]get msg from:pack1
+[TURN:301]get msg from:pack0
+[TURN:301]get msg from:pack3
+[TURN:301]get msg from:pack2
+--- calcPoint : 302 ---
++++ render +++
+--- turn end : 302 ---
+
+--- evLoop : 302 ---
+[TURN:302]get msg from:pack0
+[TURN:302]get msg from:pack1
+[TURN:302]get msg from:pack2
+[TURN:302]get msg from:pack3
+--- calcPoint : 303 ---
++++ render +++
+--- turn end : 303 ---
+
+--- evLoop : 303 ---
+[TURN:303]get msg from:pack0
+[TURN:303]get msg from:pack1
+[TURN:303]get msg from:pack2
+[TURN:303]get msg from:pack3
+--- calcPoint : 304 ---
++++ render +++
+--- turn end : 304 ---
+
+--- evLoop : 304 ---
+[TURN:304]get msg from:pack0
+[TURN:304]get msg from:pack1
+[TURN:304]get msg from:pack2
+[TURN:304]get msg from:pack3
+--- calcPoint : 305 ---
++++ render +++
+--- turn end : 305 ---
+
+--- evLoop : 305 ---
+[TURN:305]get msg from:pack0
+[TURN:305]get msg from:pack2
+[TURN:305]get msg from:pack3
+[TURN:305]get msg from:pack1
+--- calcPoint : 306 ---
++++ render +++
+--- turn end : 306 ---
+
+--- evLoop : 306 ---
+[TURN:306]get msg from:pack0
+[TURN:306]get msg from:pack2
+[TURN:306]get msg from:pack3
+[TURN:306]get msg from:pack1
+--- calcPoint : 307 ---
++++ render +++
+--- turn end : 307 ---
+
+--- evLoop : 307 ---
+[TURN:307]get msg from:pack1
+[TURN:307]get msg from:pack0
+[TURN:307]get msg from:pack2
+[TURN:307]get msg from:pack3
+--- calcPoint : 308 ---
++++ render +++
+--- turn end : 308 ---
+
+--- evLoop : 308 ---
+[TURN:308]get msg from:pack0
+[TURN:308]get msg from:pack1
+[TURN:308]get msg from:pack3
+[TURN:308]get msg from:pack2
+--- calcPoint : 309 ---
++++ render +++
+--- turn end : 309 ---
+
+--- evLoop : 309 ---
+[TURN:309]get msg from:pack0
+[TURN:309]get msg from:pack1
+[TURN:309]get msg from:pack2
+[TURN:309]get msg from:pack3
+--- calcPoint : 310 ---
++++ render +++
+--- turn end : 310 ---
+
+--- evLoop : 310 ---
+[TURN:310]get msg from:pack0
+[TURN:310]get msg from:pack1
+[TURN:310]get msg from:pack2
+[TURN:310]get msg from:pack3
+--- calcPoint : 311 ---
++++ render +++
+--- turn end : 311 ---
+
+--- evLoop : 311 ---
+[TURN:311]get msg from:pack0
+[TURN:311]get msg from:pack1
+[TURN:311]get msg from:pack2
+[TURN:311]get msg from:pack3
+--- calcPoint : 312 ---
++++ render +++
+--- turn end : 312 ---
+
+--- evLoop : 312 ---
+[TURN:312]get msg from:pack0
+[TURN:312]get msg from:pack2
+[TURN:312]get msg from:pack1
+[TURN:312]get msg from:pack3
+--- calcPoint : 313 ---
++++ render +++
+--- turn end : 313 ---
+
+--- evLoop : 313 ---
+[TURN:313]get msg from:pack1
+[TURN:313]get msg from:pack0
+[TURN:313]get msg from:pack2
+[TURN:313]get msg from:pack3
+--- calcPoint : 314 ---
++++ render +++
+--- turn end : 314 ---
+
+--- evLoop : 314 ---
+[TURN:314]get msg from:pack0
+[TURN:314]get msg from:pack1
+[TURN:314]get msg from:pack2
+[TURN:314]get msg from:pack3
+--- calcPoint : 315 ---
++++ render +++
+--- turn end : 315 ---
+
+--- evLoop : 315 ---
+[TURN:315]get msg from:pack0
+[TURN:315]get msg from:pack1
+[TURN:315]get msg from:pack2
+[TURN:315]get msg from:pack3
+--- calcPoint : 316 ---
++++ render +++
+--- turn end : 316 ---
+
+--- evLoop : 316 ---
+[TURN:316]get msg from:pack0
+[TURN:316]get msg from:pack1
+[TURN:316]get msg from:pack2
+[TURN:316]get msg from:pack3
+--- calcPoint : 317 ---
++++ render +++
+--- turn end : 317 ---
+
+--- evLoop : 317 ---
+[TURN:317]get msg from:pack0
+[TURN:317]get msg from:pack1
+[TURN:317]get msg from:pack2
+[TURN:317]get msg from:pack3
+--- calcPoint : 318 ---
++++ render +++
+--- turn end : 318 ---
+
+--- evLoop : 318 ---
+[TURN:318]get msg from:pack0
+[TURN:318]get msg from:pack1
+[TURN:318]get msg from:pack2
+[TURN:318]get msg from:pack3
+--- calcPoint : 319 ---
++++ render +++
+--- turn end : 319 ---
+
+--- evLoop : 319 ---
+[TURN:319]get msg from:pack0
+[TURN:319]get msg from:pack1
+[TURN:319]get msg from:pack2
+[TURN:319]get msg from:pack3
+--- calcPoint : 320 ---
++++ render +++
+--- turn end : 320 ---
+
+--- evLoop : 320 ---
+[TURN:320]get msg from:pack0
+[TURN:320]get msg from:pack1
+[TURN:320]get msg from:pack2
+[TURN:320]get msg from:pack3
+--- calcPoint : 321 ---
++++ render +++
+--- turn end : 321 ---
+
+--- evLoop : 321 ---
+[TURN:321]get msg from:pack0
+[TURN:321]get msg from:pack1
+[TURN:321]get msg from:pack2
+[TURN:321]get msg from:pack3
+--- calcPoint : 322 ---
++++ render +++
+--- turn end : 322 ---
+
+--- evLoop : 322 ---
+[TURN:322]get msg from:pack0
+[TURN:322]get msg from:pack1
+[TURN:322]get msg from:pack2
+[TURN:322]get msg from:pack3
+--- calcPoint : 323 ---
++++ render +++
+--- turn end : 323 ---
+
+--- evLoop : 323 ---
+[TURN:323]get msg from:pack1
+[TURN:323]get msg from:pack0
+[TURN:323]get msg from:pack2
+[TURN:323]get msg from:pack3
+--- calcPoint : 324 ---
++++ render +++
+--- turn end : 324 ---
+
+--- evLoop : 324 ---
+[TURN:324]get msg from:pack1
+[TURN:324]get msg from:pack0
+[TURN:324]get msg from:pack2
+[TURN:324]get msg from:pack3
+--- calcPoint : 325 ---
++++ render +++
+--- turn end : 325 ---
+
+--- evLoop : 325 ---
+[TURN:325]get msg from:pack1
+[TURN:325]get msg from:pack0
+[TURN:325]get msg from:pack2
+[TURN:325]get msg from:pack3
+--- calcPoint : 326 ---
++++ render +++
+--- turn end : 326 ---
+
+--- evLoop : 326 ---
+[TURN:326]get msg from:pack0
+[TURN:326]get msg from:pack1
+[TURN:326]get msg from:pack2
+[TURN:326]get msg from:pack3
+--- calcPoint : 327 ---
++++ render +++
+--- turn end : 327 ---
+
+--- evLoop : 327 ---
+[TURN:327]get msg from:pack0
+[TURN:327]get msg from:pack2
+[TURN:327]get msg from:pack1
+[TURN:327]get msg from:pack3
+--- calcPoint : 328 ---
+0 2 5
++++ render +++
+--- turn end : 328 ---
+
+--- evLoop : 328 ---
+[TURN:328]get msg from:pack0
+[TURN:328]get msg from:pack1
+[TURN:328]get msg from:pack2
+[TURN:328]get msg from:pack3
+--- calcPoint : 329 ---
+0 3 5
++++ render +++
+--- turn end : 329 ---
+
+--- evLoop : 329 ---
+[TURN:329]get msg from:pack0
+[TURN:329]get msg from:pack1
+[TURN:329]get msg from:pack2
+[TURN:329]get msg from:pack3
+--- calcPoint : 330 ---
++++ render +++
+--- turn end : 330 ---
+
+--- evLoop : 330 ---
+[TURN:330]get msg from:pack0
+[TURN:330]get msg from:pack1
+[TURN:330]get msg from:pack2
+[TURN:330]get msg from:pack3
+--- calcPoint : 331 ---
++++ render +++
+--- turn end : 331 ---
+
+--- evLoop : 331 ---
+[TURN:331]get msg from:pack0
+[TURN:331]get msg from:pack1
+[TURN:331]get msg from:pack3
+[TURN:331]get msg from:pack2
+--- calcPoint : 332 ---
+0 5 4
++++ render +++
+--- turn end : 332 ---
+
+--- evLoop : 332 ---
+[TURN:332]get msg from:pack0
+[TURN:332]get msg from:pack1
+[TURN:332]get msg from:pack2
+[TURN:332]get msg from:pack3
+--- calcPoint : 333 ---
++++ render +++
+--- turn end : 333 ---
+
+--- evLoop : 333 ---
+[TURN:333]get msg from:pack0
+[TURN:333]get msg from:pack1
+[TURN:333]get msg from:pack2
+[TURN:333]get msg from:pack3
+--- calcPoint : 334 ---
++++ render +++
+--- turn end : 334 ---
+
+--- evLoop : 334 ---
+[TURN:334]get msg from:pack0
+[TURN:334]get msg from:pack1
+[TURN:334]get msg from:pack2
+[TURN:334]get msg from:pack3
+--- calcPoint : 335 ---
++++ render +++
+--- turn end : 335 ---
+
+--- evLoop : 335 ---
+[TURN:335]get msg from:pack0
+[TURN:335]get msg from:pack1
+[TURN:335]get msg from:pack2
+[TURN:335]get msg from:pack3
+--- calcPoint : 336 ---
++++ render +++
+--- turn end : 336 ---
+
+--- evLoop : 336 ---
+[TURN:336]get msg from:pack0
+[TURN:336]get msg from:pack1
+[TURN:336]get msg from:pack2
+[TURN:336]get msg from:pack3
+--- calcPoint : 337 ---
++++ render +++
+--- turn end : 337 ---
+
+--- evLoop : 337 ---
+[TURN:337]get msg from:pack0
+[TURN:337]get msg from:pack2
+[TURN:337]get msg from:pack1
+[TURN:337]get msg from:pack3
+--- calcPoint : 338 ---
++++ render +++
+--- turn end : 338 ---
+
+--- evLoop : 338 ---
+[TURN:338]get msg from:pack0
+[TURN:338]get msg from:pack1
+[TURN:338]get msg from:pack2
+[TURN:338]get msg from:pack3
+--- calcPoint : 339 ---
++++ render +++
+--- turn end : 339 ---
+
+--- evLoop : 339 ---
+[TURN:339]get msg from:pack0
+[TURN:339]get msg from:pack2
+[TURN:339]get msg from:pack1
+[TURN:339]get msg from:pack3
+--- calcPoint : 340 ---
++++ render +++
+--- turn end : 340 ---
+
+--- evLoop : 340 ---
+[TURN:340]get msg from:pack0
+[TURN:340]get msg from:pack2
+[TURN:340]get msg from:pack1
+[TURN:340]get msg from:pack3
+--- calcPoint : 341 ---
+0 14 4
++++ render +++
+--- turn end : 341 ---
+
+--- evLoop : 341 ---
+[TURN:341]get msg from:pack1
+[TURN:341]get msg from:pack0
+[TURN:341]get msg from:pack2
+[TURN:341]get msg from:pack3
+--- calcPoint : 342 ---
++++ render +++
+--- turn end : 342 ---
+
+--- evLoop : 342 ---
+[TURN:342]get msg from:pack0
+[TURN:342]get msg from:pack1
+[TURN:342]get msg from:pack2
+[TURN:342]get msg from:pack3
+--- calcPoint : 343 ---
++++ render +++
+--- turn end : 343 ---
+
+--- evLoop : 343 ---
+[TURN:343]get msg from:pack1
+[TURN:343]get msg from:pack0
+[TURN:343]get msg from:pack2
+[TURN:343]get msg from:pack3
+--- calcPoint : 344 ---
++++ render +++
+--- turn end : 344 ---
+
+--- evLoop : 344 ---
+[TURN:344]get msg from:pack0
+[TURN:344]get msg from:pack1
+[TURN:344]get msg from:pack3
+[TURN:344]get msg from:pack2
+--- calcPoint : 345 ---
++++ render +++
+--- turn end : 345 ---
+
+--- evLoop : 345 ---
+[TURN:345]get msg from:pack0
+[TURN:345]get msg from:pack2
+[TURN:345]get msg from:pack1
+[TURN:345]get msg from:pack3
+--- calcPoint : 346 ---
++++ render +++
+--- turn end : 346 ---
+
+--- evLoop : 346 ---
+[TURN:346]get msg from:pack0
+[TURN:346]get msg from:pack1
+[TURN:346]get msg from:pack2
+[TURN:346]get msg from:pack3
+--- calcPoint : 347 ---
++++ render +++
+--- turn end : 347 ---
+
+--- evLoop : 347 ---
+[TURN:347]get msg from:pack0
+[TURN:347]get msg from:pack1
+[TURN:347]get msg from:pack2
+[TURN:347]get msg from:pack3
+--- calcPoint : 348 ---
+0 14 3
++++ render +++
+--- turn end : 348 ---
+
+--- evLoop : 348 ---
+[TURN:348]get msg from:pack0
+[TURN:348]get msg from:pack1
+[TURN:348]get msg from:pack2
+[TURN:348]get msg from:pack3
+--- calcPoint : 349 ---
++++ render +++
+--- turn end : 349 ---
+
+--- evLoop : 349 ---
+[TURN:349]get msg from:pack1
+[TURN:349]get msg from:pack0
+[TURN:349]get msg from:pack2
+[TURN:349]get msg from:pack3
+--- calcPoint : 350 ---
++++ render +++
+--- turn end : 350 ---
+
+--- evLoop : 350 ---
+[TURN:350]get msg from:pack0
+[TURN:350]get msg from:pack3
+[TURN:350]get msg from:pack1
+[TURN:350]get msg from:pack2
+--- calcPoint : 351 ---
++++ render +++
+--- turn end : 351 ---
+
+--- evLoop : 351 ---
+[TURN:351]get msg from:pack0
+[TURN:351]get msg from:pack1
+[TURN:351]get msg from:pack3
+[TURN:351]get msg from:pack2
+--- calcPoint : 352 ---
++++ render +++
+--- turn end : 352 ---
+
+--- evLoop : 352 ---
+[TURN:352]get msg from:pack0
+[TURN:352]get msg from:pack2
+[TURN:352]get msg from:pack1
+[TURN:352]get msg from:pack3
+--- calcPoint : 353 ---
++++ render +++
+--- turn end : 353 ---
+
+--- evLoop : 353 ---
+[TURN:353]get msg from:pack0
+[TURN:353]get msg from:pack1
+[TURN:353]get msg from:pack2
+[TURN:353]get msg from:pack3
+--- calcPoint : 354 ---
++++ render +++
+--- turn end : 354 ---
+
+--- evLoop : 354 ---
+[TURN:354]get msg from:pack0
+[TURN:354]get msg from:pack1
+[TURN:354]get msg from:pack2
+[TURN:354]get msg from:pack3
+--- calcPoint : 355 ---
++++ render +++
+--- turn end : 355 ---
+
+--- evLoop : 355 ---
+[TURN:355]get msg from:pack0
+[TURN:355]get msg from:pack1
+[TURN:355]get msg from:pack2
+[TURN:355]get msg from:pack3
+--- calcPoint : 356 ---
++++ render +++
+--- turn end : 356 ---
+
+--- evLoop : 356 ---
+[TURN:356]get msg from:pack0
+[TURN:356]get msg from:pack1
+[TURN:356]get msg from:pack2
+[TURN:356]get msg from:pack3
+--- calcPoint : 357 ---
+0 5 3
++++ render +++
+--- turn end : 357 ---
+
+--- evLoop : 357 ---
+[TURN:357]get msg from:pack0
+[TURN:357]get msg from:pack1
+[TURN:357]get msg from:pack2
+[TURN:357]get msg from:pack3
+--- calcPoint : 358 ---
++++ render +++
+--- turn end : 358 ---
+
+--- evLoop : 358 ---
+[TURN:358]get msg from:pack1
+[TURN:358]get msg from:pack0
+[TURN:358]get msg from:pack2
+[TURN:358]get msg from:pack3
+--- calcPoint : 359 ---
++++ render +++
+--- turn end : 359 ---
+
+--- evLoop : 359 ---
+[TURN:359]get msg from:pack0
+[TURN:359]get msg from:pack1
+[TURN:359]get msg from:pack2
+[TURN:359]get msg from:pack3
+--- calcPoint : 360 ---
++++ render +++
+--- turn end : 360 ---
+
+--- evLoop : 360 ---
+[TURN:360]get msg from:pack0
+[TURN:360]get msg from:pack1
+[TURN:360]get msg from:pack2
+[TURN:360]get msg from:pack3
+--- calcPoint : 361 ---
++++ render +++
+--- turn end : 361 ---
+
+--- evLoop : 361 ---
+[TURN:361]get msg from:pack0
+[TURN:361]get msg from:pack1
+[TURN:361]get msg from:pack2
+[TURN:361]get msg from:pack3
+--- calcPoint : 362 ---
++++ render +++
+--- turn end : 362 ---
+
+--- evLoop : 362 ---
+[TURN:362]get msg from:pack0
+[TURN:362]get msg from:pack1
+[TURN:362]get msg from:pack2
+[TURN:362]get msg from:pack3
+--- calcPoint : 363 ---
++++ render +++
+--- turn end : 363 ---
+
+--- evLoop : 363 ---
+[TURN:363]get msg from:pack0
+[TURN:363]get msg from:pack1
+[TURN:363]get msg from:pack2
+[TURN:363]get msg from:pack3
+--- calcPoint : 364 ---
++++ render +++
+--- turn end : 364 ---
+
+--- evLoop : 364 ---
+[TURN:364]get msg from:pack0
+[TURN:364]get msg from:pack1
+[TURN:364]get msg from:pack2
+[TURN:364]get msg from:pack3
+--- calcPoint : 365 ---
++++ render +++
+--- turn end : 365 ---
+
+--- evLoop : 365 ---
+[TURN:365]get msg from:pack0
+[TURN:365]get msg from:pack1
+[TURN:365]get msg from:pack2
+[TURN:365]get msg from:pack3
+--- calcPoint : 366 ---
++++ render +++
+--- turn end : 366 ---
+
+--- evLoop : 366 ---
+[TURN:366]get msg from:pack0
+[TURN:366]get msg from:pack1
+[TURN:366]get msg from:pack2
+[TURN:366]get msg from:pack3
+--- calcPoint : 367 ---
++++ render +++
+--- turn end : 367 ---
+
+--- evLoop : 367 ---
+[TURN:367]get msg from:pack0
+[TURN:367]get msg from:pack1
+[TURN:367]get msg from:pack2
+[TURN:367]get msg from:pack3
+--- calcPoint : 368 ---
++++ render +++
+--- turn end : 368 ---
+
+--- evLoop : 368 ---
+[TURN:368]get msg from:pack0
+[TURN:368]get msg from:pack1
+[TURN:368]get msg from:pack2
+[TURN:368]get msg from:pack3
+--- calcPoint : 369 ---
++++ render +++
+--- turn end : 369 ---
+
+--- evLoop : 369 ---
+[TURN:369]get msg from:pack0
+[TURN:369]get msg from:pack1
+[TURN:369]get msg from:pack2
+[TURN:369]get msg from:pack3
+--- calcPoint : 370 ---
++++ render +++
+--- turn end : 370 ---
+
+--- evLoop : 370 ---
+[TURN:370]get msg from:pack1
+[TURN:370]get msg from:pack0
+[TURN:370]get msg from:pack2
+[TURN:370]get msg from:pack3
+--- calcPoint : 371 ---
++++ render +++
+--- turn end : 371 ---
+
+--- evLoop : 371 ---
+[TURN:371]get msg from:pack2
+[TURN:371]get msg from:pack0
+[TURN:371]get msg from:pack1
+[TURN:371]get msg from:pack3
+--- calcPoint : 372 ---
++++ render +++
+--- turn end : 372 ---
+
+--- evLoop : 372 ---
+[TURN:372]get msg from:pack0
+[TURN:372]get msg from:pack1
+[TURN:372]get msg from:pack2
+[TURN:372]get msg from:pack3
+--- calcPoint : 373 ---
++++ render +++
+--- turn end : 373 ---
+
+--- evLoop : 373 ---
+[TURN:373]get msg from:pack0
+[TURN:373]get msg from:pack2
+[TURN:373]get msg from:pack1
+[TURN:373]get msg from:pack3
+--- calcPoint : 374 ---
++++ render +++
+--- turn end : 374 ---
+
+--- evLoop : 374 ---
+[TURN:374]get msg from:pack1
+[TURN:374]get msg from:pack0
+[TURN:374]get msg from:pack2
+[TURN:374]get msg from:pack3
+--- calcPoint : 375 ---
++++ render +++
+--- turn end : 375 ---
+
+--- evLoop : 375 ---
+[TURN:375]get msg from:pack1
+[TURN:375]get msg from:pack0
+[TURN:375]get msg from:pack2
+[TURN:375]get msg from:pack3
+--- calcPoint : 376 ---
++++ render +++
+--- turn end : 376 ---
+
+--- evLoop : 376 ---
+[TURN:376]get msg from:pack0
+[TURN:376]get msg from:pack1
+[TURN:376]get msg from:pack2
+[TURN:376]get msg from:pack3
+--- calcPoint : 377 ---
++++ render +++
+--- turn end : 377 ---
+
+--- evLoop : 377 ---
+[TURN:377]get msg from:pack0
+[TURN:377]get msg from:pack1
+[TURN:377]get msg from:pack2
+[TURN:377]get msg from:pack3
+--- calcPoint : 378 ---
++++ render +++
+--- turn end : 378 ---
+
+--- evLoop : 378 ---
+[TURN:378]get msg from:pack0
+[TURN:378]get msg from:pack1
+[TURN:378]get msg from:pack3
+[TURN:378]get msg from:pack2
+--- calcPoint : 379 ---
++++ render +++
+--- turn end : 379 ---
+
+--- evLoop : 379 ---
+[TURN:379]get msg from:pack0
+[TURN:379]get msg from:pack1
+[TURN:379]get msg from:pack2
+[TURN:379]get msg from:pack3
+--- calcPoint : 380 ---
++++ render +++
+--- turn end : 380 ---
+
+--- evLoop : 380 ---
+[TURN:380]get msg from:pack0
+[TURN:380]get msg from:pack1
+[TURN:380]get msg from:pack2
+[TURN:380]get msg from:pack3
+--- calcPoint : 381 ---
++++ render +++
+--- turn end : 381 ---
+
+--- evLoop : 381 ---
+[TURN:381]get msg from:pack0
+[TURN:381]get msg from:pack1
+[TURN:381]get msg from:pack2
+[TURN:381]get msg from:pack3
+--- calcPoint : 382 ---
++++ render +++
+--- turn end : 382 ---
+
+--- evLoop : 382 ---
+[TURN:382]get msg from:pack0
+[TURN:382]get msg from:pack1
+[TURN:382]get msg from:pack3
+[TURN:382]get msg from:pack2
+--- calcPoint : 383 ---
++++ render +++
+--- turn end : 383 ---
+
+--- evLoop : 383 ---
+[TURN:383]get msg from:pack0
+[TURN:383]get msg from:pack1
+[TURN:383]get msg from:pack2
+[TURN:383]get msg from:pack3
+--- calcPoint : 384 ---
++++ render +++
+--- turn end : 384 ---
+
+--- evLoop : 384 ---
+[TURN:384]get msg from:pack0
+[TURN:384]get msg from:pack1
+[TURN:384]get msg from:pack2
+[TURN:384]get msg from:pack3
+--- calcPoint : 385 ---
++++ render +++
+--- turn end : 385 ---
+
+--- evLoop : 385 ---
+[TURN:385]get msg from:pack0
+[TURN:385]get msg from:pack1
+[TURN:385]get msg from:pack3
+[TURN:385]get msg from:pack2
+--- calcPoint : 386 ---
++++ render +++
+--- turn end : 386 ---
+
+--- evLoop : 386 ---
+[TURN:386]get msg from:pack0
+[TURN:386]get msg from:pack1
+[TURN:386]get msg from:pack2
+[TURN:386]get msg from:pack3
+--- calcPoint : 387 ---
++++ render +++
+--- turn end : 387 ---
+
+--- evLoop : 387 ---
+[TURN:387]get msg from:pack0
+[TURN:387]get msg from:pack1
+[TURN:387]get msg from:pack2
+[TURN:387]get msg from:pack3
+--- calcPoint : 388 ---
++++ render +++
+--- turn end : 388 ---
+
+--- evLoop : 388 ---
+[TURN:388]get msg from:pack0
+[TURN:388]get msg from:pack1
+[TURN:388]get msg from:pack2
+[TURN:388]get msg from:pack3
+--- calcPoint : 389 ---
++++ render +++
+--- turn end : 389 ---
+
+--- evLoop : 389 ---
+[TURN:389]get msg from:pack0
+[TURN:389]get msg from:pack1
+[TURN:389]get msg from:pack2
+[TURN:389]get msg from:pack3
+--- calcPoint : 390 ---
++++ render +++
+--- turn end : 390 ---
+
+--- evLoop : 390 ---
+[TURN:390]get msg from:pack1
+[TURN:390]get msg from:pack0
+[TURN:390]get msg from:pack2
+[TURN:390]get msg from:pack3
+--- calcPoint : 391 ---
++++ render +++
+--- turn end : 391 ---
+
+--- evLoop : 391 ---
+[TURN:391]get msg from:pack0
+[TURN:391]get msg from:pack1
+[TURN:391]get msg from:pack2
+[TURN:391]get msg from:pack3
+--- calcPoint : 392 ---
++++ render +++
+--- turn end : 392 ---
+
+--- evLoop : 392 ---
+[TURN:392]get msg from:pack1
+[TURN:392]get msg from:pack0
+[TURN:392]get msg from:pack2
+[TURN:392]get msg from:pack3
+--- calcPoint : 393 ---
++++ render +++
+--- turn end : 393 ---
+
+--- evLoop : 393 ---
+[TURN:393]get msg from:pack0
+[TURN:393]get msg from:pack1
+[TURN:393]get msg from:pack2
+[TURN:393]get msg from:pack3
+--- calcPoint : 394 ---
++++ render +++
+--- turn end : 394 ---
+
+--- evLoop : 394 ---
+[TURN:394]get msg from:pack0
+[TURN:394]get msg from:pack1
+[TURN:394]get msg from:pack2
+[TURN:394]get msg from:pack3
+--- calcPoint : 395 ---
++++ render +++
+--- turn end : 395 ---
+
+--- evLoop : 395 ---
+[TURN:395]get msg from:pack0
+[TURN:395]get msg from:pack1
+[TURN:395]get msg from:pack3
+[TURN:395]get msg from:pack2
+--- calcPoint : 396 ---
++++ render +++
+--- turn end : 396 ---
+
+--- evLoop : 396 ---
+[TURN:396]get msg from:pack0
+[TURN:396]get msg from:pack1
+[TURN:396]get msg from:pack2
+[TURN:396]get msg from:pack3
+--- calcPoint : 397 ---
++++ render +++
+--- turn end : 397 ---
+
+--- evLoop : 397 ---
+[TURN:397]get msg from:pack0
+[TURN:397]get msg from:pack1
+[TURN:397]get msg from:pack2
+[TURN:397]get msg from:pack3
+--- calcPoint : 398 ---
++++ render +++
+--- turn end : 398 ---
+
+--- evLoop : 398 ---
+[TURN:398]get msg from:pack1
+[TURN:398]get msg from:pack0
+[TURN:398]get msg from:pack2
+[TURN:398]get msg from:pack3
+--- calcPoint : 399 ---
++++ render +++
+--- turn end : 399 ---
+
+--- evLoop : 399 ---
+[TURN:399]get msg from:pack0
+[TURN:399]get msg from:pack1
+[TURN:399]get msg from:pack2
+[TURN:399]get msg from:pack3
+--- calcPoint : 400 ---
++++ render +++
+--- turn end : 400 ---
+
+--- evLoop : 400 ---
+[TURN:400]get msg from:pack0
+[TURN:400]get msg from:pack1
+[TURN:400]get msg from:pack2
+[TURN:400]get msg from:pack3
+--- calcPoint : 401 ---
++++ render +++
+--- turn end : 401 ---
+
+--- evLoop : 401 ---
+[TURN:401]get msg from:pack0
+[TURN:401]get msg from:pack1
+[TURN:401]get msg from:pack2
+[TURN:401]get msg from:pack3
+--- calcPoint : 402 ---
++++ render +++
+--- turn end : 402 ---
+
+--- evLoop : 402 ---
+[TURN:402]get msg from:pack0
+[TURN:402]get msg from:pack1
+[TURN:402]get msg from:pack3
+[TURN:402]get msg from:pack2
+--- calcPoint : 403 ---
++++ render +++
+--- turn end : 403 ---
+
+--- evLoop : 403 ---
+[TURN:403]get msg from:pack0
+[TURN:403]get msg from:pack1
+[TURN:403]get msg from:pack2
+[TURN:403]get msg from:pack3
+--- calcPoint : 404 ---
+0 5 2
++++ render +++
+--- turn end : 404 ---
+
+--- evLoop : 404 ---
+[TURN:404]get msg from:pack0
+[TURN:404]get msg from:pack2
+[TURN:404]get msg from:pack1
+[TURN:404]get msg from:pack3
+--- calcPoint : 405 ---
++++ render +++
+--- turn end : 405 ---
+
+--- evLoop : 405 ---
+[TURN:405]get msg from:pack0
+[TURN:405]get msg from:pack1
+[TURN:405]get msg from:pack2
+[TURN:405]get msg from:pack3
+--- calcPoint : 406 ---
++++ render +++
+--- turn end : 406 ---
+
+--- evLoop : 406 ---
+[TURN:406]get msg from:pack0
+[TURN:406]get msg from:pack1
+[TURN:406]get msg from:pack2
+[TURN:406]get msg from:pack3
+--- calcPoint : 407 ---
++++ render +++
+--- turn end : 407 ---
+
+--- evLoop : 407 ---
+[TURN:407]get msg from:pack0
+[TURN:407]get msg from:pack2
+[TURN:407]get msg from:pack3
+[TURN:407]get msg from:pack1
+--- calcPoint : 408 ---
++++ render +++
+--- turn end : 408 ---
+
+--- evLoop : 408 ---
+[TURN:408]get msg from:pack0
+[TURN:408]get msg from:pack1
+[TURN:408]get msg from:pack2
+[TURN:408]get msg from:pack3
+--- calcPoint : 409 ---
++++ render +++
+--- turn end : 409 ---
+
+--- evLoop : 409 ---
+[TURN:409]get msg from:pack1
+[TURN:409]get msg from:pack0
+[TURN:409]get msg from:pack2
+[TURN:409]get msg from:pack3
+--- calcPoint : 410 ---
++++ render +++
+--- turn end : 410 ---
+
+--- evLoop : 410 ---
+[TURN:410]get msg from:pack0
+[TURN:410]get msg from:pack1
+[TURN:410]get msg from:pack2
+[TURN:410]get msg from:pack3
+--- calcPoint : 411 ---
++++ render +++
+--- turn end : 411 ---
+
+--- evLoop : 411 ---
+[TURN:411]get msg from:pack0
+[TURN:411]get msg from:pack1
+[TURN:411]get msg from:pack2
+[TURN:411]get msg from:pack3
+--- calcPoint : 412 ---
++++ render +++
+--- turn end : 412 ---
+
+--- evLoop : 412 ---
+[TURN:412]get msg from:pack0
+[TURN:412]get msg from:pack1
+[TURN:412]get msg from:pack3
+[TURN:412]get msg from:pack2
+--- calcPoint : 413 ---
+0 14 2
++++ render +++
+--- turn end : 413 ---
+
+--- evLoop : 413 ---
+[TURN:413]get msg from:pack0
+[TURN:413]get msg from:pack2
+[TURN:413]get msg from:pack1
+[TURN:413]get msg from:pack3
+--- calcPoint : 414 ---
++++ render +++
+--- turn end : 414 ---
+
+14 Oct 06:18:31 - close.
+14 Oct 06:18:31 - close.
+14 Oct 06:19:11 - close.
+14 Oct 06:20:51 - close.

@@ -27,7 +27,6 @@ var env = {};
 				return (util.createMsg('readyOk', msg));
 			}
 			,next : function(arg) {
-				// that.printStage(arg.cells);
 				console.log('[ next ]');
 				var msg = userScript.next(arg);
 				msg.id = that.id;
@@ -56,6 +55,9 @@ var env = {};
 				$('div#usrInfo div#g_status').html('END');
 				$('div#usrInfo div#winner').html(winText);
 				display.clearGifTimer();
+			}
+			,moveError : function(arg) {
+				console.log('moveError.');
 			}
 		};
 
