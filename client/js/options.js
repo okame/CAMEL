@@ -8,7 +8,7 @@ OPTIONS = {};
 
 (function($) {
 OPTIONS = {
-	packColor : "yellow"
+	packColor : ['Yellow', 'Green', 'Aquamarine', 'LightPink']
 	, feedColor : "red"
 	, enemyColor : "red"
 	, stageColor : "gray"

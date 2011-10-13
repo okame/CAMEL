@@ -57,6 +57,15 @@ tool.sumPackNum = function(packs) {
 	return sum;
 }
 
+/**
+ * logging.
+ */
+tool.debugLog = function(msg) {
+	if(tool.logLevel == 'DEBUG') {
+		sys.log(msg);
+	}
+}
+
 
 //-----------------------
 exports.tool = tool;

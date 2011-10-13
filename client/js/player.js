@@ -55,6 +55,7 @@ var env = {};
 					+ 'point : ' + arg.winner.point;
 				$('div#usrInfo div#g_status').html('END');
 				$('div#usrInfo div#winner').html(winText);
+				display.clearGifTimer();
 			}
 		};
 

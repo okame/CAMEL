@@ -30,6 +30,10 @@ display = {};
 			, CONSTATNT.MOUTH.SMALL
 		];
 
+		display.clearGifTimer = function() {
+			clearInterval(this.gifTimer);
+		}
+
 		display.gifStart = function(dir) {
 			display.gifTimer = setInterval(function() {
 					display.mouthNo = (display.mouthNo >= (display.lotate.length - 1)? 0 : (display.mouthNo + 1));
@@ -39,17 +43,16 @@ display = {};
 		display.imgs = [];
 
 		display.renderQueue = {};
-		display.renderQueue.block = [];
-		display.renderQueue.pack = [];
-		display.renderQueue.feed = [];
 
 
 		/** 
 		 * Main.
 		 */
 		display.render = function () {
-			this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
 			//this.renderGridLine();
+			this.setRenderQueue();
+			this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
+			//this.ra();
 			this.renderAllObjects();
 		}
 
@@ -80,7 +83,7 @@ display = {};
 			renderUtil.init(this.ctx);
 
 			for(i=0; i<env.PACK_NUM; i++) {
-				this.packs[i] = new Pack(env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y, 'left', this.ctx);
+				this.packs[i] = new Pack(env.DEFAULT_PACK_X, env.DEFAULT_PACK_Y, 'left', i, this.ctx);
 			}
 
 
@@ -164,14 +167,81 @@ display = {};
 		 * - stage blocks
 		 * @param stage
 		 */
-		display.renderAllObjects= function(stage) {
-			var enemie = this.matrix.enemy,
-			stage = stage || this.matrix.stage,
-			size = OPTIONS.cellSize,
-			cellNumX = this.matrixSizeX,
-			cellNumY = this.matrixSizeY,
-			i, j, k, x, y, di, dj;
+		display.renderAllObjects= function() {
+			var i, j, k, di, dj, id;
 
+			for(k in this.renderQueue.block) {
+				i = this.renderQueue.block[k].i;
+				j = this.renderQueue.block[k].j;
+				this.renderCell(i, j, this.renderStage);
+			}
+			for(k in this.renderQueue.feed) {
+				i = this.renderQueue.feed[k].i;
+				j = this.renderQueue.feed[k].j;
+				this.renderCell(i, j, this.renderFeed);
+			}
+			for(k in this.renderQueue.pack) {
+				i = this.renderQueue.pack[k].i;
+				j = this.renderQueue.pack[k].j;
+				id  = this.renderQueue.pack[k].id;
+				di = i - this.packs[id].i; 
+				dj = j - this.packs[id].j; 
+				this.packs[id].movePack(di, dj);
+				this.packs[id].i = i;
+				this.packs[id].j = j;
+			}
+
+		}
+
+		/**
+		 * Set render objects into queue.
+		 */
+		display.setRenderQueue = function(stage) {
+			var stage = stage || this.matrix.stage
+			, i, j, k;
+
+			display.renderQueue.block = [];
+			display.renderQueue.pack = [];
+			display.renderQueue.feed = [];
+			for(i = 0; i < stage.length; i++) {
+				for(j = 0; j < stage[i].length; j++) {
+					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
+						// this.renderCell(i, j, this.renderStage);
+						this.renderQueue.block.push({i:i, j:j});
+					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
+						// render all packs
+						for(k=0; k<env.PACK_NUM; k++) {
+							if(stage[j][i][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
+								/*
+								di = i - this.packs[k].i; 
+								dj = j - this.packs[k].j; 
+								this.packs[k].movePack(di, dj, k);
+								this.packs[k].i = i;
+								this.packs[k].j = j;
+								*/
+
+								this.renderQueue.pack.push({i:i, j:j, id:k});
+							}
+						}
+					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
+						//this.renderCell(i, j, this.renderFeed);
+						this.renderQueue.feed.push({i:i, j:j});
+					}
+				}
+			}
+
+		}
+
+		/**
+		 * Set render objects into queue.
+		 */
+		display.ra = function(stage) {
+			var stage = stage || this.matrix.stage
+			, i, j, k;
+
+			display.renderQueue.block = [];
+			display.renderQueue.pack = [];
+			display.renderQueue.feed = [];
 			for(i = 0; i < stage.length; i++) {
 				for(j = 0; j < stage[i].length; j++) {
 					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
@@ -185,43 +255,11 @@ display = {};
 								this.packs[k].movePack(di, dj, k);
 								this.packs[k].i = i;
 								this.packs[k].j = j;
+
 							}
 						}
 					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
 						this.renderCell(i, j, this.renderFeed);
-					}
-				}
-			}
-		}
-
-		/**
-		 * Set render objects into queue.
-		 */
-		display.setRenderQueue = function(stage) {
-			var stage = stage || this.matrix.stage
-			, i, j, k;
-
-			for(i = 0; i < stage.length; i++) {
-				for(j = 0; j < stage[i].length; j++) {
-					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
-						// this.renderCell(i, j, this.renderStage);
-						this.renderQueue.block.push({i:i, j:j});
-					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
-						// render all packs
-						for(k=0; k<env.PACK_NUM; k++) {
-							if(stage[j][i][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
-								di = i - this.packs[k].i; 
-								dj = j - this.packs[k].j; 
-								this.packs[k].movePack(di, dj, k);
-								this.packs[k].i = i;
-								this.packs[k].j = j;
-
-								this.renderQueue.pack.push({di:di, dj:dj, id:k});
-							}
-						}
-					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
-						//this.renderCell(i, j, this.renderFeed);
-						this.renderQueue.feed.push({i:i, j:j});
 					}
 				}
 			}

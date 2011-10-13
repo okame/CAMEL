@@ -20,15 +20,17 @@
 /**
  * Constructor.
  */
-var Pack = function(i, j, dir, ctx) {
+var Pack = function(i, j, dir, id, ctx) {
 	this.i = i;
 	this.j = j;
 	this.dir = dir;
 	this.ctx = ctx;
+	this.id = id;
+	this.color = OPTIONS.packColor[this.id];
 
 	// init
-	this.r = (OPTIONS.cellSize-1)/2
-	this.msize = Math.PI/6;
+	this.r = (OPTIONS.cellSize-1) / 2
+	
 	this.mouth = CONSTATNT.MOUTH.MATER;
 }
 
@@ -36,11 +38,17 @@ var Pack = function(i, j, dir, ctx) {
  * PakPak Lotation.
  */
 Pack.prototype.lotate = [
-	  CONSTATNT.MOUTH.MATER
+	  CONSTATNT.MOUTH.MASTER
 	, CONSTATNT.MOUTH.SMALL
 	, CONSTATNT.MOUTH.LARGE
 	, CONSTATNT.MOUTH.SMALL
 ];
+
+Pack.prototype.msizes = {
+	  s : (Math.PI / 12)
+	, m : 0
+	, l : (Math.PI / 3)
+};
 
 Pack.prototype.gifTimer;
 Pack.prototype.gifStart = function(dir) {
@@ -52,17 +60,27 @@ Pack.prototype.gifStart = function(dir) {
 /**
  * PakPak imgs.
  */
-Pack.prototype.mouthNo = 0;
-Pack.prototype.imgs = {};
-Pack.prototype.imgs['master'] = new Image()
-Pack.prototype.imgs['right_s'] = new Image()
-Pack.prototype.imgs['right_l'] = new Image()
-Pack.prototype.imgs['down_s'] = new Image()
-Pack.prototype.imgs['down_l'] = new Image()
-Pack.prototype.imgs['left_s'] = new Image()
-Pack.prototype.imgs['left_l'] = new Image()
-Pack.prototype.imgs['up_s'] = new Image()
-Pack.prototype.imgs['up_l'] = new Image()
+
+(function(){
+	Pack.prototype.mouthNo = 0;
+	Pack.prototype.imgs = {};
+	var i
+	, j
+	, color
+	, size;
+	for(i in CONSTATNT.COLOR) {
+		color = CONSTATNT.COLOR[i];
+		Pack.prototype.imgs['master_'+color] = new Image()
+		for(j in CONSTATNT.MOUTH) {
+			size = CONSTATNT.MOUTH[j];
+			if(size == 'm') continue;
+			Pack.prototype.imgs['right_'+size+'_'+color] = new Image()
+			Pack.prototype.imgs['down_'+size+'_'+color] = new Image()
+			Pack.prototype.imgs['left_'+size+'_'+color] = new Image()
+			Pack.prototype.imgs['up_'+size+'_'+color] = new Image()
+		}
+	}
+})();
 
 for(key in Pack.prototype.imgs) {
 	Pack.prototype.imgs[key].src = './img/'+key+'.png';
@@ -109,38 +127,36 @@ Pack.prototype.renderPack = function (x, y) {
 	var size = OPTIONS.cellSize
 		, rx = x + size/2
 		, ry = y + size/2
+		, msize = this.msizes[this.lotate[this.mouthNo]]
 		, mths
 		, mthe;
 
-	//render circle
-	this.ctx.fillStyle = OPTIONS.packColor;
-	this.ctx.beginPath();
-	this.ctx.arc(rx, ry, this.r, 0, Math.PI * 2, true);
-	this.ctx.fill();
-	this.ctx.closePath();
-
 	if(this.dir == 'left') {
-		mths = Math.PI + this.msize;
-		mthe = Math.PI - this.msize;
+		mths = Math.PI + msize;
+		mthe = Math.PI - msize;
 	} else if(this.dir == 'down') {
-		mths = Math.PI / 2 + this.msize;
-		mthe = Math.PI / 2 - this.msize;
+		mths = Math.PI / 2 + msize;
+		mthe = Math.PI / 2 - msize;
 	} else if(this.dir == 'right') {
-		mths = this.msize;
-		mthe = 2 * Math.PI - this.msize;
+		mths = msize;
+		mthe = 2 * Math.PI - msize;
 	} else if(this.dir == 'up') {
-		mths = Math.PI * 3 / 2 + this.msize;
-		mthe = Math.PI * 3 / 2 - this.msize;
+		mths = Math.PI * 3 / 2 + msize;
+		mthe = Math.PI * 3 / 2 - msize;
 	} else {
 		return false;
 	}
 
-	//erase mouth region
-	this.ctx.fillStyle = OPTIONS.bgColor;
+
+	//render circle
+	this.ctx.fillStyle = this.color;
 	this.ctx.beginPath();
-	this.ctx.arc(rx, ry, this.r, mths, mthe, true);
+	this.ctx.arc(rx, ry, this.r, mthe, mths, true);
 	this.ctx.fill();
 	this.ctx.closePath();
+
+	//erase mouth region
+	this.ctx.fillStyle = OPTIONS.bgColor;
 	this.ctx.beginPath();
 	this.ctx.moveTo(rx, ry);
 	this.ctx.lineTo(rx + this.r * Math.cos(mths), ry + this.r * Math.sin(mths));
@@ -196,8 +212,8 @@ Pack.prototype.renderPackMotion = function(di, dj) {
 			p.clearPack(x, y);
 			x += xm;
 			y += ym;
-			// p.renderPack(x, y, p.dir);
-			index = p.mouthNo == 0? 'master' : p.dir+'_'+p.lotate[p.mouthNo];
+			//p.renderPack(x, y, p.dir);
+			index = p.mouthNo == 0? 'master_'+CONSTATNT.COLOR[p.color] : p.dir+'_'+p.lotate[p.mouthNo]+'_'+CONSTATNT.COLOR[p.color];
 			p.renderPackImg(x, y, p.imgs[index]);
 			cntRate++;
 			}, dRate);

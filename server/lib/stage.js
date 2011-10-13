@@ -7,6 +7,8 @@ var stage = {}
 /* Load library */
 var sys = require('sys');
 var env = require('./env').env;
+var file = require('./file');
+var tool = require('./tool').tool;
 
 /* ------------------------------
  * Member variables
@@ -51,7 +53,8 @@ stage.init = function() {
 		this.cells[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
 	}	
 
-	this.debug();
+	//this.makeCellFromBlocks(debugBlocks);
+	this.makeCellFromBlocks(this.getBlocksFromText('./lib/stage/normal2.txt'));
 	
 	this.createPList();
 
@@ -124,6 +127,60 @@ stage.feedsIsEmpty = function() {
 	}
 }
 
+/**
+ * make stage from text file.
+ */
+stage.getBlocksFromText = function(fileName) {
+	if(!fileName){
+		sys.log('[Error] Please input file name.');
+		return;
+	}
+	tool.debugLog('[getBlocksFromText]');
+
+	var line
+	, row
+	, i
+	, len
+	blocks = [];
+	file.open(fileName);
+	while(line = file.readLine()) {
+		row = line.split(',')
+		for(i in row) {
+			row[i] = row[i].trim();
+		}
+		blocks.push(row);
+	}
+	file.close();
+
+	return blocks;
+}
+
+/**
+ * make cells from blocks.
+ */
+stage.makeCellFromBlocks = function(blocks) {
+
+	if(!blocks){
+		sys.log('[Error] Please input blocks.');
+		return;
+	}
+
+	var i, j;
+
+	// Put point
+	for(i=0; i<blocks.length; i++) {
+		for(j=0; j<blocks[i].length; j++) {
+			if(blocks[i][j] == 1) {
+				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+			} else if(blocks[i][j] == 9) {
+				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
+			}
+		}
+	}
+}
+
+
+
 //------------------------
 exports.stage = stage;
 
@@ -132,7 +189,21 @@ exports.stage = stage;
 /* DEBUG */
 stage.debug = function() {
 
-	var blocks = [
+	var i, j;
+
+	// Put point
+	for(i=0; i<blocks.length; i++) {
+		for(j=0; j<blocks[i].length; j++) {
+			if(blocks[i][j] == 1) {
+				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+			} else if(blocks[i][j] == 9) {
+				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
+			}
+		}
+	}
+}
+
+var debugBlocks = [
 		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
 		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
@@ -154,16 +225,4 @@ stage.debug = function() {
 		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
 		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
 	]
-	, i, j;
 
-	// Put point
-	for(i=0; i<blocks.length; i++) {
-		for(j=0; j<blocks[i].length; j++) {
-			if(blocks[i][j] == 1) {
-				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-			} else if(blocks[i][j] == 9) {
-				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
-			}
-		}
-	}
-}

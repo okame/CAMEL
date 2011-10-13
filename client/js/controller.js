@@ -39,7 +39,7 @@ var controller = {};
 					display.matrix.stage = arg;
 					display.render();
 				} else {
-					console.log('ope:'+ope);
+					// console.log('ope:'+ope);
 					if(player.operations[ope]) res = player.operations[ope](arg);
 					if(res) that.con.send(res);
 				}

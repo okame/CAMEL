@@ -20,4 +20,11 @@ CONSTATNT = {};
 		, SMALL : 's'
 		, LARGE : 'l'
 	}
+
+	CONSTATNT.COLOR = {
+		Yellow : 'y'
+		, Aquamarine : 'b'
+		, LightPink : 'r'
+		, Green : 'g'
+	}
  })($);
