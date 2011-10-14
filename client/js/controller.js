@@ -16,7 +16,7 @@ var controller = {};
 		controller.init = function(init) {
 			var that = this;
 
-			this.con = new window.WebSocket('ws://takagi.ws:8000');
+			this.con = new window.WebSocket('ws://'+ CONSTATNT.SERVER.HOST + ':' + CONSTATNT.SERVER.PORT);
 
 			/*------------------------------------------------
 			 * Client operation implementations

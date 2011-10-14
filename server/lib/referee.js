@@ -171,7 +171,6 @@ referee.calcPoint = function(num){
 
 		// 餌の削除
 		this.stage.cells[pack.x][pack.y][env.STAGE_OBJECTS.FEED] = 0;
-		console.log(i, pack.x, pack.y);
 
 	}
 

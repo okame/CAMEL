@@ -1,7 +1,7 @@
 var sys = require('sys');
 
 exports.env = {
-	PACK_NUM : 4,
+	PACK_NUM : 1,
 	STAGE_WIDTH :20,
 	STAGE_OBJECTS : {
 		BLOCK:0,

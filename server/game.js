@@ -1,5 +1,7 @@
 var game = {};
 
+var hoge = {};
+
 var createServer    = require('./lib/server').createServer
 , util            = require('util')
 , WebSocketServer = require('websocket').server
@@ -82,8 +84,19 @@ game.init = function() {
 			, finished;
 		
 			if(referee.checkNextCell(id, x, y)){
+				console.log(x,y);
 				packs[id].move(msg);
+
+				// DEB
+				if(hoge) {
+					if((Math.abs(hoge.x - x) + Math.abs(hoge.y - y)) > 2) {
+						console.log('--------  INVALID MOVEMENT. -------');
+					}
+				}
+				hoge.x = x;
+				hoge.y = y;
 			} else {
+				console.log('wall');
 				packs[id].moveError();
 				packs[id].isWall = true;
 			}
@@ -91,7 +104,7 @@ game.init = function() {
 			packs[id].changeState(env.PACK_STATUS.MOVE);
 			finished = tool.checkPackStatus(packs, 'MOVE');
 
-			console.log('[TURN:'+turnNumber+']get msg from:pack' + id);
+			//console.log('[TURN:'+turnNumber+']get msg from:pack' + id);
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
 					packs[i].changeState(env.PACK_STATUS.TURN_END);
@@ -129,12 +142,10 @@ game.messageEvnt = function(con, msg) {
 game.turnEnd = function(){
 
 	turnNumber++;
-	console.log('--- calcPoint : '+turnNumber+' ---');
 	referee.calcPoint(turnNumber);
 	//referee.printPoint();
 
 	
-	console.log('+++ render +++');
 	for(var id in packs) {
 		packs[id].send('scr', packs[id].point);
 		packs[id].render(stage.cells);

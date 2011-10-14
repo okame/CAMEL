@@ -8,6 +8,11 @@ CONSTATNT = {};
 
 (function($) {
 
+ 	CONSTATNT.SERVER = {
+		PORT : '8000'
+		, HOST : 'localhost'
+	}
+
 	CONSTATNT.DIR = {
 		 UP : 0
 		,DOWN : 1

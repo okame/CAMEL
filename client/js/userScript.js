@@ -2,8 +2,6 @@ var userScript = {};
 
 (function($) {
 
-		var save = [];
-
 		var R = 1
 		, D = 2
 		, L = 3
@@ -195,8 +193,6 @@ var userScript = {};
 				// 現在の進行方向で次に進むマスを取得
 				next = getNext(cells, pack, dir);
 
-				save.push({i:(next.i - pack.x), j:(next.j - pack.y)});
-
 				return next;
 			}
 
@@ -350,11 +346,11 @@ var userScript = {};
 		}
 
 
-		//userScript.next = userScript.random;
+		userScript.next = userScript.random;
 		//userScript.next = userScript.random2;
 		// userScript.next = userScript.changeDirAtWall;
-		// userScript.next = userScript.takagi;
-		// userScript.next = userScript.takagi2;
-		userScript.next = userScript.kondo1;
+		userScript.next = userScript.takagi;
+		//userScript.next = userScript.takagi2;
+		//userScript.next = userScript.kondo1;
 
 	})();

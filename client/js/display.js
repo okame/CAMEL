@@ -50,10 +50,10 @@ display = {};
 		 */
 		display.render = function () {
 			//this.renderGridLine();
-			this.setRenderQueue();
+			//this.setRenderQueue();
 			this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
-			//this.ra();
-			this.renderAllObjects();
+			this.ra();
+			//this.renderAllObjects();
 		}
 
 		// Initialize
@@ -244,7 +244,7 @@ display = {};
 			display.renderQueue.feed = [];
 			for(i = 0; i < stage.length; i++) {
 				for(j = 0; j < stage[i].length; j++) {
-					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
+					if(stage[j][i][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
 						this.renderCell(i, j, this.renderStage);
 					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
 						// render all packs

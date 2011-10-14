@@ -1,3804 +1,4293 @@
-14 Oct 01:34:43 - server listening on port 8000.
-14 Oct 01:34:45 - connect.
-14 Oct 01:34:45 - clientInit(id=0)
-14 Oct 01:34:46 - connect.
-14 Oct 01:34:46 - clientInit(id=1)
-14 Oct 01:34:47 - connect.
-14 Oct 01:34:47 - clientInit(id=2)
-14 Oct 01:34:47 - connect.
-14 Oct 01:34:48 - clientInit(id=3)
-14 Oct 01:34:48 - finished to create stage
-14 Oct 01:34:48 - readyOk(id=2)
-14 Oct 01:34:48 - readyOk(id=1)
-14 Oct 01:34:48 - readyOk(id=0)
-14 Oct 01:34:48 - readyOk(id=3)
+14 Oct 20:42:05 - server listening on port 8000.
+14 Oct 20:42:07 - connect.
+14 Oct 20:42:07 - clientInit(id=0)
+14 Oct 20:42:07 - finished to create stage
+14 Oct 20:42:07 - readyOk(id=0)
 --- evLoop : 0 ---
-[TURN:0]get msg from:pack0
-[TURN:0]get msg from:pack2
-[TURN:0]get msg from:pack1
-[TURN:0]get msg from:pack3
---- calcPoint : 1 ---
-+++ render +++
+2 2
 --- turn end : 1 ---
 
 --- evLoop : 1 ---
-[TURN:1]get msg from:pack0
-[TURN:1]get msg from:pack1
-[TURN:1]get msg from:pack2
-[TURN:1]get msg from:pack3
---- calcPoint : 2 ---
-+++ render +++
+2 3
 --- turn end : 2 ---
 
 --- evLoop : 2 ---
-[TURN:2]get msg from:pack0
-[TURN:2]get msg from:pack1
-[TURN:2]get msg from:pack2
-[TURN:2]get msg from:pack3
---- calcPoint : 3 ---
-+++ render +++
+1 3
 --- turn end : 3 ---
 
 --- evLoop : 3 ---
-[TURN:3]get msg from:pack0
-[TURN:3]get msg from:pack1
-[TURN:3]get msg from:pack2
-[TURN:3]get msg from:pack3
---- calcPoint : 4 ---
-+++ render +++
+1 4
 --- turn end : 4 ---
 
 --- evLoop : 4 ---
-[TURN:4]get msg from:pack2
-[TURN:4]get msg from:pack0
-[TURN:4]get msg from:pack3
-[TURN:4]get msg from:pack1
---- calcPoint : 5 ---
-+++ render +++
+2 4
 --- turn end : 5 ---
 
 --- evLoop : 5 ---
-[TURN:5]get msg from:pack0
-[TURN:5]get msg from:pack1
-[TURN:5]get msg from:pack2
-[TURN:5]get msg from:pack3
---- calcPoint : 6 ---
-+++ render +++
+2 3
 --- turn end : 6 ---
 
 --- evLoop : 6 ---
-[TURN:6]get msg from:pack0
-[TURN:6]get msg from:pack1
-[TURN:6]get msg from:pack3
-[TURN:6]get msg from:pack2
---- calcPoint : 7 ---
-+++ render +++
+3 3
 --- turn end : 7 ---
 
 --- evLoop : 7 ---
-[TURN:7]get msg from:pack0
-[TURN:7]get msg from:pack1
-[TURN:7]get msg from:pack2
-[TURN:7]get msg from:pack3
---- calcPoint : 8 ---
-+++ render +++
+4 3
 --- turn end : 8 ---
 
 --- evLoop : 8 ---
-[TURN:8]get msg from:pack0
-[TURN:8]get msg from:pack1
-[TURN:8]get msg from:pack2
-[TURN:8]get msg from:pack3
---- calcPoint : 9 ---
-+++ render +++
+4 4
 --- turn end : 9 ---
 
 --- evLoop : 9 ---
-[TURN:9]get msg from:pack0
-[TURN:9]get msg from:pack1
-[TURN:9]get msg from:pack2
-[TURN:9]get msg from:pack3
---- calcPoint : 10 ---
-+++ render +++
+4 5
 --- turn end : 10 ---
 
 --- evLoop : 10 ---
-[TURN:10]get msg from:pack0
-[TURN:10]get msg from:pack1
-[TURN:10]get msg from:pack3
-[TURN:10]get msg from:pack2
---- calcPoint : 11 ---
-+++ render +++
+4 6
 --- turn end : 11 ---
 
 --- evLoop : 11 ---
-[TURN:11]get msg from:pack0
-[TURN:11]get msg from:pack1
-[TURN:11]get msg from:pack3
-[TURN:11]get msg from:pack2
---- calcPoint : 12 ---
-+++ render +++
+5 6
 --- turn end : 12 ---
 
 --- evLoop : 12 ---
-[TURN:12]get msg from:pack0
-[TURN:12]get msg from:pack1
-[TURN:12]get msg from:pack2
-[TURN:12]get msg from:pack3
---- calcPoint : 13 ---
-+++ render +++
+5 7
 --- turn end : 13 ---
 
 --- evLoop : 13 ---
-[TURN:13]get msg from:pack0
-[TURN:13]get msg from:pack1
-[TURN:13]get msg from:pack2
-[TURN:13]get msg from:pack3
---- calcPoint : 14 ---
-+++ render +++
+4 7
 --- turn end : 14 ---
 
 --- evLoop : 14 ---
-[TURN:14]get msg from:pack1
-[TURN:14]get msg from:pack0
-[TURN:14]get msg from:pack2
-[TURN:14]get msg from:pack3
---- calcPoint : 15 ---
-+++ render +++
+4 6
 --- turn end : 15 ---
 
 --- evLoop : 15 ---
-[TURN:15]get msg from:pack0
-[TURN:15]get msg from:pack1
-[TURN:15]get msg from:pack2
-[TURN:15]get msg from:pack3
---- calcPoint : 16 ---
-+++ render +++
+4 5
 --- turn end : 16 ---
 
 --- evLoop : 16 ---
-[TURN:16]get msg from:pack0
-[TURN:16]get msg from:pack1
-[TURN:16]get msg from:pack2
-[TURN:16]get msg from:pack3
---- calcPoint : 17 ---
-+++ render +++
+3 5
 --- turn end : 17 ---
 
 --- evLoop : 17 ---
-[TURN:17]get msg from:pack0
-[TURN:17]get msg from:pack1
-[TURN:17]get msg from:pack2
-[TURN:17]get msg from:pack3
---- calcPoint : 18 ---
-+++ render +++
+3 4
 --- turn end : 18 ---
 
 --- evLoop : 18 ---
-[TURN:18]get msg from:pack0
-[TURN:18]get msg from:pack1
-[TURN:18]get msg from:pack2
-[TURN:18]get msg from:pack3
---- calcPoint : 19 ---
-+++ render +++
+2 4
 --- turn end : 19 ---
 
 --- evLoop : 19 ---
-[TURN:19]get msg from:pack0
-[TURN:19]get msg from:pack1
-[TURN:19]get msg from:pack2
-[TURN:19]get msg from:pack3
---- calcPoint : 20 ---
-+++ render +++
+2 3
 --- turn end : 20 ---
 
 --- evLoop : 20 ---
-[TURN:20]get msg from:pack0
-[TURN:20]get msg from:pack1
-[TURN:20]get msg from:pack2
-[TURN:20]get msg from:pack3
---- calcPoint : 21 ---
-+++ render +++
+3 3
 --- turn end : 21 ---
 
 --- evLoop : 21 ---
-[TURN:21]get msg from:pack0
-[TURN:21]get msg from:pack1
-[TURN:21]get msg from:pack2
-[TURN:21]get msg from:pack3
---- calcPoint : 22 ---
-+++ render +++
+3 2
 --- turn end : 22 ---
 
 --- evLoop : 22 ---
-[TURN:22]get msg from:pack0
-[TURN:22]get msg from:pack1
-[TURN:22]get msg from:pack2
-[TURN:22]get msg from:pack3
---- calcPoint : 23 ---
-+++ render +++
+4 2
 --- turn end : 23 ---
 
 --- evLoop : 23 ---
-[TURN:23]get msg from:pack0
-[TURN:23]get msg from:pack1
-[TURN:23]get msg from:pack2
-[TURN:23]get msg from:pack3
---- calcPoint : 24 ---
-+++ render +++
+4 1
 --- turn end : 24 ---
 
 --- evLoop : 24 ---
-[TURN:24]get msg from:pack0
-[TURN:24]get msg from:pack1
-[TURN:24]get msg from:pack2
-[TURN:24]get msg from:pack3
---- calcPoint : 25 ---
-+++ render +++
+3 1
 --- turn end : 25 ---
 
 --- evLoop : 25 ---
-[TURN:25]get msg from:pack0
-[TURN:25]get msg from:pack1
-[TURN:25]get msg from:pack2
-[TURN:25]get msg from:pack3
---- calcPoint : 26 ---
-+++ render +++
+3 2
 --- turn end : 26 ---
 
 --- evLoop : 26 ---
-[TURN:26]get msg from:pack0
-[TURN:26]get msg from:pack1
-[TURN:26]get msg from:pack2
-[TURN:26]get msg from:pack3
---- calcPoint : 27 ---
-+++ render +++
+3 3
 --- turn end : 27 ---
 
 --- evLoop : 27 ---
-[TURN:27]get msg from:pack0
-[TURN:27]get msg from:pack1
-[TURN:27]get msg from:pack2
-[TURN:27]get msg from:pack3
---- calcPoint : 28 ---
-+++ render +++
+4 3
 --- turn end : 28 ---
 
 --- evLoop : 28 ---
-[TURN:28]get msg from:pack0
-[TURN:28]get msg from:pack1
-[TURN:28]get msg from:pack2
-[TURN:28]get msg from:pack3
---- calcPoint : 29 ---
-+++ render +++
+5 3
 --- turn end : 29 ---
 
 --- evLoop : 29 ---
-[TURN:29]get msg from:pack0
-[TURN:29]get msg from:pack1
-[TURN:29]get msg from:pack2
-[TURN:29]get msg from:pack3
---- calcPoint : 30 ---
-+++ render +++
+5 2
 --- turn end : 30 ---
 
 --- evLoop : 30 ---
-[TURN:30]get msg from:pack0
-[TURN:30]get msg from:pack1
-[TURN:30]get msg from:pack2
-[TURN:30]get msg from:pack3
---- calcPoint : 31 ---
-+++ render +++
+4 2
 --- turn end : 31 ---
 
 --- evLoop : 31 ---
-[TURN:31]get msg from:pack0
-[TURN:31]get msg from:pack1
-[TURN:31]get msg from:pack2
-[TURN:31]get msg from:pack3
---- calcPoint : 32 ---
-+++ render +++
+4 3
 --- turn end : 32 ---
 
 --- evLoop : 32 ---
-[TURN:32]get msg from:pack0
-[TURN:32]get msg from:pack1
-[TURN:32]get msg from:pack2
-[TURN:32]get msg from:pack3
---- calcPoint : 33 ---
-+++ render +++
+4 4
 --- turn end : 33 ---
 
 --- evLoop : 33 ---
-[TURN:33]get msg from:pack1
-[TURN:33]get msg from:pack0
-[TURN:33]get msg from:pack2
-[TURN:33]get msg from:pack3
---- calcPoint : 34 ---
-+++ render +++
+3 4
 --- turn end : 34 ---
 
 --- evLoop : 34 ---
-[TURN:34]get msg from:pack0
-[TURN:34]get msg from:pack1
-[TURN:34]get msg from:pack2
-[TURN:34]get msg from:pack3
---- calcPoint : 35 ---
-+++ render +++
+2 4
 --- turn end : 35 ---
 
 --- evLoop : 35 ---
-[TURN:35]get msg from:pack0
-[TURN:35]get msg from:pack3
-[TURN:35]get msg from:pack2
-[TURN:35]get msg from:pack1
---- calcPoint : 36 ---
-+++ render +++
+2 3
 --- turn end : 36 ---
 
 --- evLoop : 36 ---
-[TURN:36]get msg from:pack0
-[TURN:36]get msg from:pack1
-[TURN:36]get msg from:pack2
-[TURN:36]get msg from:pack3
---- calcPoint : 37 ---
-+++ render +++
+3 3
 --- turn end : 37 ---
 
 --- evLoop : 37 ---
-[TURN:37]get msg from:pack0
-[TURN:37]get msg from:pack1
-[TURN:37]get msg from:pack2
-[TURN:37]get msg from:pack3
---- calcPoint : 38 ---
-+++ render +++
+3 2
 --- turn end : 38 ---
 
 --- evLoop : 38 ---
-[TURN:38]get msg from:pack0
-[TURN:38]get msg from:pack1
-[TURN:38]get msg from:pack2
-[TURN:38]get msg from:pack3
---- calcPoint : 39 ---
-+++ render +++
+4 2
 --- turn end : 39 ---
 
 --- evLoop : 39 ---
-[TURN:39]get msg from:pack0
-[TURN:39]get msg from:pack1
-[TURN:39]get msg from:pack2
-[TURN:39]get msg from:pack3
---- calcPoint : 40 ---
-+++ render +++
+4 3
 --- turn end : 40 ---
 
 --- evLoop : 40 ---
-[TURN:40]get msg from:pack0
-[TURN:40]get msg from:pack1
-[TURN:40]get msg from:pack2
-[TURN:40]get msg from:pack3
---- calcPoint : 41 ---
-+++ render +++
+3 3
 --- turn end : 41 ---
 
 --- evLoop : 41 ---
-[TURN:41]get msg from:pack0
-[TURN:41]get msg from:pack1
-[TURN:41]get msg from:pack2
-[TURN:41]get msg from:pack3
---- calcPoint : 42 ---
-+++ render +++
+3 2
 --- turn end : 42 ---
 
 --- evLoop : 42 ---
-[TURN:42]get msg from:pack0
-[TURN:42]get msg from:pack1
-[TURN:42]get msg from:pack2
-[TURN:42]get msg from:pack3
---- calcPoint : 43 ---
-+++ render +++
+3 1
 --- turn end : 43 ---
 
 --- evLoop : 43 ---
-[TURN:43]get msg from:pack0
-[TURN:43]get msg from:pack1
-[TURN:43]get msg from:pack2
-[TURN:43]get msg from:pack3
---- calcPoint : 44 ---
-+++ render +++
+2 1
 --- turn end : 44 ---
 
 --- evLoop : 44 ---
-[TURN:44]get msg from:pack0
-[TURN:44]get msg from:pack1
-[TURN:44]get msg from:pack3
-[TURN:44]get msg from:pack2
---- calcPoint : 45 ---
-+++ render +++
+1 1
 --- turn end : 45 ---
 
 --- evLoop : 45 ---
-[TURN:45]get msg from:pack0
-[TURN:45]get msg from:pack1
-[TURN:45]get msg from:pack2
-[TURN:45]get msg from:pack3
---- calcPoint : 46 ---
-+++ render +++
+1 2
 --- turn end : 46 ---
 
 --- evLoop : 46 ---
-[TURN:46]get msg from:pack0
-[TURN:46]get msg from:pack1
-[TURN:46]get msg from:pack2
-[TURN:46]get msg from:pack3
---- calcPoint : 47 ---
-+++ render +++
+2 2
 --- turn end : 47 ---
 
 --- evLoop : 47 ---
-[TURN:47]get msg from:pack0
-[TURN:47]get msg from:pack1
-[TURN:47]get msg from:pack3
-[TURN:47]get msg from:pack2
---- calcPoint : 48 ---
-+++ render +++
+2 1
 --- turn end : 48 ---
 
 --- evLoop : 48 ---
-[TURN:48]get msg from:pack0
-[TURN:48]get msg from:pack1
-[TURN:48]get msg from:pack2
-[TURN:48]get msg from:pack3
---- calcPoint : 49 ---
-+++ render +++
+3 1
 --- turn end : 49 ---
 
 --- evLoop : 49 ---
-[TURN:49]get msg from:pack0
-[TURN:49]get msg from:pack1
-[TURN:49]get msg from:pack2
-[TURN:49]get msg from:pack3
---- calcPoint : 50 ---
-+++ render +++
+3 2
 --- turn end : 50 ---
 
 --- evLoop : 50 ---
-[TURN:50]get msg from:pack0
-[TURN:50]get msg from:pack1
-[TURN:50]get msg from:pack2
-[TURN:50]get msg from:pack3
---- calcPoint : 51 ---
-+++ render +++
+4 2
 --- turn end : 51 ---
 
 --- evLoop : 51 ---
-[TURN:51]get msg from:pack0
-[TURN:51]get msg from:pack1
-[TURN:51]get msg from:pack2
-[TURN:51]get msg from:pack3
---- calcPoint : 52 ---
-+++ render +++
+4 1
 --- turn end : 52 ---
 
 --- evLoop : 52 ---
-[TURN:52]get msg from:pack0
-[TURN:52]get msg from:pack1
-[TURN:52]get msg from:pack2
-[TURN:52]get msg from:pack3
---- calcPoint : 53 ---
-+++ render +++
+5 1
 --- turn end : 53 ---
 
 --- evLoop : 53 ---
-[TURN:53]get msg from:pack0
-[TURN:53]get msg from:pack1
-[TURN:53]get msg from:pack2
-[TURN:53]get msg from:pack3
---- calcPoint : 54 ---
-+++ render +++
+6 1
 --- turn end : 54 ---
 
 --- evLoop : 54 ---
-[TURN:54]get msg from:pack0
-[TURN:54]get msg from:pack1
-[TURN:54]get msg from:pack3
-[TURN:54]get msg from:pack2
---- calcPoint : 55 ---
-0 5 17
-+++ render +++
+7 1
 --- turn end : 55 ---
 
 --- evLoop : 55 ---
-[TURN:55]get msg from:pack0
-[TURN:55]get msg from:pack1
-[TURN:55]get msg from:pack2
-[TURN:55]get msg from:pack3
---- calcPoint : 56 ---
-0 5 16
-+++ render +++
+7 2
 --- turn end : 56 ---
 
 --- evLoop : 56 ---
-[TURN:56]get msg from:pack0
-[TURN:56]get msg from:pack1
-[TURN:56]get msg from:pack2
-[TURN:56]get msg from:pack3
---- calcPoint : 57 ---
-+++ render +++
+8 2
 --- turn end : 57 ---
 
 --- evLoop : 57 ---
-[TURN:57]get msg from:pack1
-[TURN:57]get msg from:pack0
-[TURN:57]get msg from:pack2
-[TURN:57]get msg from:pack3
---- calcPoint : 58 ---
-+++ render +++
+8 1
 --- turn end : 58 ---
 
 --- evLoop : 58 ---
-[TURN:58]get msg from:pack0
-[TURN:58]get msg from:pack1
-[TURN:58]get msg from:pack2
-[TURN:58]get msg from:pack3
---- calcPoint : 59 ---
-+++ render +++
+7 1
 --- turn end : 59 ---
 
 --- evLoop : 59 ---
-[TURN:59]get msg from:pack0
-[TURN:59]get msg from:pack1
-[TURN:59]get msg from:pack2
-[TURN:59]get msg from:pack3
---- calcPoint : 60 ---
-+++ render +++
+7 2
 --- turn end : 60 ---
 
 --- evLoop : 60 ---
-[TURN:60]get msg from:pack0
-[TURN:60]get msg from:pack1
-[TURN:60]get msg from:pack2
-[TURN:60]get msg from:pack3
---- calcPoint : 61 ---
-+++ render +++
+8 2
 --- turn end : 61 ---
 
 --- evLoop : 61 ---
-[TURN:61]get msg from:pack0
-[TURN:61]get msg from:pack1
-[TURN:61]get msg from:pack2
-[TURN:61]get msg from:pack3
---- calcPoint : 62 ---
-+++ render +++
+8 3
 --- turn end : 62 ---
 
 --- evLoop : 62 ---
-[TURN:62]get msg from:pack0
-[TURN:62]get msg from:pack1
-[TURN:62]get msg from:pack2
-[TURN:62]get msg from:pack3
---- calcPoint : 63 ---
-+++ render +++
+9 3
 --- turn end : 63 ---
 
 --- evLoop : 63 ---
-[TURN:63]get msg from:pack0
-[TURN:63]get msg from:pack1
-[TURN:63]get msg from:pack2
-[TURN:63]get msg from:pack3
---- calcPoint : 64 ---
-+++ render +++
+10 3
 --- turn end : 64 ---
 
 --- evLoop : 64 ---
-[TURN:64]get msg from:pack0
-[TURN:64]get msg from:pack1
-[TURN:64]get msg from:pack2
-[TURN:64]get msg from:pack3
---- calcPoint : 65 ---
-0 5 15
-+++ render +++
+10 2
 --- turn end : 65 ---
 
 --- evLoop : 65 ---
-[TURN:65]get msg from:pack0
-[TURN:65]get msg from:pack1
-[TURN:65]get msg from:pack3
-[TURN:65]get msg from:pack2
---- calcPoint : 66 ---
-0 5 14
-+++ render +++
+11 2
 --- turn end : 66 ---
 
 --- evLoop : 66 ---
-[TURN:66]get msg from:pack0
-[TURN:66]get msg from:pack1
-[TURN:66]get msg from:pack2
-[TURN:66]get msg from:pack3
---- calcPoint : 67 ---
-0 6 14
-+++ render +++
+11 3
 --- turn end : 67 ---
 
 --- evLoop : 67 ---
-[TURN:67]get msg from:pack0
-[TURN:67]get msg from:pack1
-[TURN:67]get msg from:pack2
-[TURN:67]get msg from:pack3
---- calcPoint : 68 ---
-0 7 14
-+++ render +++
+11 4
 --- turn end : 68 ---
 
 --- evLoop : 68 ---
-[TURN:68]get msg from:pack0
-[TURN:68]get msg from:pack1
-[TURN:68]get msg from:pack2
-[TURN:68]get msg from:pack3
---- calcPoint : 69 ---
-0 8 14
-+++ render +++
+11 5
 --- turn end : 69 ---
 
 --- evLoop : 69 ---
-[TURN:69]get msg from:pack1
-[TURN:69]get msg from:pack0
-[TURN:69]get msg from:pack2
-[TURN:69]get msg from:pack3
---- calcPoint : 70 ---
-0 9 14
-+++ render +++
+12 5
 --- turn end : 70 ---
 
 --- evLoop : 70 ---
-[TURN:70]get msg from:pack0
-[TURN:70]get msg from:pack1
-[TURN:70]get msg from:pack2
-[TURN:70]get msg from:pack3
---- calcPoint : 71 ---
-0 10 14
-+++ render +++
+13 5
 --- turn end : 71 ---
 
 --- evLoop : 71 ---
-[TURN:71]get msg from:pack0
-[TURN:71]get msg from:pack1
-[TURN:71]get msg from:pack3
-[TURN:71]get msg from:pack2
---- calcPoint : 72 ---
-0 11 14
-+++ render +++
+14 5
 --- turn end : 72 ---
 
 --- evLoop : 72 ---
-[TURN:72]get msg from:pack0
-[TURN:72]get msg from:pack1
-[TURN:72]get msg from:pack2
-[TURN:72]get msg from:pack3
---- calcPoint : 73 ---
-0 12 14
-+++ render +++
+14 4
 --- turn end : 73 ---
 
 --- evLoop : 73 ---
-[TURN:73]get msg from:pack0
-[TURN:73]get msg from:pack1
-[TURN:73]get msg from:pack2
-[TURN:73]get msg from:pack3
---- calcPoint : 74 ---
-0 13 14
-+++ render +++
+14 3
 --- turn end : 74 ---
 
 --- evLoop : 74 ---
-[TURN:74]get msg from:pack0
-[TURN:74]get msg from:pack1
-[TURN:74]get msg from:pack2
-[TURN:74]get msg from:pack3
---- calcPoint : 75 ---
-0 14 14
-+++ render +++
+15 3
 --- turn end : 75 ---
 
 --- evLoop : 75 ---
-[TURN:75]get msg from:pack0
-[TURN:75]get msg from:pack1
-[TURN:75]get msg from:pack3
-[TURN:75]get msg from:pack2
---- calcPoint : 76 ---
-0 15 14
-+++ render +++
+16 3
 --- turn end : 76 ---
 
 --- evLoop : 76 ---
-[TURN:76]get msg from:pack0
-[TURN:76]get msg from:pack1
-[TURN:76]get msg from:pack2
-[TURN:76]get msg from:pack3
---- calcPoint : 77 ---
-0 16 14
-+++ render +++
+16 2
 --- turn end : 77 ---
 
 --- evLoop : 77 ---
-[TURN:77]get msg from:pack0
-[TURN:77]get msg from:pack1
-[TURN:77]get msg from:pack2
-[TURN:77]get msg from:pack3
---- calcPoint : 78 ---
-0 17 14
-+++ render +++
+15 2
 --- turn end : 78 ---
 
 --- evLoop : 78 ---
-[TURN:78]get msg from:pack0
-[TURN:78]get msg from:pack1
-[TURN:78]get msg from:pack3
-[TURN:78]get msg from:pack2
---- calcPoint : 79 ---
-+++ render +++
+15 3
 --- turn end : 79 ---
 
 --- evLoop : 79 ---
-[TURN:79]get msg from:pack0
-[TURN:79]get msg from:pack1
-[TURN:79]get msg from:pack2
-[TURN:79]get msg from:pack3
---- calcPoint : 80 ---
-+++ render +++
+14 3
 --- turn end : 80 ---
 
 --- evLoop : 80 ---
-[TURN:80]get msg from:pack0
-[TURN:80]get msg from:pack1
-[TURN:80]get msg from:pack2
-[TURN:80]get msg from:pack3
---- calcPoint : 81 ---
-+++ render +++
+13 3
 --- turn end : 81 ---
 
 --- evLoop : 81 ---
-[TURN:81]get msg from:pack0
-[TURN:81]get msg from:pack1
-[TURN:81]get msg from:pack2
-[TURN:81]get msg from:pack3
---- calcPoint : 82 ---
-+++ render +++
+12 3
 --- turn end : 82 ---
 
 --- evLoop : 82 ---
-[TURN:82]get msg from:pack0
-[TURN:82]get msg from:pack1
-[TURN:82]get msg from:pack2
-[TURN:82]get msg from:pack3
---- calcPoint : 83 ---
-+++ render +++
+11 3
 --- turn end : 83 ---
 
 --- evLoop : 83 ---
-[TURN:83]get msg from:pack0
-[TURN:83]get msg from:pack1
-[TURN:83]get msg from:pack3
-[TURN:83]get msg from:pack2
---- calcPoint : 84 ---
-0 14 17
-+++ render +++
+11 4
 --- turn end : 84 ---
 
 --- evLoop : 84 ---
-[TURN:84]get msg from:pack2
-[TURN:84]get msg from:pack0
-[TURN:84]get msg from:pack1
-[TURN:84]get msg from:pack3
---- calcPoint : 85 ---
-0 14 16
-+++ render +++
+11 5
 --- turn end : 85 ---
 
 --- evLoop : 85 ---
-[TURN:85]get msg from:pack1
-[TURN:85]get msg from:pack0
-[TURN:85]get msg from:pack2
-[TURN:85]get msg from:pack3
---- calcPoint : 86 ---
-+++ render +++
+12 5
 --- turn end : 86 ---
 
 --- evLoop : 86 ---
-[TURN:86]get msg from:pack0
-[TURN:86]get msg from:pack1
-[TURN:86]get msg from:pack2
-[TURN:86]get msg from:pack3
---- calcPoint : 87 ---
-+++ render +++
+12 4
 --- turn end : 87 ---
 
 --- evLoop : 87 ---
-[TURN:87]get msg from:pack0
-[TURN:87]get msg from:pack1
-[TURN:87]get msg from:pack2
-[TURN:87]get msg from:pack3
---- calcPoint : 88 ---
-+++ render +++
+12 3
 --- turn end : 88 ---
 
 --- evLoop : 88 ---
-[TURN:88]get msg from:pack0
-[TURN:88]get msg from:pack1
-[TURN:88]get msg from:pack2
-[TURN:88]get msg from:pack3
---- calcPoint : 89 ---
-+++ render +++
+11 3
 --- turn end : 89 ---
 
 --- evLoop : 89 ---
-[TURN:89]get msg from:pack0
-[TURN:89]get msg from:pack1
-[TURN:89]get msg from:pack2
-[TURN:89]get msg from:pack3
---- calcPoint : 90 ---
-0 14 15
-+++ render +++
+11 4
 --- turn end : 90 ---
 
 --- evLoop : 90 ---
-[TURN:90]get msg from:pack0
-[TURN:90]get msg from:pack1
-[TURN:90]get msg from:pack2
-[TURN:90]get msg from:pack3
---- calcPoint : 91 ---
-+++ render +++
+12 4
 --- turn end : 91 ---
 
 --- evLoop : 91 ---
-[TURN:91]get msg from:pack0
-[TURN:91]get msg from:pack2
-[TURN:91]get msg from:pack1
-[TURN:91]get msg from:pack3
---- calcPoint : 92 ---
-+++ render +++
+12 3
 --- turn end : 92 ---
 
 --- evLoop : 92 ---
-[TURN:92]get msg from:pack0
-[TURN:92]get msg from:pack1
-[TURN:92]get msg from:pack2
-[TURN:92]get msg from:pack3
---- calcPoint : 93 ---
-+++ render +++
+12 2
 --- turn end : 93 ---
 
 --- evLoop : 93 ---
-[TURN:93]get msg from:pack0
-[TURN:93]get msg from:pack1
-[TURN:93]get msg from:pack2
-[TURN:93]get msg from:pack3
---- calcPoint : 94 ---
-+++ render +++
+12 1
 --- turn end : 94 ---
 
 --- evLoop : 94 ---
-[TURN:94]get msg from:pack0
-[TURN:94]get msg from:pack1
-[TURN:94]get msg from:pack2
-[TURN:94]get msg from:pack3
---- calcPoint : 95 ---
-+++ render +++
+13 1
 --- turn end : 95 ---
 
 --- evLoop : 95 ---
-[TURN:95]get msg from:pack0
-[TURN:95]get msg from:pack1
-[TURN:95]get msg from:pack2
-[TURN:95]get msg from:pack3
---- calcPoint : 96 ---
-+++ render +++
+13 2
 --- turn end : 96 ---
 
 --- evLoop : 96 ---
-[TURN:96]get msg from:pack0
-[TURN:96]get msg from:pack1
-[TURN:96]get msg from:pack3
-[TURN:96]get msg from:pack2
---- calcPoint : 97 ---
-+++ render +++
+13 3
 --- turn end : 97 ---
 
 --- evLoop : 97 ---
-[TURN:97]get msg from:pack0
-[TURN:97]get msg from:pack1
-[TURN:97]get msg from:pack2
-[TURN:97]get msg from:pack3
---- calcPoint : 98 ---
-+++ render +++
+12 3
 --- turn end : 98 ---
 
 --- evLoop : 98 ---
-[TURN:98]get msg from:pack0
-[TURN:98]get msg from:pack1
-[TURN:98]get msg from:pack2
-[TURN:98]get msg from:pack3
---- calcPoint : 99 ---
-+++ render +++
+12 2
 --- turn end : 99 ---
 
 --- evLoop : 99 ---
-[TURN:99]get msg from:pack0
-[TURN:99]get msg from:pack1
-[TURN:99]get msg from:pack2
-[TURN:99]get msg from:pack3
---- calcPoint : 100 ---
-+++ render +++
+11 2
 --- turn end : 100 ---
 
 --- evLoop : 100 ---
-[TURN:100]get msg from:pack0
-[TURN:100]get msg from:pack1
-[TURN:100]get msg from:pack2
-[TURN:100]get msg from:pack3
---- calcPoint : 101 ---
-+++ render +++
+11 1
 --- turn end : 101 ---
 
 --- evLoop : 101 ---
-[TURN:101]get msg from:pack1
-[TURN:101]get msg from:pack0
-[TURN:101]get msg from:pack2
-[TURN:101]get msg from:pack3
---- calcPoint : 102 ---
-+++ render +++
+12 1
 --- turn end : 102 ---
 
 --- evLoop : 102 ---
-[TURN:102]get msg from:pack0
-[TURN:102]get msg from:pack2
-[TURN:102]get msg from:pack1
-[TURN:102]get msg from:pack3
---- calcPoint : 103 ---
-+++ render +++
+13 1
 --- turn end : 103 ---
 
 --- evLoop : 103 ---
-[TURN:103]get msg from:pack1
-[TURN:103]get msg from:pack2
-[TURN:103]get msg from:pack0
-[TURN:103]get msg from:pack3
---- calcPoint : 104 ---
-+++ render +++
+13 2
 --- turn end : 104 ---
 
 --- evLoop : 104 ---
-[TURN:104]get msg from:pack0
-[TURN:104]get msg from:pack1
-[TURN:104]get msg from:pack2
-[TURN:104]get msg from:pack3
---- calcPoint : 105 ---
-+++ render +++
+12 2
 --- turn end : 105 ---
 
 --- evLoop : 105 ---
-[TURN:105]get msg from:pack0
-[TURN:105]get msg from:pack1
-[TURN:105]get msg from:pack2
-[TURN:105]get msg from:pack3
---- calcPoint : 106 ---
-+++ render +++
+12 3
 --- turn end : 106 ---
 
 --- evLoop : 106 ---
-[TURN:106]get msg from:pack0
-[TURN:106]get msg from:pack1
-[TURN:106]get msg from:pack2
-[TURN:106]get msg from:pack3
---- calcPoint : 107 ---
-+++ render +++
+13 3
 --- turn end : 107 ---
 
 --- evLoop : 107 ---
-[TURN:107]get msg from:pack0
-[TURN:107]get msg from:pack1
-[TURN:107]get msg from:pack2
-[TURN:107]get msg from:pack3
---- calcPoint : 108 ---
-+++ render +++
+14 3
 --- turn end : 108 ---
 
 --- evLoop : 108 ---
-[TURN:108]get msg from:pack1
-[TURN:108]get msg from:pack0
-[TURN:108]get msg from:pack2
-[TURN:108]get msg from:pack3
---- calcPoint : 109 ---
-+++ render +++
+14 2
 --- turn end : 109 ---
 
 --- evLoop : 109 ---
-[TURN:109]get msg from:pack1
-[TURN:109]get msg from:pack2
-[TURN:109]get msg from:pack0
-[TURN:109]get msg from:pack3
---- calcPoint : 110 ---
-+++ render +++
+14 1
 --- turn end : 110 ---
 
 --- evLoop : 110 ---
-[TURN:110]get msg from:pack1
-[TURN:110]get msg from:pack0
-[TURN:110]get msg from:pack2
-[TURN:110]get msg from:pack3
---- calcPoint : 111 ---
-+++ render +++
+13 1
 --- turn end : 111 ---
 
 --- evLoop : 111 ---
-[TURN:111]get msg from:pack0
-[TURN:111]get msg from:pack1
-[TURN:111]get msg from:pack2
-[TURN:111]get msg from:pack3
---- calcPoint : 112 ---
-+++ render +++
+12 1
 --- turn end : 112 ---
 
 --- evLoop : 112 ---
-[TURN:112]get msg from:pack1
-[TURN:112]get msg from:pack0
-[TURN:112]get msg from:pack2
-[TURN:112]get msg from:pack3
---- calcPoint : 113 ---
-+++ render +++
+12 2
 --- turn end : 113 ---
 
 --- evLoop : 113 ---
-[TURN:113]get msg from:pack0
-[TURN:113]get msg from:pack1
-[TURN:113]get msg from:pack2
-[TURN:113]get msg from:pack3
---- calcPoint : 114 ---
-+++ render +++
+11 2
 --- turn end : 114 ---
 
 --- evLoop : 114 ---
-[TURN:114]get msg from:pack0
-[TURN:114]get msg from:pack1
-[TURN:114]get msg from:pack2
-[TURN:114]get msg from:pack3
---- calcPoint : 115 ---
-+++ render +++
+11 1
 --- turn end : 115 ---
 
 --- evLoop : 115 ---
-[TURN:115]get msg from:pack0
-[TURN:115]get msg from:pack1
-[TURN:115]get msg from:pack2
-[TURN:115]get msg from:pack3
---- calcPoint : 116 ---
-+++ render +++
+10 1
 --- turn end : 116 ---
 
 --- evLoop : 116 ---
-[TURN:116]get msg from:pack0
-[TURN:116]get msg from:pack1
-[TURN:116]get msg from:pack2
-[TURN:116]get msg from:pack3
---- calcPoint : 117 ---
-+++ render +++
+9 1
 --- turn end : 117 ---
 
 --- evLoop : 117 ---
-[TURN:117]get msg from:pack0
-[TURN:117]get msg from:pack1
-[TURN:117]get msg from:pack3
-[TURN:117]get msg from:pack2
---- calcPoint : 118 ---
-+++ render +++
+9 2
 --- turn end : 118 ---
 
 --- evLoop : 118 ---
-[TURN:118]get msg from:pack0
-[TURN:118]get msg from:pack1
-[TURN:118]get msg from:pack2
-[TURN:118]get msg from:pack3
---- calcPoint : 119 ---
-+++ render +++
+10 2
 --- turn end : 119 ---
 
 --- evLoop : 119 ---
-[TURN:119]get msg from:pack0
-[TURN:119]get msg from:pack1
-[TURN:119]get msg from:pack2
-[TURN:119]get msg from:pack3
---- calcPoint : 120 ---
-+++ render +++
+10 3
 --- turn end : 120 ---
 
 --- evLoop : 120 ---
-[TURN:120]get msg from:pack0
-[TURN:120]get msg from:pack2
-[TURN:120]get msg from:pack1
-[TURN:120]get msg from:pack3
---- calcPoint : 121 ---
-+++ render +++
+10 4
 --- turn end : 121 ---
 
 --- evLoop : 121 ---
-[TURN:121]get msg from:pack0
-[TURN:121]get msg from:pack1
-[TURN:121]get msg from:pack3
-[TURN:121]get msg from:pack2
---- calcPoint : 122 ---
-+++ render +++
+9 4
 --- turn end : 122 ---
 
 --- evLoop : 122 ---
-[TURN:122]get msg from:pack0
-[TURN:122]get msg from:pack1
-[TURN:122]get msg from:pack2
-[TURN:122]get msg from:pack3
---- calcPoint : 123 ---
-+++ render +++
+9 5
 --- turn end : 123 ---
 
 --- evLoop : 123 ---
-[TURN:123]get msg from:pack0
-[TURN:123]get msg from:pack1
-[TURN:123]get msg from:pack2
-[TURN:123]get msg from:pack3
---- calcPoint : 124 ---
-+++ render +++
+8 5
 --- turn end : 124 ---
 
 --- evLoop : 124 ---
-[TURN:124]get msg from:pack0
-[TURN:124]get msg from:pack1
-[TURN:124]get msg from:pack2
-[TURN:124]get msg from:pack3
---- calcPoint : 125 ---
-+++ render +++
+8 4
 --- turn end : 125 ---
 
 --- evLoop : 125 ---
-[TURN:125]get msg from:pack0
-[TURN:125]get msg from:pack1
-[TURN:125]get msg from:pack2
-[TURN:125]get msg from:pack3
---- calcPoint : 126 ---
-+++ render +++
+7 4
 --- turn end : 126 ---
 
 --- evLoop : 126 ---
-[TURN:126]get msg from:pack0
-[TURN:126]get msg from:pack1
-[TURN:126]get msg from:pack2
-[TURN:126]get msg from:pack3
---- calcPoint : 127 ---
-0 2 14
-+++ render +++
+6 4
 --- turn end : 127 ---
 
 --- evLoop : 127 ---
-[TURN:127]get msg from:pack0
-[TURN:127]get msg from:pack1
-[TURN:127]get msg from:pack2
-[TURN:127]get msg from:pack3
---- calcPoint : 128 ---
-0 3 14
-+++ render +++
+5 4
 --- turn end : 128 ---
 
 --- evLoop : 128 ---
-[TURN:128]get msg from:pack0
-[TURN:128]get msg from:pack1
-[TURN:128]get msg from:pack3
-[TURN:128]get msg from:pack2
---- calcPoint : 129 ---
-0 4 14
-+++ render +++
+4 4
 --- turn end : 129 ---
 
 --- evLoop : 129 ---
-[TURN:129]get msg from:pack0
-[TURN:129]get msg from:pack1
-[TURN:129]get msg from:pack2
-[TURN:129]get msg from:pack3
---- calcPoint : 130 ---
-+++ render +++
+4 3
 --- turn end : 130 ---
 
 --- evLoop : 130 ---
-[TURN:130]get msg from:pack1
-[TURN:130]get msg from:pack2
-[TURN:130]get msg from:pack0
-[TURN:130]get msg from:pack3
---- calcPoint : 131 ---
-0 5 13
-+++ render +++
+3 3
 --- turn end : 131 ---
 
 --- evLoop : 131 ---
-[TURN:131]get msg from:pack2
-[TURN:131]get msg from:pack1
-[TURN:131]get msg from:pack0
-[TURN:131]get msg from:pack3
---- calcPoint : 132 ---
-0 5 12
-+++ render +++
+3 2
 --- turn end : 132 ---
 
 --- evLoop : 132 ---
-[TURN:132]get msg from:pack0
-[TURN:132]get msg from:pack1
-[TURN:132]get msg from:pack3
-[TURN:132]get msg from:pack2
---- calcPoint : 133 ---
-+++ render +++
+4 2
 --- turn end : 133 ---
 
 --- evLoop : 133 ---
-[TURN:133]get msg from:pack0
-[TURN:133]get msg from:pack1
-[TURN:133]get msg from:pack3
-[TURN:133]get msg from:pack2
---- calcPoint : 134 ---
-+++ render +++
+4 1
 --- turn end : 134 ---
 
 --- evLoop : 134 ---
-[TURN:134]get msg from:pack0
-[TURN:134]get msg from:pack1
-[TURN:134]get msg from:pack2
-[TURN:134]get msg from:pack3
---- calcPoint : 135 ---
-0 5 11
-+++ render +++
+3 1
 --- turn end : 135 ---
 
 --- evLoop : 135 ---
-[TURN:135]get msg from:pack1
-[TURN:135]get msg from:pack0
-[TURN:135]get msg from:pack2
-[TURN:135]get msg from:pack3
---- calcPoint : 136 ---
-0 5 10
-+++ render +++
+2 1
 --- turn end : 136 ---
 
 --- evLoop : 136 ---
-[TURN:136]get msg from:pack0
-[TURN:136]get msg from:pack1
-[TURN:136]get msg from:pack2
-[TURN:136]get msg from:pack3
---- calcPoint : 137 ---
-+++ render +++
+1 1
 --- turn end : 137 ---
 
 --- evLoop : 137 ---
-[TURN:137]get msg from:pack0
-[TURN:137]get msg from:pack1
-[TURN:137]get msg from:pack2
-[TURN:137]get msg from:pack3
---- calcPoint : 138 ---
-+++ render +++
+1 2
 --- turn end : 138 ---
 
 --- evLoop : 138 ---
-[TURN:138]get msg from:pack0
-[TURN:138]get msg from:pack1
-[TURN:138]get msg from:pack2
-[TURN:138]get msg from:pack3
---- calcPoint : 139 ---
-0 5 9
-+++ render +++
+1 3
 --- turn end : 139 ---
 
 --- evLoop : 139 ---
-[TURN:139]get msg from:pack0
-[TURN:139]get msg from:pack1
-[TURN:139]get msg from:pack2
-[TURN:139]get msg from:pack3
---- calcPoint : 140 ---
-0 5 8
-+++ render +++
+1 4
 --- turn end : 140 ---
 
 --- evLoop : 140 ---
-[TURN:140]get msg from:pack0
-[TURN:140]get msg from:pack2
-[TURN:140]get msg from:pack1
-[TURN:140]get msg from:pack3
---- calcPoint : 141 ---
-+++ render +++
+1 5
 --- turn end : 141 ---
 
 --- evLoop : 141 ---
-[TURN:141]get msg from:pack0
-[TURN:141]get msg from:pack1
-[TURN:141]get msg from:pack2
-[TURN:141]get msg from:pack3
---- calcPoint : 142 ---
-+++ render +++
+1 6
 --- turn end : 142 ---
 
 --- evLoop : 142 ---
-[TURN:142]get msg from:pack0
-[TURN:142]get msg from:pack1
-[TURN:142]get msg from:pack2
-[TURN:142]get msg from:pack3
---- calcPoint : 143 ---
-0 5 7
-+++ render +++
+2 6
 --- turn end : 143 ---
 
 --- evLoop : 143 ---
-[TURN:143]get msg from:pack0
-[TURN:143]get msg from:pack1
-[TURN:143]get msg from:pack2
-[TURN:143]get msg from:pack3
---- calcPoint : 144 ---
-0 5 6
-+++ render +++
+2 5
 --- turn end : 144 ---
 
 --- evLoop : 144 ---
-[TURN:144]get msg from:pack0
-[TURN:144]get msg from:pack2
-[TURN:144]get msg from:pack1
-[TURN:144]get msg from:pack3
---- calcPoint : 145 ---
-+++ render +++
+3 5
 --- turn end : 145 ---
 
 --- evLoop : 145 ---
-[TURN:145]get msg from:pack0
-[TURN:145]get msg from:pack1
-[TURN:145]get msg from:pack2
-[TURN:145]get msg from:pack3
---- calcPoint : 146 ---
-0 4 5
-+++ render +++
+4 5
 --- turn end : 146 ---
 
 --- evLoop : 146 ---
-[TURN:146]get msg from:pack0
-[TURN:146]get msg from:pack1
-[TURN:146]get msg from:pack2
-[TURN:146]get msg from:pack3
---- calcPoint : 147 ---
-0 5 5
-+++ render +++
+5 5
 --- turn end : 147 ---
 
 --- evLoop : 147 ---
-[TURN:147]get msg from:pack0
-[TURN:147]get msg from:pack1
-[TURN:147]get msg from:pack3
-[TURN:147]get msg from:pack2
---- calcPoint : 148 ---
-0 6 5
-+++ render +++
+5 4
 --- turn end : 148 ---
 
 --- evLoop : 148 ---
-[TURN:148]get msg from:pack0
-[TURN:148]get msg from:pack1
-[TURN:148]get msg from:pack2
-[TURN:148]get msg from:pack3
---- calcPoint : 149 ---
-0 7 5
-+++ render +++
+6 4
 --- turn end : 149 ---
 
 --- evLoop : 149 ---
-[TURN:149]get msg from:pack1
-[TURN:149]get msg from:pack0
-[TURN:149]get msg from:pack3
-[TURN:149]get msg from:pack2
---- calcPoint : 150 ---
-0 8 5
-+++ render +++
+7 4
 --- turn end : 150 ---
 
 --- evLoop : 150 ---
-[TURN:150]get msg from:pack0
-[TURN:150]get msg from:pack1
-[TURN:150]get msg from:pack2
-[TURN:150]get msg from:pack3
---- calcPoint : 151 ---
-0 9 5
-+++ render +++
+8 4
 --- turn end : 151 ---
 
 --- evLoop : 151 ---
-[TURN:151]get msg from:pack0
-[TURN:151]get msg from:pack1
-[TURN:151]get msg from:pack2
-[TURN:151]get msg from:pack3
---- calcPoint : 152 ---
-0 10 5
-+++ render +++
+9 4
 --- turn end : 152 ---
 
 --- evLoop : 152 ---
-[TURN:152]get msg from:pack0
-[TURN:152]get msg from:pack1
-[TURN:152]get msg from:pack2
-[TURN:152]get msg from:pack3
---- calcPoint : 153 ---
-0 11 5
-+++ render +++
+9 3
 --- turn end : 153 ---
 
 --- evLoop : 153 ---
-[TURN:153]get msg from:pack0
-[TURN:153]get msg from:pack1
-[TURN:153]get msg from:pack2
-[TURN:153]get msg from:pack3
---- calcPoint : 154 ---
-0 12 5
-+++ render +++
+10 3
 --- turn end : 154 ---
 
 --- evLoop : 154 ---
-[TURN:154]get msg from:pack0
-[TURN:154]get msg from:pack1
-[TURN:154]get msg from:pack2
-[TURN:154]get msg from:pack3
---- calcPoint : 155 ---
-0 13 5
-+++ render +++
+10 4
 --- turn end : 155 ---
 
 --- evLoop : 155 ---
-[TURN:155]get msg from:pack0
-[TURN:155]get msg from:pack1
-[TURN:155]get msg from:pack2
-[TURN:155]get msg from:pack3
---- calcPoint : 156 ---
-0 14 5
-+++ render +++
+10 5
 --- turn end : 156 ---
 
 --- evLoop : 156 ---
-[TURN:156]get msg from:pack0
-[TURN:156]get msg from:pack1
-[TURN:156]get msg from:pack2
-[TURN:156]get msg from:pack3
---- calcPoint : 157 ---
-0 15 5
-+++ render +++
+11 5
 --- turn end : 157 ---
 
 --- evLoop : 157 ---
-[TURN:157]get msg from:pack0
-[TURN:157]get msg from:pack1
-[TURN:157]get msg from:pack3
-[TURN:157]get msg from:pack2
---- calcPoint : 158 ---
-0 16 5
-+++ render +++
+12 5
 --- turn end : 158 ---
 
 --- evLoop : 158 ---
-[TURN:158]get msg from:pack0
-[TURN:158]get msg from:pack1
-[TURN:158]get msg from:pack2
-[TURN:158]get msg from:pack3
---- calcPoint : 159 ---
-0 17 5
-+++ render +++
+12 4
 --- turn end : 159 ---
 
 --- evLoop : 159 ---
-[TURN:159]get msg from:pack0
-[TURN:159]get msg from:pack1
-[TURN:159]get msg from:pack2
-[TURN:159]get msg from:pack3
---- calcPoint : 160 ---
-+++ render +++
+13 4
 --- turn end : 160 ---
 
 --- evLoop : 160 ---
-[TURN:160]get msg from:pack0
-[TURN:160]get msg from:pack1
-[TURN:160]get msg from:pack3
-[TURN:160]get msg from:pack2
---- calcPoint : 161 ---
-+++ render +++
+14 4
 --- turn end : 161 ---
 
 --- evLoop : 161 ---
-[TURN:161]get msg from:pack0
-[TURN:161]get msg from:pack1
-[TURN:161]get msg from:pack3
-[TURN:161]get msg from:pack2
---- calcPoint : 162 ---
-+++ render +++
+14 5
 --- turn end : 162 ---
 
 --- evLoop : 162 ---
-[TURN:162]get msg from:pack1
-[TURN:162]get msg from:pack0
-[TURN:162]get msg from:pack3
-[TURN:162]get msg from:pack2
---- calcPoint : 163 ---
-+++ render +++
+15 5
 --- turn end : 163 ---
 
 --- evLoop : 163 ---
-[TURN:163]get msg from:pack1
-[TURN:163]get msg from:pack0
-[TURN:163]get msg from:pack2
-[TURN:163]get msg from:pack3
---- calcPoint : 164 ---
-+++ render +++
+16 5
 --- turn end : 164 ---
 
 --- evLoop : 164 ---
-[TURN:164]get msg from:pack0
-[TURN:164]get msg from:pack1
-[TURN:164]get msg from:pack3
-[TURN:164]get msg from:pack2
---- calcPoint : 165 ---
-+++ render +++
+17 5
 --- turn end : 165 ---
 
 --- evLoop : 165 ---
-[TURN:165]get msg from:pack1
-[TURN:165]get msg from:pack0
-[TURN:165]get msg from:pack3
-[TURN:165]get msg from:pack2
---- calcPoint : 166 ---
-+++ render +++
+17 6
 --- turn end : 166 ---
 
 --- evLoop : 166 ---
-[TURN:166]get msg from:pack1
-[TURN:166]get msg from:pack0
-[TURN:166]get msg from:pack2
-[TURN:166]get msg from:pack3
---- calcPoint : 167 ---
-+++ render +++
+17 7
 --- turn end : 167 ---
 
 --- evLoop : 167 ---
-[TURN:167]get msg from:pack0
-[TURN:167]get msg from:pack1
-[TURN:167]get msg from:pack2
-[TURN:167]get msg from:pack3
---- calcPoint : 168 ---
-+++ render +++
+17 8
 --- turn end : 168 ---
 
 --- evLoop : 168 ---
-[TURN:168]get msg from:pack0
-[TURN:168]get msg from:pack1
-[TURN:168]get msg from:pack2
-[TURN:168]get msg from:pack3
---- calcPoint : 169 ---
-+++ render +++
+18 8
 --- turn end : 169 ---
 
 --- evLoop : 169 ---
-[TURN:169]get msg from:pack0
-[TURN:169]get msg from:pack1
-[TURN:169]get msg from:pack2
-[TURN:169]get msg from:pack3
---- calcPoint : 170 ---
-0 14 13
-+++ render +++
+18 9
 --- turn end : 170 ---
 
 --- evLoop : 170 ---
-[TURN:170]get msg from:pack0
-[TURN:170]get msg from:pack1
-[TURN:170]get msg from:pack2
-[TURN:170]get msg from:pack3
---- calcPoint : 171 ---
-0 14 12
-+++ render +++
+18 10
 --- turn end : 171 ---
 
 --- evLoop : 171 ---
-[TURN:171]get msg from:pack0
-[TURN:171]get msg from:pack1
-[TURN:171]get msg from:pack2
-[TURN:171]get msg from:pack3
---- calcPoint : 172 ---
-+++ render +++
+17 10
 --- turn end : 172 ---
 
 --- evLoop : 172 ---
-[TURN:172]get msg from:pack0
-[TURN:172]get msg from:pack1
-[TURN:172]get msg from:pack2
-[TURN:172]get msg from:pack3
---- calcPoint : 173 ---
-+++ render +++
+17 9
 --- turn end : 173 ---
 
 --- evLoop : 173 ---
-[TURN:173]get msg from:pack0
-[TURN:173]get msg from:pack1
-[TURN:173]get msg from:pack2
-[TURN:173]get msg from:pack3
---- calcPoint : 174 ---
-0 14 11
-+++ render +++
+18 9
 --- turn end : 174 ---
 
 --- evLoop : 174 ---
-[TURN:174]get msg from:pack0
-[TURN:174]get msg from:pack1
-[TURN:174]get msg from:pack2
-[TURN:174]get msg from:pack3
---- calcPoint : 175 ---
-0 14 10
-+++ render +++
+18 10
 --- turn end : 175 ---
 
 --- evLoop : 175 ---
-[TURN:175]get msg from:pack1
-[TURN:175]get msg from:pack0
-[TURN:175]get msg from:pack2
-[TURN:175]get msg from:pack3
---- calcPoint : 176 ---
-+++ render +++
+17 10
 --- turn end : 176 ---
 
 --- evLoop : 176 ---
-[TURN:176]get msg from:pack0
-[TURN:176]get msg from:pack1
-[TURN:176]get msg from:pack2
-[TURN:176]get msg from:pack3
---- calcPoint : 177 ---
-+++ render +++
+17 11
 --- turn end : 177 ---
 
 --- evLoop : 177 ---
-[TURN:177]get msg from:pack1
-[TURN:177]get msg from:pack0
-[TURN:177]get msg from:pack2
-[TURN:177]get msg from:pack3
---- calcPoint : 178 ---
-0 14 9
-+++ render +++
+18 11
 --- turn end : 178 ---
 
 --- evLoop : 178 ---
-[TURN:178]get msg from:pack0
-[TURN:178]get msg from:pack1
-[TURN:178]get msg from:pack2
-[TURN:178]get msg from:pack3
---- calcPoint : 179 ---
-0 14 8
-+++ render +++
+18 10
 --- turn end : 179 ---
 
 --- evLoop : 179 ---
-[TURN:179]get msg from:pack0
-[TURN:179]get msg from:pack1
-[TURN:179]get msg from:pack3
-[TURN:179]get msg from:pack2
---- calcPoint : 180 ---
-+++ render +++
+18 9
 --- turn end : 180 ---
 
 --- evLoop : 180 ---
-[TURN:180]get msg from:pack0
-[TURN:180]get msg from:pack1
-[TURN:180]get msg from:pack3
-[TURN:180]get msg from:pack2
---- calcPoint : 181 ---
-+++ render +++
+18 8
 --- turn end : 181 ---
 
 --- evLoop : 181 ---
-[TURN:181]get msg from:pack0
-[TURN:181]get msg from:pack1
-[TURN:181]get msg from:pack2
-[TURN:181]get msg from:pack3
---- calcPoint : 182 ---
-0 14 7
-+++ render +++
+17 8
 --- turn end : 182 ---
 
 --- evLoop : 182 ---
-[TURN:182]get msg from:pack0
-[TURN:182]get msg from:pack1
-[TURN:182]get msg from:pack2
-[TURN:182]get msg from:pack3
---- calcPoint : 183 ---
-0 14 6
-+++ render +++
+17 9
 --- turn end : 183 ---
 
 --- evLoop : 183 ---
-[TURN:183]get msg from:pack0
-[TURN:183]get msg from:pack1
-[TURN:183]get msg from:pack2
-[TURN:183]get msg from:pack3
---- calcPoint : 184 ---
-+++ render +++
+17 10
 --- turn end : 184 ---
 
 --- evLoop : 184 ---
-[TURN:184]get msg from:pack0
-[TURN:184]get msg from:pack1
-[TURN:184]get msg from:pack2
-[TURN:184]get msg from:pack3
---- calcPoint : 185 ---
-+++ render +++
+18 10
 --- turn end : 185 ---
 
 --- evLoop : 185 ---
-[TURN:185]get msg from:pack0
-[TURN:185]get msg from:pack1
-[TURN:185]get msg from:pack2
-[TURN:185]get msg from:pack3
---- calcPoint : 186 ---
-+++ render +++
+18 9
 --- turn end : 186 ---
 
 --- evLoop : 186 ---
-[TURN:186]get msg from:pack0
-[TURN:186]get msg from:pack1
-[TURN:186]get msg from:pack2
-[TURN:186]get msg from:pack3
---- calcPoint : 187 ---
-+++ render +++
+17 9
 --- turn end : 187 ---
 
 --- evLoop : 187 ---
-[TURN:187]get msg from:pack0
-[TURN:187]get msg from:pack1
-[TURN:187]get msg from:pack2
-[TURN:187]get msg from:pack3
---- calcPoint : 188 ---
-+++ render +++
+17 8
 --- turn end : 188 ---
 
 --- evLoop : 188 ---
-[TURN:188]get msg from:pack0
-[TURN:188]get msg from:pack1
-[TURN:188]get msg from:pack2
-[TURN:188]get msg from:pack3
---- calcPoint : 189 ---
-+++ render +++
+17 7
 --- turn end : 189 ---
 
 --- evLoop : 189 ---
-[TURN:189]get msg from:pack0
-[TURN:189]get msg from:pack1
-[TURN:189]get msg from:pack2
-[TURN:189]get msg from:pack3
---- calcPoint : 190 ---
-+++ render +++
+18 7
 --- turn end : 190 ---
 
 --- evLoop : 190 ---
-[TURN:190]get msg from:pack0
-[TURN:190]get msg from:pack1
-[TURN:190]get msg from:pack2
-[TURN:190]get msg from:pack3
---- calcPoint : 191 ---
-+++ render +++
+18 6
 --- turn end : 191 ---
 
 --- evLoop : 191 ---
-[TURN:191]get msg from:pack0
-[TURN:191]get msg from:pack1
-[TURN:191]get msg from:pack2
-[TURN:191]get msg from:pack3
---- calcPoint : 192 ---
-+++ render +++
+17 6
 --- turn end : 192 ---
 
 --- evLoop : 192 ---
-[TURN:192]get msg from:pack0
-[TURN:192]get msg from:pack1
-[TURN:192]get msg from:pack2
-[TURN:192]get msg from:pack3
---- calcPoint : 193 ---
-+++ render +++
+16 6
 --- turn end : 193 ---
 
 --- evLoop : 193 ---
-[TURN:193]get msg from:pack0
-[TURN:193]get msg from:pack1
-[TURN:193]get msg from:pack2
-[TURN:193]get msg from:pack3
---- calcPoint : 194 ---
-+++ render +++
+16 5
 --- turn end : 194 ---
 
 --- evLoop : 194 ---
-[TURN:194]get msg from:pack1
-[TURN:194]get msg from:pack2
-[TURN:194]get msg from:pack0
-[TURN:194]get msg from:pack3
---- calcPoint : 195 ---
-+++ render +++
+16 4
 --- turn end : 195 ---
 
 --- evLoop : 195 ---
-[TURN:195]get msg from:pack1
-[TURN:195]get msg from:pack0
-[TURN:195]get msg from:pack2
-[TURN:195]get msg from:pack3
---- calcPoint : 196 ---
-+++ render +++
+15 4
 --- turn end : 196 ---
 
 --- evLoop : 196 ---
-[TURN:196]get msg from:pack0
-[TURN:196]get msg from:pack1
-[TURN:196]get msg from:pack3
-[TURN:196]get msg from:pack2
---- calcPoint : 197 ---
-+++ render +++
+14 4
 --- turn end : 197 ---
 
 --- evLoop : 197 ---
-[TURN:197]get msg from:pack1
-[TURN:197]get msg from:pack0
-[TURN:197]get msg from:pack2
-[TURN:197]get msg from:pack3
---- calcPoint : 198 ---
-+++ render +++
+13 4
 --- turn end : 198 ---
 
 --- evLoop : 198 ---
-[TURN:198]get msg from:pack0
-[TURN:198]get msg from:pack2
-[TURN:198]get msg from:pack3
-[TURN:198]get msg from:pack1
---- calcPoint : 199 ---
-+++ render +++
+13 5
 --- turn end : 199 ---
 
 --- evLoop : 199 ---
-[TURN:199]get msg from:pack0
-[TURN:199]get msg from:pack1
-[TURN:199]get msg from:pack2
-[TURN:199]get msg from:pack3
---- calcPoint : 200 ---
-+++ render +++
+12 5
 --- turn end : 200 ---
 
 --- evLoop : 200 ---
-[TURN:200]get msg from:pack0
-[TURN:200]get msg from:pack1
-[TURN:200]get msg from:pack2
-[TURN:200]get msg from:pack3
---- calcPoint : 201 ---
-+++ render +++
+12 4
 --- turn end : 201 ---
 
 --- evLoop : 201 ---
-[TURN:201]get msg from:pack0
-[TURN:201]get msg from:pack1
-[TURN:201]get msg from:pack2
-[TURN:201]get msg from:pack3
---- calcPoint : 202 ---
-+++ render +++
+11 4
 --- turn end : 202 ---
 
 --- evLoop : 202 ---
-[TURN:202]get msg from:pack0
-[TURN:202]get msg from:pack1
-[TURN:202]get msg from:pack2
-[TURN:202]get msg from:pack3
---- calcPoint : 203 ---
-+++ render +++
+11 3
 --- turn end : 203 ---
 
 --- evLoop : 203 ---
-[TURN:203]get msg from:pack0
-[TURN:203]get msg from:pack1
-[TURN:203]get msg from:pack2
-[TURN:203]get msg from:pack3
---- calcPoint : 204 ---
-+++ render +++
+11 2
 --- turn end : 204 ---
 
 --- evLoop : 204 ---
-[TURN:204]get msg from:pack0
-[TURN:204]get msg from:pack1
-[TURN:204]get msg from:pack2
-[TURN:204]get msg from:pack3
---- calcPoint : 205 ---
-+++ render +++
+12 2
 --- turn end : 205 ---
 
 --- evLoop : 205 ---
-[TURN:205]get msg from:pack0
-[TURN:205]get msg from:pack1
-[TURN:205]get msg from:pack2
-[TURN:205]get msg from:pack3
---- calcPoint : 206 ---
-+++ render +++
+12 3
 --- turn end : 206 ---
 
 --- evLoop : 206 ---
-[TURN:206]get msg from:pack0
-[TURN:206]get msg from:pack1
-[TURN:206]get msg from:pack3
-[TURN:206]get msg from:pack2
---- calcPoint : 207 ---
-+++ render +++
+11 3
 --- turn end : 207 ---
 
 --- evLoop : 207 ---
-[TURN:207]get msg from:pack0
-[TURN:207]get msg from:pack2
-[TURN:207]get msg from:pack1
-[TURN:207]get msg from:pack3
---- calcPoint : 208 ---
-+++ render +++
+11 2
 --- turn end : 208 ---
 
 --- evLoop : 208 ---
-[TURN:208]get msg from:pack0
-[TURN:208]get msg from:pack1
-[TURN:208]get msg from:pack3
-[TURN:208]get msg from:pack2
---- calcPoint : 209 ---
-+++ render +++
+11 1
 --- turn end : 209 ---
 
 --- evLoop : 209 ---
-[TURN:209]get msg from:pack0
-[TURN:209]get msg from:pack1
-[TURN:209]get msg from:pack2
-[TURN:209]get msg from:pack3
---- calcPoint : 210 ---
-+++ render +++
+12 1
 --- turn end : 210 ---
 
 --- evLoop : 210 ---
-[TURN:210]get msg from:pack0
-[TURN:210]get msg from:pack1
-[TURN:210]get msg from:pack3
-[TURN:210]get msg from:pack2
---- calcPoint : 211 ---
-+++ render +++
+12 2
 --- turn end : 211 ---
 
 --- evLoop : 211 ---
-[TURN:211]get msg from:pack0
-[TURN:211]get msg from:pack2
-[TURN:211]get msg from:pack1
-[TURN:211]get msg from:pack3
---- calcPoint : 212 ---
-+++ render +++
+11 2
 --- turn end : 212 ---
 
 --- evLoop : 212 ---
-[TURN:212]get msg from:pack1
-[TURN:212]get msg from:pack0
-[TURN:212]get msg from:pack2
-[TURN:212]get msg from:pack3
---- calcPoint : 213 ---
-+++ render +++
+11 1
 --- turn end : 213 ---
 
 --- evLoop : 213 ---
-[TURN:213]get msg from:pack1
-[TURN:213]get msg from:pack0
-[TURN:213]get msg from:pack2
-[TURN:213]get msg from:pack3
---- calcPoint : 214 ---
-+++ render +++
+10 1
 --- turn end : 214 ---
 
 --- evLoop : 214 ---
-[TURN:214]get msg from:pack0
-[TURN:214]get msg from:pack1
-[TURN:214]get msg from:pack3
-[TURN:214]get msg from:pack2
---- calcPoint : 215 ---
-+++ render +++
+9 1
 --- turn end : 215 ---
 
 --- evLoop : 215 ---
-[TURN:215]get msg from:pack0
-[TURN:215]get msg from:pack1
-[TURN:215]get msg from:pack2
-[TURN:215]get msg from:pack3
---- calcPoint : 216 ---
-+++ render +++
+8 1
 --- turn end : 216 ---
 
 --- evLoop : 216 ---
-[TURN:216]get msg from:pack1
-[TURN:216]get msg from:pack0
-[TURN:216]get msg from:pack3
-[TURN:216]get msg from:pack2
---- calcPoint : 217 ---
-+++ render +++
+7 1
 --- turn end : 217 ---
 
 --- evLoop : 217 ---
-[TURN:217]get msg from:pack0
-[TURN:217]get msg from:pack1
-[TURN:217]get msg from:pack2
-[TURN:217]get msg from:pack3
---- calcPoint : 218 ---
-+++ render +++
+7 2
 --- turn end : 218 ---
 
 --- evLoop : 218 ---
-[TURN:218]get msg from:pack0
-[TURN:218]get msg from:pack1
-[TURN:218]get msg from:pack2
-[TURN:218]get msg from:pack3
---- calcPoint : 219 ---
-+++ render +++
+7 3
 --- turn end : 219 ---
 
 --- evLoop : 219 ---
-[TURN:219]get msg from:pack0
-[TURN:219]get msg from:pack1
-[TURN:219]get msg from:pack3
-[TURN:219]get msg from:pack2
---- calcPoint : 220 ---
-+++ render +++
+6 3
 --- turn end : 220 ---
 
 --- evLoop : 220 ---
-[TURN:220]get msg from:pack1
-[TURN:220]get msg from:pack2
-[TURN:220]get msg from:pack0
-[TURN:220]get msg from:pack3
---- calcPoint : 221 ---
-+++ render +++
+5 3
 --- turn end : 221 ---
 
 --- evLoop : 221 ---
-[TURN:221]get msg from:pack0
-[TURN:221]get msg from:pack1
-[TURN:221]get msg from:pack2
-[TURN:221]get msg from:pack3
---- calcPoint : 222 ---
-+++ render +++
+5 4
 --- turn end : 222 ---
 
 --- evLoop : 222 ---
-[TURN:222]get msg from:pack0
-[TURN:222]get msg from:pack1
-[TURN:222]get msg from:pack2
-[TURN:222]get msg from:pack3
---- calcPoint : 223 ---
-+++ render +++
+4 4
 --- turn end : 223 ---
 
 --- evLoop : 223 ---
-[TURN:223]get msg from:pack0
-[TURN:223]get msg from:pack2
-[TURN:223]get msg from:pack1
-[TURN:223]get msg from:pack3
---- calcPoint : 224 ---
-+++ render +++
+4 5
 --- turn end : 224 ---
 
 --- evLoop : 224 ---
-[TURN:224]get msg from:pack0
-[TURN:224]get msg from:pack1
-[TURN:224]get msg from:pack2
-[TURN:224]get msg from:pack3
---- calcPoint : 225 ---
-+++ render +++
+5 5
 --- turn end : 225 ---
 
 --- evLoop : 225 ---
-[TURN:225]get msg from:pack0
-[TURN:225]get msg from:pack1
-[TURN:225]get msg from:pack2
-[TURN:225]get msg from:pack3
---- calcPoint : 226 ---
-+++ render +++
+5 4
 --- turn end : 226 ---
 
 --- evLoop : 226 ---
-[TURN:226]get msg from:pack0
-[TURN:226]get msg from:pack1
-[TURN:226]get msg from:pack2
-[TURN:226]get msg from:pack3
---- calcPoint : 227 ---
-+++ render +++
+5 3
 --- turn end : 227 ---
 
 --- evLoop : 227 ---
-[TURN:227]get msg from:pack0
-[TURN:227]get msg from:pack1
-[TURN:227]get msg from:pack2
-[TURN:227]get msg from:pack3
---- calcPoint : 228 ---
-+++ render +++
+6 3
 --- turn end : 228 ---
 
 --- evLoop : 228 ---
-[TURN:228]get msg from:pack0
-[TURN:228]get msg from:pack1
-[TURN:228]get msg from:pack3
-[TURN:228]get msg from:pack2
---- calcPoint : 229 ---
-+++ render +++
+6 4
 --- turn end : 229 ---
 
 --- evLoop : 229 ---
-[TURN:229]get msg from:pack0
-[TURN:229]get msg from:pack1
-[TURN:229]get msg from:pack2
-[TURN:229]get msg from:pack3
---- calcPoint : 230 ---
-+++ render +++
+6 5
 --- turn end : 230 ---
 
 --- evLoop : 230 ---
-[TURN:230]get msg from:pack1
-[TURN:230]get msg from:pack0
-[TURN:230]get msg from:pack2
-[TURN:230]get msg from:pack3
---- calcPoint : 231 ---
-+++ render +++
+7 5
 --- turn end : 231 ---
 
 --- evLoop : 231 ---
-[TURN:231]get msg from:pack0
-[TURN:231]get msg from:pack1
-[TURN:231]get msg from:pack2
-[TURN:231]get msg from:pack3
---- calcPoint : 232 ---
-+++ render +++
+8 5
 --- turn end : 232 ---
 
 --- evLoop : 232 ---
-[TURN:232]get msg from:pack0
-[TURN:232]get msg from:pack1
-[TURN:232]get msg from:pack2
-[TURN:232]get msg from:pack3
---- calcPoint : 233 ---
-+++ render +++
+8 4
 --- turn end : 233 ---
 
 --- evLoop : 233 ---
-[TURN:233]get msg from:pack0
-[TURN:233]get msg from:pack1
-[TURN:233]get msg from:pack2
-[TURN:233]get msg from:pack3
---- calcPoint : 234 ---
-+++ render +++
+9 4
 --- turn end : 234 ---
 
 --- evLoop : 234 ---
-[TURN:234]get msg from:pack0
-[TURN:234]get msg from:pack1
-[TURN:234]get msg from:pack2
-[TURN:234]get msg from:pack3
---- calcPoint : 235 ---
-+++ render +++
+9 5
 --- turn end : 235 ---
 
 --- evLoop : 235 ---
-[TURN:235]get msg from:pack0
-[TURN:235]get msg from:pack2
-[TURN:235]get msg from:pack1
-[TURN:235]get msg from:pack3
---- calcPoint : 236 ---
-+++ render +++
+10 5
 --- turn end : 236 ---
 
 --- evLoop : 236 ---
-[TURN:236]get msg from:pack0
-[TURN:236]get msg from:pack3
-[TURN:236]get msg from:pack1
-[TURN:236]get msg from:pack2
---- calcPoint : 237 ---
-+++ render +++
+10 4
 --- turn end : 237 ---
 
 --- evLoop : 237 ---
-[TURN:237]get msg from:pack0
-[TURN:237]get msg from:pack1
-[TURN:237]get msg from:pack2
-[TURN:237]get msg from:pack3
---- calcPoint : 238 ---
-+++ render +++
+10 3
 --- turn end : 238 ---
 
 --- evLoop : 238 ---
-[TURN:238]get msg from:pack0
-[TURN:238]get msg from:pack1
-[TURN:238]get msg from:pack2
-[TURN:238]get msg from:pack3
---- calcPoint : 239 ---
-+++ render +++
+10 2
 --- turn end : 239 ---
 
 --- evLoop : 239 ---
-[TURN:239]get msg from:pack0
-[TURN:239]get msg from:pack1
-[TURN:239]get msg from:pack2
-[TURN:239]get msg from:pack3
---- calcPoint : 240 ---
-+++ render +++
+10 1
 --- turn end : 240 ---
 
 --- evLoop : 240 ---
-[TURN:240]get msg from:pack0
-[TURN:240]get msg from:pack1
-[TURN:240]get msg from:pack2
-[TURN:240]get msg from:pack3
---- calcPoint : 241 ---
-+++ render +++
+11 1
 --- turn end : 241 ---
 
 --- evLoop : 241 ---
-[TURN:241]get msg from:pack0
-[TURN:241]get msg from:pack1
-[TURN:241]get msg from:pack2
-[TURN:241]get msg from:pack3
---- calcPoint : 242 ---
-+++ render +++
+11 2
 --- turn end : 242 ---
 
 --- evLoop : 242 ---
-[TURN:242]get msg from:pack0
-[TURN:242]get msg from:pack1
-[TURN:242]get msg from:pack2
-[TURN:242]get msg from:pack3
---- calcPoint : 243 ---
-+++ render +++
+12 2
 --- turn end : 243 ---
 
 --- evLoop : 243 ---
-[TURN:243]get msg from:pack0
-[TURN:243]get msg from:pack1
-[TURN:243]get msg from:pack2
-[TURN:243]get msg from:pack3
---- calcPoint : 244 ---
-+++ render +++
+12 1
 --- turn end : 244 ---
 
 --- evLoop : 244 ---
-[TURN:244]get msg from:pack0
-[TURN:244]get msg from:pack1
-[TURN:244]get msg from:pack3
-[TURN:244]get msg from:pack2
---- calcPoint : 245 ---
-+++ render +++
+11 1
 --- turn end : 245 ---
 
 --- evLoop : 245 ---
-[TURN:245]get msg from:pack0
-[TURN:245]get msg from:pack1
-[TURN:245]get msg from:pack2
-[TURN:245]get msg from:pack3
---- calcPoint : 246 ---
-+++ render +++
+11 2
 --- turn end : 246 ---
 
 --- evLoop : 246 ---
-[TURN:246]get msg from:pack0
-[TURN:246]get msg from:pack1
-[TURN:246]get msg from:pack2
-[TURN:246]get msg from:pack3
---- calcPoint : 247 ---
-+++ render +++
+11 3
 --- turn end : 247 ---
 
 --- evLoop : 247 ---
-[TURN:247]get msg from:pack0
-[TURN:247]get msg from:pack1
-[TURN:247]get msg from:pack2
-[TURN:247]get msg from:pack3
---- calcPoint : 248 ---
-+++ render +++
+11 4
 --- turn end : 248 ---
 
 --- evLoop : 248 ---
-[TURN:248]get msg from:pack0
-[TURN:248]get msg from:pack2
-[TURN:248]get msg from:pack1
-[TURN:248]get msg from:pack3
---- calcPoint : 249 ---
-+++ render +++
+11 5
 --- turn end : 249 ---
 
 --- evLoop : 249 ---
-[TURN:249]get msg from:pack0
-[TURN:249]get msg from:pack1
-[TURN:249]get msg from:pack3
-[TURN:249]get msg from:pack2
---- calcPoint : 250 ---
-+++ render +++
+10 5
 --- turn end : 250 ---
 
 --- evLoop : 250 ---
-[TURN:250]get msg from:pack0
-[TURN:250]get msg from:pack1
-[TURN:250]get msg from:pack2
-[TURN:250]get msg from:pack3
---- calcPoint : 251 ---
-+++ render +++
+10 4
 --- turn end : 251 ---
 
 --- evLoop : 251 ---
-[TURN:251]get msg from:pack0
-[TURN:251]get msg from:pack1
-[TURN:251]get msg from:pack2
-[TURN:251]get msg from:pack3
---- calcPoint : 252 ---
-+++ render +++
+10 3
 --- turn end : 252 ---
 
 --- evLoop : 252 ---
-[TURN:252]get msg from:pack0
-[TURN:252]get msg from:pack2
-[TURN:252]get msg from:pack1
-[TURN:252]get msg from:pack3
---- calcPoint : 253 ---
-+++ render +++
+10 2
 --- turn end : 253 ---
 
 --- evLoop : 253 ---
-[TURN:253]get msg from:pack0
-[TURN:253]get msg from:pack1
-[TURN:253]get msg from:pack2
-[TURN:253]get msg from:pack3
---- calcPoint : 254 ---
-+++ render +++
+9 2
 --- turn end : 254 ---
 
 --- evLoop : 254 ---
-[TURN:254]get msg from:pack0
-[TURN:254]get msg from:pack1
-[TURN:254]get msg from:pack2
-[TURN:254]get msg from:pack3
---- calcPoint : 255 ---
-+++ render +++
+8 2
 --- turn end : 255 ---
 
 --- evLoop : 255 ---
-[TURN:255]get msg from:pack0
-[TURN:255]get msg from:pack2
-[TURN:255]get msg from:pack1
-[TURN:255]get msg from:pack3
---- calcPoint : 256 ---
-+++ render +++
+8 1
 --- turn end : 256 ---
 
 --- evLoop : 256 ---
-[TURN:256]get msg from:pack0
-[TURN:256]get msg from:pack1
-[TURN:256]get msg from:pack2
-[TURN:256]get msg from:pack3
---- calcPoint : 257 ---
-+++ render +++
+7 1
 --- turn end : 257 ---
 
 --- evLoop : 257 ---
-[TURN:257]get msg from:pack0
-[TURN:257]get msg from:pack1
-[TURN:257]get msg from:pack2
-[TURN:257]get msg from:pack3
---- calcPoint : 258 ---
-+++ render +++
+7 2
 --- turn end : 258 ---
 
 --- evLoop : 258 ---
-[TURN:258]get msg from:pack0
-[TURN:258]get msg from:pack2
-[TURN:258]get msg from:pack1
-[TURN:258]get msg from:pack3
---- calcPoint : 259 ---
-+++ render +++
+6 2
 --- turn end : 259 ---
 
 --- evLoop : 259 ---
-[TURN:259]get msg from:pack0
-[TURN:259]get msg from:pack1
-[TURN:259]get msg from:pack2
-[TURN:259]get msg from:pack3
---- calcPoint : 260 ---
-+++ render +++
+6 3
 --- turn end : 260 ---
 
 --- evLoop : 260 ---
-[TURN:260]get msg from:pack0
-[TURN:260]get msg from:pack1
-[TURN:260]get msg from:pack2
-[TURN:260]get msg from:pack3
---- calcPoint : 261 ---
-+++ render +++
+6 4
 --- turn end : 261 ---
 
 --- evLoop : 261 ---
-[TURN:261]get msg from:pack0
-[TURN:261]get msg from:pack1
-[TURN:261]get msg from:pack3
-[TURN:261]get msg from:pack2
---- calcPoint : 262 ---
-+++ render +++
+5 4
 --- turn end : 262 ---
 
 --- evLoop : 262 ---
-[TURN:262]get msg from:pack0
-[TURN:262]get msg from:pack1
-[TURN:262]get msg from:pack2
-[TURN:262]get msg from:pack3
---- calcPoint : 263 ---
-+++ render +++
+4 4
 --- turn end : 263 ---
 
 --- evLoop : 263 ---
-[TURN:263]get msg from:pack0
-[TURN:263]get msg from:pack1
-[TURN:263]get msg from:pack3
-[TURN:263]get msg from:pack2
---- calcPoint : 264 ---
-+++ render +++
+4 5
 --- turn end : 264 ---
 
 --- evLoop : 264 ---
-[TURN:264]get msg from:pack0
-[TURN:264]get msg from:pack1
-[TURN:264]get msg from:pack3
-[TURN:264]get msg from:pack2
---- calcPoint : 265 ---
-+++ render +++
+4 6
 --- turn end : 265 ---
 
 --- evLoop : 265 ---
-[TURN:265]get msg from:pack1
-[TURN:265]get msg from:pack0
-[TURN:265]get msg from:pack2
-[TURN:265]get msg from:pack3
---- calcPoint : 266 ---
-+++ render +++
+5 6
 --- turn end : 266 ---
 
 --- evLoop : 266 ---
-[TURN:266]get msg from:pack0
-[TURN:266]get msg from:pack1
-[TURN:266]get msg from:pack2
-[TURN:266]get msg from:pack3
---- calcPoint : 267 ---
-+++ render +++
+5 5
 --- turn end : 267 ---
 
 --- evLoop : 267 ---
-[TURN:267]get msg from:pack0
-[TURN:267]get msg from:pack1
-[TURN:267]get msg from:pack2
-[TURN:267]get msg from:pack3
---- calcPoint : 268 ---
-+++ render +++
+6 5
 --- turn end : 268 ---
 
 --- evLoop : 268 ---
-[TURN:268]get msg from:pack0
-[TURN:268]get msg from:pack1
-[TURN:268]get msg from:pack2
-[TURN:268]get msg from:pack3
---- calcPoint : 269 ---
-+++ render +++
+6 4
 --- turn end : 269 ---
 
 --- evLoop : 269 ---
-[TURN:269]get msg from:pack0
-[TURN:269]get msg from:pack1
-[TURN:269]get msg from:pack2
-[TURN:269]get msg from:pack3
---- calcPoint : 270 ---
-+++ render +++
+7 4
 --- turn end : 270 ---
 
 --- evLoop : 270 ---
-[TURN:270]get msg from:pack0
-[TURN:270]get msg from:pack1
-[TURN:270]get msg from:pack2
-[TURN:270]get msg from:pack3
---- calcPoint : 271 ---
-+++ render +++
+8 4
 --- turn end : 271 ---
 
 --- evLoop : 271 ---
-[TURN:271]get msg from:pack0
-[TURN:271]get msg from:pack2
-[TURN:271]get msg from:pack1
-[TURN:271]get msg from:pack3
---- calcPoint : 272 ---
-+++ render +++
+9 4
 --- turn end : 272 ---
 
 --- evLoop : 272 ---
-[TURN:272]get msg from:pack0
-[TURN:272]get msg from:pack1
-[TURN:272]get msg from:pack2
-[TURN:272]get msg from:pack3
---- calcPoint : 273 ---
-+++ render +++
+9 5
 --- turn end : 273 ---
 
 --- evLoop : 273 ---
-[TURN:273]get msg from:pack0
-[TURN:273]get msg from:pack1
-[TURN:273]get msg from:pack2
-[TURN:273]get msg from:pack3
---- calcPoint : 274 ---
-+++ render +++
+8 5
 --- turn end : 274 ---
 
 --- evLoop : 274 ---
-[TURN:274]get msg from:pack0
-[TURN:274]get msg from:pack1
-[TURN:274]get msg from:pack2
-[TURN:274]get msg from:pack3
---- calcPoint : 275 ---
-+++ render +++
+7 5
 --- turn end : 275 ---
 
 --- evLoop : 275 ---
-[TURN:275]get msg from:pack0
-[TURN:275]get msg from:pack1
-[TURN:275]get msg from:pack2
-[TURN:275]get msg from:pack3
---- calcPoint : 276 ---
-+++ render +++
+6 5
 --- turn end : 276 ---
 
 --- evLoop : 276 ---
-[TURN:276]get msg from:pack0
-[TURN:276]get msg from:pack1
-[TURN:276]get msg from:pack2
-[TURN:276]get msg from:pack3
---- calcPoint : 277 ---
-+++ render +++
+5 5
 --- turn end : 277 ---
 
 --- evLoop : 277 ---
-[TURN:277]get msg from:pack0
-[TURN:277]get msg from:pack1
-[TURN:277]get msg from:pack2
-[TURN:277]get msg from:pack3
---- calcPoint : 278 ---
-+++ render +++
+5 6
 --- turn end : 278 ---
 
 --- evLoop : 278 ---
-[TURN:278]get msg from:pack0
-[TURN:278]get msg from:pack2
-[TURN:278]get msg from:pack1
-[TURN:278]get msg from:pack3
---- calcPoint : 279 ---
-+++ render +++
+5 7
 --- turn end : 279 ---
 
 --- evLoop : 279 ---
-[TURN:279]get msg from:pack0
-[TURN:279]get msg from:pack1
-[TURN:279]get msg from:pack2
-[TURN:279]get msg from:pack3
---- calcPoint : 280 ---
-+++ render +++
+5 8
 --- turn end : 280 ---
 
 --- evLoop : 280 ---
-[TURN:280]get msg from:pack0
-[TURN:280]get msg from:pack1
-[TURN:280]get msg from:pack2
-[TURN:280]get msg from:pack3
---- calcPoint : 281 ---
-+++ render +++
+5 9
 --- turn end : 281 ---
 
 --- evLoop : 281 ---
-[TURN:281]get msg from:pack0
-[TURN:281]get msg from:pack1
-[TURN:281]get msg from:pack2
-[TURN:281]get msg from:pack3
---- calcPoint : 282 ---
-+++ render +++
+5 10
 --- turn end : 282 ---
 
 --- evLoop : 282 ---
-[TURN:282]get msg from:pack0
-[TURN:282]get msg from:pack1
-[TURN:282]get msg from:pack2
-[TURN:282]get msg from:pack3
---- calcPoint : 283 ---
-+++ render +++
+5 11
 --- turn end : 283 ---
 
 --- evLoop : 283 ---
-[TURN:283]get msg from:pack0
-[TURN:283]get msg from:pack1
-[TURN:283]get msg from:pack3
-[TURN:283]get msg from:pack2
---- calcPoint : 284 ---
-+++ render +++
+5 12
 --- turn end : 284 ---
 
 --- evLoop : 284 ---
-[TURN:284]get msg from:pack0
-[TURN:284]get msg from:pack1
-[TURN:284]get msg from:pack3
-[TURN:284]get msg from:pack2
---- calcPoint : 285 ---
-+++ render +++
+5 13
 --- turn end : 285 ---
 
 --- evLoop : 285 ---
-[TURN:285]get msg from:pack0
-[TURN:285]get msg from:pack1
-[TURN:285]get msg from:pack2
-[TURN:285]get msg from:pack3
---- calcPoint : 286 ---
-+++ render +++
+5 14
 --- turn end : 286 ---
 
 --- evLoop : 286 ---
-[TURN:286]get msg from:pack0
-[TURN:286]get msg from:pack1
-[TURN:286]get msg from:pack2
-[TURN:286]get msg from:pack3
---- calcPoint : 287 ---
-+++ render +++
+6 14
 --- turn end : 287 ---
 
 --- evLoop : 287 ---
-[TURN:287]get msg from:pack0
-[TURN:287]get msg from:pack1
-[TURN:287]get msg from:pack2
-[TURN:287]get msg from:pack3
---- calcPoint : 288 ---
-+++ render +++
+7 14
 --- turn end : 288 ---
 
 --- evLoop : 288 ---
-[TURN:288]get msg from:pack0
-[TURN:288]get msg from:pack1
-[TURN:288]get msg from:pack2
-[TURN:288]get msg from:pack3
---- calcPoint : 289 ---
-+++ render +++
+8 14
 --- turn end : 289 ---
 
 --- evLoop : 289 ---
-[TURN:289]get msg from:pack0
-[TURN:289]get msg from:pack1
-[TURN:289]get msg from:pack2
-[TURN:289]get msg from:pack3
---- calcPoint : 290 ---
-+++ render +++
+9 14
 --- turn end : 290 ---
 
 --- evLoop : 290 ---
-[TURN:290]get msg from:pack1
-[TURN:290]get msg from:pack0
-[TURN:290]get msg from:pack2
-[TURN:290]get msg from:pack3
---- calcPoint : 291 ---
-+++ render +++
+10 14
 --- turn end : 291 ---
 
 --- evLoop : 291 ---
-[TURN:291]get msg from:pack0
-[TURN:291]get msg from:pack2
-[TURN:291]get msg from:pack1
-[TURN:291]get msg from:pack3
---- calcPoint : 292 ---
-+++ render +++
+11 14
 --- turn end : 292 ---
 
 --- evLoop : 292 ---
-[TURN:292]get msg from:pack0
-[TURN:292]get msg from:pack1
-[TURN:292]get msg from:pack2
-[TURN:292]get msg from:pack3
---- calcPoint : 293 ---
-+++ render +++
+12 14
 --- turn end : 293 ---
 
 --- evLoop : 293 ---
-[TURN:293]get msg from:pack0
-[TURN:293]get msg from:pack1
-[TURN:293]get msg from:pack3
-[TURN:293]get msg from:pack2
---- calcPoint : 294 ---
-+++ render +++
+13 14
 --- turn end : 294 ---
 
 --- evLoop : 294 ---
-[TURN:294]get msg from:pack0
-[TURN:294]get msg from:pack1
-[TURN:294]get msg from:pack2
-[TURN:294]get msg from:pack3
---- calcPoint : 295 ---
-+++ render +++
+14 14
 --- turn end : 295 ---
 
 --- evLoop : 295 ---
-[TURN:295]get msg from:pack0
-[TURN:295]get msg from:pack1
-[TURN:295]get msg from:pack2
-[TURN:295]get msg from:pack3
---- calcPoint : 296 ---
-+++ render +++
+14 13
 --- turn end : 296 ---
 
 --- evLoop : 296 ---
-[TURN:296]get msg from:pack1
-[TURN:296]get msg from:pack0
-[TURN:296]get msg from:pack3
-[TURN:296]get msg from:pack2
---- calcPoint : 297 ---
-+++ render +++
+14 12
 --- turn end : 297 ---
 
 --- evLoop : 297 ---
-[TURN:297]get msg from:pack0
-[TURN:297]get msg from:pack1
-[TURN:297]get msg from:pack2
-[TURN:297]get msg from:pack3
---- calcPoint : 298 ---
-+++ render +++
+14 11
 --- turn end : 298 ---
 
 --- evLoop : 298 ---
-[TURN:298]get msg from:pack0
-[TURN:298]get msg from:pack1
-[TURN:298]get msg from:pack2
-[TURN:298]get msg from:pack3
---- calcPoint : 299 ---
-+++ render +++
+14 10
 --- turn end : 299 ---
 
 --- evLoop : 299 ---
-[TURN:299]get msg from:pack0
-[TURN:299]get msg from:pack3
-[TURN:299]get msg from:pack1
-[TURN:299]get msg from:pack2
---- calcPoint : 300 ---
-+++ render +++
+14 9
 --- turn end : 300 ---
 
 --- evLoop : 300 ---
-[TURN:300]get msg from:pack0
-[TURN:300]get msg from:pack1
-[TURN:300]get msg from:pack3
-[TURN:300]get msg from:pack2
---- calcPoint : 301 ---
-+++ render +++
+15 9
 --- turn end : 301 ---
 
 --- evLoop : 301 ---
-[TURN:301]get msg from:pack1
-[TURN:301]get msg from:pack0
-[TURN:301]get msg from:pack3
-[TURN:301]get msg from:pack2
---- calcPoint : 302 ---
-+++ render +++
+15 10
 --- turn end : 302 ---
 
 --- evLoop : 302 ---
-[TURN:302]get msg from:pack0
-[TURN:302]get msg from:pack1
-[TURN:302]get msg from:pack2
-[TURN:302]get msg from:pack3
---- calcPoint : 303 ---
-+++ render +++
+14 10
 --- turn end : 303 ---
 
 --- evLoop : 303 ---
-[TURN:303]get msg from:pack0
-[TURN:303]get msg from:pack1
-[TURN:303]get msg from:pack2
-[TURN:303]get msg from:pack3
---- calcPoint : 304 ---
-+++ render +++
+14 11
 --- turn end : 304 ---
 
 --- evLoop : 304 ---
-[TURN:304]get msg from:pack0
-[TURN:304]get msg from:pack1
-[TURN:304]get msg from:pack2
-[TURN:304]get msg from:pack3
---- calcPoint : 305 ---
-+++ render +++
+15 11
 --- turn end : 305 ---
 
 --- evLoop : 305 ---
-[TURN:305]get msg from:pack0
-[TURN:305]get msg from:pack2
-[TURN:305]get msg from:pack3
-[TURN:305]get msg from:pack1
---- calcPoint : 306 ---
-+++ render +++
+15 12
 --- turn end : 306 ---
 
 --- evLoop : 306 ---
-[TURN:306]get msg from:pack0
-[TURN:306]get msg from:pack2
-[TURN:306]get msg from:pack3
-[TURN:306]get msg from:pack1
---- calcPoint : 307 ---
-+++ render +++
+15 13
 --- turn end : 307 ---
 
 --- evLoop : 307 ---
-[TURN:307]get msg from:pack1
-[TURN:307]get msg from:pack0
-[TURN:307]get msg from:pack2
-[TURN:307]get msg from:pack3
---- calcPoint : 308 ---
-+++ render +++
+14 13
 --- turn end : 308 ---
 
 --- evLoop : 308 ---
-[TURN:308]get msg from:pack0
-[TURN:308]get msg from:pack1
-[TURN:308]get msg from:pack3
-[TURN:308]get msg from:pack2
---- calcPoint : 309 ---
-+++ render +++
+14 14
 --- turn end : 309 ---
 
 --- evLoop : 309 ---
-[TURN:309]get msg from:pack0
-[TURN:309]get msg from:pack1
-[TURN:309]get msg from:pack2
-[TURN:309]get msg from:pack3
---- calcPoint : 310 ---
-+++ render +++
+15 14
 --- turn end : 310 ---
 
 --- evLoop : 310 ---
-[TURN:310]get msg from:pack0
-[TURN:310]get msg from:pack1
-[TURN:310]get msg from:pack2
-[TURN:310]get msg from:pack3
---- calcPoint : 311 ---
-+++ render +++
+16 14
 --- turn end : 311 ---
 
 --- evLoop : 311 ---
-[TURN:311]get msg from:pack0
-[TURN:311]get msg from:pack1
-[TURN:311]get msg from:pack2
-[TURN:311]get msg from:pack3
---- calcPoint : 312 ---
-+++ render +++
+17 14
 --- turn end : 312 ---
 
 --- evLoop : 312 ---
-[TURN:312]get msg from:pack0
-[TURN:312]get msg from:pack2
-[TURN:312]get msg from:pack1
-[TURN:312]get msg from:pack3
---- calcPoint : 313 ---
-+++ render +++
+17 13
 --- turn end : 313 ---
 
 --- evLoop : 313 ---
-[TURN:313]get msg from:pack1
-[TURN:313]get msg from:pack0
-[TURN:313]get msg from:pack2
-[TURN:313]get msg from:pack3
---- calcPoint : 314 ---
-+++ render +++
+17 12
 --- turn end : 314 ---
 
 --- evLoop : 314 ---
-[TURN:314]get msg from:pack0
-[TURN:314]get msg from:pack1
-[TURN:314]get msg from:pack2
-[TURN:314]get msg from:pack3
---- calcPoint : 315 ---
-+++ render +++
+17 11
 --- turn end : 315 ---
 
 --- evLoop : 315 ---
-[TURN:315]get msg from:pack0
-[TURN:315]get msg from:pack1
-[TURN:315]get msg from:pack2
-[TURN:315]get msg from:pack3
---- calcPoint : 316 ---
-+++ render +++
+17 10
 --- turn end : 316 ---
 
 --- evLoop : 316 ---
-[TURN:316]get msg from:pack0
-[TURN:316]get msg from:pack1
-[TURN:316]get msg from:pack2
-[TURN:316]get msg from:pack3
---- calcPoint : 317 ---
-+++ render +++
+18 10
 --- turn end : 317 ---
 
 --- evLoop : 317 ---
-[TURN:317]get msg from:pack0
-[TURN:317]get msg from:pack1
-[TURN:317]get msg from:pack2
-[TURN:317]get msg from:pack3
---- calcPoint : 318 ---
-+++ render +++
+18 9
 --- turn end : 318 ---
 
 --- evLoop : 318 ---
-[TURN:318]get msg from:pack0
-[TURN:318]get msg from:pack1
-[TURN:318]get msg from:pack2
-[TURN:318]get msg from:pack3
---- calcPoint : 319 ---
-+++ render +++
+18 8
 --- turn end : 319 ---
 
 --- evLoop : 319 ---
-[TURN:319]get msg from:pack0
-[TURN:319]get msg from:pack1
-[TURN:319]get msg from:pack2
-[TURN:319]get msg from:pack3
---- calcPoint : 320 ---
-+++ render +++
+18 7
 --- turn end : 320 ---
 
 --- evLoop : 320 ---
-[TURN:320]get msg from:pack0
-[TURN:320]get msg from:pack1
-[TURN:320]get msg from:pack2
-[TURN:320]get msg from:pack3
---- calcPoint : 321 ---
-+++ render +++
+17 7
 --- turn end : 321 ---
 
 --- evLoop : 321 ---
-[TURN:321]get msg from:pack0
-[TURN:321]get msg from:pack1
-[TURN:321]get msg from:pack2
-[TURN:321]get msg from:pack3
---- calcPoint : 322 ---
-+++ render +++
+17 8
 --- turn end : 322 ---
 
 --- evLoop : 322 ---
-[TURN:322]get msg from:pack0
-[TURN:322]get msg from:pack1
-[TURN:322]get msg from:pack2
-[TURN:322]get msg from:pack3
---- calcPoint : 323 ---
-+++ render +++
+17 9
 --- turn end : 323 ---
 
 --- evLoop : 323 ---
-[TURN:323]get msg from:pack1
-[TURN:323]get msg from:pack0
-[TURN:323]get msg from:pack2
-[TURN:323]get msg from:pack3
---- calcPoint : 324 ---
-+++ render +++
+18 9
 --- turn end : 324 ---
 
 --- evLoop : 324 ---
-[TURN:324]get msg from:pack1
-[TURN:324]get msg from:pack0
-[TURN:324]get msg from:pack2
-[TURN:324]get msg from:pack3
---- calcPoint : 325 ---
-+++ render +++
+18 8
 --- turn end : 325 ---
 
 --- evLoop : 325 ---
-[TURN:325]get msg from:pack1
-[TURN:325]get msg from:pack0
-[TURN:325]get msg from:pack2
-[TURN:325]get msg from:pack3
---- calcPoint : 326 ---
-+++ render +++
+17 8
 --- turn end : 326 ---
 
 --- evLoop : 326 ---
-[TURN:326]get msg from:pack0
-[TURN:326]get msg from:pack1
-[TURN:326]get msg from:pack2
-[TURN:326]get msg from:pack3
---- calcPoint : 327 ---
-+++ render +++
+17 9
 --- turn end : 327 ---
 
 --- evLoop : 327 ---
-[TURN:327]get msg from:pack0
-[TURN:327]get msg from:pack2
-[TURN:327]get msg from:pack1
-[TURN:327]get msg from:pack3
---- calcPoint : 328 ---
-0 2 5
-+++ render +++
+18 9
 --- turn end : 328 ---
 
 --- evLoop : 328 ---
-[TURN:328]get msg from:pack0
-[TURN:328]get msg from:pack1
-[TURN:328]get msg from:pack2
-[TURN:328]get msg from:pack3
---- calcPoint : 329 ---
-0 3 5
-+++ render +++
+18 10
 --- turn end : 329 ---
 
 --- evLoop : 329 ---
-[TURN:329]get msg from:pack0
-[TURN:329]get msg from:pack1
-[TURN:329]get msg from:pack2
-[TURN:329]get msg from:pack3
---- calcPoint : 330 ---
-+++ render +++
+17 10
 --- turn end : 330 ---
 
 --- evLoop : 330 ---
-[TURN:330]get msg from:pack0
-[TURN:330]get msg from:pack1
-[TURN:330]get msg from:pack2
-[TURN:330]get msg from:pack3
---- calcPoint : 331 ---
-+++ render +++
+17 11
 --- turn end : 331 ---
 
 --- evLoop : 331 ---
-[TURN:331]get msg from:pack0
-[TURN:331]get msg from:pack1
-[TURN:331]get msg from:pack3
-[TURN:331]get msg from:pack2
---- calcPoint : 332 ---
-0 5 4
-+++ render +++
+18 11
 --- turn end : 332 ---
 
 --- evLoop : 332 ---
-[TURN:332]get msg from:pack0
-[TURN:332]get msg from:pack1
-[TURN:332]get msg from:pack2
-[TURN:332]get msg from:pack3
---- calcPoint : 333 ---
-+++ render +++
+18 10
 --- turn end : 333 ---
 
 --- evLoop : 333 ---
-[TURN:333]get msg from:pack0
-[TURN:333]get msg from:pack1
-[TURN:333]get msg from:pack2
-[TURN:333]get msg from:pack3
---- calcPoint : 334 ---
-+++ render +++
+18 9
 --- turn end : 334 ---
 
 --- evLoop : 334 ---
-[TURN:334]get msg from:pack0
-[TURN:334]get msg from:pack1
-[TURN:334]get msg from:pack2
-[TURN:334]get msg from:pack3
---- calcPoint : 335 ---
-+++ render +++
+18 8
 --- turn end : 335 ---
 
 --- evLoop : 335 ---
-[TURN:335]get msg from:pack0
-[TURN:335]get msg from:pack1
-[TURN:335]get msg from:pack2
-[TURN:335]get msg from:pack3
---- calcPoint : 336 ---
-+++ render +++
+17 8
 --- turn end : 336 ---
 
 --- evLoop : 336 ---
-[TURN:336]get msg from:pack0
-[TURN:336]get msg from:pack1
-[TURN:336]get msg from:pack2
-[TURN:336]get msg from:pack3
---- calcPoint : 337 ---
-+++ render +++
+17 7
 --- turn end : 337 ---
 
 --- evLoop : 337 ---
-[TURN:337]get msg from:pack0
-[TURN:337]get msg from:pack2
-[TURN:337]get msg from:pack1
-[TURN:337]get msg from:pack3
---- calcPoint : 338 ---
-+++ render +++
+17 6
 --- turn end : 338 ---
 
 --- evLoop : 338 ---
-[TURN:338]get msg from:pack0
-[TURN:338]get msg from:pack1
-[TURN:338]get msg from:pack2
-[TURN:338]get msg from:pack3
---- calcPoint : 339 ---
-+++ render +++
+18 6
 --- turn end : 339 ---
 
 --- evLoop : 339 ---
-[TURN:339]get msg from:pack0
-[TURN:339]get msg from:pack2
-[TURN:339]get msg from:pack1
-[TURN:339]get msg from:pack3
---- calcPoint : 340 ---
-+++ render +++
+18 5
 --- turn end : 340 ---
 
 --- evLoop : 340 ---
-[TURN:340]get msg from:pack0
-[TURN:340]get msg from:pack2
-[TURN:340]get msg from:pack1
-[TURN:340]get msg from:pack3
---- calcPoint : 341 ---
-0 14 4
-+++ render +++
+18 4
 --- turn end : 341 ---
 
 --- evLoop : 341 ---
-[TURN:341]get msg from:pack1
-[TURN:341]get msg from:pack0
-[TURN:341]get msg from:pack2
-[TURN:341]get msg from:pack3
---- calcPoint : 342 ---
-+++ render +++
+17 4
 --- turn end : 342 ---
 
 --- evLoop : 342 ---
-[TURN:342]get msg from:pack0
-[TURN:342]get msg from:pack1
-[TURN:342]get msg from:pack2
-[TURN:342]get msg from:pack3
---- calcPoint : 343 ---
-+++ render +++
+17 5
 --- turn end : 343 ---
 
 --- evLoop : 343 ---
-[TURN:343]get msg from:pack1
-[TURN:343]get msg from:pack0
-[TURN:343]get msg from:pack2
-[TURN:343]get msg from:pack3
---- calcPoint : 344 ---
-+++ render +++
+16 5
 --- turn end : 344 ---
 
 --- evLoop : 344 ---
-[TURN:344]get msg from:pack0
-[TURN:344]get msg from:pack1
-[TURN:344]get msg from:pack3
-[TURN:344]get msg from:pack2
---- calcPoint : 345 ---
-+++ render +++
+16 6
 --- turn end : 345 ---
 
 --- evLoop : 345 ---
-[TURN:345]get msg from:pack0
-[TURN:345]get msg from:pack2
-[TURN:345]get msg from:pack1
-[TURN:345]get msg from:pack3
---- calcPoint : 346 ---
-+++ render +++
+17 6
 --- turn end : 346 ---
 
 --- evLoop : 346 ---
-[TURN:346]get msg from:pack0
-[TURN:346]get msg from:pack1
-[TURN:346]get msg from:pack2
-[TURN:346]get msg from:pack3
---- calcPoint : 347 ---
-+++ render +++
+17 5
 --- turn end : 347 ---
 
 --- evLoop : 347 ---
-[TURN:347]get msg from:pack0
-[TURN:347]get msg from:pack1
-[TURN:347]get msg from:pack2
-[TURN:347]get msg from:pack3
---- calcPoint : 348 ---
-0 14 3
-+++ render +++
+18 5
 --- turn end : 348 ---
 
 --- evLoop : 348 ---
-[TURN:348]get msg from:pack0
-[TURN:348]get msg from:pack1
-[TURN:348]get msg from:pack2
-[TURN:348]get msg from:pack3
---- calcPoint : 349 ---
-+++ render +++
+18 6
 --- turn end : 349 ---
 
 --- evLoop : 349 ---
-[TURN:349]get msg from:pack1
-[TURN:349]get msg from:pack0
-[TURN:349]get msg from:pack2
-[TURN:349]get msg from:pack3
---- calcPoint : 350 ---
-+++ render +++
+17 6
 --- turn end : 350 ---
 
 --- evLoop : 350 ---
-[TURN:350]get msg from:pack0
-[TURN:350]get msg from:pack3
-[TURN:350]get msg from:pack1
-[TURN:350]get msg from:pack2
---- calcPoint : 351 ---
-+++ render +++
+17 7
 --- turn end : 351 ---
 
 --- evLoop : 351 ---
-[TURN:351]get msg from:pack0
-[TURN:351]get msg from:pack1
-[TURN:351]get msg from:pack3
-[TURN:351]get msg from:pack2
---- calcPoint : 352 ---
-+++ render +++
+17 8
 --- turn end : 352 ---
 
 --- evLoop : 352 ---
-[TURN:352]get msg from:pack0
-[TURN:352]get msg from:pack2
-[TURN:352]get msg from:pack1
-[TURN:352]get msg from:pack3
---- calcPoint : 353 ---
-+++ render +++
+18 8
 --- turn end : 353 ---
 
 --- evLoop : 353 ---
-[TURN:353]get msg from:pack0
-[TURN:353]get msg from:pack1
-[TURN:353]get msg from:pack2
-[TURN:353]get msg from:pack3
---- calcPoint : 354 ---
-+++ render +++
+18 7
 --- turn end : 354 ---
 
 --- evLoop : 354 ---
-[TURN:354]get msg from:pack0
-[TURN:354]get msg from:pack1
-[TURN:354]get msg from:pack2
-[TURN:354]get msg from:pack3
---- calcPoint : 355 ---
-+++ render +++
+18 6
 --- turn end : 355 ---
 
 --- evLoop : 355 ---
-[TURN:355]get msg from:pack0
-[TURN:355]get msg from:pack1
-[TURN:355]get msg from:pack2
-[TURN:355]get msg from:pack3
---- calcPoint : 356 ---
-+++ render +++
+17 6
 --- turn end : 356 ---
 
 --- evLoop : 356 ---
-[TURN:356]get msg from:pack0
-[TURN:356]get msg from:pack1
-[TURN:356]get msg from:pack2
-[TURN:356]get msg from:pack3
---- calcPoint : 357 ---
-0 5 3
-+++ render +++
+17 7
 --- turn end : 357 ---
 
 --- evLoop : 357 ---
-[TURN:357]get msg from:pack0
-[TURN:357]get msg from:pack1
-[TURN:357]get msg from:pack2
-[TURN:357]get msg from:pack3
---- calcPoint : 358 ---
-+++ render +++
+18 7
 --- turn end : 358 ---
 
 --- evLoop : 358 ---
-[TURN:358]get msg from:pack1
-[TURN:358]get msg from:pack0
-[TURN:358]get msg from:pack2
-[TURN:358]get msg from:pack3
---- calcPoint : 359 ---
-+++ render +++
+18 6
 --- turn end : 359 ---
 
 --- evLoop : 359 ---
-[TURN:359]get msg from:pack0
-[TURN:359]get msg from:pack1
-[TURN:359]get msg from:pack2
-[TURN:359]get msg from:pack3
---- calcPoint : 360 ---
-+++ render +++
+17 6
 --- turn end : 360 ---
 
 --- evLoop : 360 ---
-[TURN:360]get msg from:pack0
-[TURN:360]get msg from:pack1
-[TURN:360]get msg from:pack2
-[TURN:360]get msg from:pack3
---- calcPoint : 361 ---
-+++ render +++
+17 7
 --- turn end : 361 ---
 
 --- evLoop : 361 ---
-[TURN:361]get msg from:pack0
-[TURN:361]get msg from:pack1
-[TURN:361]get msg from:pack2
-[TURN:361]get msg from:pack3
---- calcPoint : 362 ---
-+++ render +++
+18 7
 --- turn end : 362 ---
 
 --- evLoop : 362 ---
-[TURN:362]get msg from:pack0
-[TURN:362]get msg from:pack1
-[TURN:362]get msg from:pack2
-[TURN:362]get msg from:pack3
---- calcPoint : 363 ---
-+++ render +++
+18 8
 --- turn end : 363 ---
 
 --- evLoop : 363 ---
-[TURN:363]get msg from:pack0
-[TURN:363]get msg from:pack1
-[TURN:363]get msg from:pack2
-[TURN:363]get msg from:pack3
---- calcPoint : 364 ---
-+++ render +++
+18 9
 --- turn end : 364 ---
 
 --- evLoop : 364 ---
-[TURN:364]get msg from:pack0
-[TURN:364]get msg from:pack1
-[TURN:364]get msg from:pack2
-[TURN:364]get msg from:pack3
---- calcPoint : 365 ---
-+++ render +++
+17 9
 --- turn end : 365 ---
 
 --- evLoop : 365 ---
-[TURN:365]get msg from:pack0
-[TURN:365]get msg from:pack1
-[TURN:365]get msg from:pack2
-[TURN:365]get msg from:pack3
---- calcPoint : 366 ---
-+++ render +++
+17 8
 --- turn end : 366 ---
 
 --- evLoop : 366 ---
-[TURN:366]get msg from:pack0
-[TURN:366]get msg from:pack1
-[TURN:366]get msg from:pack2
-[TURN:366]get msg from:pack3
---- calcPoint : 367 ---
-+++ render +++
+18 8
 --- turn end : 367 ---
 
 --- evLoop : 367 ---
-[TURN:367]get msg from:pack0
-[TURN:367]get msg from:pack1
-[TURN:367]get msg from:pack2
-[TURN:367]get msg from:pack3
---- calcPoint : 368 ---
-+++ render +++
+18 9
 --- turn end : 368 ---
 
 --- evLoop : 368 ---
-[TURN:368]get msg from:pack0
-[TURN:368]get msg from:pack1
-[TURN:368]get msg from:pack2
-[TURN:368]get msg from:pack3
---- calcPoint : 369 ---
-+++ render +++
+17 9
 --- turn end : 369 ---
 
 --- evLoop : 369 ---
-[TURN:369]get msg from:pack0
-[TURN:369]get msg from:pack1
-[TURN:369]get msg from:pack2
-[TURN:369]get msg from:pack3
---- calcPoint : 370 ---
-+++ render +++
+17 8
 --- turn end : 370 ---
 
 --- evLoop : 370 ---
-[TURN:370]get msg from:pack1
-[TURN:370]get msg from:pack0
-[TURN:370]get msg from:pack2
-[TURN:370]get msg from:pack3
---- calcPoint : 371 ---
-+++ render +++
+17 7
 --- turn end : 371 ---
 
 --- evLoop : 371 ---
-[TURN:371]get msg from:pack2
-[TURN:371]get msg from:pack0
-[TURN:371]get msg from:pack1
-[TURN:371]get msg from:pack3
---- calcPoint : 372 ---
-+++ render +++
+17 6
 --- turn end : 372 ---
 
 --- evLoop : 372 ---
-[TURN:372]get msg from:pack0
-[TURN:372]get msg from:pack1
-[TURN:372]get msg from:pack2
-[TURN:372]get msg from:pack3
---- calcPoint : 373 ---
-+++ render +++
+18 6
 --- turn end : 373 ---
 
 --- evLoop : 373 ---
-[TURN:373]get msg from:pack0
-[TURN:373]get msg from:pack2
-[TURN:373]get msg from:pack1
-[TURN:373]get msg from:pack3
---- calcPoint : 374 ---
-+++ render +++
+18 7
 --- turn end : 374 ---
 
 --- evLoop : 374 ---
-[TURN:374]get msg from:pack1
-[TURN:374]get msg from:pack0
-[TURN:374]get msg from:pack2
-[TURN:374]get msg from:pack3
---- calcPoint : 375 ---
-+++ render +++
+17 7
 --- turn end : 375 ---
 
 --- evLoop : 375 ---
-[TURN:375]get msg from:pack1
-[TURN:375]get msg from:pack0
-[TURN:375]get msg from:pack2
-[TURN:375]get msg from:pack3
---- calcPoint : 376 ---
-+++ render +++
+17 6
 --- turn end : 376 ---
 
 --- evLoop : 376 ---
-[TURN:376]get msg from:pack0
-[TURN:376]get msg from:pack1
-[TURN:376]get msg from:pack2
-[TURN:376]get msg from:pack3
---- calcPoint : 377 ---
-+++ render +++
+17 5
 --- turn end : 377 ---
 
 --- evLoop : 377 ---
-[TURN:377]get msg from:pack0
-[TURN:377]get msg from:pack1
-[TURN:377]get msg from:pack2
-[TURN:377]get msg from:pack3
---- calcPoint : 378 ---
-+++ render +++
+16 5
 --- turn end : 378 ---
 
 --- evLoop : 378 ---
-[TURN:378]get msg from:pack0
-[TURN:378]get msg from:pack1
-[TURN:378]get msg from:pack3
-[TURN:378]get msg from:pack2
---- calcPoint : 379 ---
-+++ render +++
+16 6
 --- turn end : 379 ---
 
 --- evLoop : 379 ---
-[TURN:379]get msg from:pack0
-[TURN:379]get msg from:pack1
-[TURN:379]get msg from:pack2
-[TURN:379]get msg from:pack3
---- calcPoint : 380 ---
-+++ render +++
+17 6
 --- turn end : 380 ---
 
 --- evLoop : 380 ---
-[TURN:380]get msg from:pack0
-[TURN:380]get msg from:pack1
-[TURN:380]get msg from:pack2
-[TURN:380]get msg from:pack3
---- calcPoint : 381 ---
-+++ render +++
+18 6
 --- turn end : 381 ---
 
 --- evLoop : 381 ---
-[TURN:381]get msg from:pack0
-[TURN:381]get msg from:pack1
-[TURN:381]get msg from:pack2
-[TURN:381]get msg from:pack3
---- calcPoint : 382 ---
-+++ render +++
+18 5
 --- turn end : 382 ---
 
 --- evLoop : 382 ---
-[TURN:382]get msg from:pack0
-[TURN:382]get msg from:pack1
-[TURN:382]get msg from:pack3
-[TURN:382]get msg from:pack2
---- calcPoint : 383 ---
-+++ render +++
+17 5
 --- turn end : 383 ---
 
 --- evLoop : 383 ---
-[TURN:383]get msg from:pack0
-[TURN:383]get msg from:pack1
-[TURN:383]get msg from:pack2
-[TURN:383]get msg from:pack3
---- calcPoint : 384 ---
-+++ render +++
+17 6
 --- turn end : 384 ---
 
 --- evLoop : 384 ---
-[TURN:384]get msg from:pack0
-[TURN:384]get msg from:pack1
-[TURN:384]get msg from:pack2
-[TURN:384]get msg from:pack3
---- calcPoint : 385 ---
-+++ render +++
+16 6
 --- turn end : 385 ---
 
 --- evLoop : 385 ---
-[TURN:385]get msg from:pack0
-[TURN:385]get msg from:pack1
-[TURN:385]get msg from:pack3
-[TURN:385]get msg from:pack2
---- calcPoint : 386 ---
-+++ render +++
+15 6
 --- turn end : 386 ---
 
 --- evLoop : 386 ---
-[TURN:386]get msg from:pack0
-[TURN:386]get msg from:pack1
-[TURN:386]get msg from:pack2
-[TURN:386]get msg from:pack3
---- calcPoint : 387 ---
-+++ render +++
+14 6
 --- turn end : 387 ---
 
 --- evLoop : 387 ---
-[TURN:387]get msg from:pack0
-[TURN:387]get msg from:pack1
-[TURN:387]get msg from:pack2
-[TURN:387]get msg from:pack3
---- calcPoint : 388 ---
-+++ render +++
+14 7
 --- turn end : 388 ---
 
 --- evLoop : 388 ---
-[TURN:388]get msg from:pack0
-[TURN:388]get msg from:pack1
-[TURN:388]get msg from:pack2
-[TURN:388]get msg from:pack3
---- calcPoint : 389 ---
-+++ render +++
+15 7
 --- turn end : 389 ---
 
 --- evLoop : 389 ---
-[TURN:389]get msg from:pack0
-[TURN:389]get msg from:pack1
-[TURN:389]get msg from:pack2
-[TURN:389]get msg from:pack3
---- calcPoint : 390 ---
-+++ render +++
+15 6
 --- turn end : 390 ---
 
 --- evLoop : 390 ---
-[TURN:390]get msg from:pack1
-[TURN:390]get msg from:pack0
-[TURN:390]get msg from:pack2
-[TURN:390]get msg from:pack3
---- calcPoint : 391 ---
-+++ render +++
+14 6
 --- turn end : 391 ---
 
 --- evLoop : 391 ---
-[TURN:391]get msg from:pack0
-[TURN:391]get msg from:pack1
-[TURN:391]get msg from:pack2
-[TURN:391]get msg from:pack3
---- calcPoint : 392 ---
-+++ render +++
+14 7
 --- turn end : 392 ---
 
 --- evLoop : 392 ---
-[TURN:392]get msg from:pack1
-[TURN:392]get msg from:pack0
-[TURN:392]get msg from:pack2
-[TURN:392]get msg from:pack3
---- calcPoint : 393 ---
-+++ render +++
+14 8
 --- turn end : 393 ---
 
 --- evLoop : 393 ---
-[TURN:393]get msg from:pack0
-[TURN:393]get msg from:pack1
-[TURN:393]get msg from:pack2
-[TURN:393]get msg from:pack3
---- calcPoint : 394 ---
-+++ render +++
+15 8
 --- turn end : 394 ---
 
 --- evLoop : 394 ---
-[TURN:394]get msg from:pack0
-[TURN:394]get msg from:pack1
-[TURN:394]get msg from:pack2
-[TURN:394]get msg from:pack3
---- calcPoint : 395 ---
-+++ render +++
+15 7
 --- turn end : 395 ---
 
 --- evLoop : 395 ---
-[TURN:395]get msg from:pack0
-[TURN:395]get msg from:pack1
-[TURN:395]get msg from:pack3
-[TURN:395]get msg from:pack2
---- calcPoint : 396 ---
-+++ render +++
+14 7
 --- turn end : 396 ---
 
 --- evLoop : 396 ---
-[TURN:396]get msg from:pack0
-[TURN:396]get msg from:pack1
-[TURN:396]get msg from:pack2
-[TURN:396]get msg from:pack3
---- calcPoint : 397 ---
-+++ render +++
+14 6
 --- turn end : 397 ---
 
 --- evLoop : 397 ---
-[TURN:397]get msg from:pack0
-[TURN:397]get msg from:pack1
-[TURN:397]get msg from:pack2
-[TURN:397]get msg from:pack3
---- calcPoint : 398 ---
-+++ render +++
+15 6
 --- turn end : 398 ---
 
 --- evLoop : 398 ---
-[TURN:398]get msg from:pack1
-[TURN:398]get msg from:pack0
-[TURN:398]get msg from:pack2
-[TURN:398]get msg from:pack3
---- calcPoint : 399 ---
-+++ render +++
+16 6
 --- turn end : 399 ---
 
 --- evLoop : 399 ---
-[TURN:399]get msg from:pack0
-[TURN:399]get msg from:pack1
-[TURN:399]get msg from:pack2
-[TURN:399]get msg from:pack3
---- calcPoint : 400 ---
-+++ render +++
+16 5
 --- turn end : 400 ---
 
 --- evLoop : 400 ---
-[TURN:400]get msg from:pack0
-[TURN:400]get msg from:pack1
-[TURN:400]get msg from:pack2
-[TURN:400]get msg from:pack3
---- calcPoint : 401 ---
-+++ render +++
+17 5
 --- turn end : 401 ---
 
 --- evLoop : 401 ---
-[TURN:401]get msg from:pack0
-[TURN:401]get msg from:pack1
-[TURN:401]get msg from:pack2
-[TURN:401]get msg from:pack3
---- calcPoint : 402 ---
-+++ render +++
+18 5
 --- turn end : 402 ---
 
 --- evLoop : 402 ---
-[TURN:402]get msg from:pack0
-[TURN:402]get msg from:pack1
-[TURN:402]get msg from:pack3
-[TURN:402]get msg from:pack2
---- calcPoint : 403 ---
-+++ render +++
+18 4
 --- turn end : 403 ---
 
 --- evLoop : 403 ---
-[TURN:403]get msg from:pack0
-[TURN:403]get msg from:pack1
-[TURN:403]get msg from:pack2
-[TURN:403]get msg from:pack3
---- calcPoint : 404 ---
-0 5 2
-+++ render +++
+18 3
 --- turn end : 404 ---
 
 --- evLoop : 404 ---
-[TURN:404]get msg from:pack0
-[TURN:404]get msg from:pack2
-[TURN:404]get msg from:pack1
-[TURN:404]get msg from:pack3
---- calcPoint : 405 ---
-+++ render +++
+17 3
 --- turn end : 405 ---
 
 --- evLoop : 405 ---
-[TURN:405]get msg from:pack0
-[TURN:405]get msg from:pack1
-[TURN:405]get msg from:pack2
-[TURN:405]get msg from:pack3
---- calcPoint : 406 ---
-+++ render +++
+17 2
 --- turn end : 406 ---
 
 --- evLoop : 406 ---
-[TURN:406]get msg from:pack0
-[TURN:406]get msg from:pack1
-[TURN:406]get msg from:pack2
-[TURN:406]get msg from:pack3
---- calcPoint : 407 ---
-+++ render +++
+18 2
 --- turn end : 407 ---
 
 --- evLoop : 407 ---
-[TURN:407]get msg from:pack0
-[TURN:407]get msg from:pack2
-[TURN:407]get msg from:pack3
-[TURN:407]get msg from:pack1
---- calcPoint : 408 ---
-+++ render +++
+18 1
 --- turn end : 408 ---
 
 --- evLoop : 408 ---
-[TURN:408]get msg from:pack0
-[TURN:408]get msg from:pack1
-[TURN:408]get msg from:pack2
-[TURN:408]get msg from:pack3
---- calcPoint : 409 ---
-+++ render +++
+17 1
 --- turn end : 409 ---
 
 --- evLoop : 409 ---
-[TURN:409]get msg from:pack1
-[TURN:409]get msg from:pack0
-[TURN:409]get msg from:pack2
-[TURN:409]get msg from:pack3
---- calcPoint : 410 ---
-+++ render +++
+17 2
 --- turn end : 410 ---
 
 --- evLoop : 410 ---
-[TURN:410]get msg from:pack0
-[TURN:410]get msg from:pack1
-[TURN:410]get msg from:pack2
-[TURN:410]get msg from:pack3
---- calcPoint : 411 ---
-+++ render +++
+17 3
 --- turn end : 411 ---
 
 --- evLoop : 411 ---
-[TURN:411]get msg from:pack0
-[TURN:411]get msg from:pack1
-[TURN:411]get msg from:pack2
-[TURN:411]get msg from:pack3
---- calcPoint : 412 ---
-+++ render +++
+17 4
 --- turn end : 412 ---
 
 --- evLoop : 412 ---
-[TURN:412]get msg from:pack0
-[TURN:412]get msg from:pack1
-[TURN:412]get msg from:pack3
-[TURN:412]get msg from:pack2
---- calcPoint : 413 ---
-0 14 2
-+++ render +++
+17 5
 --- turn end : 413 ---
 
 --- evLoop : 413 ---
-[TURN:413]get msg from:pack0
-[TURN:413]get msg from:pack2
-[TURN:413]get msg from:pack1
-[TURN:413]get msg from:pack3
---- calcPoint : 414 ---
-+++ render +++
+18 5
 --- turn end : 414 ---
 
-14 Oct 06:18:31 - close.
-14 Oct 06:18:31 - close.
-14 Oct 06:19:11 - close.
-14 Oct 06:20:51 - close.
+--- evLoop : 414 ---
+18 4
+--- turn end : 415 ---
+
+--- evLoop : 415 ---
+17 4
+--- turn end : 416 ---
+
+--- evLoop : 416 ---
+17 3
+--- turn end : 417 ---
+
+--- evLoop : 417 ---
+17 2
+--- turn end : 418 ---
+
+--- evLoop : 418 ---
+16 2
+--- turn end : 419 ---
+
+--- evLoop : 419 ---
+16 1
+--- turn end : 420 ---
+
+--- evLoop : 420 ---
+17 1
+--- turn end : 421 ---
+
+--- evLoop : 421 ---
+18 1
+--- turn end : 422 ---
+
+--- evLoop : 422 ---
+18 2
+--- turn end : 423 ---
+
+--- evLoop : 423 ---
+18 3
+--- turn end : 424 ---
+
+--- evLoop : 424 ---
+17 3
+--- turn end : 425 ---
+
+--- evLoop : 425 ---
+16 3
+--- turn end : 426 ---
+
+--- evLoop : 426 ---
+16 4
+--- turn end : 427 ---
+
+--- evLoop : 427 ---
+16 5
+--- turn end : 428 ---
+
+--- evLoop : 428 ---
+16 6
+--- turn end : 429 ---
+
+--- evLoop : 429 ---
+17 6
+--- turn end : 430 ---
+
+--- evLoop : 430 ---
+17 5
+--- turn end : 431 ---
+
+--- evLoop : 431 ---
+18 5
+--- turn end : 432 ---
+
+--- evLoop : 432 ---
+18 6
+--- turn end : 433 ---
+
+--- evLoop : 433 ---
+18 7
+--- turn end : 434 ---
+
+--- evLoop : 434 ---
+17 7
+--- turn end : 435 ---
+
+--- evLoop : 435 ---
+17 8
+--- turn end : 436 ---
+
+--- evLoop : 436 ---
+18 8
+--- turn end : 437 ---
+
+--- evLoop : 437 ---
+18 7
+--- turn end : 438 ---
+
+--- evLoop : 438 ---
+17 7
+--- turn end : 439 ---
+
+--- evLoop : 439 ---
+17 8
+--- turn end : 440 ---
+
+--- evLoop : 440 ---
+18 8
+--- turn end : 441 ---
+
+--- evLoop : 441 ---
+18 9
+--- turn end : 442 ---
+
+--- evLoop : 442 ---
+17 9
+--- turn end : 443 ---
+
+--- evLoop : 443 ---
+17 8
+--- turn end : 444 ---
+
+--- evLoop : 444 ---
+17 7
+--- turn end : 445 ---
+
+--- evLoop : 445 ---
+17 6
+--- turn end : 446 ---
+
+--- evLoop : 446 ---
+17 5
+--- turn end : 447 ---
+
+--- evLoop : 447 ---
+18 5
+--- turn end : 448 ---
+
+--- evLoop : 448 ---
+18 4
+--- turn end : 449 ---
+
+--- evLoop : 449 ---
+18 3
+--- turn end : 450 ---
+
+--- evLoop : 450 ---
+17 3
+--- turn end : 451 ---
+
+--- evLoop : 451 ---
+17 4
+--- turn end : 452 ---
+
+--- evLoop : 452 ---
+16 4
+--- turn end : 453 ---
+
+--- evLoop : 453 ---
+16 5
+--- turn end : 454 ---
+
+--- evLoop : 454 ---
+15 5
+--- turn end : 455 ---
+
+--- evLoop : 455 ---
+14 5
+--- turn end : 456 ---
+
+--- evLoop : 456 ---
+13 5
+--- turn end : 457 ---
+
+--- evLoop : 457 ---
+12 5
+--- turn end : 458 ---
+
+--- evLoop : 458 ---
+12 4
+--- turn end : 459 ---
+
+--- evLoop : 459 ---
+11 4
+--- turn end : 460 ---
+
+--- evLoop : 460 ---
+11 5
+--- turn end : 461 ---
+
+--- evLoop : 461 ---
+12 5
+--- turn end : 462 ---
+
+--- evLoop : 462 ---
+13 5
+--- turn end : 463 ---
+
+--- evLoop : 463 ---
+14 5
+--- turn end : 464 ---
+
+--- evLoop : 464 ---
+14 4
+--- turn end : 465 ---
+
+--- evLoop : 465 ---
+15 4
+--- turn end : 466 ---
+
+--- evLoop : 466 ---
+15 3
+--- turn end : 467 ---
+
+--- evLoop : 467 ---
+16 3
+--- turn end : 468 ---
+
+--- evLoop : 468 ---
+16 4
+--- turn end : 469 ---
+
+--- evLoop : 469 ---
+15 4
+--- turn end : 470 ---
+
+--- evLoop : 470 ---
+15 3
+--- turn end : 471 ---
+
+--- evLoop : 471 ---
+14 3
+--- turn end : 472 ---
+
+--- evLoop : 472 ---
+13 3
+--- turn end : 473 ---
+
+--- evLoop : 473 ---
+13 2
+--- turn end : 474 ---
+
+--- evLoop : 474 ---
+13 1
+--- turn end : 475 ---
+
+--- evLoop : 475 ---
+14 1
+--- turn end : 476 ---
+
+--- evLoop : 476 ---
+14 2
+--- turn end : 477 ---
+
+--- evLoop : 477 ---
+14 3
+--- turn end : 478 ---
+
+--- evLoop : 478 ---
+14 4
+--- turn end : 479 ---
+
+--- evLoop : 479 ---
+15 4
+--- turn end : 480 ---
+
+--- evLoop : 480 ---
+15 5
+--- turn end : 481 ---
+
+--- evLoop : 481 ---
+15 6
+--- turn end : 482 ---
+
+--- evLoop : 482 ---
+14 6
+--- turn end : 483 ---
+
+--- evLoop : 483 ---
+14 7
+--- turn end : 484 ---
+
+--- evLoop : 484 ---
+14 8
+--- turn end : 485 ---
+
+--- evLoop : 485 ---
+15 8
+--- turn end : 486 ---
+
+--- evLoop : 486 ---
+15 9
+--- turn end : 487 ---
+
+--- evLoop : 487 ---
+15 10
+--- turn end : 488 ---
+
+--- evLoop : 488 ---
+15 11
+--- turn end : 489 ---
+
+--- evLoop : 489 ---
+14 11
+--- turn end : 490 ---
+
+--- evLoop : 490 ---
+14 12
+--- turn end : 491 ---
+
+--- evLoop : 491 ---
+15 12
+--- turn end : 492 ---
+
+--- evLoop : 492 ---
+15 11
+--- turn end : 493 ---
+
+--- evLoop : 493 ---
+14 11
+--- turn end : 494 ---
+
+--- evLoop : 494 ---
+14 10
+--- turn end : 495 ---
+
+--- evLoop : 495 ---
+15 10
+--- turn end : 496 ---
+
+--- evLoop : 496 ---
+15 9
+--- turn end : 497 ---
+
+--- evLoop : 497 ---
+14 9
+--- turn end : 498 ---
+
+--- evLoop : 498 ---
+14 8
+--- turn end : 499 ---
+
+--- evLoop : 499 ---
+15 8
+--- turn end : 500 ---
+
+--- evLoop : 500 ---
+15 7
+--- turn end : 501 ---
+
+--- evLoop : 501 ---
+14 7
+--- turn end : 502 ---
+
+--- evLoop : 502 ---
+14 8
+--- turn end : 503 ---
+
+--- evLoop : 503 ---
+15 8
+--- turn end : 504 ---
+
+--- evLoop : 504 ---
+15 7
+--- turn end : 505 ---
+
+--- evLoop : 505 ---
+14 7
+--- turn end : 506 ---
+
+--- evLoop : 506 ---
+14 6
+--- turn end : 507 ---
+
+--- evLoop : 507 ---
+15 6
+--- turn end : 508 ---
+
+--- evLoop : 508 ---
+15 5
+--- turn end : 509 ---
+
+--- evLoop : 509 ---
+15 4
+--- turn end : 510 ---
+
+--- evLoop : 510 ---
+14 4
+--- turn end : 511 ---
+
+--- evLoop : 511 ---
+13 4
+--- turn end : 512 ---
+
+--- evLoop : 512 ---
+13 3
+--- turn end : 513 ---
+
+--- evLoop : 513 ---
+14 3
+--- turn end : 514 ---
+
+--- evLoop : 514 ---
+14 2
+--- turn end : 515 ---
+
+--- evLoop : 515 ---
+13 2
+--- turn end : 516 ---
+
+--- evLoop : 516 ---
+13 3
+--- turn end : 517 ---
+
+--- evLoop : 517 ---
+12 3
+--- turn end : 518 ---
+
+--- evLoop : 518 ---
+11 3
+--- turn end : 519 ---
+
+--- evLoop : 519 ---
+11 4
+--- turn end : 520 ---
+
+--- evLoop : 520 ---
+12 4
+--- turn end : 521 ---
+
+--- evLoop : 521 ---
+12 5
+--- turn end : 522 ---
+
+--- evLoop : 522 ---
+13 5
+--- turn end : 523 ---
+
+--- evLoop : 523 ---
+14 5
+--- turn end : 524 ---
+
+--- evLoop : 524 ---
+14 6
+--- turn end : 525 ---
+
+--- evLoop : 525 ---
+15 6
+--- turn end : 526 ---
+
+--- evLoop : 526 ---
+16 6
+--- turn end : 527 ---
+
+--- evLoop : 527 ---
+16 5
+--- turn end : 528 ---
+
+--- evLoop : 528 ---
+15 5
+--- turn end : 529 ---
+
+--- evLoop : 529 ---
+14 5
+--- turn end : 530 ---
+
+--- evLoop : 530 ---
+13 5
+--- turn end : 531 ---
+
+--- evLoop : 531 ---
+12 5
+--- turn end : 532 ---
+
+--- evLoop : 532 ---
+12 4
+--- turn end : 533 ---
+
+--- evLoop : 533 ---
+12 3
+--- turn end : 534 ---
+
+--- evLoop : 534 ---
+12 2
+--- turn end : 535 ---
+
+--- evLoop : 535 ---
+13 2
+--- turn end : 536 ---
+
+--- evLoop : 536 ---
+13 1
+--- turn end : 537 ---
+
+--- evLoop : 537 ---
+12 1
+--- turn end : 538 ---
+
+--- evLoop : 538 ---
+12 2
+--- turn end : 539 ---
+
+--- evLoop : 539 ---
+13 2
+--- turn end : 540 ---
+
+--- evLoop : 540 ---
+13 3
+--- turn end : 541 ---
+
+--- evLoop : 541 ---
+14 3
+--- turn end : 542 ---
+
+--- evLoop : 542 ---
+15 3
+--- turn end : 543 ---
+
+--- evLoop : 543 ---
+16 3
+--- turn end : 544 ---
+
+--- evLoop : 544 ---
+16 2
+--- turn end : 545 ---
+
+--- evLoop : 545 ---
+15 2
+--- turn end : 546 ---
+
+--- evLoop : 546 ---
+14 2
+--- turn end : 547 ---
+
+--- evLoop : 547 ---
+14 1
+--- turn end : 548 ---
+
+--- evLoop : 548 ---
+13 1
+--- turn end : 549 ---
+
+--- evLoop : 549 ---
+12 1
+--- turn end : 550 ---
+
+--- evLoop : 550 ---
+11 1
+--- turn end : 551 ---
+
+--- evLoop : 551 ---
+11 2
+--- turn end : 552 ---
+
+--- evLoop : 552 ---
+11 3
+--- turn end : 553 ---
+
+--- evLoop : 553 ---
+10 3
+--- turn end : 554 ---
+
+--- evLoop : 554 ---
+10 4
+--- turn end : 555 ---
+
+--- evLoop : 555 ---
+10 5
+--- turn end : 556 ---
+
+--- evLoop : 556 ---
+9 5
+--- turn end : 557 ---
+
+--- evLoop : 557 ---
+9 4
+--- turn end : 558 ---
+
+--- evLoop : 558 ---
+8 4
+--- turn end : 559 ---
+
+--- evLoop : 559 ---
+7 4
+--- turn end : 560 ---
+
+--- evLoop : 560 ---
+7 3
+--- turn end : 561 ---
+
+--- evLoop : 561 ---
+6 3
+--- turn end : 562 ---
+
+--- evLoop : 562 ---
+6 4
+--- turn end : 563 ---
+
+--- evLoop : 563 ---
+7 4
+--- turn end : 564 ---
+
+--- evLoop : 564 ---
+7 3
+--- turn end : 565 ---
+
+--- evLoop : 565 ---
+8 3
+--- turn end : 566 ---
+
+--- evLoop : 566 ---
+8 2
+--- turn end : 567 ---
+
+--- evLoop : 567 ---
+9 2
+--- turn end : 568 ---
+
+--- evLoop : 568 ---
+9 3
+--- turn end : 569 ---
+
+--- evLoop : 569 ---
+8 3
+--- turn end : 570 ---
+
+--- evLoop : 570 ---
+8 2
+--- turn end : 571 ---
+
+--- evLoop : 571 ---
+9 2
+--- turn end : 572 ---
+
+--- evLoop : 572 ---
+9 1
+--- turn end : 573 ---
+
+--- evLoop : 573 ---
+8 1
+--- turn end : 574 ---
+
+--- evLoop : 574 ---
+8 2
+--- turn end : 575 ---
+
+--- evLoop : 575 ---
+9 2
+--- turn end : 576 ---
+
+--- evLoop : 576 ---
+9 1
+--- turn end : 577 ---
+
+--- evLoop : 577 ---
+10 1
+--- turn end : 578 ---
+
+--- evLoop : 578 ---
+11 1
+--- turn end : 579 ---
+
+--- evLoop : 579 ---
+11 2
+--- turn end : 580 ---
+
+--- evLoop : 580 ---
+12 2
+--- turn end : 581 ---
+
+--- evLoop : 581 ---
+12 1
+--- turn end : 582 ---
+
+--- evLoop : 582 ---
+11 1
+--- turn end : 583 ---
+
+--- evLoop : 583 ---
+10 1
+--- turn end : 584 ---
+
+--- evLoop : 584 ---
+9 1
+--- turn end : 585 ---
+
+--- evLoop : 585 ---
+8 1
+--- turn end : 586 ---
+
+--- evLoop : 586 ---
+8 2
+--- turn end : 587 ---
+
+--- evLoop : 587 ---
+7 2
+--- turn end : 588 ---
+
+--- evLoop : 588 ---
+7 3
+--- turn end : 589 ---
+
+--- evLoop : 589 ---
+7 4
+--- turn end : 590 ---
+
+--- evLoop : 590 ---
+8 4
+--- turn end : 591 ---
+
+--- evLoop : 591 ---
+8 5
+--- turn end : 592 ---
+
+--- evLoop : 592 ---
+9 5
+--- turn end : 593 ---
+
+--- evLoop : 593 ---
+10 5
+--- turn end : 594 ---
+
+--- evLoop : 594 ---
+11 5
+--- turn end : 595 ---
+
+--- evLoop : 595 ---
+12 5
+--- turn end : 596 ---
+
+--- evLoop : 596 ---
+12 4
+--- turn end : 597 ---
+
+--- evLoop : 597 ---
+13 4
+--- turn end : 598 ---
+
+--- evLoop : 598 ---
+13 3
+--- turn end : 599 ---
+
+--- evLoop : 599 ---
+13 2
+--- turn end : 600 ---
+
+--- evLoop : 600 ---
+12 2
+--- turn end : 601 ---
+
+--- evLoop : 601 ---
+12 3
+--- turn end : 602 ---
+
+--- evLoop : 602 ---
+13 3
+--- turn end : 603 ---
+
+--- evLoop : 603 ---
+14 3
+--- turn end : 604 ---
+
+--- evLoop : 604 ---
+14 4
+--- turn end : 605 ---
+
+--- evLoop : 605 ---
+15 4
+--- turn end : 606 ---
+
+--- evLoop : 606 ---
+15 5
+--- turn end : 607 ---
+
+--- evLoop : 607 ---
+16 5
+--- turn end : 608 ---
+
+--- evLoop : 608 ---
+16 4
+--- turn end : 609 ---
+
+--- evLoop : 609 ---
+17 4
+--- turn end : 610 ---
+
+--- evLoop : 610 ---
+18 4
+--- turn end : 611 ---
+
+--- evLoop : 611 ---
+18 3
+--- turn end : 612 ---
+
+--- evLoop : 612 ---
+18 2
+--- turn end : 613 ---
+
+--- evLoop : 613 ---
+17 2
+--- turn end : 614 ---
+
+--- evLoop : 614 ---
+17 3
+--- turn end : 615 ---
+
+--- evLoop : 615 ---
+17 4
+--- turn end : 616 ---
+
+--- evLoop : 616 ---
+17 5
+--- turn end : 617 ---
+
+--- evLoop : 617 ---
+17 6
+--- turn end : 618 ---
+
+--- evLoop : 618 ---
+17 7
+--- turn end : 619 ---
+
+--- evLoop : 619 ---
+17 8
+--- turn end : 620 ---
+
+--- evLoop : 620 ---
+18 8
+--- turn end : 621 ---
+
+--- evLoop : 621 ---
+18 9
+--- turn end : 622 ---
+
+--- evLoop : 622 ---
+17 9
+--- turn end : 623 ---
+
+--- evLoop : 623 ---
+17 10
+--- turn end : 624 ---
+
+--- evLoop : 624 ---
+18 10
+--- turn end : 625 ---
+
+--- evLoop : 625 ---
+18 9
+--- turn end : 626 ---
+
+--- evLoop : 626 ---
+18 8
+--- turn end : 627 ---
+
+--- evLoop : 627 ---
+17 8
+--- turn end : 628 ---
+
+--- evLoop : 628 ---
+17 7
+--- turn end : 629 ---
+
+--- evLoop : 629 ---
+18 7
+--- turn end : 630 ---
+
+--- evLoop : 630 ---
+18 8
+--- turn end : 631 ---
+
+--- evLoop : 631 ---
+18 9
+--- turn end : 632 ---
+
+--- evLoop : 632 ---
+17 9
+--- turn end : 633 ---
+
+--- evLoop : 633 ---
+17 8
+--- turn end : 634 ---
+
+--- evLoop : 634 ---
+18 8
+--- turn end : 635 ---
+
+--- evLoop : 635 ---
+18 9
+--- turn end : 636 ---
+
+--- evLoop : 636 ---
+17 9
+--- turn end : 637 ---
+
+--- evLoop : 637 ---
+17 8
+--- turn end : 638 ---
+
+--- evLoop : 638 ---
+17 7
+--- turn end : 639 ---
+
+--- evLoop : 639 ---
+18 7
+--- turn end : 640 ---
+
+--- evLoop : 640 ---
+18 6
+--- turn end : 641 ---
+
+--- evLoop : 641 ---
+18 5
+--- turn end : 642 ---
+
+--- evLoop : 642 ---
+18 4
+--- turn end : 643 ---
+
+--- evLoop : 643 ---
+18 3
+--- turn end : 644 ---
+
+--- evLoop : 644 ---
+18 2
+--- turn end : 645 ---
+
+--- evLoop : 645 ---
+18 1
+--- turn end : 646 ---
+
+--- evLoop : 646 ---
+17 1
+--- turn end : 647 ---
+
+--- evLoop : 647 ---
+16 1
+--- turn end : 648 ---
+
+--- evLoop : 648 ---
+16 2
+--- turn end : 649 ---
+
+--- evLoop : 649 ---
+17 2
+--- turn end : 650 ---
+
+--- evLoop : 650 ---
+18 2
+--- turn end : 651 ---
+
+--- evLoop : 651 ---
+18 3
+--- turn end : 652 ---
+
+--- evLoop : 652 ---
+18 4
+--- turn end : 653 ---
+
+--- evLoop : 653 ---
+17 4
+--- turn end : 654 ---
+
+--- evLoop : 654 ---
+17 5
+--- turn end : 655 ---
+
+--- evLoop : 655 ---
+17 6
+--- turn end : 656 ---
+
+--- evLoop : 656 ---
+17 7
+--- turn end : 657 ---
+
+--- evLoop : 657 ---
+18 7
+--- turn end : 658 ---
+
+--- evLoop : 658 ---
+18 6
+--- turn end : 659 ---
+
+--- evLoop : 659 ---
+17 6
+--- turn end : 660 ---
+
+--- evLoop : 660 ---
+16 6
+--- turn end : 661 ---
+
+--- evLoop : 661 ---
+16 5
+--- turn end : 662 ---
+
+--- evLoop : 662 ---
+17 5
+--- turn end : 663 ---
+
+--- evLoop : 663 ---
+17 6
+--- turn end : 664 ---
+
+--- evLoop : 664 ---
+17 7
+--- turn end : 665 ---
+
+--- evLoop : 665 ---
+17 8
+--- turn end : 666 ---
+
+--- evLoop : 666 ---
+17 9
+--- turn end : 667 ---
+
+--- evLoop : 667 ---
+18 9
+--- turn end : 668 ---
+
+--- evLoop : 668 ---
+18 10
+--- turn end : 669 ---
+
+--- evLoop : 669 ---
+17 10
+--- turn end : 670 ---
+
+--- evLoop : 670 ---
+17 9
+--- turn end : 671 ---
+
+--- evLoop : 671 ---
+17 8
+--- turn end : 672 ---
+
+--- evLoop : 672 ---
+18 8
+--- turn end : 673 ---
+
+--- evLoop : 673 ---
+18 9
+--- turn end : 674 ---
+
+--- evLoop : 674 ---
+17 9
+--- turn end : 675 ---
+
+--- evLoop : 675 ---
+17 8
+--- turn end : 676 ---
+
+--- evLoop : 676 ---
+17 7
+--- turn end : 677 ---
+
+--- evLoop : 677 ---
+17 6
+--- turn end : 678 ---
+
+--- evLoop : 678 ---
+16 6
+--- turn end : 679 ---
+
+--- evLoop : 679 ---
+16 5
+--- turn end : 680 ---
+
+--- evLoop : 680 ---
+17 5
+--- turn end : 681 ---
+
+--- evLoop : 681 ---
+18 5
+--- turn end : 682 ---
+
+--- evLoop : 682 ---
+18 4
+--- turn end : 683 ---
+
+--- evLoop : 683 ---
+17 4
+--- turn end : 684 ---
+
+--- evLoop : 684 ---
+16 4
+--- turn end : 685 ---
+
+--- evLoop : 685 ---
+15 4
+--- turn end : 686 ---
+
+--- evLoop : 686 ---
+14 4
+--- turn end : 687 ---
+
+--- evLoop : 687 ---
+14 5
+--- turn end : 688 ---
+
+--- evLoop : 688 ---
+14 6
+--- turn end : 689 ---
+
+--- evLoop : 689 ---
+15 6
+--- turn end : 690 ---
+
+--- evLoop : 690 ---
+15 7
+--- turn end : 691 ---
+
+--- evLoop : 691 ---
+14 7
+--- turn end : 692 ---
+
+--- evLoop : 692 ---
+14 8
+--- turn end : 693 ---
+
+--- evLoop : 693 ---
+14 9
+--- turn end : 694 ---
+
+--- evLoop : 694 ---
+14 10
+--- turn end : 695 ---
+
+--- evLoop : 695 ---
+14 11
+--- turn end : 696 ---
+
+--- evLoop : 696 ---
+15 11
+--- turn end : 697 ---
+
+--- evLoop : 697 ---
+15 12
+--- turn end : 698 ---
+
+--- evLoop : 698 ---
+15 13
+--- turn end : 699 ---
+
+--- evLoop : 699 ---
+16 13
+--- turn end : 700 ---
+
+--- evLoop : 700 ---
+17 13
+--- turn end : 701 ---
+
+--- evLoop : 701 ---
+17 14
+--- turn end : 702 ---
+
+--- evLoop : 702 ---
+16 14
+--- turn end : 703 ---
+
+--- evLoop : 703 ---
+16 15
+--- turn end : 704 ---
+
+--- evLoop : 704 ---
+17 15
+--- turn end : 705 ---
+
+--- evLoop : 705 ---
+17 16
+--- turn end : 706 ---
+
+--- evLoop : 706 ---
+16 16
+--- turn end : 707 ---
+
+--- evLoop : 707 ---
+16 17
+--- turn end : 708 ---
+
+--- evLoop : 708 ---
+16 18
+--- turn end : 709 ---
+
+--- evLoop : 709 ---
+17 18
+--- turn end : 710 ---
+
+--- evLoop : 710 ---
+17 17
+--- turn end : 711 ---
+
+--- evLoop : 711 ---
+17 16
+--- turn end : 712 ---
+
+--- evLoop : 712 ---
+17 15
+--- turn end : 713 ---
+
+--- evLoop : 713 ---
+17 14
+--- turn end : 714 ---
+
+--- evLoop : 714 ---
+17 13
+--- turn end : 715 ---
+
+--- evLoop : 715 ---
+18 13
+--- turn end : 716 ---
+
+--- evLoop : 716 ---
+18 14
+--- turn end : 717 ---
+
+--- evLoop : 717 ---
+17 14
+--- turn end : 718 ---
+
+--- evLoop : 718 ---
+17 15
+--- turn end : 719 ---
+
+--- evLoop : 719 ---
+18 15
+--- turn end : 720 ---
+
+--- evLoop : 720 ---
+18 14
+--- turn end : 721 ---
+
+--- evLoop : 721 ---
+17 14
+--- turn end : 722 ---
+
+--- evLoop : 722 ---
+16 14
+--- turn end : 723 ---
+
+--- evLoop : 723 ---
+16 15
+--- turn end : 724 ---
+
+--- evLoop : 724 ---
+15 15
+--- turn end : 725 ---
+
+--- evLoop : 725 ---
+15 14
+--- turn end : 726 ---
+
+--- evLoop : 726 ---
+14 14
+--- turn end : 727 ---
+
+--- evLoop : 727 ---
+14 15
+--- turn end : 728 ---
+
+--- evLoop : 728 ---
+15 15
+--- turn end : 729 ---
+
+--- evLoop : 729 ---
+15 14
+--- turn end : 730 ---
+
+--- evLoop : 730 ---
+15 13
+--- turn end : 731 ---
+
+--- evLoop : 731 ---
+16 13
+--- turn end : 732 ---
+
+--- evLoop : 732 ---
+17 13
+--- turn end : 733 ---
+
+--- evLoop : 733 ---
+18 13
+--- turn end : 734 ---
+
+--- evLoop : 734 ---
+18 12
+--- turn end : 735 ---
+
+--- evLoop : 735 ---
+18 11
+--- turn end : 736 ---
+
+--- evLoop : 736 ---
+17 11
+--- turn end : 737 ---
+
+--- evLoop : 737 ---
+17 12
+--- turn end : 738 ---
+
+--- evLoop : 738 ---
+18 12
+--- turn end : 739 ---
+
+--- evLoop : 739 ---
+18 13
+--- turn end : 740 ---
+
+--- evLoop : 740 ---
+17 13
+--- turn end : 741 ---
+
+--- evLoop : 741 ---
+17 12
+--- turn end : 742 ---
+
+--- evLoop : 742 ---
+17 11
+--- turn end : 743 ---
+
+--- evLoop : 743 ---
+18 11
+--- turn end : 744 ---
+
+--- evLoop : 744 ---
+18 10
+--- turn end : 745 ---
+
+--- evLoop : 745 ---
+17 10
+--- turn end : 746 ---
+
+--- evLoop : 746 ---
+17 11
+--- turn end : 747 ---
+
+--- evLoop : 747 ---
+17 12
+--- turn end : 748 ---
+
+--- evLoop : 748 ---
+18 12
+--- turn end : 749 ---
+
+--- evLoop : 749 ---
+18 11
+--- turn end : 750 ---
+
+--- evLoop : 750 ---
+17 11
+--- turn end : 751 ---
+
+--- evLoop : 751 ---
+17 10
+--- turn end : 752 ---
+
+--- evLoop : 752 ---
+17 9
+--- turn end : 753 ---
+
+--- evLoop : 753 ---
+18 9
+--- turn end : 754 ---
+
+--- evLoop : 754 ---
+18 10
+--- turn end : 755 ---
+
+--- evLoop : 755 ---
+17 10
+--- turn end : 756 ---
+
+--- evLoop : 756 ---
+17 11
+--- turn end : 757 ---
+
+--- evLoop : 757 ---
+17 12
+--- turn end : 758 ---
+
+--- evLoop : 758 ---
+18 12
+--- turn end : 759 ---
+
+--- evLoop : 759 ---
+18 11
+--- turn end : 760 ---
+
+--- evLoop : 760 ---
+17 11
+--- turn end : 761 ---
+
+--- evLoop : 761 ---
+17 10
+--- turn end : 762 ---
+
+--- evLoop : 762 ---
+18 10
+--- turn end : 763 ---
+
+--- evLoop : 763 ---
+18 9
+--- turn end : 764 ---
+
+--- evLoop : 764 ---
+17 9
+--- turn end : 765 ---
+
+--- evLoop : 765 ---
+17 8
+--- turn end : 766 ---
+
+--- evLoop : 766 ---
+18 8
+--- turn end : 767 ---
+
+--- evLoop : 767 ---
+18 7
+--- turn end : 768 ---
+
+--- evLoop : 768 ---
+18 6
+--- turn end : 769 ---
+
+--- evLoop : 769 ---
+17 6
+--- turn end : 770 ---
+
+--- evLoop : 770 ---
+17 5
+--- turn end : 771 ---
+
+--- evLoop : 771 ---
+17 4
+--- turn end : 772 ---
+
+--- evLoop : 772 ---
+17 3
+--- turn end : 773 ---
+
+--- evLoop : 773 ---
+16 3
+--- turn end : 774 ---
+
+--- evLoop : 774 ---
+15 3
+--- turn end : 775 ---
+
+--- evLoop : 775 ---
+15 2
+--- turn end : 776 ---
+
+--- evLoop : 776 ---
+14 2
+--- turn end : 777 ---
+
+--- evLoop : 777 ---
+14 1
+--- turn end : 778 ---
+
+--- evLoop : 778 ---
+15 1
+--- turn end : 779 ---
+
+--- evLoop : 779 ---
+15 2
+--- turn end : 780 ---
+
+--- evLoop : 780 ---
+15 3
+--- turn end : 781 ---
+
+--- evLoop : 781 ---
+14 3
+--- turn end : 782 ---
+
+--- evLoop : 782 ---
+13 3
+--- turn end : 783 ---
+
+--- evLoop : 783 ---
+13 2
+--- turn end : 784 ---
+
+--- evLoop : 784 ---
+13 1
+--- turn end : 785 ---
+
+--- evLoop : 785 ---
+14 1
+--- turn end : 786 ---
+
+--- evLoop : 786 ---
+15 1
+--- turn end : 787 ---
+
+--- evLoop : 787 ---
+16 1
+--- turn end : 788 ---
+
+--- evLoop : 788 ---
+16 2
+--- turn end : 789 ---
+
+--- evLoop : 789 ---
+17 2
+--- turn end : 790 ---
+
+--- evLoop : 790 ---
+17 1
+--- turn end : 791 ---
+
+--- evLoop : 791 ---
+16 1
+--- turn end : 792 ---
+
+--- evLoop : 792 ---
+15 1
+--- turn end : 793 ---
+
+--- evLoop : 793 ---
+15 2
+--- turn end : 794 ---
+
+--- evLoop : 794 ---
+14 2
+--- turn end : 795 ---
+
+--- evLoop : 795 ---
+14 1
+--- turn end : 796 ---
+
+--- evLoop : 796 ---
+15 1
+--- turn end : 797 ---
+
+--- evLoop : 797 ---
+15 2
+--- turn end : 798 ---
+
+--- evLoop : 798 ---
+15 3
+--- turn end : 799 ---
+
+--- evLoop : 799 ---
+15 4
+--- turn end : 800 ---
+
+--- evLoop : 800 ---
+15 5
+--- turn end : 801 ---
+
+--- evLoop : 801 ---
+14 5
+--- turn end : 802 ---
+
+--- evLoop : 802 ---
+14 6
+--- turn end : 803 ---
+
+--- evLoop : 803 ---
+14 7
+--- turn end : 804 ---
+
+--- evLoop : 804 ---
+14 8
+--- turn end : 805 ---
+
+--- evLoop : 805 ---
+15 8
+--- turn end : 806 ---
+
+--- evLoop : 806 ---
+15 7
+--- turn end : 807 ---
+
+--- evLoop : 807 ---
+14 7
+--- turn end : 808 ---
+
+--- evLoop : 808 ---
+14 6
+--- turn end : 809 ---
+
+--- evLoop : 809 ---
+14 5
+--- turn end : 810 ---
+
+--- evLoop : 810 ---
+14 4
+--- turn end : 811 ---
+
+--- evLoop : 811 ---
+13 4
+--- turn end : 812 ---
+
+--- evLoop : 812 ---
+12 4
+--- turn end : 813 ---
+
+--- evLoop : 813 ---
+12 5
+--- turn end : 814 ---
+
+--- evLoop : 814 ---
+13 5
+--- turn end : 815 ---
+
+--- evLoop : 815 ---
+13 4
+--- turn end : 816 ---
+
+--- evLoop : 816 ---
+14 4
+--- turn end : 817 ---
+
+--- evLoop : 817 ---
+14 5
+--- turn end : 818 ---
+
+--- evLoop : 818 ---
+13 5
+--- turn end : 819 ---
+
+--- evLoop : 819 ---
+13 4
+--- turn end : 820 ---
+
+--- evLoop : 820 ---
+14 4
+--- turn end : 821 ---
+
+--- evLoop : 821 ---
+14 3
+--- turn end : 822 ---
+
+--- evLoop : 822 ---
+15 3
+--- turn end : 823 ---
+
+--- evLoop : 823 ---
+15 4
+--- turn end : 824 ---
+
+--- evLoop : 824 ---
+15 5
+--- turn end : 825 ---
+
+--- evLoop : 825 ---
+14 5
+--- turn end : 826 ---
+
+--- evLoop : 826 ---
+14 6
+--- turn end : 827 ---
+
+--- evLoop : 827 ---
+14 7
+--- turn end : 828 ---
+
+--- evLoop : 828 ---
+14 8
+--- turn end : 829 ---
+
+--- evLoop : 829 ---
+15 8
+--- turn end : 830 ---
+
+--- evLoop : 830 ---
+15 9
+--- turn end : 831 ---
+
+--- evLoop : 831 ---
+14 9
+--- turn end : 832 ---
+
+--- evLoop : 832 ---
+14 10
+--- turn end : 833 ---
+
+--- evLoop : 833 ---
+14 11
+--- turn end : 834 ---
+
+--- evLoop : 834 ---
+15 11
+--- turn end : 835 ---
+
+--- evLoop : 835 ---
+15 10
+--- turn end : 836 ---
+
+--- evLoop : 836 ---
+15 9
+--- turn end : 837 ---
+
+--- evLoop : 837 ---
+14 9
+--- turn end : 838 ---
+
+--- evLoop : 838 ---
+14 8
+--- turn end : 839 ---
+
+--- evLoop : 839 ---
+14 7
+--- turn end : 840 ---
+
+--- evLoop : 840 ---
+15 7
+--- turn end : 841 ---
+
+--- evLoop : 841 ---
+15 6
+--- turn end : 842 ---
+
+--- evLoop : 842 ---
+15 5
+--- turn end : 843 ---
+
+--- evLoop : 843 ---
+15 4
+--- turn end : 844 ---
+
+--- evLoop : 844 ---
+14 4
+--- turn end : 845 ---
+
+--- evLoop : 845 ---
+14 3
+--- turn end : 846 ---
+
+--- evLoop : 846 ---
+14 2
+--- turn end : 847 ---
+
+--- evLoop : 847 ---
+14 1
+--- turn end : 848 ---
+
+--- evLoop : 848 ---
+13 1
+--- turn end : 849 ---
+
+--- evLoop : 849 ---
+13 2
+--- turn end : 850 ---
+
+--- evLoop : 850 ---
+13 3
+--- turn end : 851 ---
+
+--- evLoop : 851 ---
+14 3
+--- turn end : 852 ---
+
+--- evLoop : 852 ---
+15 3
+--- turn end : 853 ---
+
+--- evLoop : 853 ---
+15 2
+--- turn end : 854 ---
+
+--- evLoop : 854 ---
+14 2
+--- turn end : 855 ---
+
+--- evLoop : 855 ---
+14 1
+--- turn end : 856 ---
+
+--- evLoop : 856 ---
+13 1
+--- turn end : 857 ---
+
+--- evLoop : 857 ---
+13 2
+--- turn end : 858 ---
+
+--- evLoop : 858 ---
+12 2
+--- turn end : 859 ---
+
+--- evLoop : 859 ---
+11 2
+--- turn end : 860 ---
+
+--- evLoop : 860 ---
+11 1
+--- turn end : 861 ---
+
+--- evLoop : 861 ---
+12 1
+--- turn end : 862 ---
+
+--- evLoop : 862 ---
+13 1
+--- turn end : 863 ---
+
+--- evLoop : 863 ---
+14 1
+--- turn end : 864 ---
+
+--- evLoop : 864 ---
+14 2
+--- turn end : 865 ---
+
+--- evLoop : 865 ---
+14 3
+--- turn end : 866 ---
+
+--- evLoop : 866 ---
+14 4
+--- turn end : 867 ---
+
+--- evLoop : 867 ---
+14 5
+--- turn end : 868 ---
+
+--- evLoop : 868 ---
+15 5
+--- turn end : 869 ---
+
+--- evLoop : 869 ---
+15 6
+--- turn end : 870 ---
+
+--- evLoop : 870 ---
+16 6
+--- turn end : 871 ---
+
+--- evLoop : 871 ---
+17 6
+--- turn end : 872 ---
+
+--- evLoop : 872 ---
+18 6
+--- turn end : 873 ---
+
+--- evLoop : 873 ---
+18 5
+--- turn end : 874 ---
+
+--- evLoop : 874 ---
+17 5
+--- turn end : 875 ---
+
+--- evLoop : 875 ---
+16 5
+--- turn end : 876 ---
+
+--- evLoop : 876 ---
+16 4
+--- turn end : 877 ---
+
+--- evLoop : 877 ---
+17 4
+--- turn end : 878 ---
+
+--- evLoop : 878 ---
+17 3
+--- turn end : 879 ---
+
+--- evLoop : 879 ---
+16 3
+--- turn end : 880 ---
+
+--- evLoop : 880 ---
+16 2
+--- turn end : 881 ---
+
+--- evLoop : 881 ---
+16 1
+--- turn end : 882 ---
+
+--- evLoop : 882 ---
+15 1
+--- turn end : 883 ---
+
+--- evLoop : 883 ---
+15 2
+--- turn end : 884 ---
+
+--- evLoop : 884 ---
+15 3
+--- turn end : 885 ---
+
+--- evLoop : 885 ---
+15 4
+--- turn end : 886 ---
+
+--- evLoop : 886 ---
+15 5
+--- turn end : 887 ---
+
+--- evLoop : 887 ---
+16 5
+--- turn end : 888 ---
+
+--- evLoop : 888 ---
+16 4
+--- turn end : 889 ---
+
+--- evLoop : 889 ---
+15 4
+--- turn end : 890 ---
+
+--- evLoop : 890 ---
+14 4
+--- turn end : 891 ---
+
+--- evLoop : 891 ---
+13 4
+--- turn end : 892 ---
+
+--- evLoop : 892 ---
+13 5
+--- turn end : 893 ---
+
+--- evLoop : 893 ---
+14 5
+--- turn end : 894 ---
+
+--- evLoop : 894 ---
+14 4
+--- turn end : 895 ---
+
+--- evLoop : 895 ---
+14 3
+--- turn end : 896 ---
+
+--- evLoop : 896 ---
+15 3
+--- turn end : 897 ---
+
+--- evLoop : 897 ---
+15 2
+--- turn end : 898 ---
+
+--- evLoop : 898 ---
+15 1
+--- turn end : 899 ---
+
+--- evLoop : 899 ---
+14 1
+--- turn end : 900 ---
+
+--- evLoop : 900 ---
+14 2
+--- turn end : 901 ---
+
+--- evLoop : 901 ---
+13 2
+--- turn end : 902 ---
+
+--- evLoop : 902 ---
+13 1
+--- turn end : 903 ---
+
+--- evLoop : 903 ---
+12 1
+--- turn end : 904 ---
+
+--- evLoop : 904 ---
+11 1
+--- turn end : 905 ---
+
+--- evLoop : 905 ---
+10 1
+--- turn end : 906 ---
+
+--- evLoop : 906 ---
+10 2
+--- turn end : 907 ---
+
+--- evLoop : 907 ---
+10 3
+--- turn end : 908 ---
+
+--- evLoop : 908 ---
+9 3
+--- turn end : 909 ---
+
+--- evLoop : 909 ---
+9 2
+--- turn end : 910 ---
+
+--- evLoop : 910 ---
+10 2
+--- turn end : 911 ---
+
+--- evLoop : 911 ---
+10 1
+--- turn end : 912 ---
+
+--- evLoop : 912 ---
+9 1
+--- turn end : 913 ---
+
+--- evLoop : 913 ---
+9 2
+--- turn end : 914 ---
+
+--- evLoop : 914 ---
+10 2
+--- turn end : 915 ---
+
+--- evLoop : 915 ---
+11 2
+--- turn end : 916 ---
+
+--- evLoop : 916 ---
+11 3
+--- turn end : 917 ---
+
+--- evLoop : 917 ---
+10 3
+--- turn end : 918 ---
+
+--- evLoop : 918 ---
+10 4
+--- turn end : 919 ---
+
+--- evLoop : 919 ---
+9 4
+--- turn end : 920 ---
+
+--- evLoop : 920 ---
+9 5
+--- turn end : 921 ---
+
+--- evLoop : 921 ---
+10 5
+--- turn end : 922 ---
+
+--- evLoop : 922 ---
+10 4
+--- turn end : 923 ---
+
+--- evLoop : 923 ---
+10 3
+--- turn end : 924 ---
+
+--- evLoop : 924 ---
+11 3
+--- turn end : 925 ---
+
+--- evLoop : 925 ---
+11 4
+--- turn end : 926 ---
+
+--- evLoop : 926 ---
+12 4
+--- turn end : 927 ---
+
+--- evLoop : 927 ---
+12 5
+--- turn end : 928 ---
+
+--- evLoop : 928 ---
+11 5
+--- turn end : 929 ---
+
+--- evLoop : 929 ---
+10 5
+--- turn end : 930 ---
+
+--- evLoop : 930 ---
+10 4
+--- turn end : 931 ---
+
+--- evLoop : 931 ---
+10 3
+--- turn end : 932 ---
+
+--- evLoop : 932 ---
+10 2
+--- turn end : 933 ---
+
+--- evLoop : 933 ---
+9 2
+--- turn end : 934 ---
+
+--- evLoop : 934 ---
+9 3
+--- turn end : 935 ---
+
+--- evLoop : 935 ---
+10 3
+--- turn end : 936 ---
+
+--- evLoop : 936 ---
+10 2
+--- turn end : 937 ---
+
+--- evLoop : 937 ---
+10 1
+--- turn end : 938 ---
+
+--- evLoop : 938 ---
+9 1
+--- turn end : 939 ---
+
+--- evLoop : 939 ---
+8 1
+--- turn end : 940 ---
+
+--- evLoop : 940 ---
+8 2
+--- turn end : 941 ---
+
+--- evLoop : 941 ---
+7 2
+--- turn end : 942 ---
+
+--- evLoop : 942 ---
+7 1
+--- turn end : 943 ---
+
+--- evLoop : 943 ---
+8 1
+--- turn end : 944 ---
+
+--- evLoop : 944 ---
+9 1
+--- turn end : 945 ---
+
+--- evLoop : 945 ---
+9 2
+--- turn end : 946 ---
+
+--- evLoop : 946 ---
+8 2
+--- turn end : 947 ---
+
+--- evLoop : 947 ---
+8 1
+--- turn end : 948 ---
+
+--- evLoop : 948 ---
+7 1
+--- turn end : 949 ---
+
+--- evLoop : 949 ---
+7 2
+--- turn end : 950 ---
+
+--- evLoop : 950 ---
+8 2
+--- turn end : 951 ---
+
+--- evLoop : 951 ---
+9 2
+--- turn end : 952 ---
+
+--- evLoop : 952 ---
+9 3
+--- turn end : 953 ---
+
+--- evLoop : 953 ---
+8 3
+--- turn end : 954 ---
+
+--- evLoop : 954 ---
+7 3
+--- turn end : 955 ---
+
+--- evLoop : 955 ---
+6 3
+--- turn end : 956 ---
+
+--- evLoop : 956 ---
+5 3
+--- turn end : 957 ---
+
+--- evLoop : 957 ---
+5 2
+--- turn end : 958 ---
+
+--- evLoop : 958 ---
+4 2
+--- turn end : 959 ---
+
+--- evLoop : 959 ---
+4 3
+--- turn end : 960 ---
+
+--- evLoop : 960 ---
+3 3
+--- turn end : 961 ---
+
+--- evLoop : 961 ---
+3 4
+--- turn end : 962 ---
+
+--- evLoop : 962 ---
+2 4
+--- turn end : 963 ---
+
+--- evLoop : 963 ---
+2 3
+--- turn end : 964 ---
+
+--- evLoop : 964 ---
+3 3
+--- turn end : 965 ---
+
+--- evLoop : 965 ---
+4 3
+--- turn end : 966 ---
+
+--- evLoop : 966 ---
+5 3
+--- turn end : 967 ---
+
+--- evLoop : 967 ---
+5 2
+--- turn end : 968 ---
+
+--- evLoop : 968 ---
+4 2
+--- turn end : 969 ---
+
+--- evLoop : 969 ---
+4 1
+--- turn end : 970 ---
+
+--- evLoop : 970 ---
+5 1
+--- turn end : 971 ---
+
+--- evLoop : 971 ---
+5 2
+--- turn end : 972 ---
+
+--- evLoop : 972 ---
+5 3
+--- turn end : 973 ---
+
+--- evLoop : 973 ---
+4 3
+--- turn end : 974 ---
+
+--- evLoop : 974 ---
+4 2
+--- turn end : 975 ---
+
+--- evLoop : 975 ---
+5 2
+--- turn end : 976 ---
+
+--- evLoop : 976 ---
+5 3
+--- turn end : 977 ---
+
+--- evLoop : 977 ---
+6 3
+--- turn end : 978 ---
+
+--- evLoop : 978 ---
+7 3
+--- turn end : 979 ---
+
+--- evLoop : 979 ---
+7 4
+--- turn end : 980 ---
+
+--- evLoop : 980 ---
+7 5
+--- turn end : 981 ---
+
+--- evLoop : 981 ---
+6 5
+--- turn end : 982 ---
+
+--- evLoop : 982 ---
+5 5
+--- turn end : 983 ---
+
+--- evLoop : 983 ---
+5 4
+--- turn end : 984 ---
+
+--- evLoop : 984 ---
+4 4
+--- turn end : 985 ---
+
+--- evLoop : 985 ---
+3 4
+--- turn end : 986 ---
+
+--- evLoop : 986 ---
+2 4
+--- turn end : 987 ---
+
+--- evLoop : 987 ---
+2 5
+--- turn end : 988 ---
+
+--- evLoop : 988 ---
+2 6
+--- turn end : 989 ---
+
+--- evLoop : 989 ---
+2 7
+--- turn end : 990 ---
+
+--- evLoop : 990 ---
+1 7
+--- turn end : 991 ---
+
+--- evLoop : 991 ---
+1 6
+--- turn end : 992 ---
+
+--- evLoop : 992 ---
+1 5
+--- turn end : 993 ---
+
+--- evLoop : 993 ---
+2 5
+--- turn end : 994 ---
+
+--- evLoop : 994 ---
+3 5
+--- turn end : 995 ---
+
+--- evLoop : 995 ---
+3 4
+--- turn end : 996 ---
+
+--- evLoop : 996 ---
+3 3
+--- turn end : 997 ---
+
+--- evLoop : 997 ---
+4 3
+--- turn end : 998 ---
+
+--- evLoop : 998 ---
+4 4
+--- turn end : 999 ---
+
+--- evLoop : 999 ---
+4 5
+--- turn end : 1000 ---
+
+--- evLoop : 1000 ---
+3 5
+--- turn end : 1001 ---
+
+--- evLoop : 1001 ---
+2 5
+--- turn end : 1002 ---
+
+--- evLoop : 1002 ---
+2 6
+--- turn end : 1003 ---
+
+--- evLoop : 1003 ---
+2 7
+--- turn end : 1004 ---
+
+--- evLoop : 1004 ---
+2 8
+--- turn end : 1005 ---
+
+--- evLoop : 1005 ---
+1 8
+--- turn end : 1006 ---
+
+--- evLoop : 1006 ---
+1 9
+--- turn end : 1007 ---
+
+--- evLoop : 1007 ---
+1 10
+--- turn end : 1008 ---
+
+--- evLoop : 1008 ---
+1 11
+--- turn end : 1009 ---
+
+--- evLoop : 1009 ---
+1 12
+--- turn end : 1010 ---
+
+--- evLoop : 1010 ---
+1 13
+--- turn end : 1011 ---
+
+--- evLoop : 1011 ---
+1 14
+--- turn end : 1012 ---
+
+--- evLoop : 1012 ---
+2 14
+--- turn end : 1013 ---
+
+--- evLoop : 1013 ---
+2 13
+--- turn end : 1014 ---
+
+--- evLoop : 1014 ---
+3 13
+--- turn end : 1015 ---
+
+--- evLoop : 1015 ---
+3 14
+--- turn end : 1016 ---
+
+--- evLoop : 1016 ---
+2 14
+--- turn end : 1017 ---
+
+--- evLoop : 1017 ---
+1 14
+--- turn end : 1018 ---
+
+--- evLoop : 1018 ---
+1 15
+--- turn end : 1019 ---
+
+--- evLoop : 1019 ---
+1 16
+--- turn end : 1020 ---
+
+--- evLoop : 1020 ---
+1 17
+--- turn end : 1021 ---
+
+--- evLoop : 1021 ---
+1 18
+--- turn end : 1022 ---
+
+--- evLoop : 1022 ---
+2 18
+--- turn end : 1023 ---
+
+--- evLoop : 1023 ---
+3 18
+--- turn end : 1024 ---
+
+--- evLoop : 1024 ---
+4 18
+--- turn end : 1025 ---
+
+--- evLoop : 1025 ---
+4 17
+--- turn end : 1026 ---
+
+--- evLoop : 1026 ---
+5 17
+--- turn end : 1027 ---
+
+--- evLoop : 1027 ---
+5 18
+--- turn end : 1028 ---
+
+--- evLoop : 1028 ---
+6 18
+--- turn end : 1029 ---
+
+--- evLoop : 1029 ---
+7 18
+--- turn end : 1030 ---
+
+--- evLoop : 1030 ---
+8 18
+--- turn end : 1031 ---
+
+--- evLoop : 1031 ---
+9 18
+--- turn end : 1032 ---
+
+--- evLoop : 1032 ---
+10 18
+--- turn end : 1033 ---
+
+--- evLoop : 1033 ---
+11 18
+--- turn end : 1034 ---
+
+--- evLoop : 1034 ---
+12 18
+--- turn end : 1035 ---
+
+--- evLoop : 1035 ---
+13 18
+--- turn end : 1036 ---
+
+--- evLoop : 1036 ---
+14 18
+--- turn end : 1037 ---
+
+--- evLoop : 1037 ---
+15 18
+--- turn end : 1038 ---
+
+--- evLoop : 1038 ---
+15 17
+--- turn end : 1039 ---
+
+--- evLoop : 1039 ---
+16 17
+--- turn end : 1040 ---
+
+--- evLoop : 1040 ---
+17 17
+--- turn end : 1041 ---
+
+--- evLoop : 1041 ---
+17 16
+--- turn end : 1042 ---
+
+--- evLoop : 1042 ---
+18 16
+--- turn end : 1043 ---
+
+--- evLoop : 1043 ---
+18 15
+--- turn end : 1044 ---
+
+--- evLoop : 1044 ---
+18 14
+--- turn end : 1045 ---
+
+--- evLoop : 1045 ---
+18 13
+--- turn end : 1046 ---
+
+--- evLoop : 1046 ---
+17 13
+--- turn end : 1047 ---
+
+--- evLoop : 1047 ---
+17 12
+--- turn end : 1048 ---
+
+--- evLoop : 1048 ---
+18 12
+--- turn end : 1049 ---
+
+--- evLoop : 1049 ---
+18 11
+--- turn end : 1050 ---
+
+--- evLoop : 1050 ---
+17 11
+--- turn end : 1051 ---
+
+--- evLoop : 1051 ---
+17 10
+--- turn end : 1052 ---
+
+--- evLoop : 1052 ---
+18 10
+--- turn end : 1053 ---
+
+--- evLoop : 1053 ---
+18 11
+--- turn end : 1054 ---
+
+--- evLoop : 1054 ---
+17 11
+--- turn end : 1055 ---
+
+--- evLoop : 1055 ---
+17 12
+--- turn end : 1056 ---
+
+--- evLoop : 1056 ---
+17 13
+--- turn end : 1057 ---
+
+--- evLoop : 1057 ---
+17 14
+--- turn end : 1058 ---
+
+--- evLoop : 1058 ---
+16 14
+--- turn end : 1059 ---
+
+--- evLoop : 1059 ---
+15 14
+--- turn end : 1060 ---
+
+--- evLoop : 1060 ---
+15 13
+--- turn end : 1061 ---
+
+--- evLoop : 1061 ---
+15 12
+--- turn end : 1062 ---
+
+--- evLoop : 1062 ---
+14 12
+--- turn end : 1063 ---
+
+--- evLoop : 1063 ---
+14 11
+--- turn end : 1064 ---
+
+--- evLoop : 1064 ---
+15 11
+--- turn end : 1065 ---
+
+--- evLoop : 1065 ---
+15 12
+--- turn end : 1066 ---
+
+--- evLoop : 1066 ---
+14 12
+--- turn end : 1067 ---
+
+--- evLoop : 1067 ---
+14 11
+--- turn end : 1068 ---
+
+--- evLoop : 1068 ---
+15 11
+--- turn end : 1069 ---
+
+--- evLoop : 1069 ---
+15 10
+--- turn end : 1070 ---
+
+--- evLoop : 1070 ---
+15 9
+--- turn end : 1071 ---
+
+--- evLoop : 1071 ---
+14 9
+--- turn end : 1072 ---
+
