@@ -346,11 +346,11 @@ var userScript = {};
 		}
 
 
-		userScript.next = userScript.random;
-		//userScript.next = userScript.random2;
+		//userScript.next = userScript.random;
+		userScript.next = userScript.random2;
 		// userScript.next = userScript.changeDirAtWall;
-		userScript.next = userScript.takagi;
+		//userScript.next = userScript.takagi;
 		//userScript.next = userScript.takagi2;
-		//userScript.next = userScript.kondo1;
+		// userScript.next = userScript.kondo1;
 
 	})();
