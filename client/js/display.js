@@ -24,10 +24,10 @@ display = {};
 		display.gifTimer;
 
 		display.lotate = [
-			  CONSTATNT.MOUTH.MATER
-			, CONSTATNT.MOUTH.SMALL
-			, CONSTATNT.MOUTH.LARGE
-			, CONSTATNT.MOUTH.SMALL
+			  CONSTANT.MOUTH.MATER
+			, CONSTANT.MOUTH.SMALL
+			, CONSTANT.MOUTH.LARGE
+			, CONSTANT.MOUTH.SMALL
 		];
 
 		display.clearGifTimer = function() {
@@ -49,11 +49,7 @@ display = {};
 		 * Main.
 		 */
 		display.render = function () {
-			//this.renderGridLine();
-			//this.setRenderQueue();
-			this.ctx.clearRect(0,0,OPTIONS.canvasWidth,OPTIONS.canvasHeight);
-			this.ra();
-			//this.renderAllObjects();
+			this.renderAllObjects();
 		}
 
 		// Initialize
@@ -128,27 +124,34 @@ display = {};
 		 * @param j coordinate of a cell
 		 * @param f render method
 		 */
-		display.renderCell = function (i, j, f){
+		display.renderCell = function (i, j, f, arg){
 			var size = OPTIONS.cellSize,
 			x, y;
 			x = i * size;
 			y = j * size;
-			f.apply(this, [x, y]);
+			f.apply(this, [x, y, arg]);
 		}
 
 		/**
 		 * render feed at {x, y}:pixel.
 		 * @param x
 		 * @param y
+		 * @param point
 		 */
-		display.renderFeed = function (x, y) {
+		display.renderFeed = function (x, y, point) {
 			var size = OPTIONS.cellSize
-			,r = (size-1)/3
+			,r = (size-1)/8
 			,rx = x + size/2
 			,ry = y + size/2
-			,msize = Math.PI/6,mths,mthe;
-			renderUtil.circle(rx, ry, r, OPTIONS.feedColor);
-
+			,color;
+			if(point == 1) {
+				color = OPTIONS.feedColorS;
+			} else if(point == 2) {
+				color = OPTIONS.feedColorM;
+			} else if(point == 3) {
+				color = OPTIONS.feedColorL;
+			}
+			renderUtil.circle(rx, ry, r, color);
 		}
 
 		/**
@@ -156,96 +159,64 @@ display = {};
 		 * @param x
 		 * @param y
 		 */
-		display.renderStage = function (x, y) {
-			renderUtil.rect(x, y, OPTIONS.stageColor);
+		display.renderStage = function (x, y, dir) {
+			renderUtil.line(x, y, OPTIONS.frameColor, dir);
 		}
 
-		/**
-		 * render all objects.
-		 * - packs
-		 * - feeds
-		 * - stage blocks
-		 * @param stage
-		 */
-		display.renderAllObjects= function() {
-			var i, j, k, di, dj, id;
+		display.getBlockCode = function(x, y) {
+			var r, l, u, d
+			, stage = this.matrix.stage
+			, code;
 
-			for(k in this.renderQueue.block) {
-				i = this.renderQueue.block[k].i;
-				j = this.renderQueue.block[k].j;
-				this.renderCell(i, j, this.renderStage);
+			if(stage[x + 1]) {
+				d = stage[x + 1][y][env.STAGE_OBJECTS.BLOCK]
 			}
-			for(k in this.renderQueue.feed) {
-				i = this.renderQueue.feed[k].i;
-				j = this.renderQueue.feed[k].j;
-				this.renderCell(i, j, this.renderFeed);
+			if(stage[x - 1]) {
+				u = stage[x - 1][y][env.STAGE_OBJECTS.BLOCK]
 			}
-			for(k in this.renderQueue.pack) {
-				i = this.renderQueue.pack[k].i;
-				j = this.renderQueue.pack[k].j;
-				id  = this.renderQueue.pack[k].id;
-				di = i - this.packs[id].i; 
-				dj = j - this.packs[id].j; 
-				this.packs[id].movePack(di, dj);
-				this.packs[id].i = i;
-				this.packs[id].j = j;
+			if(stage[x][y - 1]) {
+				l = stage[x][y - 1][env.STAGE_OBJECTS.BLOCK]
+			}
+			if(stage[x][y + 1]) {
+				r = stage[x][y + 1][env.STAGE_OBJECTS.BLOCK]
 			}
 
+			if(r && l) {
+				code = CONSTANT.BLOCK.H;
+			} else if(u && d) {
+				code = CONSTANT.BLOCK.V;
+			} else if(r && d) {
+				code = CONSTANT.BLOCK.RD;
+			} else if(r && u) {
+				code = CONSTANT.BLOCK.RU;
+			} else if(l && u) {
+				code = CONSTANT.BLOCK.LU;
+			} else if(l && d) {
+				code = CONSTANT.BLOCK.LD;
+			} else {
+				code = CONSTANT.BLOCK.H;
+			}
+
+			return  code;
 		}
 
 		/**
 		 * Set render objects into queue.
 		 */
-		display.setRenderQueue = function(stage) {
+		display.renderAllObjects = function(stage) {
 			var stage = stage || this.matrix.stage
-			, i, j, k;
+			, i, j, k
+			, point
+			, dir;
 
 			display.renderQueue.block = [];
 			display.renderQueue.pack = [];
 			display.renderQueue.feed = [];
 			for(i = 0; i < stage.length; i++) {
 				for(j = 0; j < stage[i].length; j++) {
-					if(stage[i][j][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
-						// this.renderCell(i, j, this.renderStage);
-						this.renderQueue.block.push({i:i, j:j});
-					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
-						// render all packs
-						for(k=0; k<env.PACK_NUM; k++) {
-							if(stage[j][i][env.STAGE_OBJECTS.PACK] & Math.pow(2, k)) {
-								/*
-								di = i - this.packs[k].i; 
-								dj = j - this.packs[k].j; 
-								this.packs[k].movePack(di, dj, k);
-								this.packs[k].i = i;
-								this.packs[k].j = j;
-								*/
-
-								this.renderQueue.pack.push({i:i, j:j, id:k});
-							}
-						}
-					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
-						//this.renderCell(i, j, this.renderFeed);
-						this.renderQueue.feed.push({i:i, j:j});
-					}
-				}
-			}
-
-		}
-
-		/**
-		 * Set render objects into queue.
-		 */
-		display.ra = function(stage) {
-			var stage = stage || this.matrix.stage
-			, i, j, k;
-
-			display.renderQueue.block = [];
-			display.renderQueue.pack = [];
-			display.renderQueue.feed = [];
-			for(i = 0; i < stage.length; i++) {
-				for(j = 0; j < stage[i].length; j++) {
-					if(stage[j][i][env.STAGE_OBJECTS.BLOCK] == env.EXIST_FLG) {
-						this.renderCell(i, j, this.renderStage);
+					if(stage[j][i][env.STAGE_OBJECTS.BLOCK] == env.BLOCK_EXIST) {
+						dir = this.getBlockCode(j, i);
+						this.renderCell(i, j, this.renderStage, dir);
 					} else if(stage[j][i][env.STAGE_OBJECTS.PACK] > 0) {
 						// render all packs
 						for(k=0; k<env.PACK_NUM; k++) {
@@ -255,17 +226,21 @@ display = {};
 								this.packs[k].movePack(di, dj, k);
 								this.packs[k].i = i;
 								this.packs[k].j = j;
-
 							}
 						}
 					} else if(stage[j][i][env.STAGE_OBJECTS.FEED] > 0) {
-						this.renderCell(i, j, this.renderFeed);
+						point = stage[j][i][env.STAGE_OBJECTS.FEED];
+						this.renderCell(i, j, this.renderFeed, point);
+					} else {
+						this.renderCell(i, j, renderUtil.clearRect);
 					}
 				}
 			}
-
 		}
 
+		display.stop = function () {
+			this.clearGifTimer();
+		}
 	})($);
 
 

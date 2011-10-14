@@ -37,23 +37,23 @@ referee.checkNextCell = function(id, x, y){
 	//check out of stage
 	if(!(x > 0 && x < env.STAGE_XSIZE - 1 && y > 0 && y < env.STAGE_YSIZE - 1)){
 		sys.log('Cant move to out of stage.x='+x+',y='+y+'(id='+id+')');
-		return false;
+		return env.FEED_BACK.WALL;
 	}
 
 	//check wall
-	if(this.stage.cells[x][y][env.STAGE_OBJECTS.BLOCK] == env.BLOCK_EXIST_YES){
+	if(this.stage.cells[x][y][env.STAGE_OBJECTS.BLOCK] == env.BLOCK_EXIST){
 		//block
 		sys.log('Cant move into block.x='+x+',y='+y+'(id='+id+')');
-		return false;
+		return env.FEED_BACK.WALL;
 	}
 
 	//check next step
 	if(!this.checkNextStep(id, x, y)){
-		sys.log('No exist packman.(id='+id+')');
-		return  false;
+		sys.log('[Error] invalid movement.(id='+id+')');
+		return env.FEED_BACK.INVM;
 	}
 
-	return true;
+	return env.FEED_BACK.SUCS;
 }
 
 /**
@@ -68,7 +68,6 @@ referee.checkNextStep = function(id, x, y){
 	dy = Math.abs(pack.y - y);
 
 	if((dx + dy) > 1) {
-		console.log('HOGE');
 		return false;
 	}else{
 		return true;

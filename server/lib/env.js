@@ -1,7 +1,7 @@
 var sys = require('sys');
 
 exports.env = {
-	PACK_NUM : 5,
+	PACK_NUM : 1,
 	STAGE_WIDTH :20,
 	STAGE_OBJECTS : {
 		BLOCK:0,
@@ -10,10 +10,8 @@ exports.env = {
 		ITEM:3
 	},
 	STAGE_WIDTH : 20,
-	DEFAULT_PACK_X:2,
-	DEFAULT_PACK_Y:1,
-	EMPTY_FLG:0,
-	EXIST_FLG:1,
+	DEFAULT_PACK_X:5,
+	DEFAULT_PACK_Y:3,
 	stage: [],
 	packs : {},
 
@@ -25,11 +23,24 @@ exports.env = {
 	STAGE_PACKMAN : 1,
 	STAGE_POINT : 2,
 
-	BLOCK_EXIST_NO  : 0,
-	BLOCK_EXIST_YES : 1,
+	BLOCK_EXIST : 1,
+	BLOCK_H : 1,
+	BLOCK_V : 2,
+	BLOCK_RU : 3,
+	BLOCK_LU : 4,
+	BLOCK_RD : 5,
+	BLOCK_LD : 6,
+
+	FEED_BACK : {
+		SUCS : 0,
+		WALL : 1,
+		INVM : 2
+	},
 
 	FRAME_RATE : 200,
 	PORT : 8000,
+
+	GAME_TIME : 1,
 
 	PACK_STATUS : {
 		NEW : 0,

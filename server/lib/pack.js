@@ -15,9 +15,9 @@ exports.Pack = function(con, id, x, y, teamName) {
 	this.y = y || env.DEFAULT_PACK_Y;
 	this.point = 0;
 	this.item = 0;
-	this.isWall = false; // Whether last step is wall or not.
 	this.status = env.PACK_STATUS.CLIENT_INIT;
 	this.id = id++;
+	this.feedBack = env.FEED_BACK.SUCS;
 }
 
 exports.Pack.prototype.changeState = function(state) {
@@ -52,7 +52,6 @@ exports.Pack.prototype.move = function(msg) {
 	 */
 	stage.cells[this.x][this.y][env.STAGE_OBJECTS.PACK] -= Math.pow(2,this.id);
 	stage.cells[x][y][env.STAGE_OBJECTS.PACK] += Math.pow(2,this.id);
-	this.isWall = false;
 
 	// 位置更新
 	this.x = x;
@@ -76,7 +75,7 @@ exports.Pack.prototype.createPackGhost = function(msg) {
 	pack.x = this.x;
 	pack.y = this.y;
 	pack.id = this.id;
-	pack.isWall = this.isWall;
+	pack.feedBack = this.feedBack;
 	return pack;
 }
 

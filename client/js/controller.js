@@ -16,13 +16,14 @@ var controller = {};
 		controller.init = function(init) {
 			var that = this;
 
-			this.con = new window.WebSocket('ws://'+ CONSTATNT.SERVER.HOST + ':' + CONSTATNT.SERVER.PORT);
+			this.con = new window.WebSocket('ws://'+ CONSTANT.SERVER.HOST + ':' + CONSTANT.SERVER.PORT);
 
 			/*------------------------------------------------
 			 * Client operation implementations
 			 ------------------------------------------------*/
 			this.con.onclose = function(e) {
 				console.log('connection closed');
+				display.stop();
 			};
 			this.con.onopen = function(e) {
 				console.log('connecting.');

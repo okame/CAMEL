@@ -4,32 +4,43 @@
  * dep :
  */
 
-CONSTATNT = {};
+CONSTANT = {};
 
 (function($) {
 
- 	CONSTATNT.SERVER = {
+ 	CONSTANT.SERVER = {
 		PORT : '8000'
-		, HOST : 'localhost'
+		, HOST : 'takagi.ws'
 	}
 
-	CONSTATNT.DIR = {
+	CONSTANT.DIR = {
 		 UP : 0
 		,DOWN : 1
 		,LEFT :2
 		,RIGTH : 3
 	},
 
-	CONSTATNT.MOUTH = {
+	CONSTANT.MOUTH = {
 		MASTER : 'm'
 		, SMALL : 's'
 		, LARGE : 'l'
 	}
 
-	CONSTATNT.COLOR = {
+	CONSTANT.COLOR = {
 		Yellow : 'y'
 		, Aquamarine : 'b'
 		, LightPink : 'r'
 		, Green : 'g'
+		, Gray : 'gr'
 	}
+
+	CONSTANT.BLOCK= {
+		H : 0
+		, V : 1
+		, LU : 2
+		, RU : 3
+		, LD : 4
+		, RD : 5
+	}
+
  })($);

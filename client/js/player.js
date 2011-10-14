@@ -10,7 +10,9 @@ var env = {};
 
 (function($) {
 		var that = player;
-		that.stage = {};
+		that.stage = {}
+		teamName = 'team1';
+
 		that.operations = {
 			 start : function(arg) {
 				console.log('[ start ]');
@@ -21,7 +23,6 @@ var env = {};
 				msg.id = that.id;
 				that.stage = arg;
 				env = arg;
-				display.init(env.stage);
 				display.render();
 				userScript.init();
 				return (util.createMsg('readyOk', msg));
@@ -39,11 +40,19 @@ var env = {};
 				$('div#usrInfo div#g_status').html(arg);
 			}
 			,init : function(arg) {
-				that.id = arg.id;
-				$('div#usrInfo div#id').html(arg.id);
-				$('div#usrInfo div#g_status').html(arg.state);
-				$('div#usrInfo div#score').html(arg.score);
-				$('div#usrInfo div#g_status').html(arg.state);
+				var usrInfo = arg.usrInfo
+				, state = usrInfo.state
+				, id = usrInfo.id
+				, score = usrInfo.score;
+				env = arg.env;
+				display.init(env.stage);
+				display.render();
+				that.id = usrInfo.id;
+				$('div#usrInfo div#id').html(id);
+				$('div#usrInfo div#g_status').html(state);
+				$('div#usrInfo div#score').html(score);
+				$('div#usrInfo div#g_status').html(state);
+				$('div#usrInfo div#team').html(teamName);
 				console.log('id:'+that.id);
 			}
 			,state : function(arg) {
@@ -56,23 +65,7 @@ var env = {};
 				$('div#usrInfo div#winner').html(winText);
 				display.clearGifTimer();
 			}
-			,moveError : function(arg) {
-				console.log('moveError.');
-			}
 		};
-
-		that.printStage = function(cells){
-			console.log('printStage');
-			var i,j,str;
-			for(i=0; i<cells.length; i++) {
-				str = "";
-				for(j=0; j<cells.length; j++) {
-					str += (console.log(cells[j][i][env.STAGE_OBJECTS.FEED]) + " ");
-				}
-				console.log(str);
-			}
-		}
-
 
 	})($);
 

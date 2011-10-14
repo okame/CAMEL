@@ -31,17 +31,17 @@ var Pack = function(i, j, dir, id, ctx) {
 	// init
 	this.r = (OPTIONS.cellSize-1) / 2
 	
-	this.mouth = CONSTATNT.MOUTH.MATER;
+	this.mouth = CONSTANT.MOUTH.MATER;
 }
 
 /**
  * PakPak Lotation.
  */
 Pack.prototype.lotate = [
-	  CONSTATNT.MOUTH.MASTER
-	, CONSTATNT.MOUTH.SMALL
-	, CONSTATNT.MOUTH.LARGE
-	, CONSTATNT.MOUTH.SMALL
+	  CONSTANT.MOUTH.MASTER
+	, CONSTANT.MOUTH.SMALL
+	, CONSTANT.MOUTH.LARGE
+	, CONSTANT.MOUTH.SMALL
 ];
 
 Pack.prototype.msizes = {
@@ -68,11 +68,11 @@ Pack.prototype.gifStart = function(dir) {
 	, j
 	, color
 	, size;
-	for(i in CONSTATNT.COLOR) {
-		color = CONSTATNT.COLOR[i];
+	for(i in CONSTANT.COLOR) {
+		color = CONSTANT.COLOR[i];
 		Pack.prototype.imgs['master_'+color] = new Image()
-		for(j in CONSTATNT.MOUTH) {
-			size = CONSTATNT.MOUTH[j];
+		for(j in CONSTANT.MOUTH) {
+			size = CONSTANT.MOUTH[j];
 			if(size == 'm') continue;
 			Pack.prototype.imgs['right_'+size+'_'+color] = new Image()
 			Pack.prototype.imgs['down_'+size+'_'+color] = new Image()
@@ -213,7 +213,7 @@ Pack.prototype.renderPackMotion = function(di, dj) {
 			x += xm;
 			y += ym;
 			//p.renderPack(x, y, p.dir);
-			index = p.mouthNo == 0? 'master_'+CONSTATNT.COLOR[p.color] : p.dir+'_'+p.lotate[p.mouthNo]+'_'+CONSTATNT.COLOR[p.color];
+			index = p.mouthNo == 0? 'master_'+CONSTANT.COLOR[p.color] : p.dir+'_'+p.lotate[p.mouthNo]+'_'+CONSTANT.COLOR[p.color];
 			p.renderPackImg(x, y, p.imgs[index]);
 			cntRate++;
 			}, dRate);

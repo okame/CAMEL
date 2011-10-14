@@ -15,19 +15,22 @@ var createServer    = require('./lib/server').createServer
 , packs           = {}
 , turnNumber      = 0
 , idCnt           = 0
-, loopLock = false;
+, loopLock = false
+, endFrame = Math.floor(env.GAME_TIME * 60 * 1000 / env.FRAME_RATE);
+console.log(endFrame);
  
-game.moduleInit = function() {
-	stage.init();
-	referee.init(packs, stage);
-	this.sv = createServer();
-}
-
 /*
  * initialize function
  */
 game.init = function() {
 	var that = this;
+
+	// WebSocketServer作成
+	this.sv = createServer(this.connectEvnt, this.closeEvnt, this.messageEvnt);
+
+	// stage作成
+	stage.init();
+	env.stage = stage.cells;
 
 	// ope
 	this.operations = {
@@ -43,19 +46,19 @@ game.init = function() {
 				packs[id] = pack;
 				pack.changeState(env.PACK_STATUS.CLIENT_INIT);
 				usrInfo = { score:0 ,id:id ,state:'CLIENT_INIT' };
-				pack.send('init', usrInfo);
+				pack.send('init', {usrInfo:usrInfo, env:env});
 				util.log('clientInit(id='+id+')');
 
 				//Check first connection of all client
 				finished = tool.checkPackStatus(packs, 'CLIENT_INIT');
 				if(tool.sumPackNum(packs) == env.PACK_NUM && finished){
-					env.stage = stage.cells;
 					env.packs = [];
 					for(i=0; i<env.PACK_NUM; i++) {
 						env.packs[i] = packs[i].createPackGhost();
 					}
+
+					referee.init(packs, stage);
 					that.sv.broadcast(tool.createMsg('ready', env));
-					that.moduleInit();
 				}
 			}else{
 				util.log('[Error] game is full.');
@@ -81,30 +84,21 @@ game.init = function() {
 			var id = msg.id
 			, x = msg.i
 			, y = msg.j
-			, finished;
-		
-			if(referee.checkNextCell(id, x, y)){
-				console.log(x,y);
-				packs[id].move(msg);
+			, finished
+			, feedBack;
 
-				// DEB
-				if(hoge) {
-					if((Math.abs(hoge.x - x) + Math.abs(hoge.y - y)) > 2) {
-						console.log('--------  INVALID MOVEMENT. -------');
-					}
-				}
-				hoge.x = x;
-				hoge.y = y;
+			packs[id].feedBack = referee.checkNextCell(id, x, y)
+
+			if(packs[id].feedBack == env.FEED_BACK.SUCS){
+				console.log('[id:'+id+']',x,y);
+				packs[id].move(msg);
 			} else {
-				console.log('wall');
-				packs[id].moveError();
 				packs[id].isWall = true;
 			}
 
 			packs[id].changeState(env.PACK_STATUS.MOVE);
 			finished = tool.checkPackStatus(packs, 'MOVE');
 
-			//console.log('[TURN:'+turnNumber+']get msg from:pack' + id);
 			if(finished){
 				for(i=0; i<env.PACK_NUM; i++){
 					packs[i].changeState(env.PACK_STATUS.TURN_END);
@@ -113,9 +107,6 @@ game.init = function() {
 			}
 		}
 	}
-
-	// WebSocketServer作成
-	this.sv = createServer(this.connectEvnt, this.closeEvnt, this.messageEvnt);
 
 };
 
@@ -188,7 +179,7 @@ game.evLoop = function() {
 	}
 
 	// check game end.
-	if(stage.feedsIsEmpty()) {
+	if(stage.feedsIsEmpty() || turnNumber >= endFrame) {
 		clearInterval(game.timer);
 		msg.winner = referee.judgeWinner();
 		game.sv.broadcast(tool.createMsg('end', msg));

@@ -44,14 +44,19 @@ stage.init = function() {
 	/* Create edge as wall */
 	// Vertical line
 	for(i = 0; i < env.STAGE_XSIZE; i++){
-		this.cells[i][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-		this.cells[i][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
+		this.cells[i][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+		this.cells[i][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
 	}
 	// Horizontal line
 	for(i = 1; i < env.STAGE_YSIZE-1; i++){
-		this.cells[0][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-		this.cells[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-	}	
+		this.cells[0][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+		this.cells[env.STAGE_XSIZE-1][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+	}
+	// Corner
+	this.cells[0][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+	this.cells[0][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+	this.cells[env.STAGE_XSIZE-1][0][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+	this.cells[env.STAGE_XSIZE-1][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
 
 	//this.makeCellFromBlocks(debugBlocks);
 	this.makeCellFromBlocks(this.getBlocksFromText('./lib/stage/normal2.txt'));
@@ -170,10 +175,14 @@ stage.makeCellFromBlocks = function(blocks) {
 	// Put point
 	for(i=0; i<blocks.length; i++) {
 		for(j=0; j<blocks[i].length; j++) {
-			if(blocks[i][j] == 1) {
-				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-			} else if(blocks[i][j] == 9) {
-				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
+			if(blocks[i][j] == env.BLOCK_EXIST) {
+				this.cells[i][j][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
+			} else if(blocks[i][j] == 5) {
+				this.cells[i][j][env.STAGE_OBJECTS.FEED] = 1;
+			} else if(blocks[i][j] == 6) {
+				this.cells[i][j][env.STAGE_OBJECTS.FEED] = 2;
+			} else if(blocks[i][j] == 7) {
+				this.cells[i][j][env.STAGE_OBJECTS.FEED] = 3;
 			}
 		}
 	}
@@ -183,46 +192,3 @@ stage.makeCellFromBlocks = function(blocks) {
 
 //------------------------
 exports.stage = stage;
-
-
-
-/* DEBUG */
-stage.debug = function() {
-
-	var i, j;
-
-	// Put point
-	for(i=0; i<blocks.length; i++) {
-		for(j=0; j<blocks[i].length; j++) {
-			if(blocks[i][j] == 1) {
-				this.cells[j][i][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST_YES;
-			} else if(blocks[i][j] == 9) {
-				this.cells[j][i][env.STAGE_OBJECTS.FEED] = 1;
-			}
-		}
-	}
-}
-
-var debugBlocks = [
-		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 1, 1, 1, 9, 1, 1, 1, 1, 1, 1, 1, 1, 9, 1, 1, 1, 0, 1],
-		[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-	]
-

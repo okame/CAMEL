@@ -72,4 +72,83 @@ renderUtil = {};
 			this.ctx.fillStyle = "";
 		}
 
+		renderUtil.clearRect = function (x, y) {
+			var size = OPTIONS.cellSize;
+			this.ctx.fillStyle = OPTIONS.bgColor;
+			this.ctx.clearRect(x,y,size,size);
+			this.ctx.fillStyle = "";
+		}
+
+		/**
+		 * Render stage line.
+		 */
+		renderUtil.line = function (x, y, color, dir) {
+			var size = OPTIONS.cellSize
+			, xs , ys , xe , ye
+			, color = color || OPTIONS.frameColor
+			, lineWidth = OPTIONS.lineWidth;
+
+			if(dir == CONSTANT.BLOCK.H) {
+				xs = x;
+				ys = y + size/2;
+				xe = x + size;
+				ye = ys;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			} else if(dir == CONSTANT.BLOCK.V){
+				xs = x + size/2;
+				ys = y;
+				xe = xs;
+				ye = y + size;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			} else if(dir == CONSTANT.BLOCK.RD){
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = x + size;
+				ye = ys;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = xs;
+				ye = y + size;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			} else if(dir == CONSTANT.BLOCK.LD){
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = x;
+				ye = ys;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = xs;
+				ye = y + size;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			} else if(dir == CONSTANT.BLOCK.RU){
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = x + size;
+				ye = ys;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = xs;
+				ye = y;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			} else if(dir == CONSTANT.BLOCK.LU){
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = x;
+				ye = ys;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+				xs = x + size/2;
+				ys = y + size/2;
+				xe = xs;
+				ye = y;
+				this.stroke(xs, ys, xe, ye, color, lineWidth);
+			}
+
+			this.ctx.fillStyle = "";
+		}
+
+
+
 	})($);
