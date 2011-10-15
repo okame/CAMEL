@@ -10,8 +10,8 @@ exports.env = {
 		ITEM:3
 	},
 	STAGE_WIDTH : 20,
-	DEFAULT_PACK_X:5,
-	DEFAULT_PACK_Y:3,
+	DEFAULT_PACK_X:1,
+	DEFAULT_PACK_Y:1,
 	stage: [],
 	packs : {},
 

@@ -85,7 +85,8 @@ var userScript = {};
 			, next;
 
 			// 分岐できる方向を調査
-			branch = getBranch(cells, pack, dir);
+			//branch = getBranch(cells, pack, dir);
+			branch = [R];
 			if(branch.length) {
 				// ランダムに方向を変える
 				dir = getRandomVal(branch);

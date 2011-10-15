@@ -23,5 +23,6 @@ OPTIONS = {
 	, gridColor : 'rgb(240, 240, 240)'
 	, bgColor : 'rgb(0, 0, 0)'
 	, gifTime : 100
+	, teamName : 'team1'
 }
 })($);

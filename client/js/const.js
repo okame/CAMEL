@@ -10,7 +10,7 @@ CONSTANT = {};
 
  	CONSTANT.SERVER = {
 		PORT : '8000'
-		, HOST : 'takagi.ws'
+		, HOST : 'localhost'
 	}
 
 	CONSTANT.DIR = {

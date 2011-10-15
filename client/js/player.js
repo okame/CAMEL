@@ -11,7 +11,7 @@ var env = {};
 (function($) {
 		var that = player;
 		that.stage = {}
-		teamName = 'team1';
+		teamName = OPTIONS.teamName;
 
 		that.operations = {
 			 start : function(arg) {
@@ -19,10 +19,13 @@ var env = {};
 			}
 			,ready : function(arg) {
 				console.log('[ ready ]');
-				var msg = {};
+				var msg = {}
+				, packImg;
 				msg.id = that.id;
 				that.stage = arg;
 				env = arg;
+				packImg = '<img src="./img/right_s_'+CONSTANT.COLOR[OPTIONS.packColor[that.id]]+'.png" /><br />';
+				$('div#usrInfo div#team').prepend(packImg);
 				display.render();
 				userScript.init();
 				return (util.createMsg('readyOk', msg));
