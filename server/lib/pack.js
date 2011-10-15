@@ -72,8 +72,8 @@ exports.Pack.prototype.createMsg = function(ope, arg) {
 }
 exports.Pack.prototype.createPackGhost = function(msg) {
 	var pack = {};
-	pack.x = this.y;
-	pack.y = this.x;
+	pack.x = this.x;
+	pack.y = this.y;
 	pack.id = this.id;
 	pack.feedBack = this.feedBack;
 	return pack;

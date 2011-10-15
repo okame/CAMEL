@@ -92,7 +92,7 @@ var userScript = {};
 			}
 
 			// 現在の進行方向で次に進むマスを取得
-			next = getNext(cells, pack, D);
+			next = getNext(cells, pack, dir);
 
 			return next;
 		}
@@ -127,18 +127,18 @@ var userScript = {};
 			var left_flag = false;
 			var up_flag = false;
 
-			if(cells[pack.x+1][pack.y][env.STAGE_OBJECTS.BLOCK] >= env.BLOCK_EXIST){
+			if(cells[pack.x+1][pack.y][env.STAGE_OBJECTS.BLOCK] != env.BLOCK_EXIST){
 				right_flag = true;
 			}
-			if(cells[pack.x][pack.y+1][env.STAGE_OBJECTS.BLOCK] >= env.BLOCK_EXIST){
+			if(cells[pack.x][pack.y+1][env.STAGE_OBJECTS.BLOCK] != env.BLOCK_EXIST){
 				down_flag = true;
 			}
-			if(cells[pack.x-1][pack.y][env.STAGE_OBJECTS.BLOCK] >= env.BLOCK_EXIST){
-			left_flag = true;
-		}
-		if(cells[pack.x][pack.y-1][env.STAGE_OBJECTS.BLOCK] >= env.BLOCK_EXIST){
-		up_flag = true;
-		}
+			if(cells[pack.x-1][pack.y][env.STAGE_OBJECTS.BLOCK] != env.BLOCK_EXIST){
+				left_flag = true;
+			}
+			if(cells[pack.x][pack.y-1][env.STAGE_OBJECTS.BLOCK] != env.BLOCK_EXIST){
+				up_flag = true;
+			}
 
 			/*
 			 * check my route.
@@ -196,10 +196,9 @@ var userScript = {};
 			msg.j = pack.y + dis.j;
 
 			return msg;
-
 		}
 
-		userScript.next = userScript.random;
-		//userScript.next = userScript.sample;
+		//userScript.next = userScript.random;
+		userScript.next = userScript.sample;
 
 	})();

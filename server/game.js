@@ -82,8 +82,8 @@ game.init = function() {
 		// move pack
 		move : function(con, msg) {
 			var id = msg.id
-			, x = msg.j
-			, y = msg.i
+			, x = msg.i
+			, y = msg.j
 			, finished
 			, feedBack;
 
