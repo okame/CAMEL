@@ -85,15 +85,14 @@ var userScript = {};
 			, next;
 
 			// 分岐できる方向を調査
-			//branch = getBranch(cells, pack, dir);
-			branch = [R];
+			branch = getBranch(cells, pack, dir);
 			if(branch.length) {
 				// ランダムに方向を変える
 				dir = getRandomVal(branch);
 			}
 
 			// 現在の進行方向で次に進むマスを取得
-			next = getNext(cells, pack, dir);
+			next = getNext(cells, pack, D);
 
 			return next;
 		}
