@@ -3,3 +3,4 @@ client/bk/*
 client_mock/*
 .DS_Store
 ./**/DS_Store
+server/node_modules
