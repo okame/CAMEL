@@ -59,7 +59,7 @@ stage.init = function() {
 	this.cells[env.STAGE_XSIZE-1][env.STAGE_YSIZE-1][env.STAGE_OBJECTS.BLOCK] = env.BLOCK_EXIST;
 
 	//this.makeCellFromBlocks(debugBlocks);
-	this.makeCellFromBlocks(this.getBlocksFromText('./lib/stage/test.txt'));
+	this.makeCellFromBlocks(this.getBlocksFromText('./lib/stage/normal.txt'));
 	
 	this.createPList();
 

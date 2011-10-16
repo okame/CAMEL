@@ -80,7 +80,7 @@ var userScript = {};
 		userScript.random = function(arg) {
 			var cells = arg.cells
 			, pack = arg.pack
-			, branch
+		, branch
 			, turn = arg.turn
 			, next;
 
@@ -198,7 +198,7 @@ var userScript = {};
 			return msg;
 		}
 
-		//userScript.next = userScript.random;
-		userScript.next = userScript.sample;
+		userScript.next = userScript.random;
+		//userScript.next = userScript.sample;
 
 	})();
