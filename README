@@ -1,33 +1,6 @@
 * Library
-- websocket-server
--- [How to install]
--- % npm install websocket-server
+- websocket-node
+-- % npm install websocket
 
-* Message Format
-
-{
-  ope:<operation_name:string>
-  arg:<arguments:object>
-}
-
-* Coordinate Data Format
-** Stage
-
-** Entity{Pack, Item}
-各オブジェクト内に座標値を持つ
-
-* TODO
-- ステージ情報の記述を簡略化（ファイルに記述するなど）
-- ライブラリ変数をローカル化
-- クライアントにポイント数描画
-- パックマンの動きのシナリオテストができる枠組み作り
--- テキストでシーケンスを記述できるなど
-- 敵オブジェクト作成
--- 敵当たり判定
--- レンダリング処理
-- sever側とclient側でそれぞれフレームレートがハードコーディングされている
-- レンダリング時に移動オブジェクトが残ってしまう
--- 画面全体をクリア->レンダリングを繰り返す
-
-* methods
-Under construct
+* test
+- jasmine-node
