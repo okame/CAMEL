@@ -1,24 +1,41 @@
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="./js/jquery.js"></script>
-    <script type="text/javascript" src="./js/json2.js"></script>
-    <script type="text/javascript" src="./js/util.js"></script>
-    <script type="text/javascript" src="./js/player.js"></script>
-    <script type="text/javascript" src="./js/controller.js"></script>
-    <script type="text/javascript" src="./js/display.js"></script>
-    <script type="text/javascript" src="./js/key.js"></script>
-    <script type="text/javascript" src="./js/init.js"></script>
-    <link rel="stylesheet" type="text/css" href="./css/pack.css"></link>
-    <title></title>
-  </head>
-  <body>
-    <h1>pack travel</h1>
-    <div id="wrapper">
-      <canvas id="canvasMain" width="600" height="600"></canvs>
-    </div>
-    <input type="button" value="start" onclick="javascript:controller.evs()" /><br />
-    <input type="button" value="stop" onclick="javascript:controller.eve()" />
-  </body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="./js/lib/jquery.js"></script>
+		<script type="text/javascript" src="./js/lib/json2.js"></script>
+		<script type="text/javascript" src="./js/options.js"></script>
+		<script type="text/javascript" src="./js/const.js"></script>
+		<script type="text/javascript" src="./js/util.js"></script>
+		<script type="text/javascript" src="./js/userScript.js"></script>
+		<script type="text/javascript" src="./js/player.js"></script>
+		<script type="text/javascript" src="./js/renderUtil.js"></script>
+		<script type="text/javascript" src="./js/Pack.js"></script>
+		<script type="text/javascript" src="./js/display.js"></script>
+		<script type="text/javascript" src="./js/messageManager.js"></script>
+		<script type="text/javascript" src="./js/controller.js"></script>
+		<script type="text/javascript" src="./js/key.js"></script>
+		<script type="text/javascript" src="./js/init.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/pack.css"></link>
+		<title></title>
+	</head>
+	<body>
+		<h1>pack travel</h1>
+		<div id="wrapper">
+			<canvas id="canvasMain" width="600" height="600"></canvas>
+			<div id="usrInfo">
+				<div id="team">No Name</div>
+				<h2>ID</h2>
+				<div id="id">NULL</div>
+				<h2>SCORE</h2>
+				<div id="score">0</div>
+				<h2>PACK STATUS</h2>
+				<div id="g_status">DISCONNECT</div>
+				<hr />
+				<div id="packImg">NULL</div>
+				<hr />
+				<div id="winner"></div>
+			</div>
+		</div>
+	</body>
 </html>
 

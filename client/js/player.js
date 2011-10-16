@@ -1,50 +1,74 @@
+/**
+ * player.js
+ *
+ * dep :
+ * 	userScript.js
+ * 	display.js
+ */
 var player = {};
 var env = {};
 
 (function($) {
 		var that = player;
-		that.stage = {};
+		that.stage = {}
+		teamName = OPTIONS.teamName;
+
 		that.operations = {
-			// synack
-			synack : function(arg) {
-				console.log('[ synack ]');
-			},
-			start : function(arg) {
+			 start : function(arg) {
 				console.log('[ start ]');
-			},
-			prestart : function(arg) {
-				console.log('[ prestart ]');
+			}
+			,ready : function(arg) {
+				console.log('[ ready ]');
+				var msg = {}
+				, packImg;
+				msg.id = that.id;
 				that.stage = arg;
 				env = arg;
-				display.init(env.stage);
+				packImg = '<img src="./img/right_s_'+CONSTANT.COLOR[OPTIONS.packColor[that.id]]+'.png" /><br />';
+				$('div#usrInfo div#team').prepend(packImg);
 				display.render();
-				return (util.createMsg('ack',''));
-			},
-			next : function(arg) {
+				userScript.init();
+				return (util.createMsg('readyOk', msg));
+			}
+			,next : function(arg) {
 				console.log('[ next ]');
-				var msg = {};
-				var dis = {};
-				var buf = Math.floor(Math.random()*10);
-				if(buf % 4 == 0 ) {
-					dis['i'] = 1;
-					dis['j'] = 0;
-				} else if(buf % 4 == 1 ) {
-					dis['i'] = 0;
-					dis['j'] = 1;
-				} else if(buf % 4 == 2 ) {
-					dis['i'] = -1;
-					dis['j'] = 0;
-				} else if(buf % 4 == 3 ) {
-					dis['i'] = 0;
-					dis['j'] = -1;
-				} else {
-					dis['i'] = 0;
-					dis['j'] = 1;
-				}
-				msg.i = arg.x + dis.i;
-				msg.j = arg.y + dis.j;
+				var msg = userScript.next(arg);
+				msg.id = that.id;
 				return (util.createMsg('move', msg));
 			}
+			,scr : function(arg) {
+				$('div#usrInfo div#score').html(arg || '0');
+			}
+			,state : function(arg){
+				$('div#usrInfo div#g_status').html(arg);
+			}
+			,init : function(arg) {
+				var usrInfo = arg.usrInfo
+				, state = usrInfo.state
+				, id = usrInfo.id
+				, score = usrInfo.score;
+				env = arg.env;
+				display.init(env.stage);
+				display.render();
+				that.id = usrInfo.id;
+				$('div#usrInfo div#id').html(id);
+				$('div#usrInfo div#g_status').html(state);
+				$('div#usrInfo div#score').html(score);
+				$('div#usrInfo div#g_status').html(state);
+				$('div#usrInfo div#team').html(teamName);
+				console.log('id:'+that.id);
+			}
+			,state : function(arg) {
+				$('div#usrInfo div#g_status').html(arg);
+			}
+			,end : function(arg) {
+				var winText = '<b>Winner : '+arg.winner.id+'</b><br />'
+					+ 'point : ' + arg.winner.point;
+				$('div#usrInfo div#g_status').html('END');
+				$('div#usrInfo div#winner').html(winText);
+				display.clearGifTimer();
+			}
 		};
-	})();
+
+	})($);
 

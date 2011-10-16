@@ -1,0 +1,4293 @@
+14 Oct 20:42:05 - server listening on port 8000.
+14 Oct 20:42:07 - connect.
+14 Oct 20:42:07 - clientInit(id=0)
+14 Oct 20:42:07 - finished to create stage
+14 Oct 20:42:07 - readyOk(id=0)
+--- evLoop : 0 ---
+2 2
+--- turn end : 1 ---
+
+--- evLoop : 1 ---
+2 3
+--- turn end : 2 ---
+
+--- evLoop : 2 ---
+1 3
+--- turn end : 3 ---
+
+--- evLoop : 3 ---
+1 4
+--- turn end : 4 ---
+
+--- evLoop : 4 ---
+2 4
+--- turn end : 5 ---
+
+--- evLoop : 5 ---
+2 3
+--- turn end : 6 ---
+
+--- evLoop : 6 ---
+3 3
+--- turn end : 7 ---
+
+--- evLoop : 7 ---
+4 3
+--- turn end : 8 ---
+
+--- evLoop : 8 ---
+4 4
+--- turn end : 9 ---
+
+--- evLoop : 9 ---
+4 5
+--- turn end : 10 ---
+
+--- evLoop : 10 ---
+4 6
+--- turn end : 11 ---
+
+--- evLoop : 11 ---
+5 6
+--- turn end : 12 ---
+
+--- evLoop : 12 ---
+5 7
+--- turn end : 13 ---
+
+--- evLoop : 13 ---
+4 7
+--- turn end : 14 ---
+
+--- evLoop : 14 ---
+4 6
+--- turn end : 15 ---
+
+--- evLoop : 15 ---
+4 5
+--- turn end : 16 ---
+
+--- evLoop : 16 ---
+3 5
+--- turn end : 17 ---
+
+--- evLoop : 17 ---
+3 4
+--- turn end : 18 ---
+
+--- evLoop : 18 ---
+2 4
+--- turn end : 19 ---
+
+--- evLoop : 19 ---
+2 3
+--- turn end : 20 ---
+
+--- evLoop : 20 ---
+3 3
+--- turn end : 21 ---
+
+--- evLoop : 21 ---
+3 2
+--- turn end : 22 ---
+
+--- evLoop : 22 ---
+4 2
+--- turn end : 23 ---
+
+--- evLoop : 23 ---
+4 1
+--- turn end : 24 ---
+
+--- evLoop : 24 ---
+3 1
+--- turn end : 25 ---
+
+--- evLoop : 25 ---
+3 2
+--- turn end : 26 ---
+
+--- evLoop : 26 ---
+3 3
+--- turn end : 27 ---
+
+--- evLoop : 27 ---
+4 3
+--- turn end : 28 ---
+
+--- evLoop : 28 ---
+5 3
+--- turn end : 29 ---
+
+--- evLoop : 29 ---
+5 2
+--- turn end : 30 ---
+
+--- evLoop : 30 ---
+4 2
+--- turn end : 31 ---
+
+--- evLoop : 31 ---
+4 3
+--- turn end : 32 ---
+
+--- evLoop : 32 ---
+4 4
+--- turn end : 33 ---
+
+--- evLoop : 33 ---
+3 4
+--- turn end : 34 ---
+
+--- evLoop : 34 ---
+2 4
+--- turn end : 35 ---
+
+--- evLoop : 35 ---
+2 3
+--- turn end : 36 ---
+
+--- evLoop : 36 ---
+3 3
+--- turn end : 37 ---
+
+--- evLoop : 37 ---
+3 2
+--- turn end : 38 ---
+
+--- evLoop : 38 ---
+4 2
+--- turn end : 39 ---
+
+--- evLoop : 39 ---
+4 3
+--- turn end : 40 ---
+
+--- evLoop : 40 ---
+3 3
+--- turn end : 41 ---
+
+--- evLoop : 41 ---
+3 2
+--- turn end : 42 ---
+
+--- evLoop : 42 ---
+3 1
+--- turn end : 43 ---
+
+--- evLoop : 43 ---
+2 1
+--- turn end : 44 ---
+
+--- evLoop : 44 ---
+1 1
+--- turn end : 45 ---
+
+--- evLoop : 45 ---
+1 2
+--- turn end : 46 ---
+
+--- evLoop : 46 ---
+2 2
+--- turn end : 47 ---
+
+--- evLoop : 47 ---
+2 1
+--- turn end : 48 ---
+
+--- evLoop : 48 ---
+3 1
+--- turn end : 49 ---
+
+--- evLoop : 49 ---
+3 2
+--- turn end : 50 ---
+
+--- evLoop : 50 ---
+4 2
+--- turn end : 51 ---
+
+--- evLoop : 51 ---
+4 1
+--- turn end : 52 ---
+
+--- evLoop : 52 ---
+5 1
+--- turn end : 53 ---
+
+--- evLoop : 53 ---
+6 1
+--- turn end : 54 ---
+
+--- evLoop : 54 ---
+7 1
+--- turn end : 55 ---
+
+--- evLoop : 55 ---
+7 2
+--- turn end : 56 ---
+
+--- evLoop : 56 ---
+8 2
+--- turn end : 57 ---
+
+--- evLoop : 57 ---
+8 1
+--- turn end : 58 ---
+
+--- evLoop : 58 ---
+7 1
+--- turn end : 59 ---
+
+--- evLoop : 59 ---
+7 2
+--- turn end : 60 ---
+
+--- evLoop : 60 ---
+8 2
+--- turn end : 61 ---
+
+--- evLoop : 61 ---
+8 3
+--- turn end : 62 ---
+
+--- evLoop : 62 ---
+9 3
+--- turn end : 63 ---
+
+--- evLoop : 63 ---
+10 3
+--- turn end : 64 ---
+
+--- evLoop : 64 ---
+10 2
+--- turn end : 65 ---
+
+--- evLoop : 65 ---
+11 2
+--- turn end : 66 ---
+
+--- evLoop : 66 ---
+11 3
+--- turn end : 67 ---
+
+--- evLoop : 67 ---
+11 4
+--- turn end : 68 ---
+
+--- evLoop : 68 ---
+11 5
+--- turn end : 69 ---
+
+--- evLoop : 69 ---
+12 5
+--- turn end : 70 ---
+
+--- evLoop : 70 ---
+13 5
+--- turn end : 71 ---
+
+--- evLoop : 71 ---
+14 5
+--- turn end : 72 ---
+
+--- evLoop : 72 ---
+14 4
+--- turn end : 73 ---
+
+--- evLoop : 73 ---
+14 3
+--- turn end : 74 ---
+
+--- evLoop : 74 ---
+15 3
+--- turn end : 75 ---
+
+--- evLoop : 75 ---
+16 3
+--- turn end : 76 ---
+
+--- evLoop : 76 ---
+16 2
+--- turn end : 77 ---
+
+--- evLoop : 77 ---
+15 2
+--- turn end : 78 ---
+
+--- evLoop : 78 ---
+15 3
+--- turn end : 79 ---
+
+--- evLoop : 79 ---
+14 3
+--- turn end : 80 ---
+
+--- evLoop : 80 ---
+13 3
+--- turn end : 81 ---
+
+--- evLoop : 81 ---
+12 3
+--- turn end : 82 ---
+
+--- evLoop : 82 ---
+11 3
+--- turn end : 83 ---
+
+--- evLoop : 83 ---
+11 4
+--- turn end : 84 ---
+
+--- evLoop : 84 ---
+11 5
+--- turn end : 85 ---
+
+--- evLoop : 85 ---
+12 5
+--- turn end : 86 ---
+
+--- evLoop : 86 ---
+12 4
+--- turn end : 87 ---
+
+--- evLoop : 87 ---
+12 3
+--- turn end : 88 ---
+
+--- evLoop : 88 ---
+11 3
+--- turn end : 89 ---
+
+--- evLoop : 89 ---
+11 4
+--- turn end : 90 ---
+
+--- evLoop : 90 ---
+12 4
+--- turn end : 91 ---
+
+--- evLoop : 91 ---
+12 3
+--- turn end : 92 ---
+
+--- evLoop : 92 ---
+12 2
+--- turn end : 93 ---
+
+--- evLoop : 93 ---
+12 1
+--- turn end : 94 ---
+
+--- evLoop : 94 ---
+13 1
+--- turn end : 95 ---
+
+--- evLoop : 95 ---
+13 2
+--- turn end : 96 ---
+
+--- evLoop : 96 ---
+13 3
+--- turn end : 97 ---
+
+--- evLoop : 97 ---
+12 3
+--- turn end : 98 ---
+
+--- evLoop : 98 ---
+12 2
+--- turn end : 99 ---
+
+--- evLoop : 99 ---
+11 2
+--- turn end : 100 ---
+
+--- evLoop : 100 ---
+11 1
+--- turn end : 101 ---
+
+--- evLoop : 101 ---
+12 1
+--- turn end : 102 ---
+
+--- evLoop : 102 ---
+13 1
+--- turn end : 103 ---
+
+--- evLoop : 103 ---
+13 2
+--- turn end : 104 ---
+
+--- evLoop : 104 ---
+12 2
+--- turn end : 105 ---
+
+--- evLoop : 105 ---
+12 3
+--- turn end : 106 ---
+
+--- evLoop : 106 ---
+13 3
+--- turn end : 107 ---
+
+--- evLoop : 107 ---
+14 3
+--- turn end : 108 ---
+
+--- evLoop : 108 ---
+14 2
+--- turn end : 109 ---
+
+--- evLoop : 109 ---
+14 1
+--- turn end : 110 ---
+
+--- evLoop : 110 ---
+13 1
+--- turn end : 111 ---
+
+--- evLoop : 111 ---
+12 1
+--- turn end : 112 ---
+
+--- evLoop : 112 ---
+12 2
+--- turn end : 113 ---
+
+--- evLoop : 113 ---
+11 2
+--- turn end : 114 ---
+
+--- evLoop : 114 ---
+11 1
+--- turn end : 115 ---
+
+--- evLoop : 115 ---
+10 1
+--- turn end : 116 ---
+
+--- evLoop : 116 ---
+9 1
+--- turn end : 117 ---
+
+--- evLoop : 117 ---
+9 2
+--- turn end : 118 ---
+
+--- evLoop : 118 ---
+10 2
+--- turn end : 119 ---
+
+--- evLoop : 119 ---
+10 3
+--- turn end : 120 ---
+
+--- evLoop : 120 ---
+10 4
+--- turn end : 121 ---
+
+--- evLoop : 121 ---
+9 4
+--- turn end : 122 ---
+
+--- evLoop : 122 ---
+9 5
+--- turn end : 123 ---
+
+--- evLoop : 123 ---
+8 5
+--- turn end : 124 ---
+
+--- evLoop : 124 ---
+8 4
+--- turn end : 125 ---
+
+--- evLoop : 125 ---
+7 4
+--- turn end : 126 ---
+
+--- evLoop : 126 ---
+6 4
+--- turn end : 127 ---
+
+--- evLoop : 127 ---
+5 4
+--- turn end : 128 ---
+
+--- evLoop : 128 ---
+4 4
+--- turn end : 129 ---
+
+--- evLoop : 129 ---
+4 3
+--- turn end : 130 ---
+
+--- evLoop : 130 ---
+3 3
+--- turn end : 131 ---
+
+--- evLoop : 131 ---
+3 2
+--- turn end : 132 ---
+
+--- evLoop : 132 ---
+4 2
+--- turn end : 133 ---
+
+--- evLoop : 133 ---
+4 1
+--- turn end : 134 ---
+
+--- evLoop : 134 ---
+3 1
+--- turn end : 135 ---
+
+--- evLoop : 135 ---
+2 1
+--- turn end : 136 ---
+
+--- evLoop : 136 ---
+1 1
+--- turn end : 137 ---
+
+--- evLoop : 137 ---
+1 2
+--- turn end : 138 ---
+
+--- evLoop : 138 ---
+1 3
+--- turn end : 139 ---
+
+--- evLoop : 139 ---
+1 4
+--- turn end : 140 ---
+
+--- evLoop : 140 ---
+1 5
+--- turn end : 141 ---
+
+--- evLoop : 141 ---
+1 6
+--- turn end : 142 ---
+
+--- evLoop : 142 ---
+2 6
+--- turn end : 143 ---
+
+--- evLoop : 143 ---
+2 5
+--- turn end : 144 ---
+
+--- evLoop : 144 ---
+3 5
+--- turn end : 145 ---
+
+--- evLoop : 145 ---
+4 5
+--- turn end : 146 ---
+
+--- evLoop : 146 ---
+5 5
+--- turn end : 147 ---
+
+--- evLoop : 147 ---
+5 4
+--- turn end : 148 ---
+
+--- evLoop : 148 ---
+6 4
+--- turn end : 149 ---
+
+--- evLoop : 149 ---
+7 4
+--- turn end : 150 ---
+
+--- evLoop : 150 ---
+8 4
+--- turn end : 151 ---
+
+--- evLoop : 151 ---
+9 4
+--- turn end : 152 ---
+
+--- evLoop : 152 ---
+9 3
+--- turn end : 153 ---
+
+--- evLoop : 153 ---
+10 3
+--- turn end : 154 ---
+
+--- evLoop : 154 ---
+10 4
+--- turn end : 155 ---
+
+--- evLoop : 155 ---
+10 5
+--- turn end : 156 ---
+
+--- evLoop : 156 ---
+11 5
+--- turn end : 157 ---
+
+--- evLoop : 157 ---
+12 5
+--- turn end : 158 ---
+
+--- evLoop : 158 ---
+12 4
+--- turn end : 159 ---
+
+--- evLoop : 159 ---
+13 4
+--- turn end : 160 ---
+
+--- evLoop : 160 ---
+14 4
+--- turn end : 161 ---
+
+--- evLoop : 161 ---
+14 5
+--- turn end : 162 ---
+
+--- evLoop : 162 ---
+15 5
+--- turn end : 163 ---
+
+--- evLoop : 163 ---
+16 5
+--- turn end : 164 ---
+
+--- evLoop : 164 ---
+17 5
+--- turn end : 165 ---
+
+--- evLoop : 165 ---
+17 6
+--- turn end : 166 ---
+
+--- evLoop : 166 ---
+17 7
+--- turn end : 167 ---
+
+--- evLoop : 167 ---
+17 8
+--- turn end : 168 ---
+
+--- evLoop : 168 ---
+18 8
+--- turn end : 169 ---
+
+--- evLoop : 169 ---
+18 9
+--- turn end : 170 ---
+
+--- evLoop : 170 ---
+18 10
+--- turn end : 171 ---
+
+--- evLoop : 171 ---
+17 10
+--- turn end : 172 ---
+
+--- evLoop : 172 ---
+17 9
+--- turn end : 173 ---
+
+--- evLoop : 173 ---
+18 9
+--- turn end : 174 ---
+
+--- evLoop : 174 ---
+18 10
+--- turn end : 175 ---
+
+--- evLoop : 175 ---
+17 10
+--- turn end : 176 ---
+
+--- evLoop : 176 ---
+17 11
+--- turn end : 177 ---
+
+--- evLoop : 177 ---
+18 11
+--- turn end : 178 ---
+
+--- evLoop : 178 ---
+18 10
+--- turn end : 179 ---
+
+--- evLoop : 179 ---
+18 9
+--- turn end : 180 ---
+
+--- evLoop : 180 ---
+18 8
+--- turn end : 181 ---
+
+--- evLoop : 181 ---
+17 8
+--- turn end : 182 ---
+
+--- evLoop : 182 ---
+17 9
+--- turn end : 183 ---
+
+--- evLoop : 183 ---
+17 10
+--- turn end : 184 ---
+
+--- evLoop : 184 ---
+18 10
+--- turn end : 185 ---
+
+--- evLoop : 185 ---
+18 9
+--- turn end : 186 ---
+
+--- evLoop : 186 ---
+17 9
+--- turn end : 187 ---
+
+--- evLoop : 187 ---
+17 8
+--- turn end : 188 ---
+
+--- evLoop : 188 ---
+17 7
+--- turn end : 189 ---
+
+--- evLoop : 189 ---
+18 7
+--- turn end : 190 ---
+
+--- evLoop : 190 ---
+18 6
+--- turn end : 191 ---
+
+--- evLoop : 191 ---
+17 6
+--- turn end : 192 ---
+
+--- evLoop : 192 ---
+16 6
+--- turn end : 193 ---
+
+--- evLoop : 193 ---
+16 5
+--- turn end : 194 ---
+
+--- evLoop : 194 ---
+16 4
+--- turn end : 195 ---
+
+--- evLoop : 195 ---
+15 4
+--- turn end : 196 ---
+
+--- evLoop : 196 ---
+14 4
+--- turn end : 197 ---
+
+--- evLoop : 197 ---
+13 4
+--- turn end : 198 ---
+
+--- evLoop : 198 ---
+13 5
+--- turn end : 199 ---
+
+--- evLoop : 199 ---
+12 5
+--- turn end : 200 ---
+
+--- evLoop : 200 ---
+12 4
+--- turn end : 201 ---
+
+--- evLoop : 201 ---
+11 4
+--- turn end : 202 ---
+
+--- evLoop : 202 ---
+11 3
+--- turn end : 203 ---
+
+--- evLoop : 203 ---
+11 2
+--- turn end : 204 ---
+
+--- evLoop : 204 ---
+12 2
+--- turn end : 205 ---
+
+--- evLoop : 205 ---
+12 3
+--- turn end : 206 ---
+
+--- evLoop : 206 ---
+11 3
+--- turn end : 207 ---
+
+--- evLoop : 207 ---
+11 2
+--- turn end : 208 ---
+
+--- evLoop : 208 ---
+11 1
+--- turn end : 209 ---
+
+--- evLoop : 209 ---
+12 1
+--- turn end : 210 ---
+
+--- evLoop : 210 ---
+12 2
+--- turn end : 211 ---
+
+--- evLoop : 211 ---
+11 2
+--- turn end : 212 ---
+
+--- evLoop : 212 ---
+11 1
+--- turn end : 213 ---
+
+--- evLoop : 213 ---
+10 1
+--- turn end : 214 ---
+
+--- evLoop : 214 ---
+9 1
+--- turn end : 215 ---
+
+--- evLoop : 215 ---
+8 1
+--- turn end : 216 ---
+
+--- evLoop : 216 ---
+7 1
+--- turn end : 217 ---
+
+--- evLoop : 217 ---
+7 2
+--- turn end : 218 ---
+
+--- evLoop : 218 ---
+7 3
+--- turn end : 219 ---
+
+--- evLoop : 219 ---
+6 3
+--- turn end : 220 ---
+
+--- evLoop : 220 ---
+5 3
+--- turn end : 221 ---
+
+--- evLoop : 221 ---
+5 4
+--- turn end : 222 ---
+
+--- evLoop : 222 ---
+4 4
+--- turn end : 223 ---
+
+--- evLoop : 223 ---
+4 5
+--- turn end : 224 ---
+
+--- evLoop : 224 ---
+5 5
+--- turn end : 225 ---
+
+--- evLoop : 225 ---
+5 4
+--- turn end : 226 ---
+
+--- evLoop : 226 ---
+5 3
+--- turn end : 227 ---
+
+--- evLoop : 227 ---
+6 3
+--- turn end : 228 ---
+
+--- evLoop : 228 ---
+6 4
+--- turn end : 229 ---
+
+--- evLoop : 229 ---
+6 5
+--- turn end : 230 ---
+
+--- evLoop : 230 ---
+7 5
+--- turn end : 231 ---
+
+--- evLoop : 231 ---
+8 5
+--- turn end : 232 ---
+
+--- evLoop : 232 ---
+8 4
+--- turn end : 233 ---
+
+--- evLoop : 233 ---
+9 4
+--- turn end : 234 ---
+
+--- evLoop : 234 ---
+9 5
+--- turn end : 235 ---
+
+--- evLoop : 235 ---
+10 5
+--- turn end : 236 ---
+
+--- evLoop : 236 ---
+10 4
+--- turn end : 237 ---
+
+--- evLoop : 237 ---
+10 3
+--- turn end : 238 ---
+
+--- evLoop : 238 ---
+10 2
+--- turn end : 239 ---
+
+--- evLoop : 239 ---
+10 1
+--- turn end : 240 ---
+
+--- evLoop : 240 ---
+11 1
+--- turn end : 241 ---
+
+--- evLoop : 241 ---
+11 2
+--- turn end : 242 ---
+
+--- evLoop : 242 ---
+12 2
+--- turn end : 243 ---
+
+--- evLoop : 243 ---
+12 1
+--- turn end : 244 ---
+
+--- evLoop : 244 ---
+11 1
+--- turn end : 245 ---
+
+--- evLoop : 245 ---
+11 2
+--- turn end : 246 ---
+
+--- evLoop : 246 ---
+11 3
+--- turn end : 247 ---
+
+--- evLoop : 247 ---
+11 4
+--- turn end : 248 ---
+
+--- evLoop : 248 ---
+11 5
+--- turn end : 249 ---
+
+--- evLoop : 249 ---
+10 5
+--- turn end : 250 ---
+
+--- evLoop : 250 ---
+10 4
+--- turn end : 251 ---
+
+--- evLoop : 251 ---
+10 3
+--- turn end : 252 ---
+
+--- evLoop : 252 ---
+10 2
+--- turn end : 253 ---
+
+--- evLoop : 253 ---
+9 2
+--- turn end : 254 ---
+
+--- evLoop : 254 ---
+8 2
+--- turn end : 255 ---
+
+--- evLoop : 255 ---
+8 1
+--- turn end : 256 ---
+
+--- evLoop : 256 ---
+7 1
+--- turn end : 257 ---
+
+--- evLoop : 257 ---
+7 2
+--- turn end : 258 ---
+
+--- evLoop : 258 ---
+6 2
+--- turn end : 259 ---
+
+--- evLoop : 259 ---
+6 3
+--- turn end : 260 ---
+
+--- evLoop : 260 ---
+6 4
+--- turn end : 261 ---
+
+--- evLoop : 261 ---
+5 4
+--- turn end : 262 ---
+
+--- evLoop : 262 ---
+4 4
+--- turn end : 263 ---
+
+--- evLoop : 263 ---
+4 5
+--- turn end : 264 ---
+
+--- evLoop : 264 ---
+4 6
+--- turn end : 265 ---
+
+--- evLoop : 265 ---
+5 6
+--- turn end : 266 ---
+
+--- evLoop : 266 ---
+5 5
+--- turn end : 267 ---
+
+--- evLoop : 267 ---
+6 5
+--- turn end : 268 ---
+
+--- evLoop : 268 ---
+6 4
+--- turn end : 269 ---
+
+--- evLoop : 269 ---
+7 4
+--- turn end : 270 ---
+
+--- evLoop : 270 ---
+8 4
+--- turn end : 271 ---
+
+--- evLoop : 271 ---
+9 4
+--- turn end : 272 ---
+
+--- evLoop : 272 ---
+9 5
+--- turn end : 273 ---
+
+--- evLoop : 273 ---
+8 5
+--- turn end : 274 ---
+
+--- evLoop : 274 ---
+7 5
+--- turn end : 275 ---
+
+--- evLoop : 275 ---
+6 5
+--- turn end : 276 ---
+
+--- evLoop : 276 ---
+5 5
+--- turn end : 277 ---
+
+--- evLoop : 277 ---
+5 6
+--- turn end : 278 ---
+
+--- evLoop : 278 ---
+5 7
+--- turn end : 279 ---
+
+--- evLoop : 279 ---
+5 8
+--- turn end : 280 ---
+
+--- evLoop : 280 ---
+5 9
+--- turn end : 281 ---
+
+--- evLoop : 281 ---
+5 10
+--- turn end : 282 ---
+
+--- evLoop : 282 ---
+5 11
+--- turn end : 283 ---
+
+--- evLoop : 283 ---
+5 12
+--- turn end : 284 ---
+
+--- evLoop : 284 ---
+5 13
+--- turn end : 285 ---
+
+--- evLoop : 285 ---
+5 14
+--- turn end : 286 ---
+
+--- evLoop : 286 ---
+6 14
+--- turn end : 287 ---
+
+--- evLoop : 287 ---
+7 14
+--- turn end : 288 ---
+
+--- evLoop : 288 ---
+8 14
+--- turn end : 289 ---
+
+--- evLoop : 289 ---
+9 14
+--- turn end : 290 ---
+
+--- evLoop : 290 ---
+10 14
+--- turn end : 291 ---
+
+--- evLoop : 291 ---
+11 14
+--- turn end : 292 ---
+
+--- evLoop : 292 ---
+12 14
+--- turn end : 293 ---
+
+--- evLoop : 293 ---
+13 14
+--- turn end : 294 ---
+
+--- evLoop : 294 ---
+14 14
+--- turn end : 295 ---
+
+--- evLoop : 295 ---
+14 13
+--- turn end : 296 ---
+
+--- evLoop : 296 ---
+14 12
+--- turn end : 297 ---
+
+--- evLoop : 297 ---
+14 11
+--- turn end : 298 ---
+
+--- evLoop : 298 ---
+14 10
+--- turn end : 299 ---
+
+--- evLoop : 299 ---
+14 9
+--- turn end : 300 ---
+
+--- evLoop : 300 ---
+15 9
+--- turn end : 301 ---
+
+--- evLoop : 301 ---
+15 10
+--- turn end : 302 ---
+
+--- evLoop : 302 ---
+14 10
+--- turn end : 303 ---
+
+--- evLoop : 303 ---
+14 11
+--- turn end : 304 ---
+
+--- evLoop : 304 ---
+15 11
+--- turn end : 305 ---
+
+--- evLoop : 305 ---
+15 12
+--- turn end : 306 ---
+
+--- evLoop : 306 ---
+15 13
+--- turn end : 307 ---
+
+--- evLoop : 307 ---
+14 13
+--- turn end : 308 ---
+
+--- evLoop : 308 ---
+14 14
+--- turn end : 309 ---
+
+--- evLoop : 309 ---
+15 14
+--- turn end : 310 ---
+
+--- evLoop : 310 ---
+16 14
+--- turn end : 311 ---
+
+--- evLoop : 311 ---
+17 14
+--- turn end : 312 ---
+
+--- evLoop : 312 ---
+17 13
+--- turn end : 313 ---
+
+--- evLoop : 313 ---
+17 12
+--- turn end : 314 ---
+
+--- evLoop : 314 ---
+17 11
+--- turn end : 315 ---
+
+--- evLoop : 315 ---
+17 10
+--- turn end : 316 ---
+
+--- evLoop : 316 ---
+18 10
+--- turn end : 317 ---
+
+--- evLoop : 317 ---
+18 9
+--- turn end : 318 ---
+
+--- evLoop : 318 ---
+18 8
+--- turn end : 319 ---
+
+--- evLoop : 319 ---
+18 7
+--- turn end : 320 ---
+
+--- evLoop : 320 ---
+17 7
+--- turn end : 321 ---
+
+--- evLoop : 321 ---
+17 8
+--- turn end : 322 ---
+
+--- evLoop : 322 ---
+17 9
+--- turn end : 323 ---
+
+--- evLoop : 323 ---
+18 9
+--- turn end : 324 ---
+
+--- evLoop : 324 ---
+18 8
+--- turn end : 325 ---
+
+--- evLoop : 325 ---
+17 8
+--- turn end : 326 ---
+
+--- evLoop : 326 ---
+17 9
+--- turn end : 327 ---
+
+--- evLoop : 327 ---
+18 9
+--- turn end : 328 ---
+
+--- evLoop : 328 ---
+18 10
+--- turn end : 329 ---
+
+--- evLoop : 329 ---
+17 10
+--- turn end : 330 ---
+
+--- evLoop : 330 ---
+17 11
+--- turn end : 331 ---
+
+--- evLoop : 331 ---
+18 11
+--- turn end : 332 ---
+
+--- evLoop : 332 ---
+18 10
+--- turn end : 333 ---
+
+--- evLoop : 333 ---
+18 9
+--- turn end : 334 ---
+
+--- evLoop : 334 ---
+18 8
+--- turn end : 335 ---
+
+--- evLoop : 335 ---
+17 8
+--- turn end : 336 ---
+
+--- evLoop : 336 ---
+17 7
+--- turn end : 337 ---
+
+--- evLoop : 337 ---
+17 6
+--- turn end : 338 ---
+
+--- evLoop : 338 ---
+18 6
+--- turn end : 339 ---
+
+--- evLoop : 339 ---
+18 5
+--- turn end : 340 ---
+
+--- evLoop : 340 ---
+18 4
+--- turn end : 341 ---
+
+--- evLoop : 341 ---
+17 4
+--- turn end : 342 ---
+
+--- evLoop : 342 ---
+17 5
+--- turn end : 343 ---
+
+--- evLoop : 343 ---
+16 5
+--- turn end : 344 ---
+
+--- evLoop : 344 ---
+16 6
+--- turn end : 345 ---
+
+--- evLoop : 345 ---
+17 6
+--- turn end : 346 ---
+
+--- evLoop : 346 ---
+17 5
+--- turn end : 347 ---
+
+--- evLoop : 347 ---
+18 5
+--- turn end : 348 ---
+
+--- evLoop : 348 ---
+18 6
+--- turn end : 349 ---
+
+--- evLoop : 349 ---
+17 6
+--- turn end : 350 ---
+
+--- evLoop : 350 ---
+17 7
+--- turn end : 351 ---
+
+--- evLoop : 351 ---
+17 8
+--- turn end : 352 ---
+
+--- evLoop : 352 ---
+18 8
+--- turn end : 353 ---
+
+--- evLoop : 353 ---
+18 7
+--- turn end : 354 ---
+
+--- evLoop : 354 ---
+18 6
+--- turn end : 355 ---
+
+--- evLoop : 355 ---
+17 6
+--- turn end : 356 ---
+
+--- evLoop : 356 ---
+17 7
+--- turn end : 357 ---
+
+--- evLoop : 357 ---
+18 7
+--- turn end : 358 ---
+
+--- evLoop : 358 ---
+18 6
+--- turn end : 359 ---
+
+--- evLoop : 359 ---
+17 6
+--- turn end : 360 ---
+
+--- evLoop : 360 ---
+17 7
+--- turn end : 361 ---
+
+--- evLoop : 361 ---
+18 7
+--- turn end : 362 ---
+
+--- evLoop : 362 ---
+18 8
+--- turn end : 363 ---
+
+--- evLoop : 363 ---
+18 9
+--- turn end : 364 ---
+
+--- evLoop : 364 ---
+17 9
+--- turn end : 365 ---
+
+--- evLoop : 365 ---
+17 8
+--- turn end : 366 ---
+
+--- evLoop : 366 ---
+18 8
+--- turn end : 367 ---
+
+--- evLoop : 367 ---
+18 9
+--- turn end : 368 ---
+
+--- evLoop : 368 ---
+17 9
+--- turn end : 369 ---
+
+--- evLoop : 369 ---
+17 8
+--- turn end : 370 ---
+
+--- evLoop : 370 ---
+17 7
+--- turn end : 371 ---
+
+--- evLoop : 371 ---
+17 6
+--- turn end : 372 ---
+
+--- evLoop : 372 ---
+18 6
+--- turn end : 373 ---
+
+--- evLoop : 373 ---
+18 7
+--- turn end : 374 ---
+
+--- evLoop : 374 ---
+17 7
+--- turn end : 375 ---
+
+--- evLoop : 375 ---
+17 6
+--- turn end : 376 ---
+
+--- evLoop : 376 ---
+17 5
+--- turn end : 377 ---
+
+--- evLoop : 377 ---
+16 5
+--- turn end : 378 ---
+
+--- evLoop : 378 ---
+16 6
+--- turn end : 379 ---
+
+--- evLoop : 379 ---
+17 6
+--- turn end : 380 ---
+
+--- evLoop : 380 ---
+18 6
+--- turn end : 381 ---
+
+--- evLoop : 381 ---
+18 5
+--- turn end : 382 ---
+
+--- evLoop : 382 ---
+17 5
+--- turn end : 383 ---
+
+--- evLoop : 383 ---
+17 6
+--- turn end : 384 ---
+
+--- evLoop : 384 ---
+16 6
+--- turn end : 385 ---
+
+--- evLoop : 385 ---
+15 6
+--- turn end : 386 ---
+
+--- evLoop : 386 ---
+14 6
+--- turn end : 387 ---
+
+--- evLoop : 387 ---
+14 7
+--- turn end : 388 ---
+
+--- evLoop : 388 ---
+15 7
+--- turn end : 389 ---
+
+--- evLoop : 389 ---
+15 6
+--- turn end : 390 ---
+
+--- evLoop : 390 ---
+14 6
+--- turn end : 391 ---
+
+--- evLoop : 391 ---
+14 7
+--- turn end : 392 ---
+
+--- evLoop : 392 ---
+14 8
+--- turn end : 393 ---
+
+--- evLoop : 393 ---
+15 8
+--- turn end : 394 ---
+
+--- evLoop : 394 ---
+15 7
+--- turn end : 395 ---
+
+--- evLoop : 395 ---
+14 7
+--- turn end : 396 ---
+
+--- evLoop : 396 ---
+14 6
+--- turn end : 397 ---
+
+--- evLoop : 397 ---
+15 6
+--- turn end : 398 ---
+
+--- evLoop : 398 ---
+16 6
+--- turn end : 399 ---
+
+--- evLoop : 399 ---
+16 5
+--- turn end : 400 ---
+
+--- evLoop : 400 ---
+17 5
+--- turn end : 401 ---
+
+--- evLoop : 401 ---
+18 5
+--- turn end : 402 ---
+
+--- evLoop : 402 ---
+18 4
+--- turn end : 403 ---
+
+--- evLoop : 403 ---
+18 3
+--- turn end : 404 ---
+
+--- evLoop : 404 ---
+17 3
+--- turn end : 405 ---
+
+--- evLoop : 405 ---
+17 2
+--- turn end : 406 ---
+
+--- evLoop : 406 ---
+18 2
+--- turn end : 407 ---
+
+--- evLoop : 407 ---
+18 1
+--- turn end : 408 ---
+
+--- evLoop : 408 ---
+17 1
+--- turn end : 409 ---
+
+--- evLoop : 409 ---
+17 2
+--- turn end : 410 ---
+
+--- evLoop : 410 ---
+17 3
+--- turn end : 411 ---
+
+--- evLoop : 411 ---
+17 4
+--- turn end : 412 ---
+
+--- evLoop : 412 ---
+17 5
+--- turn end : 413 ---
+
+--- evLoop : 413 ---
+18 5
+--- turn end : 414 ---
+
+--- evLoop : 414 ---
+18 4
+--- turn end : 415 ---
+
+--- evLoop : 415 ---
+17 4
+--- turn end : 416 ---
+
+--- evLoop : 416 ---
+17 3
+--- turn end : 417 ---
+
+--- evLoop : 417 ---
+17 2
+--- turn end : 418 ---
+
+--- evLoop : 418 ---
+16 2
+--- turn end : 419 ---
+
+--- evLoop : 419 ---
+16 1
+--- turn end : 420 ---
+
+--- evLoop : 420 ---
+17 1
+--- turn end : 421 ---
+
+--- evLoop : 421 ---
+18 1
+--- turn end : 422 ---
+
+--- evLoop : 422 ---
+18 2
+--- turn end : 423 ---
+
+--- evLoop : 423 ---
+18 3
+--- turn end : 424 ---
+
+--- evLoop : 424 ---
+17 3
+--- turn end : 425 ---
+
+--- evLoop : 425 ---
+16 3
+--- turn end : 426 ---
+
+--- evLoop : 426 ---
+16 4
+--- turn end : 427 ---
+
+--- evLoop : 427 ---
+16 5
+--- turn end : 428 ---
+
+--- evLoop : 428 ---
+16 6
+--- turn end : 429 ---
+
+--- evLoop : 429 ---
+17 6
+--- turn end : 430 ---
+
+--- evLoop : 430 ---
+17 5
+--- turn end : 431 ---
+
+--- evLoop : 431 ---
+18 5
+--- turn end : 432 ---
+
+--- evLoop : 432 ---
+18 6
+--- turn end : 433 ---
+
+--- evLoop : 433 ---
+18 7
+--- turn end : 434 ---
+
+--- evLoop : 434 ---
+17 7
+--- turn end : 435 ---
+
+--- evLoop : 435 ---
+17 8
+--- turn end : 436 ---
+
+--- evLoop : 436 ---
+18 8
+--- turn end : 437 ---
+
+--- evLoop : 437 ---
+18 7
+--- turn end : 438 ---
+
+--- evLoop : 438 ---
+17 7
+--- turn end : 439 ---
+
+--- evLoop : 439 ---
+17 8
+--- turn end : 440 ---
+
+--- evLoop : 440 ---
+18 8
+--- turn end : 441 ---
+
+--- evLoop : 441 ---
+18 9
+--- turn end : 442 ---
+
+--- evLoop : 442 ---
+17 9
+--- turn end : 443 ---
+
+--- evLoop : 443 ---
+17 8
+--- turn end : 444 ---
+
+--- evLoop : 444 ---
+17 7
+--- turn end : 445 ---
+
+--- evLoop : 445 ---
+17 6
+--- turn end : 446 ---
+
+--- evLoop : 446 ---
+17 5
+--- turn end : 447 ---
+
+--- evLoop : 447 ---
+18 5
+--- turn end : 448 ---
+
+--- evLoop : 448 ---
+18 4
+--- turn end : 449 ---
+
+--- evLoop : 449 ---
+18 3
+--- turn end : 450 ---
+
+--- evLoop : 450 ---
+17 3
+--- turn end : 451 ---
+
+--- evLoop : 451 ---
+17 4
+--- turn end : 452 ---
+
+--- evLoop : 452 ---
+16 4
+--- turn end : 453 ---
+
+--- evLoop : 453 ---
+16 5
+--- turn end : 454 ---
+
+--- evLoop : 454 ---
+15 5
+--- turn end : 455 ---
+
+--- evLoop : 455 ---
+14 5
+--- turn end : 456 ---
+
+--- evLoop : 456 ---
+13 5
+--- turn end : 457 ---
+
+--- evLoop : 457 ---
+12 5
+--- turn end : 458 ---
+
+--- evLoop : 458 ---
+12 4
+--- turn end : 459 ---
+
+--- evLoop : 459 ---
+11 4
+--- turn end : 460 ---
+
+--- evLoop : 460 ---
+11 5
+--- turn end : 461 ---
+
+--- evLoop : 461 ---
+12 5
+--- turn end : 462 ---
+
+--- evLoop : 462 ---
+13 5
+--- turn end : 463 ---
+
+--- evLoop : 463 ---
+14 5
+--- turn end : 464 ---
+
+--- evLoop : 464 ---
+14 4
+--- turn end : 465 ---
+
+--- evLoop : 465 ---
+15 4
+--- turn end : 466 ---
+
+--- evLoop : 466 ---
+15 3
+--- turn end : 467 ---
+
+--- evLoop : 467 ---
+16 3
+--- turn end : 468 ---
+
+--- evLoop : 468 ---
+16 4
+--- turn end : 469 ---
+
+--- evLoop : 469 ---
+15 4
+--- turn end : 470 ---
+
+--- evLoop : 470 ---
+15 3
+--- turn end : 471 ---
+
+--- evLoop : 471 ---
+14 3
+--- turn end : 472 ---
+
+--- evLoop : 472 ---
+13 3
+--- turn end : 473 ---
+
+--- evLoop : 473 ---
+13 2
+--- turn end : 474 ---
+
+--- evLoop : 474 ---
+13 1
+--- turn end : 475 ---
+
+--- evLoop : 475 ---
+14 1
+--- turn end : 476 ---
+
+--- evLoop : 476 ---
+14 2
+--- turn end : 477 ---
+
+--- evLoop : 477 ---
+14 3
+--- turn end : 478 ---
+
+--- evLoop : 478 ---
+14 4
+--- turn end : 479 ---
+
+--- evLoop : 479 ---
+15 4
+--- turn end : 480 ---
+
+--- evLoop : 480 ---
+15 5
+--- turn end : 481 ---
+
+--- evLoop : 481 ---
+15 6
+--- turn end : 482 ---
+
+--- evLoop : 482 ---
+14 6
+--- turn end : 483 ---
+
+--- evLoop : 483 ---
+14 7
+--- turn end : 484 ---
+
+--- evLoop : 484 ---
+14 8
+--- turn end : 485 ---
+
+--- evLoop : 485 ---
+15 8
+--- turn end : 486 ---
+
+--- evLoop : 486 ---
+15 9
+--- turn end : 487 ---
+
+--- evLoop : 487 ---
+15 10
+--- turn end : 488 ---
+
+--- evLoop : 488 ---
+15 11
+--- turn end : 489 ---
+
+--- evLoop : 489 ---
+14 11
+--- turn end : 490 ---
+
+--- evLoop : 490 ---
+14 12
+--- turn end : 491 ---
+
+--- evLoop : 491 ---
+15 12
+--- turn end : 492 ---
+
+--- evLoop : 492 ---
+15 11
+--- turn end : 493 ---
+
+--- evLoop : 493 ---
+14 11
+--- turn end : 494 ---
+
+--- evLoop : 494 ---
+14 10
+--- turn end : 495 ---
+
+--- evLoop : 495 ---
+15 10
+--- turn end : 496 ---
+
+--- evLoop : 496 ---
+15 9
+--- turn end : 497 ---
+
+--- evLoop : 497 ---
+14 9
+--- turn end : 498 ---
+
+--- evLoop : 498 ---
+14 8
+--- turn end : 499 ---
+
+--- evLoop : 499 ---
+15 8
+--- turn end : 500 ---
+
+--- evLoop : 500 ---
+15 7
+--- turn end : 501 ---
+
+--- evLoop : 501 ---
+14 7
+--- turn end : 502 ---
+
+--- evLoop : 502 ---
+14 8
+--- turn end : 503 ---
+
+--- evLoop : 503 ---
+15 8
+--- turn end : 504 ---
+
+--- evLoop : 504 ---
+15 7
+--- turn end : 505 ---
+
+--- evLoop : 505 ---
+14 7
+--- turn end : 506 ---
+
+--- evLoop : 506 ---
+14 6
+--- turn end : 507 ---
+
+--- evLoop : 507 ---
+15 6
+--- turn end : 508 ---
+
+--- evLoop : 508 ---
+15 5
+--- turn end : 509 ---
+
+--- evLoop : 509 ---
+15 4
+--- turn end : 510 ---
+
+--- evLoop : 510 ---
+14 4
+--- turn end : 511 ---
+
+--- evLoop : 511 ---
+13 4
+--- turn end : 512 ---
+
+--- evLoop : 512 ---
+13 3
+--- turn end : 513 ---
+
+--- evLoop : 513 ---
+14 3
+--- turn end : 514 ---
+
+--- evLoop : 514 ---
+14 2
+--- turn end : 515 ---
+
+--- evLoop : 515 ---
+13 2
+--- turn end : 516 ---
+
+--- evLoop : 516 ---
+13 3
+--- turn end : 517 ---
+
+--- evLoop : 517 ---
+12 3
+--- turn end : 518 ---
+
+--- evLoop : 518 ---
+11 3
+--- turn end : 519 ---
+
+--- evLoop : 519 ---
+11 4
+--- turn end : 520 ---
+
+--- evLoop : 520 ---
+12 4
+--- turn end : 521 ---
+
+--- evLoop : 521 ---
+12 5
+--- turn end : 522 ---
+
+--- evLoop : 522 ---
+13 5
+--- turn end : 523 ---
+
+--- evLoop : 523 ---
+14 5
+--- turn end : 524 ---
+
+--- evLoop : 524 ---
+14 6
+--- turn end : 525 ---
+
+--- evLoop : 525 ---
+15 6
+--- turn end : 526 ---
+
+--- evLoop : 526 ---
+16 6
+--- turn end : 527 ---
+
+--- evLoop : 527 ---
+16 5
+--- turn end : 528 ---
+
+--- evLoop : 528 ---
+15 5
+--- turn end : 529 ---
+
+--- evLoop : 529 ---
+14 5
+--- turn end : 530 ---
+
+--- evLoop : 530 ---
+13 5
+--- turn end : 531 ---
+
+--- evLoop : 531 ---
+12 5
+--- turn end : 532 ---
+
+--- evLoop : 532 ---
+12 4
+--- turn end : 533 ---
+
+--- evLoop : 533 ---
+12 3
+--- turn end : 534 ---
+
+--- evLoop : 534 ---
+12 2
+--- turn end : 535 ---
+
+--- evLoop : 535 ---
+13 2
+--- turn end : 536 ---
+
+--- evLoop : 536 ---
+13 1
+--- turn end : 537 ---
+
+--- evLoop : 537 ---
+12 1
+--- turn end : 538 ---
+
+--- evLoop : 538 ---
+12 2
+--- turn end : 539 ---
+
+--- evLoop : 539 ---
+13 2
+--- turn end : 540 ---
+
+--- evLoop : 540 ---
+13 3
+--- turn end : 541 ---
+
+--- evLoop : 541 ---
+14 3
+--- turn end : 542 ---
+
+--- evLoop : 542 ---
+15 3
+--- turn end : 543 ---
+
+--- evLoop : 543 ---
+16 3
+--- turn end : 544 ---
+
+--- evLoop : 544 ---
+16 2
+--- turn end : 545 ---
+
+--- evLoop : 545 ---
+15 2
+--- turn end : 546 ---
+
+--- evLoop : 546 ---
+14 2
+--- turn end : 547 ---
+
+--- evLoop : 547 ---
+14 1
+--- turn end : 548 ---
+
+--- evLoop : 548 ---
+13 1
+--- turn end : 549 ---
+
+--- evLoop : 549 ---
+12 1
+--- turn end : 550 ---
+
+--- evLoop : 550 ---
+11 1
+--- turn end : 551 ---
+
+--- evLoop : 551 ---
+11 2
+--- turn end : 552 ---
+
+--- evLoop : 552 ---
+11 3
+--- turn end : 553 ---
+
+--- evLoop : 553 ---
+10 3
+--- turn end : 554 ---
+
+--- evLoop : 554 ---
+10 4
+--- turn end : 555 ---
+
+--- evLoop : 555 ---
+10 5
+--- turn end : 556 ---
+
+--- evLoop : 556 ---
+9 5
+--- turn end : 557 ---
+
+--- evLoop : 557 ---
+9 4
+--- turn end : 558 ---
+
+--- evLoop : 558 ---
+8 4
+--- turn end : 559 ---
+
+--- evLoop : 559 ---
+7 4
+--- turn end : 560 ---
+
+--- evLoop : 560 ---
+7 3
+--- turn end : 561 ---
+
+--- evLoop : 561 ---
+6 3
+--- turn end : 562 ---
+
+--- evLoop : 562 ---
+6 4
+--- turn end : 563 ---
+
+--- evLoop : 563 ---
+7 4
+--- turn end : 564 ---
+
+--- evLoop : 564 ---
+7 3
+--- turn end : 565 ---
+
+--- evLoop : 565 ---
+8 3
+--- turn end : 566 ---
+
+--- evLoop : 566 ---
+8 2
+--- turn end : 567 ---
+
+--- evLoop : 567 ---
+9 2
+--- turn end : 568 ---
+
+--- evLoop : 568 ---
+9 3
+--- turn end : 569 ---
+
+--- evLoop : 569 ---
+8 3
+--- turn end : 570 ---
+
+--- evLoop : 570 ---
+8 2
+--- turn end : 571 ---
+
+--- evLoop : 571 ---
+9 2
+--- turn end : 572 ---
+
+--- evLoop : 572 ---
+9 1
+--- turn end : 573 ---
+
+--- evLoop : 573 ---
+8 1
+--- turn end : 574 ---
+
+--- evLoop : 574 ---
+8 2
+--- turn end : 575 ---
+
+--- evLoop : 575 ---
+9 2
+--- turn end : 576 ---
+
+--- evLoop : 576 ---
+9 1
+--- turn end : 577 ---
+
+--- evLoop : 577 ---
+10 1
+--- turn end : 578 ---
+
+--- evLoop : 578 ---
+11 1
+--- turn end : 579 ---
+
+--- evLoop : 579 ---
+11 2
+--- turn end : 580 ---
+
+--- evLoop : 580 ---
+12 2
+--- turn end : 581 ---
+
+--- evLoop : 581 ---
+12 1
+--- turn end : 582 ---
+
+--- evLoop : 582 ---
+11 1
+--- turn end : 583 ---
+
+--- evLoop : 583 ---
+10 1
+--- turn end : 584 ---
+
+--- evLoop : 584 ---
+9 1
+--- turn end : 585 ---
+
+--- evLoop : 585 ---
+8 1
+--- turn end : 586 ---
+
+--- evLoop : 586 ---
+8 2
+--- turn end : 587 ---
+
+--- evLoop : 587 ---
+7 2
+--- turn end : 588 ---
+
+--- evLoop : 588 ---
+7 3
+--- turn end : 589 ---
+
+--- evLoop : 589 ---
+7 4
+--- turn end : 590 ---
+
+--- evLoop : 590 ---
+8 4
+--- turn end : 591 ---
+
+--- evLoop : 591 ---
+8 5
+--- turn end : 592 ---
+
+--- evLoop : 592 ---
+9 5
+--- turn end : 593 ---
+
+--- evLoop : 593 ---
+10 5
+--- turn end : 594 ---
+
+--- evLoop : 594 ---
+11 5
+--- turn end : 595 ---
+
+--- evLoop : 595 ---
+12 5
+--- turn end : 596 ---
+
+--- evLoop : 596 ---
+12 4
+--- turn end : 597 ---
+
+--- evLoop : 597 ---
+13 4
+--- turn end : 598 ---
+
+--- evLoop : 598 ---
+13 3
+--- turn end : 599 ---
+
+--- evLoop : 599 ---
+13 2
+--- turn end : 600 ---
+
+--- evLoop : 600 ---
+12 2
+--- turn end : 601 ---
+
+--- evLoop : 601 ---
+12 3
+--- turn end : 602 ---
+
+--- evLoop : 602 ---
+13 3
+--- turn end : 603 ---
+
+--- evLoop : 603 ---
+14 3
+--- turn end : 604 ---
+
+--- evLoop : 604 ---
+14 4
+--- turn end : 605 ---
+
+--- evLoop : 605 ---
+15 4
+--- turn end : 606 ---
+
+--- evLoop : 606 ---
+15 5
+--- turn end : 607 ---
+
+--- evLoop : 607 ---
+16 5
+--- turn end : 608 ---
+
+--- evLoop : 608 ---
+16 4
+--- turn end : 609 ---
+
+--- evLoop : 609 ---
+17 4
+--- turn end : 610 ---
+
+--- evLoop : 610 ---
+18 4
+--- turn end : 611 ---
+
+--- evLoop : 611 ---
+18 3
+--- turn end : 612 ---
+
+--- evLoop : 612 ---
+18 2
+--- turn end : 613 ---
+
+--- evLoop : 613 ---
+17 2
+--- turn end : 614 ---
+
+--- evLoop : 614 ---
+17 3
+--- turn end : 615 ---
+
+--- evLoop : 615 ---
+17 4
+--- turn end : 616 ---
+
+--- evLoop : 616 ---
+17 5
+--- turn end : 617 ---
+
+--- evLoop : 617 ---
+17 6
+--- turn end : 618 ---
+
+--- evLoop : 618 ---
+17 7
+--- turn end : 619 ---
+
+--- evLoop : 619 ---
+17 8
+--- turn end : 620 ---
+
+--- evLoop : 620 ---
+18 8
+--- turn end : 621 ---
+
+--- evLoop : 621 ---
+18 9
+--- turn end : 622 ---
+
+--- evLoop : 622 ---
+17 9
+--- turn end : 623 ---
+
+--- evLoop : 623 ---
+17 10
+--- turn end : 624 ---
+
+--- evLoop : 624 ---
+18 10
+--- turn end : 625 ---
+
+--- evLoop : 625 ---
+18 9
+--- turn end : 626 ---
+
+--- evLoop : 626 ---
+18 8
+--- turn end : 627 ---
+
+--- evLoop : 627 ---
+17 8
+--- turn end : 628 ---
+
+--- evLoop : 628 ---
+17 7
+--- turn end : 629 ---
+
+--- evLoop : 629 ---
+18 7
+--- turn end : 630 ---
+
+--- evLoop : 630 ---
+18 8
+--- turn end : 631 ---
+
+--- evLoop : 631 ---
+18 9
+--- turn end : 632 ---
+
+--- evLoop : 632 ---
+17 9
+--- turn end : 633 ---
+
+--- evLoop : 633 ---
+17 8
+--- turn end : 634 ---
+
+--- evLoop : 634 ---
+18 8
+--- turn end : 635 ---
+
+--- evLoop : 635 ---
+18 9
+--- turn end : 636 ---
+
+--- evLoop : 636 ---
+17 9
+--- turn end : 637 ---
+
+--- evLoop : 637 ---
+17 8
+--- turn end : 638 ---
+
+--- evLoop : 638 ---
+17 7
+--- turn end : 639 ---
+
+--- evLoop : 639 ---
+18 7
+--- turn end : 640 ---
+
+--- evLoop : 640 ---
+18 6
+--- turn end : 641 ---
+
+--- evLoop : 641 ---
+18 5
+--- turn end : 642 ---
+
+--- evLoop : 642 ---
+18 4
+--- turn end : 643 ---
+
+--- evLoop : 643 ---
+18 3
+--- turn end : 644 ---
+
+--- evLoop : 644 ---
+18 2
+--- turn end : 645 ---
+
+--- evLoop : 645 ---
+18 1
+--- turn end : 646 ---
+
+--- evLoop : 646 ---
+17 1
+--- turn end : 647 ---
+
+--- evLoop : 647 ---
+16 1
+--- turn end : 648 ---
+
+--- evLoop : 648 ---
+16 2
+--- turn end : 649 ---
+
+--- evLoop : 649 ---
+17 2
+--- turn end : 650 ---
+
+--- evLoop : 650 ---
+18 2
+--- turn end : 651 ---
+
+--- evLoop : 651 ---
+18 3
+--- turn end : 652 ---
+
+--- evLoop : 652 ---
+18 4
+--- turn end : 653 ---
+
+--- evLoop : 653 ---
+17 4
+--- turn end : 654 ---
+
+--- evLoop : 654 ---
+17 5
+--- turn end : 655 ---
+
+--- evLoop : 655 ---
+17 6
+--- turn end : 656 ---
+
+--- evLoop : 656 ---
+17 7
+--- turn end : 657 ---
+
+--- evLoop : 657 ---
+18 7
+--- turn end : 658 ---
+
+--- evLoop : 658 ---
+18 6
+--- turn end : 659 ---
+
+--- evLoop : 659 ---
+17 6
+--- turn end : 660 ---
+
+--- evLoop : 660 ---
+16 6
+--- turn end : 661 ---
+
+--- evLoop : 661 ---
+16 5
+--- turn end : 662 ---
+
+--- evLoop : 662 ---
+17 5
+--- turn end : 663 ---
+
+--- evLoop : 663 ---
+17 6
+--- turn end : 664 ---
+
+--- evLoop : 664 ---
+17 7
+--- turn end : 665 ---
+
+--- evLoop : 665 ---
+17 8
+--- turn end : 666 ---
+
+--- evLoop : 666 ---
+17 9
+--- turn end : 667 ---
+
+--- evLoop : 667 ---
+18 9
+--- turn end : 668 ---
+
+--- evLoop : 668 ---
+18 10
+--- turn end : 669 ---
+
+--- evLoop : 669 ---
+17 10
+--- turn end : 670 ---
+
+--- evLoop : 670 ---
+17 9
+--- turn end : 671 ---
+
+--- evLoop : 671 ---
+17 8
+--- turn end : 672 ---
+
+--- evLoop : 672 ---
+18 8
+--- turn end : 673 ---
+
+--- evLoop : 673 ---
+18 9
+--- turn end : 674 ---
+
+--- evLoop : 674 ---
+17 9
+--- turn end : 675 ---
+
+--- evLoop : 675 ---
+17 8
+--- turn end : 676 ---
+
+--- evLoop : 676 ---
+17 7
+--- turn end : 677 ---
+
+--- evLoop : 677 ---
+17 6
+--- turn end : 678 ---
+
+--- evLoop : 678 ---
+16 6
+--- turn end : 679 ---
+
+--- evLoop : 679 ---
+16 5
+--- turn end : 680 ---
+
+--- evLoop : 680 ---
+17 5
+--- turn end : 681 ---
+
+--- evLoop : 681 ---
+18 5
+--- turn end : 682 ---
+
+--- evLoop : 682 ---
+18 4
+--- turn end : 683 ---
+
+--- evLoop : 683 ---
+17 4
+--- turn end : 684 ---
+
+--- evLoop : 684 ---
+16 4
+--- turn end : 685 ---
+
+--- evLoop : 685 ---
+15 4
+--- turn end : 686 ---
+
+--- evLoop : 686 ---
+14 4
+--- turn end : 687 ---
+
+--- evLoop : 687 ---
+14 5
+--- turn end : 688 ---
+
+--- evLoop : 688 ---
+14 6
+--- turn end : 689 ---
+
+--- evLoop : 689 ---
+15 6
+--- turn end : 690 ---
+
+--- evLoop : 690 ---
+15 7
+--- turn end : 691 ---
+
+--- evLoop : 691 ---
+14 7
+--- turn end : 692 ---
+
+--- evLoop : 692 ---
+14 8
+--- turn end : 693 ---
+
+--- evLoop : 693 ---
+14 9
+--- turn end : 694 ---
+
+--- evLoop : 694 ---
+14 10
+--- turn end : 695 ---
+
+--- evLoop : 695 ---
+14 11
+--- turn end : 696 ---
+
+--- evLoop : 696 ---
+15 11
+--- turn end : 697 ---
+
+--- evLoop : 697 ---
+15 12
+--- turn end : 698 ---
+
+--- evLoop : 698 ---
+15 13
+--- turn end : 699 ---
+
+--- evLoop : 699 ---
+16 13
+--- turn end : 700 ---
+
+--- evLoop : 700 ---
+17 13
+--- turn end : 701 ---
+
+--- evLoop : 701 ---
+17 14
+--- turn end : 702 ---
+
+--- evLoop : 702 ---
+16 14
+--- turn end : 703 ---
+
+--- evLoop : 703 ---
+16 15
+--- turn end : 704 ---
+
+--- evLoop : 704 ---
+17 15
+--- turn end : 705 ---
+
+--- evLoop : 705 ---
+17 16
+--- turn end : 706 ---
+
+--- evLoop : 706 ---
+16 16
+--- turn end : 707 ---
+
+--- evLoop : 707 ---
+16 17
+--- turn end : 708 ---
+
+--- evLoop : 708 ---
+16 18
+--- turn end : 709 ---
+
+--- evLoop : 709 ---
+17 18
+--- turn end : 710 ---
+
+--- evLoop : 710 ---
+17 17
+--- turn end : 711 ---
+
+--- evLoop : 711 ---
+17 16
+--- turn end : 712 ---
+
+--- evLoop : 712 ---
+17 15
+--- turn end : 713 ---
+
+--- evLoop : 713 ---
+17 14
+--- turn end : 714 ---
+
+--- evLoop : 714 ---
+17 13
+--- turn end : 715 ---
+
+--- evLoop : 715 ---
+18 13
+--- turn end : 716 ---
+
+--- evLoop : 716 ---
+18 14
+--- turn end : 717 ---
+
+--- evLoop : 717 ---
+17 14
+--- turn end : 718 ---
+
+--- evLoop : 718 ---
+17 15
+--- turn end : 719 ---
+
+--- evLoop : 719 ---
+18 15
+--- turn end : 720 ---
+
+--- evLoop : 720 ---
+18 14
+--- turn end : 721 ---
+
+--- evLoop : 721 ---
+17 14
+--- turn end : 722 ---
+
+--- evLoop : 722 ---
+16 14
+--- turn end : 723 ---
+
+--- evLoop : 723 ---
+16 15
+--- turn end : 724 ---
+
+--- evLoop : 724 ---
+15 15
+--- turn end : 725 ---
+
+--- evLoop : 725 ---
+15 14
+--- turn end : 726 ---
+
+--- evLoop : 726 ---
+14 14
+--- turn end : 727 ---
+
+--- evLoop : 727 ---
+14 15
+--- turn end : 728 ---
+
+--- evLoop : 728 ---
+15 15
+--- turn end : 729 ---
+
+--- evLoop : 729 ---
+15 14
+--- turn end : 730 ---
+
+--- evLoop : 730 ---
+15 13
+--- turn end : 731 ---
+
+--- evLoop : 731 ---
+16 13
+--- turn end : 732 ---
+
+--- evLoop : 732 ---
+17 13
+--- turn end : 733 ---
+
+--- evLoop : 733 ---
+18 13
+--- turn end : 734 ---
+
+--- evLoop : 734 ---
+18 12
+--- turn end : 735 ---
+
+--- evLoop : 735 ---
+18 11
+--- turn end : 736 ---
+
+--- evLoop : 736 ---
+17 11
+--- turn end : 737 ---
+
+--- evLoop : 737 ---
+17 12
+--- turn end : 738 ---
+
+--- evLoop : 738 ---
+18 12
+--- turn end : 739 ---
+
+--- evLoop : 739 ---
+18 13
+--- turn end : 740 ---
+
+--- evLoop : 740 ---
+17 13
+--- turn end : 741 ---
+
+--- evLoop : 741 ---
+17 12
+--- turn end : 742 ---
+
+--- evLoop : 742 ---
+17 11
+--- turn end : 743 ---
+
+--- evLoop : 743 ---
+18 11
+--- turn end : 744 ---
+
+--- evLoop : 744 ---
+18 10
+--- turn end : 745 ---
+
+--- evLoop : 745 ---
+17 10
+--- turn end : 746 ---
+
+--- evLoop : 746 ---
+17 11
+--- turn end : 747 ---
+
+--- evLoop : 747 ---
+17 12
+--- turn end : 748 ---
+
+--- evLoop : 748 ---
+18 12
+--- turn end : 749 ---
+
+--- evLoop : 749 ---
+18 11
+--- turn end : 750 ---
+
+--- evLoop : 750 ---
+17 11
+--- turn end : 751 ---
+
+--- evLoop : 751 ---
+17 10
+--- turn end : 752 ---
+
+--- evLoop : 752 ---
+17 9
+--- turn end : 753 ---
+
+--- evLoop : 753 ---
+18 9
+--- turn end : 754 ---
+
+--- evLoop : 754 ---
+18 10
+--- turn end : 755 ---
+
+--- evLoop : 755 ---
+17 10
+--- turn end : 756 ---
+
+--- evLoop : 756 ---
+17 11
+--- turn end : 757 ---
+
+--- evLoop : 757 ---
+17 12
+--- turn end : 758 ---
+
+--- evLoop : 758 ---
+18 12
+--- turn end : 759 ---
+
+--- evLoop : 759 ---
+18 11
+--- turn end : 760 ---
+
+--- evLoop : 760 ---
+17 11
+--- turn end : 761 ---
+
+--- evLoop : 761 ---
+17 10
+--- turn end : 762 ---
+
+--- evLoop : 762 ---
+18 10
+--- turn end : 763 ---
+
+--- evLoop : 763 ---
+18 9
+--- turn end : 764 ---
+
+--- evLoop : 764 ---
+17 9
+--- turn end : 765 ---
+
+--- evLoop : 765 ---
+17 8
+--- turn end : 766 ---
+
+--- evLoop : 766 ---
+18 8
+--- turn end : 767 ---
+
+--- evLoop : 767 ---
+18 7
+--- turn end : 768 ---
+
+--- evLoop : 768 ---
+18 6
+--- turn end : 769 ---
+
+--- evLoop : 769 ---
+17 6
+--- turn end : 770 ---
+
+--- evLoop : 770 ---
+17 5
+--- turn end : 771 ---
+
+--- evLoop : 771 ---
+17 4
+--- turn end : 772 ---
+
+--- evLoop : 772 ---
+17 3
+--- turn end : 773 ---
+
+--- evLoop : 773 ---
+16 3
+--- turn end : 774 ---
+
+--- evLoop : 774 ---
+15 3
+--- turn end : 775 ---
+
+--- evLoop : 775 ---
+15 2
+--- turn end : 776 ---
+
+--- evLoop : 776 ---
+14 2
+--- turn end : 777 ---
+
+--- evLoop : 777 ---
+14 1
+--- turn end : 778 ---
+
+--- evLoop : 778 ---
+15 1
+--- turn end : 779 ---
+
+--- evLoop : 779 ---
+15 2
+--- turn end : 780 ---
+
+--- evLoop : 780 ---
+15 3
+--- turn end : 781 ---
+
+--- evLoop : 781 ---
+14 3
+--- turn end : 782 ---
+
+--- evLoop : 782 ---
+13 3
+--- turn end : 783 ---
+
+--- evLoop : 783 ---
+13 2
+--- turn end : 784 ---
+
+--- evLoop : 784 ---
+13 1
+--- turn end : 785 ---
+
+--- evLoop : 785 ---
+14 1
+--- turn end : 786 ---
+
+--- evLoop : 786 ---
+15 1
+--- turn end : 787 ---
+
+--- evLoop : 787 ---
+16 1
+--- turn end : 788 ---
+
+--- evLoop : 788 ---
+16 2
+--- turn end : 789 ---
+
+--- evLoop : 789 ---
+17 2
+--- turn end : 790 ---
+
+--- evLoop : 790 ---
+17 1
+--- turn end : 791 ---
+
+--- evLoop : 791 ---
+16 1
+--- turn end : 792 ---
+
+--- evLoop : 792 ---
+15 1
+--- turn end : 793 ---
+
+--- evLoop : 793 ---
+15 2
+--- turn end : 794 ---
+
+--- evLoop : 794 ---
+14 2
+--- turn end : 795 ---
+
+--- evLoop : 795 ---
+14 1
+--- turn end : 796 ---
+
+--- evLoop : 796 ---
+15 1
+--- turn end : 797 ---
+
+--- evLoop : 797 ---
+15 2
+--- turn end : 798 ---
+
+--- evLoop : 798 ---
+15 3
+--- turn end : 799 ---
+
+--- evLoop : 799 ---
+15 4
+--- turn end : 800 ---
+
+--- evLoop : 800 ---
+15 5
+--- turn end : 801 ---
+
+--- evLoop : 801 ---
+14 5
+--- turn end : 802 ---
+
+--- evLoop : 802 ---
+14 6
+--- turn end : 803 ---
+
+--- evLoop : 803 ---
+14 7
+--- turn end : 804 ---
+
+--- evLoop : 804 ---
+14 8
+--- turn end : 805 ---
+
+--- evLoop : 805 ---
+15 8
+--- turn end : 806 ---
+
+--- evLoop : 806 ---
+15 7
+--- turn end : 807 ---
+
+--- evLoop : 807 ---
+14 7
+--- turn end : 808 ---
+
+--- evLoop : 808 ---
+14 6
+--- turn end : 809 ---
+
+--- evLoop : 809 ---
+14 5
+--- turn end : 810 ---
+
+--- evLoop : 810 ---
+14 4
+--- turn end : 811 ---
+
+--- evLoop : 811 ---
+13 4
+--- turn end : 812 ---
+
+--- evLoop : 812 ---
+12 4
+--- turn end : 813 ---
+
+--- evLoop : 813 ---
+12 5
+--- turn end : 814 ---
+
+--- evLoop : 814 ---
+13 5
+--- turn end : 815 ---
+
+--- evLoop : 815 ---
+13 4
+--- turn end : 816 ---
+
+--- evLoop : 816 ---
+14 4
+--- turn end : 817 ---
+
+--- evLoop : 817 ---
+14 5
+--- turn end : 818 ---
+
+--- evLoop : 818 ---
+13 5
+--- turn end : 819 ---
+
+--- evLoop : 819 ---
+13 4
+--- turn end : 820 ---
+
+--- evLoop : 820 ---
+14 4
+--- turn end : 821 ---
+
+--- evLoop : 821 ---
+14 3
+--- turn end : 822 ---
+
+--- evLoop : 822 ---
+15 3
+--- turn end : 823 ---
+
+--- evLoop : 823 ---
+15 4
+--- turn end : 824 ---
+
+--- evLoop : 824 ---
+15 5
+--- turn end : 825 ---
+
+--- evLoop : 825 ---
+14 5
+--- turn end : 826 ---
+
+--- evLoop : 826 ---
+14 6
+--- turn end : 827 ---
+
+--- evLoop : 827 ---
+14 7
+--- turn end : 828 ---
+
+--- evLoop : 828 ---
+14 8
+--- turn end : 829 ---
+
+--- evLoop : 829 ---
+15 8
+--- turn end : 830 ---
+
+--- evLoop : 830 ---
+15 9
+--- turn end : 831 ---
+
+--- evLoop : 831 ---
+14 9
+--- turn end : 832 ---
+
+--- evLoop : 832 ---
+14 10
+--- turn end : 833 ---
+
+--- evLoop : 833 ---
+14 11
+--- turn end : 834 ---
+
+--- evLoop : 834 ---
+15 11
+--- turn end : 835 ---
+
+--- evLoop : 835 ---
+15 10
+--- turn end : 836 ---
+
+--- evLoop : 836 ---
+15 9
+--- turn end : 837 ---
+
+--- evLoop : 837 ---
+14 9
+--- turn end : 838 ---
+
+--- evLoop : 838 ---
+14 8
+--- turn end : 839 ---
+
+--- evLoop : 839 ---
+14 7
+--- turn end : 840 ---
+
+--- evLoop : 840 ---
+15 7
+--- turn end : 841 ---
+
+--- evLoop : 841 ---
+15 6
+--- turn end : 842 ---
+
+--- evLoop : 842 ---
+15 5
+--- turn end : 843 ---
+
+--- evLoop : 843 ---
+15 4
+--- turn end : 844 ---
+
+--- evLoop : 844 ---
+14 4
+--- turn end : 845 ---
+
+--- evLoop : 845 ---
+14 3
+--- turn end : 846 ---
+
+--- evLoop : 846 ---
+14 2
+--- turn end : 847 ---
+
+--- evLoop : 847 ---
+14 1
+--- turn end : 848 ---
+
+--- evLoop : 848 ---
+13 1
+--- turn end : 849 ---
+
+--- evLoop : 849 ---
+13 2
+--- turn end : 850 ---
+
+--- evLoop : 850 ---
+13 3
+--- turn end : 851 ---
+
+--- evLoop : 851 ---
+14 3
+--- turn end : 852 ---
+
+--- evLoop : 852 ---
+15 3
+--- turn end : 853 ---
+
+--- evLoop : 853 ---
+15 2
+--- turn end : 854 ---
+
+--- evLoop : 854 ---
+14 2
+--- turn end : 855 ---
+
+--- evLoop : 855 ---
+14 1
+--- turn end : 856 ---
+
+--- evLoop : 856 ---
+13 1
+--- turn end : 857 ---
+
+--- evLoop : 857 ---
+13 2
+--- turn end : 858 ---
+
+--- evLoop : 858 ---
+12 2
+--- turn end : 859 ---
+
+--- evLoop : 859 ---
+11 2
+--- turn end : 860 ---
+
+--- evLoop : 860 ---
+11 1
+--- turn end : 861 ---
+
+--- evLoop : 861 ---
+12 1
+--- turn end : 862 ---
+
+--- evLoop : 862 ---
+13 1
+--- turn end : 863 ---
+
+--- evLoop : 863 ---
+14 1
+--- turn end : 864 ---
+
+--- evLoop : 864 ---
+14 2
+--- turn end : 865 ---
+
+--- evLoop : 865 ---
+14 3
+--- turn end : 866 ---
+
+--- evLoop : 866 ---
+14 4
+--- turn end : 867 ---
+
+--- evLoop : 867 ---
+14 5
+--- turn end : 868 ---
+
+--- evLoop : 868 ---
+15 5
+--- turn end : 869 ---
+
+--- evLoop : 869 ---
+15 6
+--- turn end : 870 ---
+
+--- evLoop : 870 ---
+16 6
+--- turn end : 871 ---
+
+--- evLoop : 871 ---
+17 6
+--- turn end : 872 ---
+
+--- evLoop : 872 ---
+18 6
+--- turn end : 873 ---
+
+--- evLoop : 873 ---
+18 5
+--- turn end : 874 ---
+
+--- evLoop : 874 ---
+17 5
+--- turn end : 875 ---
+
+--- evLoop : 875 ---
+16 5
+--- turn end : 876 ---
+
+--- evLoop : 876 ---
+16 4
+--- turn end : 877 ---
+
+--- evLoop : 877 ---
+17 4
+--- turn end : 878 ---
+
+--- evLoop : 878 ---
+17 3
+--- turn end : 879 ---
+
+--- evLoop : 879 ---
+16 3
+--- turn end : 880 ---
+
+--- evLoop : 880 ---
+16 2
+--- turn end : 881 ---
+
+--- evLoop : 881 ---
+16 1
+--- turn end : 882 ---
+
+--- evLoop : 882 ---
+15 1
+--- turn end : 883 ---
+
+--- evLoop : 883 ---
+15 2
+--- turn end : 884 ---
+
+--- evLoop : 884 ---
+15 3
+--- turn end : 885 ---
+
+--- evLoop : 885 ---
+15 4
+--- turn end : 886 ---
+
+--- evLoop : 886 ---
+15 5
+--- turn end : 887 ---
+
+--- evLoop : 887 ---
+16 5
+--- turn end : 888 ---
+
+--- evLoop : 888 ---
+16 4
+--- turn end : 889 ---
+
+--- evLoop : 889 ---
+15 4
+--- turn end : 890 ---
+
+--- evLoop : 890 ---
+14 4
+--- turn end : 891 ---
+
+--- evLoop : 891 ---
+13 4
+--- turn end : 892 ---
+
+--- evLoop : 892 ---
+13 5
+--- turn end : 893 ---
+
+--- evLoop : 893 ---
+14 5
+--- turn end : 894 ---
+
+--- evLoop : 894 ---
+14 4
+--- turn end : 895 ---
+
+--- evLoop : 895 ---
+14 3
+--- turn end : 896 ---
+
+--- evLoop : 896 ---
+15 3
+--- turn end : 897 ---
+
+--- evLoop : 897 ---
+15 2
+--- turn end : 898 ---
+
+--- evLoop : 898 ---
+15 1
+--- turn end : 899 ---
+
+--- evLoop : 899 ---
+14 1
+--- turn end : 900 ---
+
+--- evLoop : 900 ---
+14 2
+--- turn end : 901 ---
+
+--- evLoop : 901 ---
+13 2
+--- turn end : 902 ---
+
+--- evLoop : 902 ---
+13 1
+--- turn end : 903 ---
+
+--- evLoop : 903 ---
+12 1
+--- turn end : 904 ---
+
+--- evLoop : 904 ---
+11 1
+--- turn end : 905 ---
+
+--- evLoop : 905 ---
+10 1
+--- turn end : 906 ---
+
+--- evLoop : 906 ---
+10 2
+--- turn end : 907 ---
+
+--- evLoop : 907 ---
+10 3
+--- turn end : 908 ---
+
+--- evLoop : 908 ---
+9 3
+--- turn end : 909 ---
+
+--- evLoop : 909 ---
+9 2
+--- turn end : 910 ---
+
+--- evLoop : 910 ---
+10 2
+--- turn end : 911 ---
+
+--- evLoop : 911 ---
+10 1
+--- turn end : 912 ---
+
+--- evLoop : 912 ---
+9 1
+--- turn end : 913 ---
+
+--- evLoop : 913 ---
+9 2
+--- turn end : 914 ---
+
+--- evLoop : 914 ---
+10 2
+--- turn end : 915 ---
+
+--- evLoop : 915 ---
+11 2
+--- turn end : 916 ---
+
+--- evLoop : 916 ---
+11 3
+--- turn end : 917 ---
+
+--- evLoop : 917 ---
+10 3
+--- turn end : 918 ---
+
+--- evLoop : 918 ---
+10 4
+--- turn end : 919 ---
+
+--- evLoop : 919 ---
+9 4
+--- turn end : 920 ---
+
+--- evLoop : 920 ---
+9 5
+--- turn end : 921 ---
+
+--- evLoop : 921 ---
+10 5
+--- turn end : 922 ---
+
+--- evLoop : 922 ---
+10 4
+--- turn end : 923 ---
+
+--- evLoop : 923 ---
+10 3
+--- turn end : 924 ---
+
+--- evLoop : 924 ---
+11 3
+--- turn end : 925 ---
+
+--- evLoop : 925 ---
+11 4
+--- turn end : 926 ---
+
+--- evLoop : 926 ---
+12 4
+--- turn end : 927 ---
+
+--- evLoop : 927 ---
+12 5
+--- turn end : 928 ---
+
+--- evLoop : 928 ---
+11 5
+--- turn end : 929 ---
+
+--- evLoop : 929 ---
+10 5
+--- turn end : 930 ---
+
+--- evLoop : 930 ---
+10 4
+--- turn end : 931 ---
+
+--- evLoop : 931 ---
+10 3
+--- turn end : 932 ---
+
+--- evLoop : 932 ---
+10 2
+--- turn end : 933 ---
+
+--- evLoop : 933 ---
+9 2
+--- turn end : 934 ---
+
+--- evLoop : 934 ---
+9 3
+--- turn end : 935 ---
+
+--- evLoop : 935 ---
+10 3
+--- turn end : 936 ---
+
+--- evLoop : 936 ---
+10 2
+--- turn end : 937 ---
+
+--- evLoop : 937 ---
+10 1
+--- turn end : 938 ---
+
+--- evLoop : 938 ---
+9 1
+--- turn end : 939 ---
+
+--- evLoop : 939 ---
+8 1
+--- turn end : 940 ---
+
+--- evLoop : 940 ---
+8 2
+--- turn end : 941 ---
+
+--- evLoop : 941 ---
+7 2
+--- turn end : 942 ---
+
+--- evLoop : 942 ---
+7 1
+--- turn end : 943 ---
+
+--- evLoop : 943 ---
+8 1
+--- turn end : 944 ---
+
+--- evLoop : 944 ---
+9 1
+--- turn end : 945 ---
+
+--- evLoop : 945 ---
+9 2
+--- turn end : 946 ---
+
+--- evLoop : 946 ---
+8 2
+--- turn end : 947 ---
+
+--- evLoop : 947 ---
+8 1
+--- turn end : 948 ---
+
+--- evLoop : 948 ---
+7 1
+--- turn end : 949 ---
+
+--- evLoop : 949 ---
+7 2
+--- turn end : 950 ---
+
+--- evLoop : 950 ---
+8 2
+--- turn end : 951 ---
+
+--- evLoop : 951 ---
+9 2
+--- turn end : 952 ---
+
+--- evLoop : 952 ---
+9 3
+--- turn end : 953 ---
+
+--- evLoop : 953 ---
+8 3
+--- turn end : 954 ---
+
+--- evLoop : 954 ---
+7 3
+--- turn end : 955 ---
+
+--- evLoop : 955 ---
+6 3
+--- turn end : 956 ---
+
+--- evLoop : 956 ---
+5 3
+--- turn end : 957 ---
+
+--- evLoop : 957 ---
+5 2
+--- turn end : 958 ---
+
+--- evLoop : 958 ---
+4 2
+--- turn end : 959 ---
+
+--- evLoop : 959 ---
+4 3
+--- turn end : 960 ---
+
+--- evLoop : 960 ---
+3 3
+--- turn end : 961 ---
+
+--- evLoop : 961 ---
+3 4
+--- turn end : 962 ---
+
+--- evLoop : 962 ---
+2 4
+--- turn end : 963 ---
+
+--- evLoop : 963 ---
+2 3
+--- turn end : 964 ---
+
+--- evLoop : 964 ---
+3 3
+--- turn end : 965 ---
+
+--- evLoop : 965 ---
+4 3
+--- turn end : 966 ---
+
+--- evLoop : 966 ---
+5 3
+--- turn end : 967 ---
+
+--- evLoop : 967 ---
+5 2
+--- turn end : 968 ---
+
+--- evLoop : 968 ---
+4 2
+--- turn end : 969 ---
+
+--- evLoop : 969 ---
+4 1
+--- turn end : 970 ---
+
+--- evLoop : 970 ---
+5 1
+--- turn end : 971 ---
+
+--- evLoop : 971 ---
+5 2
+--- turn end : 972 ---
+
+--- evLoop : 972 ---
+5 3
+--- turn end : 973 ---
+
+--- evLoop : 973 ---
+4 3
+--- turn end : 974 ---
+
+--- evLoop : 974 ---
+4 2
+--- turn end : 975 ---
+
+--- evLoop : 975 ---
+5 2
+--- turn end : 976 ---
+
+--- evLoop : 976 ---
+5 3
+--- turn end : 977 ---
+
+--- evLoop : 977 ---
+6 3
+--- turn end : 978 ---
+
+--- evLoop : 978 ---
+7 3
+--- turn end : 979 ---
+
+--- evLoop : 979 ---
+7 4
+--- turn end : 980 ---
+
+--- evLoop : 980 ---
+7 5
+--- turn end : 981 ---
+
+--- evLoop : 981 ---
+6 5
+--- turn end : 982 ---
+
+--- evLoop : 982 ---
+5 5
+--- turn end : 983 ---
+
+--- evLoop : 983 ---
+5 4
+--- turn end : 984 ---
+
+--- evLoop : 984 ---
+4 4
+--- turn end : 985 ---
+
+--- evLoop : 985 ---
+3 4
+--- turn end : 986 ---
+
+--- evLoop : 986 ---
+2 4
+--- turn end : 987 ---
+
+--- evLoop : 987 ---
+2 5
+--- turn end : 988 ---
+
+--- evLoop : 988 ---
+2 6
+--- turn end : 989 ---
+
+--- evLoop : 989 ---
+2 7
+--- turn end : 990 ---
+
+--- evLoop : 990 ---
+1 7
+--- turn end : 991 ---
+
+--- evLoop : 991 ---
+1 6
+--- turn end : 992 ---
+
+--- evLoop : 992 ---
+1 5
+--- turn end : 993 ---
+
+--- evLoop : 993 ---
+2 5
+--- turn end : 994 ---
+
+--- evLoop : 994 ---
+3 5
+--- turn end : 995 ---
+
+--- evLoop : 995 ---
+3 4
+--- turn end : 996 ---
+
+--- evLoop : 996 ---
+3 3
+--- turn end : 997 ---
+
+--- evLoop : 997 ---
+4 3
+--- turn end : 998 ---
+
+--- evLoop : 998 ---
+4 4
+--- turn end : 999 ---
+
+--- evLoop : 999 ---
+4 5
+--- turn end : 1000 ---
+
+--- evLoop : 1000 ---
+3 5
+--- turn end : 1001 ---
+
+--- evLoop : 1001 ---
+2 5
+--- turn end : 1002 ---
+
+--- evLoop : 1002 ---
+2 6
+--- turn end : 1003 ---
+
+--- evLoop : 1003 ---
+2 7
+--- turn end : 1004 ---
+
+--- evLoop : 1004 ---
+2 8
+--- turn end : 1005 ---
+
+--- evLoop : 1005 ---
+1 8
+--- turn end : 1006 ---
+
+--- evLoop : 1006 ---
+1 9
+--- turn end : 1007 ---
+
+--- evLoop : 1007 ---
+1 10
+--- turn end : 1008 ---
+
+--- evLoop : 1008 ---
+1 11
+--- turn end : 1009 ---
+
+--- evLoop : 1009 ---
+1 12
+--- turn end : 1010 ---
+
+--- evLoop : 1010 ---
+1 13
+--- turn end : 1011 ---
+
+--- evLoop : 1011 ---
+1 14
+--- turn end : 1012 ---
+
+--- evLoop : 1012 ---
+2 14
+--- turn end : 1013 ---
+
+--- evLoop : 1013 ---
+2 13
+--- turn end : 1014 ---
+
+--- evLoop : 1014 ---
+3 13
+--- turn end : 1015 ---
+
+--- evLoop : 1015 ---
+3 14
+--- turn end : 1016 ---
+
+--- evLoop : 1016 ---
+2 14
+--- turn end : 1017 ---
+
+--- evLoop : 1017 ---
+1 14
+--- turn end : 1018 ---
+
+--- evLoop : 1018 ---
+1 15
+--- turn end : 1019 ---
+
+--- evLoop : 1019 ---
+1 16
+--- turn end : 1020 ---
+
+--- evLoop : 1020 ---
+1 17
+--- turn end : 1021 ---
+
+--- evLoop : 1021 ---
+1 18
+--- turn end : 1022 ---
+
+--- evLoop : 1022 ---
+2 18
+--- turn end : 1023 ---
+
+--- evLoop : 1023 ---
+3 18
+--- turn end : 1024 ---
+
+--- evLoop : 1024 ---
+4 18
+--- turn end : 1025 ---
+
+--- evLoop : 1025 ---
+4 17
+--- turn end : 1026 ---
+
+--- evLoop : 1026 ---
+5 17
+--- turn end : 1027 ---
+
+--- evLoop : 1027 ---
+5 18
+--- turn end : 1028 ---
+
+--- evLoop : 1028 ---
+6 18
+--- turn end : 1029 ---
+
+--- evLoop : 1029 ---
+7 18
+--- turn end : 1030 ---
+
+--- evLoop : 1030 ---
+8 18
+--- turn end : 1031 ---
+
+--- evLoop : 1031 ---
+9 18
+--- turn end : 1032 ---
+
+--- evLoop : 1032 ---
+10 18
+--- turn end : 1033 ---
+
+--- evLoop : 1033 ---
+11 18
+--- turn end : 1034 ---
+
+--- evLoop : 1034 ---
+12 18
+--- turn end : 1035 ---
+
+--- evLoop : 1035 ---
+13 18
+--- turn end : 1036 ---
+
+--- evLoop : 1036 ---
+14 18
+--- turn end : 1037 ---
+
+--- evLoop : 1037 ---
+15 18
+--- turn end : 1038 ---
+
+--- evLoop : 1038 ---
+15 17
+--- turn end : 1039 ---
+
+--- evLoop : 1039 ---
+16 17
+--- turn end : 1040 ---
+
+--- evLoop : 1040 ---
+17 17
+--- turn end : 1041 ---
+
+--- evLoop : 1041 ---
+17 16
+--- turn end : 1042 ---
+
+--- evLoop : 1042 ---
+18 16
+--- turn end : 1043 ---
+
+--- evLoop : 1043 ---
+18 15
+--- turn end : 1044 ---
+
+--- evLoop : 1044 ---
+18 14
+--- turn end : 1045 ---
+
+--- evLoop : 1045 ---
+18 13
+--- turn end : 1046 ---
+
+--- evLoop : 1046 ---
+17 13
+--- turn end : 1047 ---
+
+--- evLoop : 1047 ---
+17 12
+--- turn end : 1048 ---
+
+--- evLoop : 1048 ---
+18 12
+--- turn end : 1049 ---
+
+--- evLoop : 1049 ---
+18 11
+--- turn end : 1050 ---
+
+--- evLoop : 1050 ---
+17 11
+--- turn end : 1051 ---
+
+--- evLoop : 1051 ---
+17 10
+--- turn end : 1052 ---
+
+--- evLoop : 1052 ---
+18 10
+--- turn end : 1053 ---
+
+--- evLoop : 1053 ---
+18 11
+--- turn end : 1054 ---
+
+--- evLoop : 1054 ---
+17 11
+--- turn end : 1055 ---
+
+--- evLoop : 1055 ---
+17 12
+--- turn end : 1056 ---
+
+--- evLoop : 1056 ---
+17 13
+--- turn end : 1057 ---
+
+--- evLoop : 1057 ---
+17 14
+--- turn end : 1058 ---
+
+--- evLoop : 1058 ---
+16 14
+--- turn end : 1059 ---
+
+--- evLoop : 1059 ---
+15 14
+--- turn end : 1060 ---
+
+--- evLoop : 1060 ---
+15 13
+--- turn end : 1061 ---
+
+--- evLoop : 1061 ---
+15 12
+--- turn end : 1062 ---
+
+--- evLoop : 1062 ---
+14 12
+--- turn end : 1063 ---
+
+--- evLoop : 1063 ---
+14 11
+--- turn end : 1064 ---
+
+--- evLoop : 1064 ---
+15 11
+--- turn end : 1065 ---
+
+--- evLoop : 1065 ---
+15 12
+--- turn end : 1066 ---
+
+--- evLoop : 1066 ---
+14 12
+--- turn end : 1067 ---
+
+--- evLoop : 1067 ---
+14 11
+--- turn end : 1068 ---
+
+--- evLoop : 1068 ---
+15 11
+--- turn end : 1069 ---
+
+--- evLoop : 1069 ---
+15 10
+--- turn end : 1070 ---
+
+--- evLoop : 1070 ---
+15 9
+--- turn end : 1071 ---
+
+--- evLoop : 1071 ---
+14 9
+--- turn end : 1072 ---
+
